@@ -1,0 +1,37 @@
+
+% intercept theorem, also known as Thales's theorem, basic proportionality theorem or side splitter theorem
+\begin{theorem}[Talesa]
+    Jeśli ramiona kąta płaskiego przetnie się 2 równoległymi prostymi:
+    \begin{center}
+        \begin{tikzpicture}
+            \tkzDefPoint(0, 0.5){O}
+            \tkzDefPoint(1.5, 0){A}
+            \tkzDefPoint(2, 1){Ap}
+            \tkzDefPointBy[homothety=center O ratio 1.618](A) \tkzGetPoint{B}
+            \tkzDefLine[parallel=through B](A,Ap) \tkzGetPoint{Bp}
+            \tkzInterLL(O,Ap)(B,Bp) \tkzGetPoint{Bpp}
+            \tkzDrawPoints[fill=gray,opacity=.9](O,A,B,Ap,Bpp)
+            \tkzLabelPoint[above](O){$O$}
+            \tkzLabelPoint[below](A){$A$}
+            \tkzLabelPoint[below](B){$B$}
+            \tkzLabelPoint[above left](Bpp){$B'$}
+            \tkzLabelPoint[above left](Ap){$A'$}
+            \tkzDrawLine[thick](O,B)
+            \tkzDrawLine[thick](O,Bpp)
+            \tkzDrawLine[color=red, thick](A,Ap)
+            \tkzDrawLine[color=red, thick](B,Bpp)
+        \end{tikzpicture}
+        \end{center}
+    to długości odcinków wyznaczonych przez te proste na jednym z ramion kąta są proporcjonalne do długości odpowiednich odcinków na drugim ramieniu kąta, a zatem
+    \begin{equation}
+        \frac{|OA|}{|OB|} = \frac{|OA'|}{|OB'|} = \frac{|AA'|}{|BB'|}.
+    \end{equation}
+\end{theorem}
+
+Tradycja przypisuje jego sformułowanie Talesowi z Miletu, chociaż znane było starożytnym Babilończykom i Egipcjanom.
+\index[persons]{Tales z Miletu}%
+Pierwszy znany dowód pojawia się w Elementach Euklidesa.
+
+\begin{proof}
+    Do napisania.
+\end{proof}
