@@ -27,23 +27,28 @@
 \usepackage[final]{microtype}
 
 % headers, footers
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\renewcommand{\headrulewidth}{0.5pt}
-\renewcommand{\chaptermark}[1]{\markboth{\sffamily\normalsize\bfseries\chaptername\ \thechapter.~#1}{}}
-\renewcommand{\sectionmark}[1]{\markright{\sffamily\normalsize\thesection~#1}{}}
-\fancyhf{}
-\fancyhead[LE, RO]{\sffamily\thepage}
-\fancyhead[LO]{\rightmark}
-\fancyhead[RE]{\leftmark}
+\RequirePackage{fancyhdr}
 \fancypagestyle{plain}{
-	\fancyhead{}
-	\renewcommand{\headrulewidth}{0pt}
+    \fancyhf{}
+    \fancyfoot[C]{}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
 }
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+% 341      Rozdział 7. Kalifat algebry | 7.2 Pierścień adeli              342 |
+\fancyhead[LE]{\thepage}
+\fancyhead[RE]{\nouppercase{\leftmark}}
+\fancyhead[LO]{\nouppercase{\rightmark}}
+\fancyhead[RO]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.0pt}
+
 \usepackage{emptypage}
 
 % \setcounter{secnumdepth}{3} % Number sections down to subsubsections, a value of 2 will number to subsections only and 1 to sections only
-\usepackage[explicit, newparttoc]{titlesec} % Required for modifying sections
+\usepackage[explicit, newparttoc, compact]{titlesec} % Required for modifying sections
 
 \newcommand{\outputpartpage}[2]{
 	\begin{tikzpicture}[remember picture, overlay]
@@ -177,71 +182,13 @@
 	}
 }
 
-%----------------------------------------------------------------------------------------
-%	THEOREM STYLES
-%----------------------------------------------------------------------------------------
-
 \usepackage{amsmath, amsfonts, amssymb, amsthm} % For math equations, theorems, symbols, etc
+\renewcommand{\qedsymbol}{$\blacksquare$}
 
-\renewcommand{\qedsymbol}{$\blacksquare$} % Redefine the QED symbol to be a filled square vs. the default unfilled square
-
-%------------------------------------------------
-
-% Orange theorem number and optional black title with padding above and below
-\newtheoremstyle{ocrenum} % Theorem style name
-	{6pt} % Space above
-	{6pt} % Space below
-	{\normalfont} % Body font
-	{} % Indent amount
-	{} % Theorem head font
-	{} % Punctuation after theorem head
-	{0.25em} % Space after theorem head
-	{\small\sffamily\bfseries\color{ocre}\thmname{#1}~\thmnumber{\@ifnotempty{#1}{}\@upn{#2}} % Theorem text (e.g. Theorem 2.1)
-	\thmnote{\the\thm@notefont\sffamily\bfseries\color{black}---~#3.\hspace{0.25em}}} % Optional theorem note
-
-%------------------------------------------------
-
-% Orange theorem number and optional black title with no padding above and below
-\newtheoremstyle{ocrenumbox} % Theorem style name
-	{0pt} % Space above
-	{0pt} % Space below
-	{\normalfont} % Body font
-	{} % Indent amount
-	{} % Theorem head font
-	{} % Punctuation after theorem head
-	{0.25em} % Space after theorem head
-	{\small\sffamily\bfseries\color{ocre!80!black}\thmname{#1}~\thmnumber{\@ifnotempty{#1}{}\@upn{#2}} % Theorem text (e.g. Theorem 2.1)
-	\thmnote{\the\thm@notefont\sffamily\bfseries\color{black}---~#3.\hspace{0.25em}}} % Optional theorem note
-
-%------------------------------------------------
-
-% Black theorem number and optional black title no padding above and below
-\newtheoremstyle{blacknumex} % Theorem style name
-	{6pt} % Space above
-	{6pt} % Space below
-	{\normalfont} % Body font
-	{} % Indent amount
-	{} % Theorem head font
-	{} % Punctuation after theorem head
-	{0.25em} % Space after theorem head
-	{\small\sffamily\bfseries{\raisebox{1.25pt}{\tiny\ensuremath{\blacksquare}}}~\thmname{#1}~\thmnumber{\@ifnotempty{#1}{}\@upn{#2}} % Theorem text (e.g. Theorem 2.1)
-	\thmnote{\the\thm@notefont\sffamily\bfseries---~#3.\hspace{0.25em}}} % Optional theorem note
-
-%------------------------------------------------
-
-% Black theorem number and optional black title padding above and below
-\newtheoremstyle{blacknumbox} % Theorem style name
-	{0pt} % Space above
-	{0pt} % Space below
-	{\normalfont} % Body font
-	{} % Indent amount
-	{} % Theorem head font
-	{} % Punctuation after theorem head
-	{0.25em} % Space after theorem head
-	{\small\sffamily\bfseries\thmname{#1}~\thmnumber{\@ifnotempty{#1}{}\@upn{#2}} % Theorem text (e.g. Theorem 2.1)
-	\thmnote{\the\thm@notefont\sffamily\bfseries---~#3.\hspace{0.25em}}} % Optional theorem note
-
-%------------------------------------------------
+\newtheoremstyle{ocrenum}{6pt}{6pt}{\normalfont}{}{}{}{0.25em}{\small\sffamily\bfseries\color{ocre}\thmname{#1}~\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}\thmnote{\the\thm@notefont\sffamily\bfseries\color{black}---~#3.\hspace{0.25em}}}
+\newtheoremstyle{ocrenumbox}{0pt}{0pt}{\normalfont}{}{}{}{0.25em}{\small\sffamily\bfseries\color{ocre!80!black}\thmname{#1}~\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}\thmnote{\the\thm@notefont\sffamily\bfseries\color{black}---~#3.\hspace{0.25em}}}
+\newtheoremstyle{blacknumex}{6pt}{6pt}{\normalfont}{}{}{}{0.25em}{\small\sffamily\bfseries{\raisebox{1.25pt}{\tiny\ensuremath{\blacksquare}}}~\thmname{#1}~\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}\thmnote{\the\thm@notefont\sffamily\bfseries---~#3.\hspace{0.25em}}}
+\newtheoremstyle{blacknumbox}{0pt}{0pt}{\normalfont}{}{}{}{0.25em}{\small\sffamily\bfseries\thmname{#1}~\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}\thmnote{\the\thm@notefont\sffamily\bfseries---~#3.\hspace{0.25em}}}
 
 \newcounter{counter}
 \numberwithin{counter}{section}
@@ -266,118 +213,14 @@
 
 \RequirePackage[framemethod=default]{mdframed} % Required for creating colored boxes used for theorems, definitions, exercises and corollaries
 
-% Theorem box
-\newmdenv[
-	skipabove=7pt, % Whitespace above box
-	skipbelow=7pt, % Whitespace below box
-	backgroundcolor=black!5, % Background color
-	linecolor=ocre, % Border color
-	innerleftmargin=5pt, % Inside left margin width
-	innerrightmargin=5pt, % Inside right margin width
-	innertopmargin=5pt, % Inside top margin height
-	innerbottommargin=5pt, % Inside bottom margin height
-	leftmargin=0cm, % Outside left margin width
-	rightmargin=0cm % Outside right margin width
-]{tBox}
-
-% Exercise box
-\newmdenv[
-	skipabove=7pt, % Whitespace above box
-	skipbelow=7pt, % Whitespace below box
-	rightline=false, % Right line visible
-	leftline=true, % Left line visible
-	topline=false, % Top line visible
-	bottomline=false, % Bottom line visible
-	linecolor=ocre, % Line color
-	linewidth=4pt, % Line width
-	backgroundcolor=ocre!10, % Background color
-	innerleftmargin=5pt, % Inside left margin width
-	innerrightmargin=5pt, % Inside right margin width
-	innertopmargin=5pt, % Inside top margin height
-	innerbottommargin=5pt, % Inside bottom margin height
-	leftmargin=0cm, % Outside left margin width
-	rightmargin=0cm % Outside right margin width
-]{eBox}
-
-% Definition box
-\newmdenv[
-	skipabove=7pt, % Whitespace above box
-	skipbelow=7pt, % Whitespace below box
-	rightline=false, % Right line visible
-	leftline=true, % Left line visible
-	topline=false, % Top line visible
-	bottomline=false, % Bottom line visible
-	linecolor=ocre, % Border color
-	linewidth=4pt, % Border width
-	innerleftmargin=5pt, % Inside left margin width
-	innerrightmargin=5pt, % Inside right margin width
-	innertopmargin=0pt, % Inside top margin height
-	innerbottommargin=0pt, % Inside bottom margin height
-	leftmargin=0cm, % Outside left margin width
-	rightmargin=0cm % Outside right margin width
-]{dBox}
-
-% Corollary box
-\newmdenv[
-	skipabove=7pt, % Whitespace above box
-	skipbelow=7pt, % Whitespace below box
-	rightline=false, % Right line visible
-	leftline=true, % Left line visible
-	topline=false, % Top line visible
-	bottomline=false, % Bottom line visible
-	linecolor=gray, % Line color
-	linewidth=4pt, % Line width
-	backgroundcolor=black!5, % Background color
-	innerleftmargin=5pt, % Inside left margin width
-	innerrightmargin=5pt, % Inside right margin width
-	innertopmargin=5pt, % Inside top margin height
-	innerbottommargin=5pt, % Inside bottom margin height
-	leftmargin=0cm, % Outside left margin width
-	rightmargin=0cm % Outside right margin width
-]{cBox}
-
-
-% Corollary box
-\newmdenv[
-	skipabove=7pt, % Whitespace above box
-	skipbelow=7pt, % Whitespace below box
-	rightline=false, % Right line visible
-	leftline=true, % Left line visible
-	topline=false, % Top line visible
-	bottomline=false, % Bottom line visible
-	linecolor=ocre, % Line color
-	linewidth=4pt, % Line width
-	backgroundcolor=ocre!15, % Background color
-	innerleftmargin=5pt, % Inside left margin width
-	innerrightmargin=5pt, % Inside right margin width
-	innertopmargin=5pt, % Inside top margin height
-	innerbottommargin=5pt, % Inside bottom margin height
-	leftmargin=0cm, % Outside left margin width
-	rightmargin=0cm % Outside right margin width
-]{cpropBox}
-
-\newmdenv[
-	skipabove=3pt, % Whitespace above box
-	skipbelow=3pt, % Whitespace below box
-	rightline=true, % Right line visible
-	leftline=true, % Left line visible
-	topline=false, % Top line visible
-	bottomline=false, % Bottom line visible
-	linecolor=ocre, % Line color
-	linewidth=4pt, % Line width
-	backgroundcolor=ocre!35, % Background color
-	innerleftmargin=5pt, % Inside left margin width
-	innerrightmargin=5pt, % Inside right margin width
-	innertopmargin=5pt, % Inside top margin height
-	innerbottommargin=5pt, % Inside bottom margin height
-	leftmargin=0cm, % Outside left margin width
-	rightmargin=0cm % Outside right margin width
-]{personBox}
-
-% Creates an environment for each type of theorem and assigns it a theorem text style from the THEOREM STYLES block above and a colored box from above
+\newmdenv[skipabove=7pt,skipbelow=7pt,backgroundcolor=black!5,linecolor=ocre,innerleftmargin=5pt,innerrightmargin=5pt,innertopmargin=5pt,innerbottommargin=5pt,leftmargin=0cm,rightmargin=0cm]{tBox}
+\newmdenv[skipabove=7pt,skipbelow=7pt,rightline=false,leftline=true,topline=false,bottomline=false,linecolor=ocre,linewidth=4pt,backgroundcolor=ocre!10,innerleftmargin=5pt,innerrightmargin=5pt,innertopmargin=5pt,innerbottommargin=5pt,leftmargin=0cm,rightmargin=0cm]{eBox}
+\newmdenv[skipabove=7pt,skipbelow=7pt,rightline=false,leftline=true,topline=false,bottomline=false,linecolor=ocre,linewidth=4pt,innerleftmargin=5pt,innerrightmargin=5pt,innertopmargin=0pt,innerbottommargin=0pt,leftmargin=0cm,rightmargin=0cm]{dBox}
+\newmdenv[skipabove=7pt,skipbelow=7pt,rightline=false,leftline=true,topline=false,bottomline=false,linecolor=gray,linewidth=4pt,backgroundcolor=black!5,innerleftmargin=5pt,innerrightmargin=5pt,innertopmargin=5pt,innerbottommargin=5pt,leftmargin=0cm,rightmargin=0cm]{cBox}
+\newmdenv[skipabove=7pt,skipbelow=7pt,rightline=false,leftline=true,topline=false,bottomline=false,linecolor=ocre,linewidth=4pt,backgroundcolor=ocre!15,innerleftmargin=5pt,innerrightmargin=5pt,innertopmargin=5pt,innerbottommargin=5pt,leftmargin=0cm,rightmargin=0cm]{cpropBox}
+\newmdenv[skipabove=3pt,skipbelow=3pt,rightline=true,leftline=true,topline=false,bottomline=false,linecolor=ocre,linewidth=4pt,backgroundcolor=ocre!35,innerleftmargin=5pt,innerrightmargin=5pt,innertopmargin=5pt,innerbottommargin=5pt,leftmargin=0cm,rightmargin=0cm]{personBox}
 
 \newenvironment{dupaexercise}{\begin{eBox}\begin{exerciseT}}{\hfill{\color{ocre}\tiny\ensuremath{\blacksquare}}\end{exerciseT}\end{eBox}}
-
 
 \newenvironment{definition}{\begin{dBox}\begin{definitionT}}{\end{definitionT}\end{dBox}}
 \newenvironment{example}{\begin{exampleT}}{\hfill{\tiny\ensuremath{\blacksquare}}\end{exampleT}}	
@@ -394,82 +237,27 @@
 \newtheorem{warning}[counter]{Uwaga}
 \newtheorem{tobedone}[counter]{Wymaga przeredagowania}
 
-%----------------------------------------------------------------------------------------
-%	 LOAD PACKAGES THAT CLASH WITH OTHER PACKAGES
-%----------------------------------------------------------------------------------------
-
 \usepackage{tikz} % Required for drawing custom shapes and positioning elements absolutely on the page
-
-
-
-
-
-
-
-
 \definecolor{ocre}{RGB}{105, 180, 255} % Define the color used for highlighting throughout the book
-
 \chapterimage{chapter_background.jpg} % Chapter heading image
 \chapterspaceabove{6.5cm} % Default whitespace from the top of the page to the chapter title on chapter pages
 \chapterspacebelow{6.75cm} % Default amount of vertical whitespace from the top margin to the start of the text on chapter pages
 
-% \NeedsTeXFormat{LaTeX2e}
-% \ProvidesClass{createspace}[2022/01/20 Create Space class]
-% \LoadClass[twoside, 9pt]{extbook}
-
 % to handle ą, ć, ę, etc.
-\RequirePackage[utf8]{inputenc}
-\RequirePackage[T1]{fontenc}
 \RequirePackage{polski}
-
-% to make the text as compact as possible
 \usepackage{Alegreya}
-% \RequirePackage[final]{microtype}
-% \RequirePackage[compact]{titlesec}
 \RequirePackage{paralist}
-
-
-
-\RequirePackage{fancyhdr}
-\fancypagestyle{plain}{
-    \fancyhf{}
-    \fancyfoot[C]{}
-    \renewcommand{\headrulewidth}{0pt}
-    \renewcommand{\footrulewidth}{0pt}
-}
-\pagestyle{fancy}
-\fancyhead{}
-\fancyfoot{}
-% 341      Rozdział 7. Kalifat algebry | 7.2 Pierścień adeli              342 |
-\fancyhead[LE]{\thepage}
-\fancyhead[RE]{\nouppercase{\leftmark}}
-\fancyhead[LO]{\nouppercase{\rightmark}}
-\fancyhead[RO]{\thepage}
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.0pt}
 
 % https://tex.stackexchange.com/questions/22012/hyperref-and-imakeidx-do-not-work-together
 \RequirePackage{imakeidx}
 
-
 \RequirePackage{subcaption} % captions to subfigures
-
-
 
 % https://www.reddit.com/r/LaTeX/comments/athzn1/replacing_leq_and_geq_with_leqslant_and_geqslant/
 \let\savedleq=\leq %
 \let\savedgeq=\geq %
 \let\le=\leqslant %
 \let\ge=\geqslant %
-
-
-
-
-
-
-
-
-
 
 \usepackage{enumitem}
 \usepackage{booktabs}
