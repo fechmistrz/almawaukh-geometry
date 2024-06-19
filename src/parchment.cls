@@ -197,9 +197,9 @@
 
 \theoremstyle{ocrenumbox}
 \newtheorem{propositionT}[counter]{Fakt}
+\newtheorem{problemT}[counter]{Problem}
 \newtheorem*{personT}{Postać}
 \newtheorem{theoremeT}[counter]{Twierdzenie}
-\newtheorem{problem}{Problem}[chapter]
 \newtheorem{exerciseT}{Exercise}[chapter]
 
 \theoremstyle{blacknumex}
@@ -218,6 +218,7 @@
 \newmdenv[skipabove=7pt,skipbelow=7pt,rightline=false,leftline=true,topline=false,bottomline=false,linecolor=ocre,linewidth=4pt,innerleftmargin=5pt,innerrightmargin=5pt,innertopmargin=0pt,innerbottommargin=0pt,leftmargin=0cm,rightmargin=0cm]{dBox}
 \newmdenv[skipabove=7pt,skipbelow=7pt,rightline=false,leftline=true,topline=false,bottomline=false,linecolor=gray,linewidth=4pt,backgroundcolor=black!5,innerleftmargin=5pt,innerrightmargin=5pt,innertopmargin=5pt,innerbottommargin=5pt,leftmargin=0cm,rightmargin=0cm]{cBox}
 \newmdenv[skipabove=7pt,skipbelow=7pt,rightline=false,leftline=true,topline=false,bottomline=false,linecolor=ocre,linewidth=4pt,backgroundcolor=ocre!15,innerleftmargin=5pt,innerrightmargin=5pt,innertopmargin=5pt,innerbottommargin=5pt,leftmargin=0cm,rightmargin=0cm]{cpropBox}
+\newmdenv[skipabove=7pt,skipbelow=7pt,rightline=false,leftline=true,topline=false,bottomline=false,linecolor=ocre,linewidth=4pt,backgroundcolor=ocre!15,innerleftmargin=5pt,innerrightmargin=5pt,innertopmargin=5pt,innerbottommargin=5pt,leftmargin=0cm,rightmargin=0cm]{cprobBox}
 \newmdenv[skipabove=3pt,skipbelow=3pt,rightline=true,leftline=true,topline=false,bottomline=false,linecolor=ocre,linewidth=4pt,backgroundcolor=ocre!35,innerleftmargin=5pt,innerrightmargin=5pt,innertopmargin=5pt,innerbottommargin=5pt,leftmargin=0cm,rightmargin=0cm]{personBox}
 
 \newenvironment{dupaexercise}{\begin{eBox}\begin{exerciseT}}{\hfill{\color{ocre}\tiny\ensuremath{\blacksquare}}\end{exerciseT}\end{eBox}}
@@ -228,6 +229,7 @@
 \newenvironment{theorem}{\begin{tBox}\begin{theoremeT}}{\end{theoremeT}\end{tBox}}
 \newenvironment{corollary}{\begin{cBox}\begin{corollaryT}}{\end{corollaryT}\end{cBox}}
 \newenvironment{proposition}{\begin{cpropBox}\begin{propositionT}}{\end{propositionT}\end{cpropBox}}
+\newenvironment{problem}{\begin{cprobBox}\begin{problemT}}{\end{problemT}\end{cprobBox}}
 \newenvironment{remark}{\small\begin{personBox}\begin{personT}}{\end{personT}\end{personBox}}
 
 \theoremstyle{plain}
