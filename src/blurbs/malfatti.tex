@@ -1,0 +1,30 @@
+%
+
+\begin{problem}[zadanie Malfattiego]
+\index{zadanie Malfattiego}%
+	Dany jest trójkąt $\triangle ABC$.
+	Skonstruować takie trzy parami styczne okręgi $K_A, K_B, K_C$, że okrąg $K_A$ (odpowiednio: $K_B$, $K_C$) jest wpisany w~kąt $\angle A$ (odpowiednio: $\angle B$, $\angle C$).
+\end{problem}
+
+Problem był rozważany na długo przed Malfattim, zajmował się nim matematyk japoński Ajima Naonobu w~XVIII wieku, a~jeszcze wcześniej pojawił się w~rękopisie Gilio di Cecco da Montepulciano z 1384 roku.
+\index[persons]{Ajima, Naonobu}%
+Malfatti \cite{malfatti_1803} wyprowadził w~1803 roku następujące: niech $r$ będzie promieniem koła wpisanego w~trójkąt, $s$ połową jego obwodu, a~$d_A, d_B, d_C$ odległościami wierzchołków $A, B, C$ od środka koła wpisanego, wtedy promienie kół Malfattiego wyrażają się wzorami
+\index[persons]{Malfatti, Gian Francesco}%
+\begin{align}
+	r_1 & = {\frac {r}{2(s-a)}}(s-r+d_A-d_B-d_C), \\
+	r_2 & = {\frac {r}{2(s-b)}}(s-r-d_A+d_B-d_C), \\
+	r_3 & = {\frac {r}{2(s-c)}}(s-r-d_A-d_B+d_C).
+\end{align}
+
+Prostą konstrukcję okręgów opartą na dwustycznych zawdzięczamy Steinerowi \cite{steiner_1826} w~1826 roku;
+\index[persons]{Steiner, Jakob}%
+inne rozwiązania podali Lehmus \cite{lehmus_1819}, Catalan \cite{catalan_1846}, Adams \cite{adams_1846}, Derousseau \cite{derousseau_1895}, Pampuch \cite{pampuch_1904}.
+% TODO: po poprawie bibliografii, podać tu index persons
+(O problemie pisze też Neugebauer \cite[s. 102]{neugebauer_2018}).
+
+Malfatti postawił tak naprawdę inny problem: znalezienia trzech rozłącznych kół zawartych w~trójkącie, których suma pól jest maksymalna i~błędnie założył, że opisane wyżej okręgi stanowią rozwiązanie.
+Pomyłkę zauważyli najpierw bez dowodu Lob, Richmond \cite{lob_richmond_1930} w~1930 roku; rygorystyczny dowód, że poprawne rozwiązanie daje algorytm zachłanny podano w~latach sześćdziesiątych tego samego wieku.
+% TODO: po poprawie bibliografii, podać tu index persons
+% TODO: Lob, H.; Richmond, H. W. (1930), "On the Solutions of Malfatti's Problem for a Triangle", Proceedings of the London Mathematical Society, 2nd ser., 30 (1): 287–304, doi:10.1112/plms/s2-30.1.287.
+
+%
