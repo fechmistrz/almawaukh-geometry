@@ -4,68 +4,7 @@
 
 \input{blurbs/page-1-5}
 
-
-\chapter{W budowie...}
-
-\input{blurbs/sixth_circle}
-
-\input{blurbs/malfatti}
-
-\input{blurbs/casey}
-
-\input{blurbs/taylor_circle}
-
-
-
-
-
-
-\chapter{Wyniki w Elementach Euklidesa}
-\input{blurbs/pons_asinorum}
-
-Twierdzenie o dwusiecznej % https://en.wikipedia.org/wiki/Angle_bisector_theorem
-The angle bisector theorem appears as Proposition 3 of Book VI in Euclid's Elements. 
-
-The exterior angle theorem is Proposition 1.16 in Euclid's Elements, which states that the measure of an exterior angle of a triangle is greater than either of the measures of the remote interior angles. This is a fundamental result in absolute geometry because its proof does not depend upon the parallel postulate. % https://en.wikipedia.org/wiki/Exterior_angle_theorem
-
-Konstrukcja pierwiastka z iloczynu:
-The theorem is usually attributed to Euclid (ca. 360–280 BC), who stated it as a corollary to proposition 8 in book VI of his Elements. In proposition 14 of book II Euclid gives a method for squaring a rectangle, which essentially matches the method given here. Euclid however provides a different slightly more complicated proof for the correctness of the construction rather than relying on the geometric mean theorem.
-% https://en.wikipedia.org/wiki/Geometric_mean_theorem
-
-
-Hinge theorem % https://en.wikipedia.org/wiki/Hinge_theorem
-
-twierdzenia geometrii koła:
-- % https://en.wikipedia.org/wiki/Thales%27s_theorem
-- The inscribed angle theorem states that an angle $\theta$ inscribed in a circle is half of the central angle $2\theta$ that subtends the same arc on the circle. 
-
-% https://en.wikipedia.org/wiki/Intercept_theorem
-
-% https://en.wikipedia.org/wiki/Inscribed_angle#Theorem
-
-It was known to the ancient Babylonians and Egyptians, although its first known proof appears in Euclid's Elements. 
-Najstarszy zachowany dowód twierdzenia Talesa zamieszczony jest w VI. księdze Elementów Euklidesa. 
-% https://en.wikipedia.org/wiki/Intercept_theorem#Claim_3
-\input{blurbs/tales}
-
-% https://en.wikipedia.org/wiki/Intersecting_chords_theorem
-% https://en.wikipedia.org/wiki/Intersecting_secants_theorem
-% https://en.wikipedia.org/wiki/Tangent%E2%80%93secant_theorem
-% https://en.wikipedia.org/wiki/Power_of_a_point#Theorems
-twierdzenie o siecznych
-
-prawo kosinusów
-% https://en.wikipedia.org/wiki/Law_of_cosines
-
-Pitagorasa % https://en.wikipedia.org/wiki/Pythagorean_theorem
-% https://en.wikipedia.org/wiki/Spiral_of_Theodorus
-
-gnomon % https://en.wikipedia.org/wiki/Theorem_of_the_gnomon
-
-\chapter{Prolog}
-
-
-
+\chapter{Preludium}
 
 \section{Przystawanie figur na płaszczyźnie.}
 Tekst.
@@ -102,9 +41,192 @@ Tekst.
 \section{Warunki istnienia okręgu stycznego do czterech prostych.}
 Tekst.
 
-\section{Nie wiem gdzie, ale w tym rozdziale}
-Potęga punktu względem okręgu?
 
+
+% Neugebauer - rozdział 2
+
+\chapter{Neugebauer 2: twierdzenie Talesa}
+
+It was known to the ancient Babylonians and Egyptians, although its first known proof appears in Euclid's Elements. 
+Najstarszy zachowany dowód twierdzenia Talesa zamieszczony jest w VI. księdze Elementów Euklidesa. 
+% https://en.wikipedia.org/wiki/Intercept_theorem#Claim_3
+\input{blurbs/tales}
+
+\input{blurbs/sixth_circle}
+
+\input{blurbs/malfatti}
+
+\input{blurbs/casey}
+
+\input{blurbs/taylor_circle}
+
+\chapter{Neugebauer 3: współpękowość, współliniowość}
+
+Znamy trzy twierdzenia o współliniowości: ..., ... i twierdzenie o prostej Auberta ...
+
+\begin{proposition}[twierdzenie Salmona]
+	Dany jest okrąg oraz trzy jego różne cięciwy $PA$, $PB$, $PC$ takie, że przekrojem okręgów na średnicach $PA$, $PB$ (odpowiednio: $PB$, $PC$ i $PA$, $PC$) są punkty $P$, $M$ (odpowiednio: $P$, $K$ oraz $P$, $L$).
+	Wtedy punkty $K$, $L$, $M$ są współliniowe.
+\end{proposition}
+
+\begin{proposition}[twierdzenie Menelaosa]
+	...
+	Wówczas punkty $K, L, M$ są współliniowe wtedy i tylko wtedy, gdy zachodzi
+	\begin{equation}
+		[AMB] [BKC] [CLA] = -1.
+	\end{equation}
+\end{proposition}
+% https://en.wikipedia.org/wiki/Menelaus%27s_theorem
+It is uncertain who actually discovered the theorem; however, the oldest extant exposition appears in Spherics by Menelaus. In this book, the plane version of the theorem is used as a lemma to prove a spherical version of the theorem.
+
+% \begin{proposition}[twierdzenie Carnota???]
+	% Neugebauer, strona 108.
+% \end{proposition}
+
+% https://en.wikipedia.org/wiki/Newton%E2%80%93Gauss_line#Existence_of_the_Newton%E2%88%92Gauss_line
+
+\begin{proposition}
+	Środki trzech przekątnych czworoboku zupełnego leżą na jednej prostej, zwaną prostą Newtona-Gaussa.
+\end{proposition}
+
+\begin{proposition}[twierdzenie Desargues'a]
+	Neugebauer, strona 109.
+	% https://en.wikipedia.org/wiki/Desargues%27s_theorem
+\end{proposition}
+
+\begin{proposition}[twierdzenie Pascala]
+	Neugebauer, strona 113.
+	% https://en.wikipedia.org/wiki/Pascal%27s_theorem
+\end{proposition}
+
+\begin{proposition}[twierdzenie Pappusa]
+	Neugebauer, strona 114.
+	% https://en.wikipedia.org/wiki/Pappus%27s_hexagon_theorem
+\end{proposition}
+
+\input{blurbs/napoleons_problem}
+
+% CARNOT
+Uogólnieniem twierdzenia o współpękowości symetralnych boków trójkąta jest:
+
+\begin{proposition}[twierdzenie Carnota]
+	... wtedy i tylko wtedy, gdy
+	\begin{equation}
+		|AM|^2 + |BK|^2 + |CL|^2 = |AL|^2 + |CK|^2 + |BM|^2.
+	\end{equation}
+\end{proposition}
+% CARNOT
+
+% CEVA
+Ważnym kryterium współpękowości trzech czewian jest:
+
+\begin{proposition}[twierdzenie Cevy (1678)]
+	Dany jest trójkąt $ABC$ i trzy różne od wierzchołków punkty $K \in BC$, $L \in CA$, $M \in AB$.
+	Wówczas czewiany $AK$, $BL$, $CM$ są współpękowe wtedy i tylko wtedy, gdy
+	\begin{equation}
+		[AMB] [BKC] [CLA] = 1.
+	\end{equation}
+\end{proposition}
+
+\textbf{Do zrobienia: czewiany Gergonne'a}.
+\index{czewiany Gergonne'a}
+
+\textbf{Do zrobienia: czewiany Nagela}.
+\index{czewiany Nagela}
+% CEVA
+
+% BRIANCHON
+Twierdzenie Brianchona, Newtona.
+% BRIANCHON
+
+% VAN AUBEL
+Twierdzenie van Aubela.
+Wzór Routha, równosć Gergonne'a.
+% VAN AUBEL
+
+% STEINER
+Twierdzenie Steinera.
+% STEINER
+
+% LEMOINE
+Czewiany, symediany, punkt Lemoine'a.
+% LEMOINE
+
+Inwersja, Feuerbach.
+
+Okręgi Apoloniusza, dwustosunek.
+
+\chapter{Neugebauer 4: przekształcenia płaszczyzny}
+\begin{enumerate}
+	\item Grupa izometrii na płaszczyźnie.
+	\item Konstrukcja obrazu punktu, okręgu, prostej przy translacji, obrocie i symetrii osiowej.
+	\item Złożenie dwóch i złożenie trzech symetrii osiowych. 
+	\item Twierdzenia o składaniu izometrii. Klasyfikacja izometrii na płaszczyźnie. 
+	\item Izometrie parzyste i izometrie nieparzyste. Twierdzenie o redukcji.
+	\item Twierdzenie Napoleona: środki ciężkości trójkątów równobocznych zbudowanych na bokach dowolnego trójkąta są wierzchołkami trójkąta równobocznego.
+\end{enumerate}
+
+Izometrie, punkty stałe.
+Translacje, symetrie osiowe, symetrie środkowe, obroty.
+Twierdzenie Chasles'a: każda izometria płaszczyzny jest złożeniem co najwyżej trzech symetrii osiowych.
+Symetria osiowa z poślizgiem.
+Słowo Banacha.
+Klasyfikacja podobieństw.
+Okrąg siedmiu punktów. % https://mathworld.wolfram.com/BrocardCircle.html ?
+Przekształcenia afiniczne i rzutowe.
+
+% https://www.cut-the-knot.org/Curriculum/Geometry/HeronsProblem.shtml
+% This one is a basic optimization problem. It's quite famous, being discussed in Heron's Catoptrica (On Mirrors from the Greek word Katoptron Catoptron = Mirror) that, in all likelihood, saw the light of day some 2000 years ago.
+
+
+\chapter{Gryzmoły}
+
+
+
+
+\section{Wyniki w Elementach Euklidesa}
+\input{blurbs/pons_asinorum}
+
+Twierdzenie o dwusiecznej % https://en.wikipedia.org/wiki/Angle_bisector_theorem
+The angle bisector theorem appears as Proposition 3 of Book VI in Euclid's Elements. 
+
+The exterior angle theorem is Proposition 1.16 in Euclid's Elements, which states that the measure of an exterior angle of a triangle is greater than either of the measures of the remote interior angles. This is a fundamental result in absolute geometry because its proof does not depend upon the parallel postulate. % https://en.wikipedia.org/wiki/Exterior_angle_theorem
+
+Konstrukcja pierwiastka z iloczynu:
+The theorem is usually attributed to Euclid (ca. 360–280 BC), who stated it as a corollary to proposition 8 in book VI of his Elements. In proposition 14 of book II Euclid gives a method for squaring a rectangle, which essentially matches the method given here. Euclid however provides a different slightly more complicated proof for the correctness of the construction rather than relying on the geometric mean theorem.
+% https://en.wikipedia.org/wiki/Geometric_mean_theorem
+
+
+Hinge theorem % https://en.wikipedia.org/wiki/Hinge_theorem
+
+twierdzenia geometrii koła:
+- % https://en.wikipedia.org/wiki/Thales%27s_theorem
+- The inscribed angle theorem states that an angle $\theta$ inscribed in a circle is half of the central angle $2\theta$ that subtends the same arc on the circle. 
+
+% https://en.wikipedia.org/wiki/Intercept_theorem
+
+% https://en.wikipedia.org/wiki/Inscribed_angle#Theorem
+
+% https://en.wikipedia.org/wiki/Intersecting_chords_theorem
+% https://en.wikipedia.org/wiki/Intersecting_secants_theorem
+% https://en.wikipedia.org/wiki/Tangent%E2%80%93secant_theorem
+% https://en.wikipedia.org/wiki/Power_of_a_point#Theorems
+twierdzenie o siecznych
+
+prawo kosinusów
+% https://en.wikipedia.org/wiki/Law_of_cosines
+
+Pitagorasa % https://en.wikipedia.org/wiki/Pythagorean_theorem
+% https://en.wikipedia.org/wiki/Spiral_of_Theodorus
+
+gnomon % https://en.wikipedia.org/wiki/Theorem_of_the_gnomon
+
+\section{Inne gryzmoły}
+
+
+
+
+Potęga punktu względem okręgu?
 
 Twierdzenie o odcinku środkowym: odcinek łączący środki dwóch boków trójkąta jest równoległy do podstawy i ma połowę jej długości.
 
@@ -124,8 +246,6 @@ Ortocentrum i trójkąt ortyczny.
 Twierdzenie Miquela.
 
 Twierdzenie Pitagorasa.
-
-
 
 Twierdzenie Varignona.
 Podobieństwo, skala.
@@ -158,77 +278,6 @@ Wzór Brahmagupty
 Twierdzenie Urquharta
 
 Punkt i kąt Crelle'a-Brocarda
-
-Twierdzenie o siódmym okręgu
-
-Twierdzenie Caseya, Taylora.
-
-\chapter{Współliniowość, współpękowość}
-
-Znamy trzy twierdzenia o współliniowości: ..., ... i twierdzenie o prostej Auberta ...
-
-\begin{proposition}[twierdzenie Salmona]
-	Dany jest okrąg oraz trzy jego różne cięciwy $PA$, $PB$, $PC$ takie, że przekrojem okręgów na średnicach $PA$, $PB$ (odpowiednio: $PB$, $PC$ i $PA$, $PC$) są punkty $P$, $M$ (odpowiednio: $P$, $K$ oraz $P$, $L$).
-	Wtedy punkty $K$, $L$, $M$ są współliniowe.
-\end{proposition}
-
-\begin{proposition}[twierdzenie Menelaosa]
-	...
-	Wówczas punkty $K, L, M$ są współliniowe wtedy i tylko wtedy, gdy zachodzi
-	\begin{equation}
-		[AMB] [BKC] [CLA] = -1.
-	\end{equation}
-\end{proposition}
-% https://en.wikipedia.org/wiki/Menelaus%27s_theorem
-
-It is uncertain who actually discovered the theorem; however, the oldest extant exposition appears in Spherics by Menelaus. In this book, the plane version of the theorem is used as a lemma to prove a spherical version of the theorem.
-% https://en.wikipedia.org/wiki/Menelaus%27s_theorem
-
-\begin{proposition}[twierdzenie Carnota???]
-	Neugebauer, strona 108.
-\end{proposition}
-
-Twierdzenie GAUSSA???
-Środki trzech przekątnych czworoboku zupełnego leżą na jednej prostej.
-
-\begin{proposition}[twierdzenie Desarguesa???]
-	Neugebauer, strona 109.
-\end{proposition}
-
-\begin{proposition}[twierdzenie Pascala]
-	Neugebauer, strona 113.
-\end{proposition}
-
-\begin{proposition}[twierdzenie Pappusa]
-	Neugebauer, strona 114.
-\end{proposition}
-
-\input{blurbs/napoleons_problem}
-
-
-
-Twierdzenie Brianchona, Newtona, van Aubela.
-Wzór Routha, równosć Gergonne'a.
-Twierdzenie Steinera.
-Czewiany, symediany, punkt Lemoine'a.
-
-Okręgi Apoloniusza, dwustosunek.
-
-
-\chapter{Przekształcenia płaszczyzny}
-Izometrie, punkty stałe.
-Translacje, symetrie osiowe, symetrie środkowe, obroty.
-Twierdzenie Chasles'a: każda izometria płaszczyzny jest złożeniem co najwyżej trzech symetrii osiowych.
-Symetria osiowa z poślizgiem.
-Słowo Banacha.
-Klasyfikacja podobieństw.
-Okrąg siedmiu punktów. % https://mathworld.wolfram.com/BrocardCircle.html ?
-Przekształcenia afiniczne i rzutowe.
-
-% https://www.cut-the-knot.org/Curriculum/Geometry/HeronsProblem.shtml
-% This one is a basic optimization problem. It's quite famous, being discussed in Heron's Catoptrica (On Mirrors from the Greek word Katoptron Catoptron = Mirror) that, in all likelihood, saw the light of day some 2000 years ago.
-
-\chapter{Gryzmoły}
 
 \section{Geometria I UW (sylabus)}
 \begin{enumerate}
@@ -266,14 +315,7 @@ Przekształcenia afiniczne i rzutowe.
 		\item Grupa dylatacji na płaszczyźnie.
 		\item Twierdzenia o składaniu jednokładności i przesunięć, twierdzenie o środkach jednokładności trzech okręgów.
 	\end{enumerate}
-	\item -- \begin{enumerate}
-		\item Grupa izometrii na płaszczyźnie.
-		\item Konstrukcja obrazu punktu, okręgu, prostej przy translacji, obrocie i symetrii osiowej.
-		\item Złożenie dwóch i złożenie trzech symetrii osiowych. 
-		\item Twierdzenia o składaniu izometrii. Klasyfikacja izometrii na płaszczyźnie. 
-		\item Izometrie parzyste i izometrie nieparzyste. Twierdzenie o redukcji.
-		\item Twierdzenie Napoleona: środki ciężkości trójkątów równobocznych zbudowanych na bokach dowolnego trójkąta są wierzchołkami trójkąta równobocznego.
-	\end{enumerate}
+	\item -- 
 	\item -- \begin{enumerate}
 		\item Grupa podobieństw płaszczyzny.
 		\item Podobieństwa spiralne i odbicia dylatacyjne.
@@ -302,12 +344,15 @@ Literatura:
 5. V. Prasolov, Zadaczi po planimietrii. Tom I-II (ros.), Nauka, Moskwa 1991
 
 \section{Geometria III}
-Geometria rzutowa: ujęcie od strony geometrycznej. Płaszczyzna rzutowa (rzeczywista), przekształcenia rzutowe prostych, pęków, stożkowych, pęków stycznych do stożkowych. Twierdzenia Desarguesa, Pappusa, Pascala, Brianchona. Dualność: biegun i biegunowa względem okręgu i stożkowych. Sprzężenie biegunowe. Inwolucje rzutowe, twierdzenia inwolucyjne. Pęki okręgów i stożkowych jako generatory inwolucji. Twierdzenie Ponceleta. Stożkowe w ujęciu rzutowym, twierdzenia Steinera i Braikenridge'a-Maclaurina. Rzutowe określenie ogniska i kierownicy stożkowych. Punkty urojone przecięcia prostej ze stożkową w ujęciu czysto geometrycznym.
+Geometria rzutowa: ujęcie od strony geometrycznej. Płaszczyzna rzutowa (rzeczywista), przekształcenia rzutowe prostych, pęków, stożkowych, pęków stycznych do stożkowych.
+{\color{gray}
+Twierdzenia Desarguesa, Pappusa, Pascala, Brianchona.
+}
+Dualność: biegun i biegunowa względem okręgu i stożkowych. Sprzężenie biegunowe. Inwolucje rzutowe, twierdzenia inwolucyjne. Pęki okręgów i stożkowych jako generatory inwolucji. Twierdzenie Ponceleta. Stożkowe w ujęciu rzutowym, twierdzenia Steinera i Braikenridge'a-Maclaurina. Rzutowe określenie ogniska i kierownicy stożkowych. Punkty urojone przecięcia prostej ze stożkową w ujęciu czysto geometrycznym.
 
 \section{Nie wiem skąd}
 Aksjomaty. Kąty naprzemianległe i odpowiadające.
 Przystawanie trójkątów.
-
 
 Łamane i wielokąty.
 Równoległobok.
@@ -342,7 +387,6 @@ Jednokładność.
 Inwersja.
 Dwustosunek.
 
-\section{Konstrukcje z cyrklem i linijką}
 % https://en.wikipedia.org/wiki/Problem_of_Apollonius
 % https://en.wikipedia.org/wiki/Poncelet%E2%80%93Steiner_theorem
 % https://en.wikipedia.org/wiki/Compass_equivalence_theorem
@@ -422,6 +466,9 @@ Dwustosunek.
 % https://en.wikipedia.org/wiki/Pompeiu%27s_theorem
 
 % % https://en.wikipedia.org/wiki/Garfield%27s_proof_of_the_Pythagorean_theorem
+
+\chapter{Konstrukcje z cyrklem i linijką}
+Do napisania...
 
 \bibliography{geo-textbook}{}
 \bibliographystyle{plain}
