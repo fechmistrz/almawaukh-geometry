@@ -185,10 +185,10 @@
 \usepackage{amsmath, amsfonts, amssymb, amsthm} % For math equations, theorems, symbols, etc
 \renewcommand{\qedsymbol}{$\blacksquare$}
 
-\newtheoremstyle{ocrenum}{6pt}{6pt}{\normalfont}{}{}{}{0.25em}{\small\sffamily\bfseries\color{ocre}\thmname{#1}~\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}\thmnote{\the\thm@notefont\sffamily\bfseries\color{black}---~#3.\hspace{0.25em}}}
-\newtheoremstyle{ocrenumbox}{0pt}{0pt}{\normalfont}{}{}{}{0.25em}{\small\sffamily\bfseries\color{ocre!80!black}\thmname{#1}~\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}\thmnote{\the\thm@notefont\sffamily\bfseries\color{black}---~#3.\hspace{0.25em}}}
-\newtheoremstyle{blacknumex}{6pt}{6pt}{\normalfont}{}{}{}{0.25em}{\small\sffamily\bfseries{\raisebox{1.25pt}{\tiny\ensuremath{\blacksquare}}}~\thmname{#1}~\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}\thmnote{\the\thm@notefont\sffamily\bfseries---~#3.\hspace{0.25em}}}
-\newtheoremstyle{blacknumbox}{0pt}{0pt}{\normalfont}{}{}{}{0.25em}{\small\sffamily\bfseries\thmname{#1}~\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}\thmnote{\the\thm@notefont\sffamily\bfseries---~#3.\hspace{0.25em}}}
+\newtheoremstyle{ocrenum}{6pt}{6pt}{\normalfont}{}{}{}{0.25em}{\small\sffamily\bfseries\color{ocre}\thmname{#1}~\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}\thmnote{\the\thm@notefont\sffamily\bfseries\color{black}\hspace{0.25em}---~#3.\hspace{0.25em}}}
+\newtheoremstyle{ocrenumbox}{0pt}{0pt}{\normalfont}{}{}{}{0.25em}{\small\sffamily\bfseries\color{ocre!80!black}\thmname{#1}~\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}\thmnote{\the\thm@notefont\sffamily\bfseries\color{black}\hspace{0.25em}---~#3.\hspace{0.25em}}}
+\newtheoremstyle{blacknumex}{6pt}{6pt}{\normalfont}{}{}{}{0.25em}{\small\sffamily\bfseries{\raisebox{1.25pt}{\tiny\ensuremath{\blacksquare}}}~\thmname{#1}~\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}\thmnote{\the\thm@notefont\sffamily\bfseries\hspace{0.25em}---~#3.\hspace{0.25em}}}
+\newtheoremstyle{blacknumbox}{0pt}{0pt}{\normalfont}{}{}{}{0.25em}{\small\sffamily\bfseries\thmname{#1}~\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}\thmnote{\the\thm@notefont\sffamily\bfseries\hspace{0.25em}---~#3.\hspace{0.25em}}}
 
 \newcounter{counter}
 \numberwithin{counter}{section}
