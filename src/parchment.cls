@@ -302,3 +302,5 @@
 \patchcmd{\theindex}{\MakeUppercase\indexname}{\sffamily\normalsize\bfseries\indexname}{}{}
 \makeindex[title=Skorowidz]
 \makeindex[name=persons,title=Indeks osób]
+
+
