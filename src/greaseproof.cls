@@ -98,6 +98,11 @@
 \newtheorem{warning}[counter]{Uwaga}
 \newtheorem{tobedone}[counter]{Wymaga przeredagowania}
 
+\theoremstyle{plain}
+\newtheorem*{euclidelement}{Element Euklidesa}
+
+
+
 % https://tex.stackexchange.com/questions/22012/hyperref-and-imakeidx-do-not-work-together
 \RequirePackage{imakeidx}
 
