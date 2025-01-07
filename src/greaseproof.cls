@@ -87,6 +87,7 @@
 \newcounter{counter}
 \numberwithin{counter}{section}
 \newtheorem{conjecture}[counter]{Hipoteza}
+\newtheorem{geoconstruction}[counter]{Konstrukcja}
 \newtheorem{integral}[counter]{Całka}
 \newtheorem{corollary}[counter]{Wniosek}
 \newtheorem{definition}[counter]{Definicja}
