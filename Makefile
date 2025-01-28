@@ -1,7 +1,7 @@
-all: geometry.pdf
+all: geometria.pdf
 
-geometry.pdf: src/geo-textbook.pdf
-	rsync src/geo-textbook.pdf geometry.pdf
+geometria.pdf: src/geometria.pdf
+	rsync src/geometria.pdf geometria.pdf
 
-src/geo-textbook.pdf: src/*.cls src/*.tex src/*/*.tex
-	cd src && lualatex geo-textbook.tex && bibtex geo-textbook && lualatex geo-textbook.tex && lualatex geo-textbook.tex
+src/geometria.pdf: src/*.cls src/*.tex # src/*/*.tex
+	cd src && pdflatex geometria.tex && bibtex geometria && pdflatex geometria.tex && pdflatex geometria.tex
