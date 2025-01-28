@@ -1,1 +1,12 @@
 *.pdf
+*.aux
+*.bbl
+*.blg
+*.idx
+*.iilg
+*.ilg
+*.ind
+*.log
+*.out
+*.ptc
+*.toc

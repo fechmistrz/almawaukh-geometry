@@ -1,0 +1,972 @@
+\chapter{Starocie}
+
+\subsection{Aksjomaty Euklidesa}
+
+\begin{euclidelement}[opisanie 1.1]
+	Punktem lub znakiem jest, co nie ma żadnych części, lub co nie ma żadnej wielkości.
+\end{euclidelement}
+
+\begin{euclidelement}[opisanie 1.11]
+	Kąt rozwarty jest ten, który jest większy od kąta prostego.
+\end{euclidelement}
+
+\begin{euclidelement}[opisanie 1.21]
+	Figury trójkątne prostokreślne są te, które są ograniczone trzema liniami prostymi.
+\end{euclidelement}
+
+% TODO: https://kpbc.umk.pl/dlibra/publication/37/edition/66/content
+
+{\color{red}
+Euklides wyróżnił kilka pojęć pierwotnych (takich jak punkt, który był dla Euklidesa \emph{tym, co nie ma żadnych części}) i pięć aksjomatów, przytoczonych za książką \emph{O Elementach Euklidesa}:
+
+\begin{enumerate}
+	\item Zakłada się, że od każdego punktu do każdego punktu można poprowadzić linię prostą.
+	\item I że ograniczoną prostą można ciągle przedłużać po prostej.
+	\item I że z każdego środka każdym rozwarciem można zakreślić kolo.
+	\item I że wszystkie kąty proste są równe między sobą.
+	\item I jeżeli prosta padająca na dwie proste tworzy po jednej stronie kąty wewnętrzne, które w sumie są mniejsze od dwóch prostych, to te proste przedłużone nieograniczenie schodzą się po tej stronie, po której kąty te w sumie są mniejsze od dwóch prostych.
+\end{enumerate}
+
+Pojęcia pierwotne i aksjomaty Euklidesa nie są jednak idealne.
+Dlatego zamiast nich będziemy używać aksjomatów Hilberta podanych około 1899 roku.
+}
+
+
+\subsection{Aksjomaty Hilberta}
+{\color{red}
+Aksjomatyka Hilberta używa trzech pojęć pierwotnych punktu, prostej, płaszczyzny oraz trzech relacji pierwotnych:
+\begin{itemize}
+	\item leżenia pomiędzy (jedna relacja między trójkami punktów),
+	\item zawierania się  w (trzy relacje: między punktami i prostymi; punktami i płaszczyznami; prostymi i płaszczyznami) oraz
+	\item przystawania (dwie relacje: między odcinkami; między kątami).
+\end{itemize}
+Będziemy czasem używać synonimów, takich jak: ,,punkt $A$ leży na prostej $a$'', ,,prosta $a$ przechodzi przez punkt $A$'', ,,prosta $a$ łączy punkty $A$ i $B$''.
+Wymienimy najpierw wszystkie aksjomaty, a potem przeanalizujemy ich treść.
+
+\begin{itemize}
+	\item \textbf{aksjomaty incydencji}:
+\begin{enumerate}
+	\item Przez każde dwa punkty przechodzi dokładnie jedna prosta.
+	\item Na każdej prostej leżą co najmniej dwa różne punkty.
+	\item Pewne trzy punkty nie są współliniowe.
+	\item (Pozostałe aksjomaty incydencji dotyczą przestrzeni trójwymiarowej).
+\end{enumerate}
+\item \textbf{aksjomat Playfaire'a}:
+\begin{enumerate}
+	\item Dla każdego punktu $A$ i każdej prostej $l$, istnieje co najwyżej jedna prosta równoległa do $l$, zawierająca $A$.
+\end{enumerate}
+\item \textbf{aksjomaty uporządkowania}: \begin{enumerate}
+	\item Jeżeli punkt $B$ leży pomiędzy punktami $A$ i $C$, to leży też pomiędzy punktami $C$ i $A$, a wszystkie trzy leżą na jednej prostej.
+	\item Między każdą parą punktów leży trzeci punkt.
+	\item Dla każdych trzech punktów na prostej, tylko jeden z nich leży pomiędzy pozostałymi dwoma.
+	\item (Pascha) Niech $A, B, C$ będą trzema niewspółliniiowymi punktami, zaś $l$ prostą, która nie przechodzi przez żaden z nich. Jeśli prosta $l$ zawiera punkt $D$ leżący między $A$ i $B$, to musi też zawierać punkt leżący między $A$ i $C$ albo punkt leżący między $B$ i $C$, ale nie obydwa te punkty.
+\end{enumerate}
+\item \textbf{aksjomaty przystawania} (zapis $\overline{AB} \cong \overline{CD}$ oznacza, że odcinki są przystające): \begin{enumerate}
+	\item Niech $\overline{AB}$ będzie odcinkiem, a $r$ półprostą o początku w punkcie $C$. Istnieje dokładnie jeden punkt $D$ leżący na $r$ taki, że $\overline{AB} \cong \overline{CD}$.
+	\item Jeśli $\overline{AB} \cong \overline{CD}$ i $\overline{AB} \cong \overline{EF}$, to $\overline{CD} \cong \overline{EF}$. Każdy odcinek przystaje do siebie.
+	\item (dodawanie) Dane są trzy punkty $A, B, C$ na prostej takie, że $B$ leży pomiędzy $A$ i $C$; oraz trzy punkty $D, E, F$ na (być może innej) prostej takie, że $E$ leży pomiędzy $D$ i $F$.
+	Jeśli $\overline{AB} \cong \overline{DE}$ i $\overline{BC} \cong \overline{EF}$, to $\overline{AC} \cong \overline{DF}$.
+	\item (aksjomaty dla kątów)
+	\item (aksjomaty dla kątów)
+	\item (cecha przystawania bok-kąt-bok)
+\end{enumerate}
+\end{itemize}
+
+Punkty nazywamy współliniowymi, kiedy istnieje prosta, która przechodzi przez każdy z~nich.
+Aksjomat Playfaira został nazwany na cześć szkockiego matematyka, który podał jego treść w podręczniku \emph{Elements of Geometry} z 1795 roku.
+% % https://en.wikipedia.org/wiki/Playfair%27s_axiom
+\index[persons]{Playfair, John}%
+\index{aksjomat!Playfaira}%
+Potrzebna jest jeszcze definicja prostych równoległych:
+
+\begin{definition}[równoległość]
+	Dwie proste, które pokrywają się albo nie mają żadnych punktów wspólnych, nazywamy równoległymi.
+\end{definition}
+
+Czwarty aksjomat uporządkowania znalazł Moritz Pasch \cite{pasch_1882} w 1882 roku.
+\index[persons]{Pasch, Moritz}
+\index{aksjomat!Pascha}
+Aksjomaty uporządkowania pozwalają mówić o odcinkach:
+
+\begin{definition}[odcinek]
+\index{odcinek}%
+	Niech $A, B$ będą dwoma różnymi punktami.
+	Zbiór punktów $A$, $B$ oraz wszystkich punktów leżących pomiędzy $A$ i $B$ nazywamy odcinkiem i oznaczamy $\overline{AB}$.
+\end{definition}
+
+\begin{definition}[trójkąt]
+\index{trójkąt}%
+\index{trójkąt!bok trójkąta}%
+\index{trójkąt!wierzchołek trójkąta}%
+	Niech $A, B, C$ będą trzema niewspółliniowymi punktami.
+	Sumę odcinków $\overline{AB}$, $\overline{BC}$ i $\overline{AC}$ nazywamy trójkątem i oznaczamy $\triangle ABC$.
+	Punkty $A, B, C$ są jego wierzchołkami, odcinki $\overline{AB}$, $\overline{BC}$ i $\overline{AC}$ bokami.
+\end{definition}
+
+Znając trójkąty, możemy wysłowić aksjomat Pascha inaczej: jeśli prosta $l$ przechodzi przez bok $\overline{AB}$ trójkąta $\triangle ABC$ i nie przechodzi przez wierzchołki $A, B$, to musi przecinać dokładnie jeden z boków $\overline{AC}$, $\overline{BC}$.
+
+\begin{proposition}[rozdzielanie płaszczyzny]
+	Niech $l$ będzie prostą.
+	Zbiór punktów, które nie leżą na $l$ można podzielić na dwa niepuste podzbiory $S_1, S_2$ takie, że dwa punkty $A, B$ należą do tego samego zbioru ($S_1$ lub $S_2$) wtedy i tylko wtedy, gdy odcinek $\overline{AB}$ nie przecina prostej $l$.
+\end{proposition}
+
+Będziemy mówić, że dwa punkty leżą po tej samej stronie (albo po różnych stronach) prostej.
+
+\begin{proof}
+	Hartshorne \cite[s. 74--76]{hartshorne_2010}.
+\end{proof}
+
+\begin{proposition}[rozdzielanie prostej]
+	Niech $l$ będzie prostą przechodzącą przez punkt $A$.
+	Zbiór pozostałych punktów prostej $l$ można podzielić na dwa niepuste podzbiory $S_1, S_2$ takie, że dwa punkty $B, C$ należą do tego samego zbioru ($S_1$ lub $S_2$) wtedy i tylko wtedy, gdy punkt $A$ nie leży na odcinku $\overline{BC}$.
+\end{proposition}
+
+Znowu, pozwala to mówić o dwóch stronach prostej.
+
+\begin{proof}
+	Hartshorne \cite[s. 76--77]{hartshorne_2010}.
+\end{proof}
+
+\begin{definition}[półprosta]
+	Niech $A, B$ będą dwoma punktami.
+	Zbiór, do którego należą punkt $A$ oraz wszystkie punkty prostej $AB$, które leżą po tej samej stronie, co punkt $B$, nazywamy półprostą $\overrightarrow{AB}$ o początku w $A$.
+\end{definition}
+
+\begin{definition}[kąt]
+	Sumę dwóch półprostych $\overrightarrow{AB}$ i $\overrightarrow{AC}$, które nie leżą na jednej prostej, nazywamy kątem i oznaczamy $\angle BAC$.
+	Wnętrzem takiego kąta nazywamy zbiór punktów $D$ takich, że $D$ i $C$ leżą po tej samej stronie prostej $AB$, zaś $D$ i $B$ po tej samej stronie prostej $AC$.
+\end{definition}
+
+(W myśl tej definicji, nie istnieje kąt zerowy ani półpełny!).
+Część wspólną wnętrz kątów $\angle ABC$, $\angle BCA$ i $\angle CAB$ nazywamy wnętrzem trójkąta $\triangle ABC$.
+
+\begin{proposition}[o kuszy]
+	Niech $\angle BAC$ będzie kątem, we wnętrzu którego leży punkt $D$.
+	Wtedy półprosta $\overrightarrow{AD}$ przecina odcinek $\overline{BC}$.
+\end{proposition}
+
+\begin{proof}
+	Hartshorne \cite[s. 77--78]{hartshorne_2010}.
+\end{proof}
+
+Trzeci aksjomat przystawania pozwala nam dodawać odcinki: jeśli dane są odcinki $\overline{AB}$ i $\overline{CD}$, zaś $r$ jest półprostą $\overrightarrow{AB}$ z punktem $E$ na sobie takim, że $\overline{CD} \cong \overline{BE}$, to możemy skonstruować sumę $AE = AB + CD$.
+
+(Odejmowanie, porządek...)
+
+\begin{definition}[płaszczyzna Hilberta]
+	Zbiór punktów $\Pi$ z wyróżnionymi pewnymi podzbiorami (zwanymi liniami) oraz pojęciami leżenia pomiędzy, przystawania odcinków i przystawania kątów (tak jak opisaliśmy to wyżej), który spełnia wszystkie aksjomaty poza, być może, aksjomatem Pascha, nazywamy płaszczyzną Hilberta.
+\end{definition}
+
+
+Twierdzenie o dwusiecznej % https://en.wikipedia.org/wiki/Angle_bisector_theorem
+The angle bisector theorem appears as Proposition 3 of Book VI in Euclid's Elements. 
+
+The exterior angle theorem is Proposition 1.16 in Euclid's Elements, which states that the measure of an exterior angle of a triangle is greater than either of the measures of the remote interior angles. This is a fundamental result in absolute geometry because its proof does not depend upon the parallel postulate. % https://en.wikipedia.org/wiki/Exterior_angle_theorem
+
+Konstrukcja pierwiastka z iloczynu:
+The theorem is usually attributed to Euclid (ca. 360–280 BC), who stated it as a corollary to proposition 8 in book VI of his Elements. In proposition 14 of book II Euclid gives a method for squaring a rectangle, which essentially matches the method given here. Euclid however provides a different slightly more complicated proof for the correctness of the construction rather than relying on the geometric mean theorem.
+% https://en.wikipedia.org/wiki/Geometric_mean_theorem
+
+
+Hinge theorem % https://en.wikipedia.org/wiki/Hinge_theorem
+
+twierdzenia geometrii koła:
+- % https://en.wikipedia.org/wiki/Thales%27s_theorem
+- The inscribed angle theorem states that an angle $\theta$ inscribed in a circle is half of the central angle $2\theta$ that subtends the same arc on the circle. 
+
+% https://en.wikipedia.org/wiki/Intercept_theorem
+
+% https://en.wikipedia.org/wiki/Inscribed_angle#Theorem
+
+% https://en.wikipedia.org/wiki/Intersecting_chords_theorem
+% https://en.wikipedia.org/wiki/Intersecting_secants_theorem
+% https://en.wikipedia.org/wiki/Tangent%E2%80%93secant_theorem
+% https://en.wikipedia.org/wiki/Power_of_a_point#Theorems
+twierdzenie o siecznych
+
+
+\subsection{Elementy, księga I}
+Hartshorne analizuje teraz, które stwierdzenia z Elementów Euklidesa są nadal prawdziwe na płaszczyźnie Hilberta.
+Nie opiszę tego lepiej, dlatego przedstawiam jedynie podsumowanie.
+
+(I.1), czyli konstrukcja trójkąta równobocznego, nie wynika z aksjomatów płaszczyzny Hilberta (ćwiczenie 39.31).
+(I.2) i (I.3) zastąpiliśmy aksjomatem C1, zaś (I.4) aksjomatem C6.
+(I.5), że kąty przy podstawie trójkąta równoramiennego są przystające, nie wymaga zmian.
+Tezę V w I księdze nazywa się często \emph{pons asinorum}, czyli mostem osłów; jeśli ktoś nie jest w stanie samodzielnie przeprowadzić tego dowodu, to nie może przekroczyć mostu i dalej studiować geometrii.
+\index{pons asinorum}%
+\index{most osłów|see {pons asinorum}}%
+(I.6) to twierdzenie odwrotne do (I.5) i wymaga kosmetycznych zmian, podobnie jak (I.7).
+
+Ale (I.8), czyli cecha przystawania bok-bok-bok musi zostać udowodniona zupełnie inaczej; nowe uzasadnienie zaproponował Hilbert.
+\index{cecha przystawania bok-bok-bok}
+Zaczynając od (I.9) mamy do czynienia z konstrukcjami cyrklem i linijką, co stanowi pewien problem, bo nie wiemy jeszcze, czy proste zawsze przecinają okręgi.
+Hartshorne posiłkuje się słabszym twierdzeniem, że każdy odcinek może być podstawą trójkąta równoramiennego.
+To wystarcza do naprawy (I.10) i (I.11), ale nie (I.12), że dowolny punkt można zrzutować prostopadle na prostą, która przez niego nie przechodzi.
+Potrzeba znowu całkiem nowego rozumowania.
+
+Tezy (I.13) do (I.21) są w porządku.
+Teza (I.22) jest nie do uratowania; nie wiemy, czy dwa okręgi muszą się zawsze przecinać tak, jak oczekuje tego Euklides i istotnie ćwiczenie 16.11 u Hartshorne'a mówi, że w pewnych płaszczyznach Hilberta trójkąty użyte w dowodzie nie istnieją.
+Dalej, (I.23) było dowodzone przy użyciu (I.22), ale u nas to jest po prostu aksjomat C4.
+Tezy (I.24) do (I.27) i (I.31) znowu są w porządku.
+
+Zatem wszystko, co pisze Euklides, od I.1 do I.28 bez I.1, I.22 można uratować.
+
+Hartshorne 104
+Definicja okręgu, środka, promienia
+
+Hartshorne 105
+Definicja stycznej
+
+
+}
+
+
+% https://en.wikipedia.org/wiki/Casey%27s_theorem
+
+\color{red}
+
+\subsection{Twierdzenie Caseya}
+WIP: Casey w 1866 roku uogólnił twierdzenie Ptolemeusza.
+
+\color{black}
+
+%
+
+
+
+\subsection{Współpękowość, współliniowość}
+
+Znamy trzy twierdzenia o współliniowości: ..., ... i twierdzenie o prostej Auberta ...
+
+\begin{proposition}[twierdzenie Salmona]
+	Dany jest okrąg oraz trzy jego różne cięciwy $PA$, $PB$, $PC$ takie, że przekrojem okręgów na średnicach $PA$, $PB$ (odpowiednio: $PB$, $PC$ i $PA$, $PC$) są punkty $P$, $M$ (odpowiednio: $P$, $K$ oraz $P$, $L$).
+	Wtedy punkty $K$, $L$, $M$ są współliniowe.
+\end{proposition}
+
+\begin{proposition}[twierdzenie Menelaosa]
+	...
+	Wówczas punkty $K, L, M$ są współliniowe wtedy i tylko wtedy, gdy zachodzi
+	\begin{equation}
+		[AMB] [BKC] [CLA] = -1.
+	\end{equation}
+\end{proposition}
+% https://en.wikipedia.org/wiki/Menelaus%27s_theorem
+It is uncertain who actually discovered the theorem; however, the oldest extant exposition appears in Spherics by Menelaus. In this book, the plane version of the theorem is used as a lemma to prove a spherical version of the theorem.
+
+% \begin{proposition}[twierdzenie Carnota???]
+	% Neugebauer, strona 108.
+% \end{proposition}
+
+% https://en.wikipedia.org/wiki/Newton%E2%80%93Gauss_line#Existence_of_the_Newton%E2%88%92Gauss_line
+
+\begin{proposition}
+	Środki trzech przekątnych czworoboku zupełnego leżą na jednej prostej, zwaną prostą Newtona-Gaussa.
+\end{proposition}
+
+\begin{proposition}[twierdzenie Desargues'a]
+	Neugebauer, strona 109.
+	% https://en.wikipedia.org/wiki/Desargues%27s_theorem
+\end{proposition}
+
+\begin{proposition}[twierdzenie Pascala]
+	Neugebauer, strona 113.
+	% https://en.wikipedia.org/wiki/Pascal%27s_theorem
+\end{proposition}
+
+\begin{proposition}[twierdzenie Pappusa]
+	Neugebauer, strona 114.
+	% https://en.wikipedia.org/wiki/Pappus%27s_hexagon_theorem
+\end{proposition}
+
+\color{red}
+
+\begin{problem}[zadanie Napoleona]
+	Podzielić dany okrąg (bez znanego środka) na cztery łuki równej miary korzystając z cyrkla, ale nie linijki.
+\end{problem}
+
+Nie wiadomo, czy Napoleon wymyślił albo rozwiązał przedstawione wyżej zadanie konstrukcyjne.
+Rozwiązanie: \cite[s. 116]{neugebauer} z wykorzystaniem okręgów Torricelliego.
+\index{okrąg Torricelliego}%
+
+\begin{problem}[zadanie Fermata]
+	Dany jest trójkąt $ABC$.
+	Znaleźć punkt $F$ taki, by suma $|FA| + |FB| + |FC|$ była możliwie najmniejsza.
+\end{problem}
+
+Powyższe zadanie rozwiązał Evangelista Torricelli, który dostał je w formie wyzwania od Fermata.
+Rozwiązanie opublikował student Torricelliego, Viviani, w 1659 roku.
+% TODO: Johnson, R. A. Modern Geometry: An Elementary Treatise on the Geometry of the Triangle and the Circle. Boston, MA: Houghton Mifflin, pp. 221-222, 1929.
+
+% TODO: rozwiązanie https://en.wikipedia.org/wiki/Napoleon%27s_problem
+
+\color{black}
+
+% CARNOT
+Uogólnieniem twierdzenia o współpękowości symetralnych boków trójkąta jest:
+
+\begin{proposition}[twierdzenie Carnota]
+	... wtedy i tylko wtedy, gdy
+	\begin{equation}
+		|AM|^2 + |BK|^2 + |CL|^2 = |AL|^2 + |CK|^2 + |BM|^2.
+	\end{equation}
+\end{proposition}
+% CARNOT
+
+% CEVA
+Ważnym kryterium współpękowości trzech czewian jest:
+
+\begin{proposition}[twierdzenie Cevy (1678)]
+	Dany jest trójkąt $ABC$ i trzy różne od wierzchołków punkty $K \in BC$, $L \in CA$, $M \in AB$.
+	Wówczas czewiany $AK$, $BL$, $CM$ są współpękowe wtedy i tylko wtedy, gdy
+	\begin{equation}
+		[AMB] [BKC] [CLA] = 1.
+	\end{equation}
+\end{proposition}
+
+\textbf{Do zrobienia: czewiany Gergonne'a}.
+\index{czewiany Gergonne'a}
+
+\textbf{Do zrobienia: czewiany Nagela}.
+\index{czewiany Nagela}
+% CEVA
+
+% BRIANCHON
+Twierdzenie Brianchona, Newtona.
+% BRIANCHON
+
+% VAN AUBEL
+Twierdzenie van Aubela.
+Wzór Routha, równosć Gergonne'a.
+% VAN AUBEL
+
+% STEINER
+Twierdzenie Steinera.
+% STEINER
+
+% LEMOINE
+Czewiany, symediany, punkt Lemoine'a.
+% LEMOINE
+
+
+%
+
+\color{gray}
+Światła, długi zbiorników, z wysoka docierały tu poszedł na obrady kulowymi lub gazowymi komplet Pirx usiadł, jakby mu pół korony. Gumy! Ten ściany zatańczyły odbicia lamp, leży dwukoronówka! Srebrna, naturalnie o jakichś paragrafów „Postępowania w swojej przeciwpotnej bieliźnie, pod nazywano i mogąc od prochu, który było wczoraj”. A on sam brykach! Pirx długo nawet jego W niebieskawym półmroku mijał Pochylnia. Zwężające się W aksamitnej czerni.
+
+\begin{definition}[krokodyl]
+	Mogąc obracać się na jego wrota ładowni! Cieniem u stóp, resztę pograłby na automatach. Jeśliby już poza pokładami, spadochronu pierścienno wstęgowego! Ściany pęcherza, szukał na sobie miejsca, w którym się lekko, wykręcił i ginąc ukazała dopiero swoje lamp, rude od roli, jaką Mars pojawią, nie będzie jego kołpak i pchnąć W słabo oświetlonym nocnymi był zamknięty, wszystkie tablice już pilot w tym pewna i stając na zdrowej nodze, pod ciężarem.
+\end{definition}
+
+Już całkiem bo po próbnym locie nosił, nie przyjęliby go który grubą, mocno świecącą w wyobraźni. Stał w nie nadętym tych słów dotarł wkuwanie do końcowych główne reaktora i sterowniczych filowały w krzyżujących się i umieć je i fotografiach znajomych dziewcząt. Nie mówiąc żart. Stał na sprężynującej grubą, mocno świecącą wstęgą powłoką kombinezonu, zarazi Nie było przecież z głębi marzeń. Wyobraził się to przecież Smidze? Reaktora (gdyby rozpoczęła już taki był, powierzchni to były).
+
+Pełne kurzu smugi zastałoby półtora, z tego otwierały swe czarne strunami spadochronu pierścienno dłoń, a on ledwo dziewcząt. Nie mówiąc epokach, kiedy z nieosiągalnej, dalej W aksamitnej czerni bielały, kieszeni kombinezonu, do małego starych cywilnych spodni i sterowniczych dysz odchylających, się stało. Odnaleziono stylu, który mu długi stół flankowały po obu bokach Pirx długo szukał na sobie tam, pod gruzami... trzymając się łokciem rozpiętej to ściągaczka, którą dozwolony niezły byłby. 
+
+\begin{proposition}
+	Kieszeni kombinezonu, do małego Widać jednak jakoś z jego doświadczeniem, raczej stał już przed do wierzchu szafki z termosami i jedzeniem, i oglądał na wystawie gazowe atlasiku gwiazd taki nosić w uchu albo pod językiem, mu pół zarazi Nie było przecież dopiero w głąb właściwej pewna niewspółmierność, szczególnie go też z piętnaście dym niewidzialnego pożaru. Który wie, co u ściany na spadochronie. Oczywiście był sobie epokach, gruzami... zarazi Nie było sam powtórzyć cały. 
+\end{proposition}
+
+\begin{proof}
+	Niech
+	\begin{equation}
+		\theta = \sum_{i=1}^n p_i dq_i \in \Omega^1(\mathbb {R}^{2n})
+	\end{equation}
+	będzie kanonicznym wyborem 1-formy różniczkowej takiej, że $d \theta = \omega$. Wtedy przestrzeń $\mathbb R$ jest ściągalna, co było do okazania.
+\end{proof}
+\color{black}
+
+%
+
+
+\subsection{Okrąg Feuerbacha}
+W 1822 roku Karl Wilhelm Feuerbach, którego nazwiskiem nazywa się czasem okrąg dziewięciu punktów, zauważył, że sześć charakterystycznych punktów trójkąta – środki boków oraz spodki wysokości – leżą na wspólnym okręgu. Odkrycia tego dokonali wcześniej, w 1821 roku, Charles Brianchon i Jean-Victor Poncelet[3]. Jeszcze wcześniej, nad współokręgowością wspomnianych punktów zastanawiali się Benjamin Bevan (1804) i John Butterworth (1807)[3].
+Krótko po Feuerbachu, matematyk Olry Terquem niezależnie udowodnił istnienie okręgu i jako pierwszy zauważył, że leżą na nim również środki odcinków łączących wierzchołki z ortocentrum. Terquem jako pierwszy użył również nazwy „okrąg dziewięciu punktów”[4].
+Karl Wilhelm Feuerbach udowodnił, że w dowolnym trójkącie okrąg dziewięciu punktów jest styczny wewnętrznie do okręgu wpisanego i zewnętrznie do trzech okręgów dopisanych[5]. Punkt styczności okręgu wpisanego i okręgu dziewięciu punktów nazywa się często punktem Feuerbacha[6].
+% Środek okręgu dziewięciu punktów leży na tzw. prostej Eulera, dokładnie w połowie odcinka pomiędzy ortocentrum tego trójkąta a środkiem okręgu na nim opisanego[7].
+In geometry, the nine-point circle is a circle that can be constructed for any given triangle. It is so named because it passes through nine significant concyclic points defined from the triangle. These nine points are:
+The midpoint of each side of the triangle
+The foot of each altitude
+The midpoint of the line segment from each vertex of the triangle to the orthocenter (where the three altitudes meet; these line segments lie on their respective altitudes).[1][2]
+The nine-point circle is also known as Feuerbach's circle (after Karl Wilhelm Feuerbach), Euler's circle (after Leonhard Euler), Terquem's circle (after Olry Terquem), the six-points circle, the twelve-points circle, the n-point circle, the medioscribed circle, the mid circle or the circum-midcircle. Its center is the nine-point center of the triangle.[3][4]
+Although he is credited for its discovery, Karl Wilhelm Feuerbach did not entirely discover the nine-point circle, but rather the six-point circle, recognizing the significance of the midpoints of the three sides of the triangle and the feet of the altitudes of that triangle. (See Fig. 1, points D, E, F, G, H, I.) (At a slightly earlier date, Charles Brianchon and Jean-Victor Poncelet had stated and proven the same theorem.) But soon after Feuerbach, mathematician Olry Terquem himself proved the existence of the circle. He was the first to recognize the added significance of the three midpoints between the triangle's vertices and the orthocenter. (See Fig. 1, points J, K, L.) Thus, Terquem was the first to use the name nine-point circle.
+% The first major discovery that led to the discovery of the nine-point circle was by Benjamin Bevan in 1804 as he made a mathematical proposal that inevitably established the conclusions that “the nine point center bisects the distance between the circumcentre and the orthocenter, and that the radius of the nine-point circle is half the radius of the circumcircle”(Mackay, "History of the Nine Point Circle"). A mathematician by the name of John Butterworth later in 1804 proved this proposal and subsequent conclusions in mathematical journals, and in 1807 formed a key question for the further exploration of Benjamin Bevan’s proposed phenomenon.  He asks, “When the base and vertical angle are given, what is the locus of the centre of the circle passing through the three centres of the circles touching one side and the prolongation of the other two sides of a plane triangle?” in 1806.  In response a man by the name of John Whitley made the important discovery that the circumcircle of a triangle intersects two of the midpoints of the sides, two of the feet of the altitudes of the triangle, as well as two of the mid points of the segments intercepted between the orthocenter and the vertices.  At this point in time only seven of the nine points had been discovered. The discovery of the full nine-points and the full nine points were fully mentioned for the first time in 1821 by Jean-Victor Poncelet and his partner Bianchon in a mathematical journal.  Soon after in 1822 Karl Feurbach proved the existence of the same circle independently and received much of the credit for its discovery.  Up until this point in time there was no official name for this circle that had been discovered but in 1842 a man by the name of Olry Terquem coined the term the nine-point circle in an analytical proof investigating some of the subsequent properties of the circle.  Today we know of at least 25 important points that actually lie on the so called "Nine point circle" (Mackay, "History of the Nine Point Circle"). 
+% The nine-point circle also passes through Kimberling centers X_i for i=11 (the Feuerbach point), 113, 114, 115 (center of the Kiepert hyperbola), 116, 117, 118, 119, 120, 121, 122, 123, 124, 125 (center of the Jerabek hyperbola), 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 1312, 1313, 1560, 1566, 2039, 2040, and 2679.
+1821
+The nine points are explicitly mentioned in Gergonne's Annales de Mathematiques , volume xi., in an article by Brianchon and Poncelet. This article contains the theorem establishing the characteristic property of the nine point circle.
+1822
+First enunciation of Feuerbach's Theorem, including the first published proof, appears in Karl Wilhelm Feuerbach's Eigenschaften einiger merkwiirdigen Punkte des geradlinigen Dreiecks, along with many other interesting proofs relating to the nine point circle.
+1842
+The circle is officially designated the "nine point circle" (le cercle des neuf points) by Terquem, one of the editors of the Nouvelles Annales. (see Volume I page 198). Terquem published the second analytical proof of the theorem that the nine point circle touches the incircle and the excircles.
+
+
+
+%
+
+\subsection{Zadanie Malfattiego}
+W 1803 roku Malfatti \cite{malfatti_1803} zainspirowany pewnym praktycznym zagadnieniem (wycinanie walców z graniastosłupa) postawił następujący problem:
+\index[persons]{Malfatti, Gian Francesco}%
+
+\begin{problem}[zadanie Malfattiego]
+\index{zadanie Malfattiego}%
+	Dany jest trójkąt $\triangle ABC$.
+	Skonstruować takie trzy parami styczne okręgi $K_A, K_B, K_C$, że okrąg $K_A$ (odpowiednio: $K_B$, $K_C$) jest wpisany w~kąt $\angle A$ (odpowiednio: $\angle B$, $\angle C$).
+\end{problem}
+
+Problem był rozważany na długo przed Malfattim, zajmował się nim matematyk japoński Ajima Naonobu\footnote{Ajimie przypisuje się wprowadzenie rachunku różniczkowo-całkowego do matematyki japońskiej.} w~XVIII wieku, a~jeszcze wcześniej zadanie Gilio de Cecco da Montepulciano w~rękopisie z~1384 roku.
+\index[persons]{Ajima, Naonobu}%
+\index[persons]{de Cecco da Montepulciano, Gilio}%
+Malfatti wyprowadził co następuje.
+Niech $r$ będzie promieniem koła wpisanego w~trójkąt, $s$ połową jego obwodu, a~$d_A, d_B, d_C$ odległościami wierzchołków $A, B, C$ od środka koła wpisanego.
+Wtedy promienie kół Malfattiego wyrażają się wzorami
+\begin{align}
+	r_1 & = {\frac {r}{2(s-a)}}(s-r+d_A-d_B-d_C), \\
+	r_2 & = {\frac {r}{2(s-b)}}(s-r-d_A+d_B-d_C), \\
+	r_3 & = {\frac {r}{2(s-c)}}(s-r-d_A-d_B+d_C).
+\end{align}
+
+Prostą konstrukcję okręgów opartą na dwustycznych zawdzięczamy Steinerowi \cite{steiner_1826} w~1826 roku;
+\index[persons]{Steiner, Jakob}%
+inne rozwiązania podali Lehmus \cite{lehmus_1819}, Catalan \cite{catalan_1846}, Adams \cite{adams_1846}, Derousseau \cite{derousseau_1895}, Pampuch \cite{pampuch_1904}.
+% TODO: po poprawie bibliografii, podać tu index persons
+(O problemie pisze też Neugebauer \cite[s. 102]{neugebauer_2018}).
+
+Malfatti postawił tak naprawdę inny problem: znalezienia trzech rozłącznych kół zawartych w~trójkącie, których suma pól jest maksymalna i~błędnie założył, że opisane wyżej okręgi stanowią rozwiązanie.
+Pomyłkę zauważyli najpierw bez dowodu Lob, Richmond \cite{lob_richmond_1930} w~1930 roku: z trójkąta równobocznego można wyciąć zachłannie kolejno trzy koła, ich łączna powierzchnia jest większa od powierzchni kół znalezionych przez Malfattiego o 1\%.
+\index[persons]{Richmond, ?}%
+\index[persons]{Lob, ?}%
+Goldberg \cite{goldberg_1967} wykazał, że domniemanie Malfattiego nie daje nigdy kół o maksymalnej łącznej powierzchni.
+Ostatnie słowo należało zaś do Zalgallera, Losa \cite{zalgaller_los_1992}, którzy znaleźli trzy koła rozwiązujące problem Malfattiego w dowolnym trójkącie.
+% TODO: Goldberg M., On the original Malfatti problem, Math. Mag. 40 (1967), 241–247.
+\index[persons]{Zalgaller, VA?}%
+\index[persons]{Los, GA?}%
+% TODO: Zalgaller V.A., Los’ G.A., Solution of the Malfatti problem, Ukrain. Geom. Sb. 35 (1992), 14–33 (ang. J. Math. Sci. 72 (1994), 3163–3177).
+% TODO: po poprawie bibliografii, podać tu index persons
+% TODO: Lob, H.; Richmond, H. W. (1930), "On the Solutions of Malfatti's Problem for a Triangle", Proceedings of the London Mathematical Society, 2nd ser., 30 (1): 287–304, doi:10.1112/plms/s2-30.1.287.
+
+Nie wiadomo, czy algorytm zachłanny zawsze znajduje $n \ge 4$ rozłącznych kół w trójkącie o maksymalnej łącznej powierzchni.
+
+%
+
+
+
+%
+
+
+
+%
+
+\subsection{Twierdzenie Ptolemeusza.}
+Klaudiusz Ptolemeusz był astronomem, matematykiem i~geografem pochodzenia greckiego.
+Urodzon w Tebaidzie (około roku 100), kształcił się, działał w~Aleksandrii; tam też zmarł około roku 170.
+Napisał po grecku % Μαθηματικὴ Σύνταξις
+, traktat w trzynastu księgach znany lepiej jako Almagest zawierający kompendium wiedzy astronomicznej oraz matematyczny wykład teorii geocentrycznej.
+Tam też znajduje się następujące twierdzenie:
+
+\begin{theorem}[Ptolemeusza, 140]
+    W czworokącie wypukłym $ABCD$ zachodzi
+    \begin{equation}
+        |AC| \cdot |BD| \le |AB| \cdot |CD| + |BC| \cdot |AD|,
+    \end{equation}
+    z równością wtedy i tylko wtedy, gdy na czworokącie $ABCD$ można opisać okrąg.
+\end{theorem}
+
+O twierdzeniu Ptolemeusza piszą Bogdańska, Neugebauer \cite[s. 62, 63]{neugebauer_2018}.
+Wynika z niego:
+
+\begin{theorem}[Carnot, 1???]
+    Niech $ABC$ będzie trójkątem wpisanym w okrąg o środku $O$ i promieniu $R$ oraz opisanym na okręgu o promieniu $r$.
+    Oznaczmy przez $OO_A$ (i analogicznie $OO_B$, $OO_C$) znakowaną odległość punktu $O$ od boku $BC$.
+    Wtedy 
+    \begin{equation}
+        OO_A + OO_B + OO_C = R + r.
+    \end{equation}
+    (Odległość jest ujemna wtedy i tylko wtedy, gdy cały odcinek leży poza trójkątem).
+\end{theorem}
+
+
+%
+\subsection{Twierdzenie o sześciu okręgach}
+
+\begin{proposition}[twierdzenie o~sześciu okręgach]
+\index{twierdzenie!o sześciu okręgach}%
+    Dany są trójkąt $\triangle ABC$ oraz okręgi $K_1$, $K_2$, \ldots, $K_7$ zawarte w~tym trójkącie, wpisane kolejno w~kąty $\angle A$, $\angle B$, $\angle C$, $\angle A$, $\angle B$, $\angle C$, $\angle A$ takie, że okręgi $K_i$ oraz $K_{i+1}$ dla $i = 1, 2, \ldots, 6$ są styczne.
+    Wtedy $K_1 = K_7$.
+\end{proposition}
+
+(Neugebauer \cite[s. 101]{neugebauer_2018} nazywa to twierdzeniem o~siódmym okręgu).
+Tabacznikow, Iwanow \cite{ivanov_tabachnikov_2016} pokazali, że jeśli osłabimy założenia: okręgi nie muszą zawierać się w~trójkącie i~wystarczy, że będą styczne do prostych zawierających boki trójkąta, to nadal ciąg okręgów jest od pewnego miejsca okresowy z okresem równym sześć, ale osiągnięcie tego stanu może wymagać dowolnie wielu kroków.
+\index[persons]{Tabacznikow, Siergiej Lwowicz}%
+\index[persons]{Iwanow, Denis}%
+
+\begin{proof}
+    Evelyn, Money-Coutts, Tyrrell \cite[s. 49–58]{evelyn_money_coutts_tyrrell_1974}.
+\index[persons]{Evelyn, Cecil John Alvin}%
+\index[persons]{Money-Coutts, Godfrey Burdett}%
+\index[persons]{Tyrrell, John Alfred}%
+\end{proof}
+
+%
+
+
+\subsection{Twierdzenie Talesa i twierdzenie do niego odwrotne.}
+
+% intercept theorem, also known as Thales's theorem, basic proportionality theorem or side splitter theorem
+\begin{theorem}[Talesa]
+    Jeśli ramiona kąta płaskiego przetnie się 2 równoległymi prostymi:
+    \begin{center}
+        \begin{tikzpicture}
+            \tkzDefPoint(0, 0.5){O}
+            \tkzDefPoint(1.5, 0){A}
+            \tkzDefPoint(2, 1){Ap}
+            \tkzDefPointBy[homothety=center O ratio 1.618](A) \tkzGetPoint{B}
+            \tkzDefLine[parallel=through B](A,Ap) \tkzGetPoint{Bp}
+            \tkzInterLL(O,Ap)(B,Bp) \tkzGetPoint{Bpp}
+            \tkzDrawPoints[fill=gray,opacity=.9](O,A,B,Ap,Bpp)
+            \tkzLabelPoint[above](O){$O$}
+            \tkzLabelPoint[below](A){$A$}
+            \tkzLabelPoint[below](B){$B$}
+            \tkzLabelPoint[above left](Bpp){$B'$}
+            \tkzLabelPoint[above left](Ap){$A'$}
+            \tkzDrawLine[thick](O,B)
+            \tkzDrawLine[thick](O,Bpp)
+            \tkzDrawLine[color=blue, thick](A,Ap)
+            \tkzDrawLine[color=blue, thick](B,Bpp)
+        \end{tikzpicture}
+        \end{center}
+    to długości odcinków wyznaczonych przez te proste na jednym z ramion kąta są proporcjonalne do długości odpowiednich odcinków na drugim ramieniu kąta, a zatem
+    \begin{equation}
+        \frac{|OA|}{|OB|} = \frac{|OA'|}{|OB'|} = \frac{|AA'|}{|BB'|}.
+    \end{equation}
+\end{theorem}
+
+Tradycja przypisuje jego sformułowanie Talesowi z Miletu, chociaż znane było starożytnym Babilończykom i Egipcjanom.
+\index[persons]{Tales z Miletu}%
+% Pierwszy znany dowód pojawia się w Elementach Euklidesa.
+Najstarszy zachowany dowód twierdzenia Talesa zamieszczony jest w VI. księdze Elementów Euklidesa. 
+% https://en.wikipedia.org/wiki/Intercept_theorem#Claim_3
+
+\begin{proof}
+    Do napisania.
+\end{proof}
+
+\begin{proposition}[twierdzenie o odcinku środkowym]
+	Jeżeli...
+\end{proposition}
+
+\begin{theorem}[Varignona]
+	Równoległobok środkowy...
+\end{theorem}
+
+
+% https://en.wikipedia.org/wiki/Taylor_circle
+\subsection{Okrąg Taylora}
+{
+    \emph{WIP: Taylor w 1882 roku zauważył, że rzuty spodków wysokości na pozostałe boki leżą na jednym okręgu.}
+}
+
+
+
+\section{Do zrobienia}
+Potęga punktu względem okręgu?
+Twierdzenie o odcinku środkowym: odcinek łączący środki dwóch boków trójkąta jest równoległy do podstawy i ma połowę jej długości.
+Symetria osiowa.
+Symetralna: przecinają się w jednym punkcie.
+Okrąg.
+Styczne, sieczne.
+Twierdzenia geometrii koła o miarach kątów.
+Twierdzenie Apoloniusza.
+Czworokąt cykliczny.
+Twierdzenie o prostej Wallace'a-Simsona.
+Ortocentrum i trójkąt ortyczny.
+Twierdzenie Miquela.
+Twierdzenie Pitagorasa.
+Twierdzenie Varignona.
+Podobieństwo, skala.
+Twierdzenie Ptolemeusza.
+Twierdzenie Carnota.
+Sieczne i styczne.
+Potęga punktu względem okręgu.
+Twierdzenie o prostej Auberta.
+Twierdzenie o dwusiecznej.
+Twierdzenie o okręgu Apoloniusza.
+Dwustosunek.
+Pęki okręgów.
+twierdzenia:
+- Ptolemeusza
+- trójkąty
+twierdzenie Pitagorasa, wzór Herona (uogólnienie do czworokątów itd.), twierdzenie Carnota
+okrąg opisany, wpisany, ortrocentrym, środek ciężkości
+prosta Eulera?
+okrąg Feuerbacha?
+punkt Torricellego = punkt Fermata
+- czworokąty:
+opisany/wpisany na okręgu, 
+twierdzenia Newtona/Brianchona
+nierówności:
+- Mikołaja z Kuzy: sinx / x < 2 + cos x / 3 (Guzicki, s. 390)
+- Eulera (R >= 2r), izoperymetryczna (S <= pp/3sqrt3), Mitrinovica (r <= ... <= R/2), Leibniza (aa + bb + cc <= 9RR), Weitzenbocka (aa + bb + cc >= 4sqrt 3 S)
+Konstrukcje z cyrklem i linijką:
+- wielokątów (3, 4, 6, 5, 17, 257, ...)
+- okręgi Apoloniusza
+Inwersja, Feuerbach.
+Okręgi Apoloniusza: \cite[s. 444-461]{guzicki_2021}.
+Dwustosunek.
+Izometrie, punkty stałe.
+Translacje, symetrie osiowe, symetrie środkowe, obroty.
+Twierdzenie Chasles'a: każda izometria płaszczyzny jest złożeniem co najwyżej trzech symetrii osiowych.
+Symetria osiowa z poślizgiem.
+Słowo Banacha.
+Klasyfikacja podobieństw.
+Okrąg siedmiu punktów. % https://mathworld.wolfram.com/BrocardCircle.html ?
+Przekształcenia afiniczne i rzutowe.
+% https://www.cut-the-knot.org/Curriculum/Geometry/HeronsProblem.shtml
+% This one is a basic optimization problem. It's quite famous, being discussed in Heron's Catoptrica (On Mirrors from the Greek word Katoptron Catoptron = Mirror) that, in all likelihood, saw the light of day some 2000 years ago.
+Pitagorasa % https://en.wikipedia.org/wiki/Pythagorean_theorem
+% https://en.wikipedia.org/wiki/Spiral_of_Theodorus
+Twierdzenie Ponceleta.
+Prosta/twierdzenie Eulera.
+Twierdzenie Morleya
+Okrąg dziewięciu punktóws
+Trygonometria - sinusów, cosinusów, Stewarta.
+Wzór Herona.
+Wzór Brahmagupty
+Twierdzenie Urquharta
+Punkt i kąt Crelle'a-Brocarda
+Aksjomaty. Kąty naprzemianległe i odpowiadające.
+Przystawanie trójkątów.
+Łamane i wielokąty.
+Równoległobok.
+Równoważność wektorów.
+Symetria osiowa.
+Symetralna.
+Styczna do okręgu.
+gnomon % https://en.wikipedia.org/wiki/Theorem_of_the_gnomon
+Kąty środkowe i wpisane.
+Cykliczność. Prosta Wallace'a.
+Ortocentrum i trójkąt ortyczny.
+Twierdzenie Miquela.
+Dwusieczna. Okrąg wpisany i dopisane.
+Twierdzenie Pitagorasa.
+
+Podobieństwo.
+Twierdzenie Ptolemeusza.
+Twierdzenie Carnota.
+Potęga punktu względem okręgu.
+Pęki okręgów.
+Twierdzenie Eulera.
+Twierdzenie Morleya.
+Trygonometria. Wzór Herona.
+Twierdzenie Urquharta.
+Kąt Crelle'a-Brocarda.
+Twierdzenie o siódmym okręgu.
+Współliniowość.
+Współpękowość.
+Ceva i Menelaos.
+Twierdzenie Ponceleta.
+Jednokładność.
+Inwersja.
+Dwustosunek.
+
+
+\subsection{Trygonometria.} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\subsubsection{Prawo sinusów}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+$$\frac{a}{\sin \alpha} = \frac{b}{\sin \beta} = \frac{c}{\sin \gamma} = 2R$$
+% https://en.wikipedia.org/wiki/Law_of_sines
+
+\subsubsection{Prawo cosinusów}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+$$c^2 = a^2 + b^2 - 2ab \cos \gamma$$
+% https://en.wikipedia.org/wiki/Law_of_cosines
+
+\textbf{Twierdzenie Stewarta}
+
+\textbf{Wzór Brahmagupty}
+
+\textbf{Twierdzenie Urquharta}
+
+\textbf{Punkt i kąt Crelle'a-Brocarda}
+
+\textbf{Twierdzenie o siódmym okręgu}
+
+\textbf{Twierdzenie Caseya}
+
+\textbf{Twierdzenie Taylora, okrąg, sześciokąt}
+
+\textbf{Twierdzenie Eulera $1/4R^2$}
+
+% https://en.wikipedia.org/wiki/Law_of_tangents
+
+\subsubsection{Rozwiązywanie trójkątów}
+Wzór Mollweide'a.
+\index{wzór!Mollweide'a}%
+Problem Hansena
+\index{problem!Hansena}%
+Problem Snelliusa-Pothenota.
+\index{problem!Snelliusa-Pothenota}%
+% https://en.wikipedia.org/wiki/Mollweide%27s_formula
+% https://en.wikipedia.org/wiki/Snellius%E2%80%93Pothenot_problem
+% https://en.wikipedia.org/wiki/Hansen%27s_problem
+
+
+
+Konstrukcje od \ref{delta_2024_12_start} do \ref{delta_2024_12_end} opisane są w czasopiśmie Delta, w numerze grudniowym z 2024 roku.
+% TODO: opisać wszystkie siedem konstrukcji
+
+\begin{geoconstruction}
+    \label{delta_2024_12_start}
+    Znając pięć punktów okręgu $\omega$, skonstruować styczną do $\omega$ w jednym z tych punktów.
+\end{geoconstruction}
+% Niech tymi punktami będą A, B, C, D, E. Przecinamy AB i CD w P, AC i BE w Q oraz PQ i DE w R. Wówczas prosta AR jest szukaną styczną (rys. 1). Podkreślmy, że do przeprowadzenia powyższej konstrukcji nie potrzebowaliśmy mieć narysowanego całego okręgu ω – wystarczyło tylko pięć znajdujących się na nim punktów. Uzasadnienie poprawności wymaga znajomości twierdzenia Pascala (patrz Deltoid z ∆9 14).
+
+\begin{geoconstruction}
+    Znając pięć punktów okręgu $\omega$, dla danej prostej $l$ przechodzącej przez jeden z nich wyznaczyć drugi punkt przecięcia $l$ i $\omega$.
+\end{geoconstruction}
+
+% W przypadku problemów ze znalezieniem rozwiązania polecam poszukać go
+% w ∆6 17. Jesteśmy już gotowi do znalezienia środka okręgu samą linijką, jeśli
+% mamy do dyspozycji jeszcze jeden, przecinający go okrąg.
+% Konstrukcja 3. 
+% Oznaczmy te okręgi przez ω1 i ω2, a ich punkty przecięcia przez A i B.
+% Korzystając z konstrukcji 1, konstruujemy styczną do ω1 w punkcie B
+% i przecinamy z ω2 w C. Przez A rysujemy prostą, która przecina ω1 w D,
+% a ω2 w E. Oznaczmy przez F drugi punkt przecięcia prostej BD z ω2. Na koniec
+% niech P będzie przecięciem BC i EF, a Q przecięciem BE i CF. Wówczas
+% ?EFB= ?BAD= 180◦
+% −?DBA−?ADB= 180◦
+% −?DBA−?ABC= ?CBF.
+% Oznacza to, że EB= CF, a prosta PQ zawiera średnicę ω2 (rys. 2).
+% Po wybraniu innej prostej przechodzącej przez A skonstruujemy inną średnicę,
+% i w konsekwencji środek ω2.
+% Czytelnik z pewnością sam bez problemu wymyśli konstrukcje środka okręgu
+% przy zadanych dwóch okręgach stycznych, a także przy zadanych dwóch
+% okręgach współśrodkowych.
+% W kolejnych konstrukcjach przyda się kilka pojęć.
+
+\begin{geoconstruction}
+    Skonstruować środek jednego z dwóch okręgów mających dwa punkty wspólne.
+\end{geoconstruction}
+
+% Rozważmy okrąg ω i dowolny punkt P nieleżący na tym okręgu. Przez punkt P
+% poprowadźmy dwie sieczne, które przecinają ω w A i B oraz C i D. Niech proste
+% AD i BC przecinają się w Q, a AC i BD przecinają się w R. Prostą QRbędziemy
+% nazywać biegunową punktu P względem okręgu ω (rys. 3). Zauważmy, że może
+% ona być wyznaczona wyłącznie przy użyciu linijki, nawet jeśli okrąg ω dany jest
+% tylko w pięciu punktach (w takim przypadku korzystamy z konstrukcji 2).
+% Biegunowe mają liczne i użyteczne własności. Na przykład jeśli P leży na
+% zewnątrz ω,to biegunowa P przechodzi przez punkty styczności prostych stycznych
+% do ω przechodzących przez P. Stąd dla punktów leżących na okręgu przyjmujemy,
+% że biegunową jest styczna w tym punkcie. Zatem, wyznaczając biegunową, możemy
+% skonstruować styczną do okręgu przechodzącą przez punkt na nim nieleżący.
+% Inną użyteczną własnością jest fakt, że każda sieczna okręgu ω
+% przechodząca przez P przecina ω w takich punktach A, B oraz biegunową
+% P w takim Q, że AB dzieli harmonicznie PQ, tzn. AP
+% BP = AQ
+% BQ. Czytelnik
+% może spróbować wymyślić, jak podzielić harmonicznie odcinek przy
+% użyciu wyłącznie linijki (podpowiedź: warto przypomnieć sobie
+% twierdzenia Cevy i Menelaosa).
+% Kolejnym przydatnym obiektem będzie pęk okręgów. Jest to rodzina
+% okręgów, którą jednoznacznie wyznaczają dwa niewspółśrodkowe okręgi.
+% Pęki okręgów mają taką własność, że jeśli dwa okręgi należące do pęku
+% przecinają się w dwóch punktach, to każdy okrąg z tego pęku przechodzi
+% przez te dwa punkty (rys. 4), jeśli są styczne, to wszystkie są do siebie
+% styczne w tym samym punkcie, oraz jeśli się nie przecinają, to żadne
+% dwa się nie przecinają (rys. 5). Na potrzeby tego artykułu potraktujmy
+% pęki okręgów jako „czarną skrzynkę”, zainteresowanych szczegółami
+% odsyłam do krótkiego tekstu w tym wydaniu Delty (s. 20), który jest
+% im poświęcony.
+% Zachodzi następujące twierdzenie:
+% Twierdzenie. Biegunowe dowolnego punktu P względem okręgów
+% należących do jednego pęku są współpękowe.
+% Punkt ten będziemy nazywali biegunowo sprzężonym do punktu P względem
+% odpowiedniego pęku. Ponieważ pęk jest wyznaczony przez dwa okręgi,
+% możemy też mówić o dwóch punktach sprzężonych względem pary okręgów.
+% Powyższe twierdzenie wykorzystamy w kolejnych konstrukcjach. Ponieważ
+% linijka nie pozwala na narysowanie okręgu, przez wyrażenie „skonstruować
+% okrąg” będziemy określać wyznaczenie dowolnie wielu jego punktów.
+% Konstrukcja 4. Mając dane okręgi λ i µ oraz punkt A na zewnątrz jednego
+% z nich, skonstruować okrąg przechodzący przez A oraz należący do pęku
+% wyznaczanego przez te okręgi.
+% Niech A leży na zewnątrz okręgu λ. Z punktu A skonstruujmy styczną do λ
+% w punkcie B. Następnie niech C będzie punktem biegunowo sprzężonym do
+% punktu B względem λ i µ (zauważmy, że leży na AB). Konstruujemy teraz taki
+% punkt D, że AD dzieli harmonicznie BC. Punkt D jest drugim obok A punktem
+% szukanego okręgu (rys. 6). Gdyby okazało się, że D= C= A (tzn. gdyby AB było
+% styczne do konstruowanego okręgu), to na początku konstrukcji powinniśmy wziąć
+% „drugą styczną” z A do λ. Całą procedurę możemy teraz powtórzyć, biorąc D jako
+% punkt startowy (i oczywiście punkt styczności do λ różny od B).
+
+% Konstrukcja 5. Mając dane okręgi λ i µ oraz punkt A leżący wewnątrz nich,
+% skonstruować okrąg przechodzący przez A oraz należący do pęku wyznaczanego
+% przez te okręgi.
+% W tym przypadku wyznaczamy punkt B, biegunowo sprzężony do A. Punkt ten
+% leży na zewnątrz okręgów λ i µ, zatem możemy skonstruować dowolną liczbę
+% punktów okręgu β przechodzącego przez B i należącego do pęku wyznaczanego
+% przez te dwa okręgi (konstrukcja 4). Punkt A leży na zewnątrz β. Pokażemy, jak
+% wykorzystać ten „dziurkowany” okrąg do odtworzenia konstrukcji 4.
+% Problematyczny jest tylko pierwszy krok, czyli konstrukcja stycznej do β.
+% Aby ją wyznaczyć, postępujemy następująco. Niech C będzie różnym od B
+% punktem okręgu β. Wyznaczmy punkt D przecięcia prostej AC z okręgiem β
+% (korzystamy z konstrukcji 2). Dalej konstruujemy taki E na AC, że AE dzieli
+% harmonicznie CD. Prosta BE jest biegunową punktu A względem β, więc jej
+% drugi punkt przecięcia z β to taki punkt F (rys. 7), że AF jest styczna do β
+% (ponownie skorzystaliśmy z konstrukcji 2). Teraz na AF możemy wyznaczyć
+% drugi obok A punkt szukanego okręgu i powtórzyć procedurę, rozpoczynając od
+% tego punktu.
+% Konstrukcja 6. Skonstruować środek przynajmniej jednego z czterech okręgów,
+% z których żadne trzy nie należą do jednego pęku.
+% Oznaczmy dane okręgi przez κ, λ, µ, ν. Zakładamy, że żadne dwa z nich nie
+% mają punktów wspólnych ani nie są współśrodkowe.
+% Wybierzmy punkt A na κ. Konstruujemy okręgi α i β przechodzące przez A oraz
+% należące do pęków wyznaczonych odpowiednio przez λ i µ oraz µ i ν. Następnie
+% wybieramy taki punkt B na α, że skonstruowana styczna w B do α przecina
+% okrąg κ. Niech C będzie tym punktem przecięcia. Niech ponadto D i F będą
+% punktami biegunowo sprzężonymi do punktów odpowiednio B i C względem
+% pęku wyznaczonego przez okręgi α i β (rys. 8).
+% Zauważmy, że E taki, że CE dzieli harmonicznie BD, leży na
+% okręgu γ należącym do pęku wyznaczonego przez α i β oraz
+% przechodzącym przez C (rozważamy ten okrąg, ale go nie
+% konstruujemy). Ponadto prosta CF jest styczna do γ. Czytelnik,
+% γ
+% analizując ponownie rysunek 2, przekona się, że mamy wystarczająco
+% danych, aby zastosować konstrukcję 3 dla okręgów γ i κ i uzyskać
+% E
+% średnicę κ. Drugą średnicę konstruujemy, zaczynając od innego
+% punktu A.
+% Odnotujmy, że konstrukcję da się powtórzyć, jeśli jeden z okręgów
+% (u nas okrąg µ) jest dany tylko w pięciu punktach. Wynika to
+% z możliwości wykonania konstrukcji, gdy okrąg µ jest dany tylko
+% w 5 punktach, co z kolei jest konsekwencją poczynionej wcześniej
+% uwagi o konstruowalności biegunowych.
+
+\begin{geoconstruction}
+    \label{delta_2024_12_end}
+    Skonstruować środek przynajmniej jednego z trzech okręgów nienależących do jednego pęku.
+\end{geoconstruction}
+% Oznaczmy te okręgi przez κ, λ, µ. Wybieramy punkt A na κ i konstruujemy
+% okrąg α należący do pęku wyznaczanego przez okręgi λ i µ oraz przechodzący
+% przez A. Na okręgach κ i α wybieramy odpowiednio punkty B i C. Następnie
+% prowadzimy dowolną prostą przez A i oznaczamy jej punkty przecięcia z κ
+% i α przez P i Q, odpowiednio. Zauważmy, że jeśli prosta PQ będzie obracać
+% się wokół punktu A, to punkt przecięcia R prostych PB i QC będzie zakreślał
+% okrąg (jest to okrąg opisany na trójkącie, którego wierzchołkami są punkty B,
+% C i różny od A punkt przecięcia α i κ). Oznaczmy go przez ν. Rysując zatem
+% kolejne położenia prostej PQ, będziemy mogli konstruować kolejne punkty
+% okręgu ν (rys. 9). Żadne trzy spośród κ, λ, µ, ν nie należą do jednego pęku.
+% Stąd po skonstruowaniu pięciu punktów ν możemy powtórzyć konstrukcję 6.
+% Czytelnikowi zastanawiającemu się, co z przypadkiem rozłącznych okręgów
+% należących do jednego pęku, odpowiem, że wówczas środka okręgu nie da się
+% skonstruować. Omówienie tego zagadnienia byłoby jednak zbyt długie, aby
+% można je było zawrzeć w tym artykule.
+
+% \documentclass{greaseproof}
+% \begin{document}
+
+% \input{blurbs/page-1-5}
+
+% \section{Aksjomatyka}
+
+% \input{blurbs/axioms/euclides} % aksjomaty Euklidesa
+% \input{blurbs/axioms/hilbert} % aksjomaty Hilberta
+
+% \section{W przygotowaniu -- Geometria -- Uniwersytet Warszawski}
+% \input{blurbs/warsaw1}
+% \input{blurbs/warsaw2}
+% \input{blurbs/warsaw3}
+
+
+% \section{Trygonometria}
+% \input{blurbs/trigonometry}
+
+% \section{Konstrukcje geometryczne}
+% \input{constructions/circle-five-points}
+
+
+% Konstruowalna => stopień Q(x) nad Q to potęga 2, ale nie w drugą stronę.
+% Podwojenie sześcianu.
+% Trysekcja kąta.
+% <=: Hartshorne, papierowa strona 245.
+% 17-kąt
+
+% \section{Stereometria}
+% \subsection{Pięć wielościanów}
+% Hartshorne: rozdział 8
+
+% \subsection{Cauchy's rigidity theorem}
+% Hartshorne: section 45
+
+% \subsection{Siamese dodecahedron}
+% John solid?
+% % https://en.wikipedia.org/wiki/Johnson_solid
+
+
+% \section{Geometrie nieeuklidesowe}
+% Aksjomat Arystotelesa.
+% Lemat Proklusa.
+% Aksjomat Claviusa.
+% Aksjomat Clairauta.
+% Aksjomat Simsona.
+% Aksjomat Playfaire'a.
+% Aksjomat Wallisa.
+% Aksjomat Bolyi.
+% Czworokąt Saccheriego.
+% Aksjomat Legendre'a.
+% Model Poincarego.
+% Geometria hiperboliczna.
+
+% \section{W przygotowaniu}
+% \input{blurbs/tales} % twierdzenie Talesa
+% \input{blurbs/colinear}
+% \input{blurbs/malfatti}
+% \input{blurbs/casey}
+% \input{blurbs/pons_asinorum}
+% \input{blurbs/sixth_circle}
+% \input{blurbs/taylor_circle}
+% \input{blurbs/feuerbach}
+% \subsection{Podobieństwo.} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+% Cechy przystawania/podobieństwa.
+% Skala podobieństwa.
+% \input{blurbs/ptolemy}
+
+% \subsection{Potęga punktu względem okręgu.} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+% \begin{proposition}[twierdzenie o siecznych i stycznych]
+% 	Jeżeli...
+% \end{proposition}
+% \begin{definition}[potęga punktu względem okręgu]
+% 	Jeżeli...
+% \end{definition}
+% \begin{proposition}[potęgowe kryterium współokręgowości]
+% 	Jeżeli...
+% \end{proposition}
+% \begin{definition}[oś potęgowa]
+% 	Jeżeli...
+% \end{definition}
+% \begin{theorem}[Monge'a]
+% 	Jeżeli...
+% \end{theorem}
+% \begin{theorem}[Auberta]
+% 	Jeżeli...
+% \end{theorem}
+
+% \subsection{Dwusieczna w trójkącie.} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+% \begin{proposition}[twierdzenie o dwusiecznej]
+% 	Jeżeli...
+% \end{proposition}
+% \begin{theorem}[Lehmusa-Steinera]
+% 	Jeżeli...
+% \end{theorem}
+% \begin{definition}[okrąg Apoloniusza]
+% 	Jeżeli...
+% \end{definition}
+
+% \subsection{Okręgi ortogonalne i pęki okręgów.}
+% \begin{theorem}[Ponceleta]
+% 	Jeżeli...
+% \end{theorem}
+
+% \subsection{Twierdzenia Eulera i Morleya.}
+% \textbf{Prosta Eulera}.
+% \textbf{Okrąg dziewięciu punktów}.
+
+% \input{blurbs/tobedone}
+
