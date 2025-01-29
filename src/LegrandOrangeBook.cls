@@ -8,11 +8,11 @@
 % - fontenc is oriented to output, that is, what fonts to use for printing characters.
 % The two packages are not connected, though it is best to call fontenc first and then inputenc.
 
-\RequirePackage{mlmodern}
+
 \RequirePackage[T1]{fontenc} % Output font encoding for international characters
 \RequirePackage[utf8]{inputenc} % Required for inputting international characters
 \RequirePackage{polski}
-
+\RequirePackage{Alegreya}
 
 %%%%%%%%%% %%%%%%%%%%% %%%%%%%%%%
 %%%%%%%%%% PAGE LAYOUT %%%%%%%%%%
@@ -216,13 +216,13 @@
 
 \newcounter{counter}
 \numberwithin{counter}{section}
+\newcounter{counter_euclid}
 
 \theoremstyle{OCREnum}
 % NOTHING?
 
 \theoremstyle{OCREnumbox}
 \newtheorem{propositionT}[counter]{Fakt}
-\newtheorem{euclidelement}[counter]{EUKLIDESOWY ELEMENT}
 \newtheorem{geoconstructionT}[counter]{Konstrukcja}
 
 \newtheorem*{personT}{Postać}
@@ -232,9 +232,15 @@
 
 \theoremstyle{blacknumex}
 \newtheorem{exampleT}[counter]{Przyk\l{}ad}
-
 \newtheorem{notation}{Notation}[chapter]
 \newtheorem{vocabulary}{Vocabulary}[chapter]
+
+\theoremstyle{blacknumexshort}
+\newtheorem{euclid_definition}[counter_euclid]{Definicja}
+\newtheorem{euclid_theorem}[counter_euclid]{Twierdzenie}
+\newtheorem{euclid_postulate}[counter_euclid]{Postulat}
+\newtheorem{euclid_basic}[counter_euclid]{Pojęcie podstawowe}
+
 
 \theoremstyle{blacknumbox}
 
