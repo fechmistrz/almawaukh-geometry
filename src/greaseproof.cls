@@ -33,7 +33,7 @@
 
 %%%%%%%%%% FONTS
 \RequirePackage{Alegreya} %% Option 'black' gives heavier bold face 
-\RequirePackage[euler-digits,small]{eulervm}
+% \RequirePackage[euler-digits,small]{eulervm}
 \RequirePackage{fontspec}
 \RequirePackage[polish]{babel}
 \RequirePackage[utf8]{inputenc}
