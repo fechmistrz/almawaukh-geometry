@@ -1,18 +1,19 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{greaseproof}[2024/08/28]
-\LoadClass[9pt, twoside]{extarticle}
+\LoadClass[10pt, twoside]{extarticle}
 
 \RequirePackage[
 	paperwidth=6.125in,
 	paperheight=9.25in,
-	left=0.82in,
-    right=0.695in,
-    top=0.6in,
-    bottom=0.71in,
+	left=0.6in,
+	right=0.6in,
+	top=0.8in,
+	bottom=0.8in,
 	twoside,
 	% showframe,
-	headsep=0.1in,
+	headsep=0.2in,
 ]{geometry}
+
 
 \RequirePackage{graphicx}
 \graphicspath{{images/}}
@@ -30,24 +31,6 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage[final]{microtype}
 
-%%%%%%%%%% HEADERS, FOOTERS
-\RequirePackage{fancyhdr}
-\fancypagestyle{plain}{
-    \fancyhf{}
-    \fancyfoot[C]{}
-    \renewcommand{\headrulewidth}{0pt}
-    \renewcommand{\footrulewidth}{0pt}
-}
-\pagestyle{fancy}
-\fancyhead{}
-\fancyfoot{}
-\fancyhead[LE]{\thepage}
-\fancyhead[RE]{\nouppercase{\leftmark}}
-\fancyhead[LO]{\nouppercase{\rightmark}}
-\fancyhead[RO]{\thepage}
-\renewcommand{\headrulewidth}{4pt}
-\renewcommand{\footrulewidth}{0.0pt}
-
 %%%%%%%%%% FONTS
 \RequirePackage{Alegreya} %% Option 'black' gives heavier bold face 
 \RequirePackage[euler-digits,small]{eulervm}
@@ -55,6 +38,7 @@
 \RequirePackage[polish]{babel}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[final]{microtype}
+
 
 \RequirePackage{polski}
 
@@ -102,8 +86,6 @@
 \theoremstyle{plain}
 \newtheorem*{euclidelement}{Element Euklidesa}
 
-
-
 % https://tex.stackexchange.com/questions/22012/hyperref-and-imakeidx-do-not-work-together
 \RequirePackage{imakeidx}
 
@@ -134,16 +116,3 @@
 \usepackage[subtle]{savetrees}
 
 \usepackage{titlesec}
-
-\renewcommand\subsection
-  {%
-    \@startsection
-      {subsection}
-      {2}
-      {\z@}
-      {3.25ex \@plus 0.1ex \@minus .2ex}
-      {-0.2em}
-      {\normalfont\normalsize\bfseries}%
-}
-
-\titleformat{\section}{\normalfont\LARGE\bfseries\centering}{\thesection{.}}{0.3em}{}
