@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{greaseproof}[2024/08/28]
-\LoadClass[10pt, twoside]{extarticle}
+\LoadClass[9pt, twoside]{extarticle}
 
 \RequirePackage[
 	paperwidth=6.125in,
@@ -32,7 +32,14 @@
 \RequirePackage[final]{microtype}
 
 %%%%%%%%%% FONTS
-\RequirePackage{Alegreya} %% Option 'black' gives heavier bold face 
+% \RequirePackage{Alegreya} %% Option 'black' gives heavier bold face 
+
+\usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
+\linespread{1.025}              % Palatino leads a little more leading
+
+% Euler for math and numbers
+\usepackage{newpxtext} \usepackage[euler-digits]{eulervm}
+
 % \RequirePackage[euler-digits,small]{eulervm}
 \RequirePackage{fontspec}
 \RequirePackage[polish]{babel}

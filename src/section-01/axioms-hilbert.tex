@@ -1,0 +1,114 @@
+%
+
+\subsection{Aksjomaty Hilberta}
+\subsubsection{Aksjomaty incydencji}
+Aksjomaty incydencji I1, I2, I3.
+
+\begin{proposition}
+    Dwie różne proste mogą mieć co najwyżej jeden punkt wspólny.
+\end{proposition}
+
+\begin{definition}
+    Dwie różne proste, które nie mają punktów wspólnych, nazywamy równoległymi.
+    Każda prosta jest też równoległa do siebie.
+\end{definition}
+
+\begin{definition}[aksjomat Playfaira]
+    Dla każdej prostej $l$ oraz punktu $A$, istnieje dokładnie jedna prosta przechodząca przez $A$, równoległa do $l$.
+\end{definition}
+
+\begin{example}
+    Rozważmy zbiór pięciu punktów $A$, $B$, $C$, $D$, $E$, w którym proste są dowolnymi dwuelementowymi podzbiorami.
+    Wtedy proste $AB$ i $AC$ mają punkt wspólny $A$, chociaż obydwie są równoległe do prostej $DE$.
+    Aksjomat Playfaira nie jest spełniony.
+\end{example}
+
+\begin{proposition}
+    Aksjomaty I1, I2, I3, P (Playfaira) są od siebie niezależne.
+\end{proposition}
+
+Hartshorne \cite[s. 69-70]{hartshorne2000} konstruuje modele geometrii, w których spełnione są dowolne trzy, ale nie czwarty z nich.
+
+\begin{proposition}
+    Płaszczyzna rzutowa to taki zbiór punktów oraz prostych (podzbiorów zbioru punktów), że: przez dwa różne punkty przechodzi dokładnie jedna prosta, każde dwie proste mają punkt wspólny, każda prosta ma co najmniej trzy punkty i nie wszystkie punkty są współliniowe.
+    Każda płaszczyzna rzutowa ma co najmniej siedem punktów, dokładnie jedna płaszczyzna rzutowa ma dokładnie siedem punktów, każdy z wymienionych zdanie wcześniej aksjomatów jest niezależny od pozostałych.
+    Co więcej, wynikają z nich wszystkie trzy aksjomaty incydencji.
+    Jeśli istnieje prosta, która ma $n+1$ punktów, to płaszczyzna ma $n^2 + n + 1$ punktów.
+\end{proposition} % Hartshorne 71
+
+\begin{proposition}
+    Płaszczyzna afiniczna to taki zbiór punktów i prostych, które spełniają aksjomaty incydencji oraz mocniejszą wersję aksjomatu Playfaira: dla każdej prostej $l$ i punktu $A$, dokładnie jedna prosta przechodzi przez punkt $A$ i jest równoległa do $l$>
+    Każda prosta na płaszczyźnie afinicznej ma tyle samo punktów.
+    Jeśli pewna prosta ma $n$ punktów, to płaszczyzna ma dokładnie $n^2$ punktów.
+    Istnieją płaszczyzny rzutowe o $4$, $9$, $16$ i $25$ punktach, ale nie istnieje taka, która miałaby $36$ punktów.
+\end{proposition} % Hartshorne 71, 72
+
+\subsubsection{Aksjomaty leżenia pomiędzy}
+B1, B2, B3, B4 (Pascha).
+
+I1-I3 + B1-B4 wynika stąd, że każda prosta ma nieskończenie wiele punktów.
+
+\begin{definition}[odcinek]
+    Niech $A$, $B$ będą punktami.
+    Zbiór złożony z punktów $A$, $B$ oraz punktów, które leżą między nimi, nazywamy odcinkiem i oznaczamy $\overline {AB}$.
+\end{definition} % Hartshorne 74
+
+\begin{definition}[trójkąt]
+    Niech $A$, $B$, $C$ będą punktami.
+    Sumę odcinków $AB$, $BC$, $AC$ nazywamy trójkątem, wspomniane odcinki -- jego bokami, zaś punkty $A$, $B$ i $C$ -- wierzchołkami.
+\end{definition} % Hartshorne 74
+
+\begin{proposition}
+    Niech $l$ będzie prostą.
+    Wtedy zbiór punktów, które nie leżą na prostej $l$ można rozbić na dwa niepuste zbiory $S_1$, $S_2$ takie, że: dwa punkty, które nie leżą na prostej $l$, należą do tego samego zbioru ($S_1$ lub $S_2$) wtedy i tylko wtedy, gdy odcinek $AB$ nie przecina prostej $l$.
+\end{proposition} % Hartshorne 74
+
+Zbiory $S_1$, $S_2$ nazywamy stronami prostej $l$.
+Podobnie punkt wyznacza na prostej dwa zbiory, które leżą po różnych stronach tego punktu.
+
+\begin{definition}[półprosta]
+    Niech $A$, $B$ będą punktami.
+    Zbiór złożony z punktów $A$, $B$ oraz punktów, które leżą po tej samej stronie punktu $A$ na prostej $AB$ co punkt $B$, nazywamy półprostą i oznaczamy $NIE WIEM JAK AB$.
+\end{definition} % Hartshorne 77
+
+\begin{definition}[kąt]
+    Sumę dwóch półprostych $AB$, $AC$, które nie leżą na jednej prostej, nazywamy kątem, zaś punkt $A$ wierzchołkiem tego kąta.
+    Wnętrze kąta $\angle BACS$ składa się z tych punktów $D$ takich, że $D$ i $C$ leżą po tej samej stronie prostej $AB$ oraz $D$ i $B$ leżą po tej samej stronie prostej $AC$.
+\end{definition} % Hartshorne 77
+
+W myśl tej definicji, nie ma kąta zerowego ani półpełnego.
+Wnętrze trójkąta $ABC$ to część wspólna wnętrz kątów $\angle ABC$, $\angle BCA$, $\angle CAB$; jest wypukłe i niepuste.
+
+\subsubsection{Aksjomaty przystawania odcinków}
+Aksjomaty C1-C3
+
+\begin{definition}[okrąg]
+    Niech $O$, $A$ będą dwoma różnymi punktami.
+    Zbiór punktów $B$ takich, że odcinki $OA$ i $OB$ są przystające nazywamy okręgiem o środku $O$ oraz promieniu $OA$; okręgi często oznacza się literą $\Gamma$.
+\end{definition} % Hartshorne 89
+
+\begin{proposition}
+    Każda prosta, która przechodzi przez środek, przecina okrąg w dwóch punktach.
+    Okrąg składa się z nieskończenie wielu punktów.
+\end{proposition}
+
+(Nie jest jasne, ile środków może mieć okrąg, ale Hartshorne \cite[s. 89]{hartshorne2000} obiecuje pokazać póżniej, że tylko jeden.
+Później ma miejsce na stronie 104).
+
+\begin{definition}[styczna]
+    Niech $\Gamma$ będzie okręgiem, zaś $l$ prostą, która przecina $\Gamma$ w dokładnie jednym punkcie $A$.
+    Mówimy, że $l$ jest styczną do okręgu $\Gamma$ w punkcie $A$.
+\end{definition}
+
+Podobnie mówimy, że dwa okręgi są styczne, jeśli mają jeden punkt wspólny.
+
+\subsubsection{Aksjomaty przystawania kątów}
+C4-C6
+
+Kąty przyległe, prosty.
+
+\subsubsection{Płaszczyzna Hilberta}
+
+. . .
+
+%

@@ -1,17 +1,17 @@
 %
 
-\subsection{Twierdzenie Talesa i podobieństwo}
-\subsubsection{Jednokładność}
+\section{Podobieństwo}
+\subsection{Jednokładność}
 Podobieństwo figur, trójkątów (cechy), stosunek pól figur podobnych.
 
 \input{section-01/tales}
 
-\subsubsection{Pole?}
+% \subsection{Pole?}
 
 \input{section-01/ptolemy}
 
 
-\subsubsection{Potęga punktu względem okręgu}
+\subsection{Potęga punktu względem okręgu}
 
 \begin{proposition}
 \label{guzicki_6_11}%
@@ -38,9 +38,6 @@ Potęga punktu względem okręgu, oś potęgowa dwóch okręgów, środek potęg
 UW niezrobione:
 twierdzenie Brianchona, konstrukcja stycznej do okręgu samą linijką, okręgi współpękowe, twierdzenie Gaussa-Bodenmillera, twierdzenie o motylku, formuła Eulera na odległość między środkami okręgu opisanego i wpisanego (dla trójkąta), twierdzenie Ponceleta dla trójkąta.
 
-\begin{proposition}[twierdzenie o siecznych i stycznych]
-	Jeżeli...
-\end{proposition}
 \begin{definition}[potęga punktu względem okręgu]
 	Jeżeli...
 \end{definition}
@@ -58,7 +55,7 @@ twierdzenie Brianchona, konstrukcja stycznej do okręgu samą linijką, okręgi 
 \end{theorem}
 
 
-\subsubsection{Twierdzenie o dwusiecznej}
+\subsection{Twierdzenie o dwusiecznej}
 Okrąg Apolloniusza, Guzicki-4
 
 \begin{proposition}[twierdzenie o dwusiecznej]
@@ -72,13 +69,13 @@ Okrąg Apolloniusza, Guzicki-4
 \end{definition}
 
 
-\subsubsection{Twierdzenie Newtona i Gaussa?}
+\subsection{Twierdzenie Newtona i Gaussa?}
 Twierdzenie Newtona: środek okręgu wpisanego w czworokąt i środki przekątnych tego czworokąta są współliniowe.
 Twierdzenie Gaussa: środki przekątnych czworokąta zupełnego są współliniowe.
 
-\subsubsection{Dwustosunek}
+\subsection{Dwustosunek}
 
-\subsubsection{Okręgi ortogonalne, pęki okręgów.}
+\subsection{Okręgi ortogonalne, pęki okręgów.}
 Wie czym są pęki okręgów, zna ich podstawowe własności i potrafi stosować w konfiguracjach spokrewnionych z twierdzeniem Ponceleta.   
 
 % T2.19 tutaj
@@ -102,38 +99,40 @@ Oczywiście jest też wielkie twierdzenie Ponceleta, udowodnione przez, jak niez
 Dowód można znaleźć na przykład u Akopiana, Zasławskiego \cite[s. 93, 61, 67, 115, 124]{akopyan_2007}.
 
 
-\subsubsection{Prosta Eulera i okrąg Feuerbacha}
+\subsection{Prosta Eulera i okrąg Feuerbacha}
 Prosta Eulera w trójkącie (środek okręgu opisanego, środek ciężkości, ortocentrum).
 Wszystkie wysokości itd. przecinają się w jednym punkcie; prosta Eulera, okrąg Feuerbacha, punkt Torricellego/Fermata (Guzicki-8)
 \input{section-01/feuerbach}
 
-\subsubsection{Twierdzenie sinusów i cosinusów}
+\subsection{Trygonometria}
+
+\subsubsection{Twierdzenie sinusów}
 
 $$\frac{a}{\sin \alpha} = \frac{b}{\sin \beta} = \frac{c}{\sin \gamma} = 2R$$
 % https://en.wikipedia.org/wiki/Law_of_sines
 
-$$c^2 = a^2 + b^2 - 2ab \cos \gamma$$
-% https://en.wikipedia.org/wiki/Law_of_cosines
+\subsubsection{Twierdzenie cosinusów}
+\begin{proposition}[twierdzenie cosinusów]
+	\label{twierdzenie_cosinusow}%
+	\begin{equation}
+		c^2 = a^2 + b^2 - 2ab \cos \gamma.
+	\end{equation}
+	% https://en.wikipedia.org/wiki/Law_of_cosines
+\end{proposition}
 
-Stewarta, wzór Herona (Guzicki-6), Brahmagupty.
-\input{section-01/heron}
+\index[persons]{Archimedes}%
+
 Wzory na promienie okręgów wpisanych, dopisanych.
-Twierdzenie Urquharta.
+
+
+\subsubsection{Zastosowania trygonometrii -- twierdzenie Urquharta}
+Twierdzenie Urquharta
+
+\subsubsection{Zastosowania trygonometrii -- punkt i kąt Crelle'a-Brocarda}
 Punkt i kąt Crelle'a-Brocarda.
 
-\textbf{Twierdzenie o siódmym okręgu}
-
-\textbf{Twierdzenie Caseya} (nie duplikat Ptolemeusza?)
-
-\textbf{Twierdzenie Taylora, okrąg, sześciokąt}
-% https://en.wikipedia.org/wiki/Taylor_circle
-{
-    \emph{WIP: Taylor w 1882 roku zauważył, że rzuty spodków wysokości na pozostałe boki leżą na jednym okręgu.}
-}
-
-\textbf{Twierdzenie Eulera $1/4R^2$}
-
-% https://en.wikipedia.org/wiki/Law_of_tangents
+\subsubsection{Zastosowania trygonometrii -- twierdzenie o siódmym okręgu}
+Twierdzenie o siódmym okręgu.
 
 \subsubsection{Rozwiązywanie trójkątów}
 Wzór Mollweide'a.
@@ -152,5 +151,20 @@ Problem Snelliusa-Pothenota.
 
 Twierdzenie Malfattiego.
 Guzicki-11
+
+\subsection{Bałagan}
+
+\textbf{Twierdzenie Caseya} (nie duplikat Ptolemeusza?)
+
+\textbf{Twierdzenie Taylora, okrąg, sześciokąt}
+% https://en.wikipedia.org/wiki/Taylor_circle
+{
+    \emph{WIP: Taylor w 1882 roku zauważył, że rzuty spodków wysokości na pozostałe boki leżą na jednym okręgu.}
+}
+
+\textbf{Twierdzenie Eulera $1/4R^2$}
+
+% https://en.wikipedia.org/wiki/Law_of_tangents
+
 
 %
