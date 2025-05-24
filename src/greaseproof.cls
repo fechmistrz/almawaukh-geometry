@@ -32,13 +32,7 @@
 \RequirePackage[final]{microtype}
 
 %%%%%%%%%% FONTS
-% \RequirePackage{Alegreya} %% Option 'black' gives heavier bold face 
-
-\usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
-\linespread{1.025}              % Palatino leads a little more leading
-
-% Euler for math and numbers
-\usepackage{newpxtext} \usepackage[euler-digits]{eulervm}
+\RequirePackage{Alegreya} %% Option 'black' gives heavier bold face 
 
 % \RequirePackage[euler-digits,small]{eulervm}
 \RequirePackage{fontspec}
@@ -120,6 +114,6 @@
 \definecolor{ocre}{RGB}{105, 180, 255} % Define the color used for highlighting throughout the book
 \colorlet{darkblue}{ocre!80!black}
 
-\usepackage[subtle]{savetrees}
+% \usepackage[subtle]{savetrees}
 
 \usepackage{titlesec}
