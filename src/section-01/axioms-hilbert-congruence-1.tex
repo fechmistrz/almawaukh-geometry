@@ -1,0 +1,51 @@
+\subsubsection{Aksjomaty przystawania odcinków}
+Listę aksjomatów rozszerzymy o trzy, które opisują niezdefiniowane pojęcie przystawania odcinków: relacji między odcinkami, którą oznaczamy przez $\cong$.
+
+\begin{axiom}[przystawania, C1]
+    Niech $A$ i $B$ będą punktami, zaś $l$ prostą przechodzącą przez punkt $C$.
+    Wtedy po każdej stronie punktu $C$ istnieje punkt $D$ taki, że odcinki $AB \cong CD$ są przystające.
+\end{axiom}
+
+Ten aksjomat odpowiada konstrukcji (I.3) Euklidesa i pozwala przenosić odcinki.
+
+\begin{axiom}[przystawania, C2]
+    Jeśli $AB \cong CD$ oraz $AB \cong EF$, to $CD \cong EF$.
+    Każdy odcinek jest przystający do siebie.
+\end{axiom}
+
+To było pierwsze pojęcie pierwotne dla Euklidesa.
+
+\begin{axiom}[przystawania, C3]
+    Niech $A$, $B$, $C$, $D$, $E$, $F$ będą takimi punktami, że $B$ leży między $A$ i $C$, zaś $E$ leży między $D$ i $F$.
+    Jeśli $AB \cong DE$ i $BC \cong EF$, to $AC \cong DF$.
+\end{axiom}
+
+Ten aksjomat pozwala nam dodawać odcinki i znowu zastępuje pojęcie pierwotne Euklidesa.
+
+\begin{proposition}[odejmowanie odcinków]
+    Niech $A$, $B$, $C$, $D$, $E$, $F$ będą takimi punktami, że $B$ leży między $A$ i $C$, zaś $E$ i $F$ leżą na półprostej zaczynającej się w $D$.
+    Jeśli $AB \cong DE$ i $AC \cong DF$, to punkt $E$ leży między $D$ i $F$, co więcej $BC \cong EF$.
+\end{proposition}
+
+Odcinek $BC$ traktujemy jako różnicę między $AC$ i $AB$.
+Dla Euklidesa to było pojęcie pierwotne:
+
+\begin{definition}[okrąg]
+    Niech $O$, $A$ będą dwoma różnymi punktami.
+    Zbiór punktów $B$ takich, że odcinki $OA$ i $OB$ są przystające nazywamy okręgiem o środku $O$ oraz promieniu $OA$; okręgi często oznacza się literą $\Gamma$.
+\end{definition} % Hartshorne 89
+
+\begin{proposition}
+    Każda prosta, która przechodzi przez środek, przecina okrąg w dwóch punktach.
+    Okrąg składa się z nieskończenie wielu punktów.
+\end{proposition}
+
+(Nie jest jasne, ile środków może mieć okrąg, ale Hartshorne \cite[s. 89]{hartshorne2000} obiecuje pokazać póżniej, że tylko jeden.
+Później ma miejsce na stronie 104).
+
+\begin{definition}[styczna]
+    Niech $\Gamma$ będzie okręgiem, zaś $l$ prostą, która przecina $\Gamma$ w dokładnie jednym punkcie $A$.
+    Mówimy, że $l$ jest styczną do okręgu $\Gamma$ w punkcie $A$.
+\end{definition}
+
+Podobnie mówimy, że dwa okręgi są styczne, jeśli mają jeden punkt wspólny.

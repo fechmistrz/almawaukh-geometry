@@ -1,0 +1,120 @@
+%
+
+\subsubsection{Aksjomaty incydencji}
+\begin{axiom}[incydencji, I1]
+    Dla każdej pary punktów $A$ oraz $B$ istnieje dokładnie jedna prosta $l$, która przechodzi przez te punkty.
+\end{axiom}
+
+\begin{axiom}[incydencji, I2]
+    Na każdej prostej istnieją co najmniej dwa punkty.
+\end{axiom}
+
+\begin{axiom}[incydencji, I3]
+    Istnieją co najmniej trzy punkty, które nie są współliniowe.
+\end{axiom}
+
+,,Być współliniowym'' to synonim leżenia na jednej prostej.
+
+\begin{proposition}
+    Dwie różne proste mogą mieć co najwyżej jeden punkt wspólny.
+\end{proposition}
+
+\begin{definition}
+    Dwie różne proste, które nie mają punktów wspólnych, nazywamy równoległymi.
+    Każda prosta jest też równoległa do siebie.
+\end{definition}
+
+\begin{axiom}[Playfaira, P]
+    Dla każdej prostej $l$ oraz punktu $A$, istnieje co najwyżej jedna prosta przechodząca przez $A$, równoległa do $l$.
+\end{axiom}
+
+John Playfair opublikował ten aksjomat w 1795 roku, chociaż już wtedy twierdził, że inni używali go przed nim (np. William Ludlam).
+\index[persons]{Playfair, John}%
+Aksjomat Playfaira jest równoważny z (piątym) postulatem Euklidesa i dlatego wiele osób próbowało wyprowadzić go z czterech wcześniejszych postulatów.
+Za każdym razem okazywało się, że w ,,dowodzie'' użyte jest zdanie będące równoważnikiem piątego postulatu, na przykład:
+\begin{itemize}
+    \item suma kątów wewnętrznych każdego trójkąta jest kątem półpełnym,
+    \item suma kątów wewnętrznych każdego trójkąta jest taka sama,
+    \item istnieje trójkąt, którego suma kątów wewnętrznych jest kątem półpełnym,
+    \item istnieją dwa trójkąty, które są do siebie podobne, ale nie przystające,
+    \item na każdym trójkącie można opisać okrąg,
+    \item jeśli trzy kąty wewnętrzne czworokąta są proste, to czwarty kąt także jest prosty,
+    \item istnieje para prostych, które są w stałej odległości od siebie,
+    \item dwie proste, które są równoległe do danej prostej, są też równoległe do siebie,
+    \item twierdzenie Pitagorasa lub jego uogólnienie, twierdzenie cosinusów
+    \item aksjomat Wallisa: nie ma górnego ograniczenia na pole trójkąta,
+    \item kąty przy górnej podstawie czworokąta Saccheriego (czworokąta $ABCD$ o dwóch kątach prostych przy dolnej podstawie $AB$, w którym boki $AD$ i $BC$ mają równe długości) są proste,
+    \item aksjomat Proklosa: jeśli prosta przecina jedną z dwóch równoległych prostych, to przecina także tę drugą.
+\end{itemize}
+
+\begin{example}
+    Rozważmy geometrię, gdzie płaszczyzna składa się z pięciu punktów $A$, $B$, $C$, $D$, $E$ i leży na niej dziesięć różnych prostych, każda z nich przechodząca przez dokładnie dwa różne punkty.
+    Wtedy proste $AB$ i $AC$ mają punkt wspólny $A$, chociaż obydwie są równoległe do prostej $DE$.
+    Aksjomat Playfaira nie jest spełniony.
+\end{example}
+
+\begin{proposition}
+    Aksjomaty incydencji I1, I2, I3 oraz aksjomat P (Playfaira) są od siebie niezależne.
+\end{proposition}
+
+Hartshorne \cite[s. 69-70]{hartshorne2000} konstruuje modele geometrii, w których spełnione są dowolne trzy, ale nie czwarty z nich.
+
+\begin{proposition}
+    Płaszczyzna rzutowa to taki zbiór punktów oraz prostych (podzbiorów zbioru punktów), że:
+    \begin{itemize}
+        \item przez dwa różne punkty przechodzi dokładnie jedna prosta,
+        \item każde dwie proste mają punkt wspólny,
+        \item każda prosta ma co najmniej trzy punkty i
+        \item nie wszystkie punkty są współliniowe.
+    \end{itemize}
+    (Każdy z wymienionych aksjomatów jest niezależny od pozostałych, ze wszystkich razem wynikają aksjomaty incydencji).
+    Każda płaszczyzna rzutowa ma co najmniej 7 punktów, dokładnie jedna płaszczyzna rzutowa ma dokładnie 7 punktów.
+    Jeśli istnieje prosta, która ma $n+1$ punktów, to płaszczyzna ma $n^2 + n + 1$ punktów.
+\end{proposition} % Hartshorne 71
+
+\begin{example}[płaszczyzna Fana]
+    Zbiór złożony z siedmiu elementów (,,punktów''), w którym wyróżniono rodzinę siedmiu podzbiorów (,,prostych'') spełniający następujące warunki:
+    \begin{itemize}
+        \item każde dwie różne proste mają dokładnie jeden punkt wspólny,
+        \item każde dwa różne punkty należą do dokładnie jednej prostej
+    \end{itemize}
+    nazywamy płaszczyzną Fana.
+    Jest przykładem płaszczyzny rzutowej, która nie spełnia aksjomatu Fana (że trzy punkty przekątne czworoboku zupełnego nie są współliniowe).
+    \begin{figure}[H]
+        \centering
+        \begin{tikzpicture}[
+        mydot/.style={
+        draw,
+        circle,
+        fill=black,
+        inner sep=1.5pt}
+        ]
+        \draw
+        (0,0) coordinate (A) --
+        (4cm,0) coordinate (B) --
+        ($ (A)!.5!(B) ! {sin(60)*2} ! 90:(B) $) coordinate (C) -- cycle;
+        \coordinate (O) at
+        (barycentric cs:A=1,B=1,C=1);
+        \draw (O) circle [radius=4cm*1.717/6];
+        \draw (C) -- ($ (A)!.5!(B) $) coordinate (LC); 
+        \draw (A) -- ($ (B)!.5!(C) $) coordinate (LA); 
+        \draw (B) -- ($ (C)!.5!(A) $) coordinate (LB); 
+        \foreach \Nodo in {A,B,C,O,LC,LA,LB}
+        \node[mydot] at (\Nodo) {};    
+    \end{tikzpicture}%
+    \caption{Płaszczyzna Fana}
+\end{figure}
+\end{example}
+
+\begin{proposition}
+    Płaszczyzna afiniczna to taki zbiór punktów i prostych, które spełniają:
+    \begin{itemize}
+        \item aksjomaty incydencji oraz
+        \item mocniejszą wersję aksjomatu Playfaira: dla każdej prostej $l$ i punktu $A$, dokładnie jedna prosta przechodzi przez punkt $A$ i jest równoległa do $l$.
+    \end{itemize}
+    Każda prosta na płaszczyźnie afinicznej ma tyle samo punktów.
+    Jeśli pewna prosta ma $n$ punktów, to płaszczyzna ma dokładnie $n^2$ punktów.
+    Istnieją płaszczyzny afiniczne o $4$, $9$, $16$ i $25$ punktach, ale nie istnieje taka, która miałaby $36$ punktów.
+\end{proposition} % Hartshorne 71, 72
+
+%

@@ -78,6 +78,7 @@
 \newtheorem{definition}[counter]{Definicja}
 \newtheorem{problem}[counter]{Problem}
 \newtheorem{example}[counter]{Przyk\l{}ad}
+\newtheorem{axiom}[counter]{Aksjomat}
 \newtheorem{lemma}[counter]{Lemat}
 \newtheorem{proposition}[counter]{Fakt}
 \newtheorem{theorem}{Twierdzenie}
