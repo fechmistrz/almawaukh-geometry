@@ -21,6 +21,7 @@ To było pierwsze pojęcie pierwotne dla Euklidesa.
 \end{axiom}
 
 Ten aksjomat pozwala nam dodawać odcinki i znowu zastępuje pojęcie pierwotne Euklidesa.
+Dodawanie jest łączne i przemienne.
 
 \begin{proposition}[odejmowanie odcinków]
     Niech $A$, $B$, $C$, $D$, $E$, $F$ będą takimi punktami, że $B$ leży między $A$ i $C$, zaś $E$ i $F$ leżą na półprostej zaczynającej się w $D$.
@@ -28,11 +29,19 @@ Ten aksjomat pozwala nam dodawać odcinki i znowu zastępuje pojęcie pierwotne 
 \end{proposition}
 
 Odcinek $BC$ traktujemy jako różnicę między $AC$ i $AB$.
-Dla Euklidesa to było pojęcie pierwotne:
+Dla Euklidesa to było pojęcie pierwotne (że całość jest większa od części).
+
+\begin{definition}
+    Niech $AB$ i $CD$ będą odcinkami.
+    Jeśli istnieje punkt $E$ między $C$ i $D$ taki, że $AB \cong CE$, to powiemy, że odcinek $AB$ jest krótszy niż odcinek $CD$ (zaś odcinek $CD$ jest dłuższy niż odcinek $AB$).
+\end{definition} % Hartshorne 85
+
+Relacja bycia krótszym jest zgodna z przystawaniem i zadaje zupełny porządek na klasach równoważności.
+Dodawanie odcinków zachowuje nierówności między nimi.
 
 \begin{definition}[okrąg]
     Niech $O$, $A$ będą dwoma różnymi punktami.
-    Zbiór punktów $B$ takich, że odcinki $OA$ i $OB$ są przystające nazywamy okręgiem o środku $O$ oraz promieniu $OA$; okręgi często oznacza się literą $\Gamma$.
+    Zbiór punktów $B$ takich, że $OA \cong OB$ nazywamy okręgiem o środku $O$ oraz promieniu $OA$; okręgi często oznacza się literą $\Gamma$.
 \end{definition} % Hartshorne 89
 
 \begin{proposition}

@@ -1,14 +1,51 @@
 \subsubsection{Aksjomaty przystawania kątów}
+Podobnie jak dla odcinków, wprowadzamy niezdefiniowaną relację przystawania kątów, oznaczaną znowu przez $\cong$, ponieważ nie prowadzi to do nieporozumień.
+
 \begin{axiom}[przystawania, C4]
-    \loremipsum
+    Niech $\angle BAC$ będzie kątem, zaś $DF$ półprostą.
+    Istnieje wtedy dokładnie jedna półprosta $DE$ po ustalonej stronie prostej $DF$ taka, że $\angle BAC \cong \angle EDF$.
 \end{axiom}
+
+Możemy traktować ten aksjomat jako odpowiednik cyrkla: pozwala przenosić kąty tak, jak Euklides (I.23).
 
 \begin{axiom}[przystawania, C5]
-    \loremipsum
+    Niech $\alpha, \beta, \gamma$ będą kątami.
+    Jeśli $\alpha \cong \beta$ oraz $\alpha \cong \gamma$, to $\beta \cong \gamma$.
+    Każdy kąt przystaje do siebie.
 \end{axiom}
+
+Mamy wreszcie cechę przystawania bok-kąt-bok, z której można wyprowadzić dodawanie kątów:
 
 \begin{axiom}[przystawania, C6]
-    \loremipsum
+    Niech $ABC$ i $DEF$ będą dwoma trójkątami takimi, że $AB \cong DE$, $AC \cong DF$ i $\angle BAC \cong \angle EDF$.
+    Wtedy pozostałe boki i kąty są przystające, a razem z nimi całe trójkąty: $BC \cong EF$, $\angle ABC \cong \angle DEF$ i $\angle ACB \cong \angle DFE$.
 \end{axiom}
 
-Kąty przyległe, prosty.
+Jeżeli chodzi o dodawanie kątów, musimy być ostrożni.
+Suma dwóch kątów może okazać się prostą (lub ,,dwoma kątami prostymi'' jak pisze Euklides) albo mieć miarę większą niż $\pi$, wtedy składniki sumy nie znajdują się we wnętrzu otrzymanego kąta.
+Kąty można także odejmować.
+
+\begin{definition}[kąt przyległy]
+    Niech $\angle BAC$ będzie kątem, zaś $D$ punktem na prostej $AC$ po przeciwnej stronie $A$ niż $C$.
+    Wtedy kąty $\angle BAC$ i $\angle BAD$ nazywamy przyległymi. % supplementary.
+\end{definition}
+
+Warto teraz spojrzeć na (I.13) Euklidesa.
+
+\begin{proposition}
+    Kąty wierzchołkowe (para kątów przy dwóch przecinających się prostych, które nie są przyległe) są przystające.
+\end{proposition}
+
+Istnieje odpowiednik relacji między odcinkami ,,bycia mniejszym'' dla kątów:
+
+\begin{definition}
+    Niech $\angle BAC$ i $\angle EDF$ będą kątami.
+    Jeśli istnieje półprosta $DG$ wewnątrz kąta $EDF$ taka, że $\angle BAC \cong \angle GDF$, to powiemy, że kąt $\angle BAC$ jest mniejszy niż kąt $\angle EDF$ (a ten drugi jest większy niż pierwszy).
+\end{definition}
+
+\begin{definition}
+    Kąt, który przystaje do kąta przyległego, nazywamy prostym.
+    Dwie proste, które przecinają się i wyznaczają tam cztery kąty proste, będziemy nazywać prostopadłymi.
+\end{definition}
+
+Nie jest ważne, który kąt przyległy wybierzemy, ponieważ kąty wierzchołkowe są przystające.
