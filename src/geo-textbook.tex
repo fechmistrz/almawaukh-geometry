@@ -9,58 +9,40 @@
 
 \input{blurbs/page-1-5}
 
+% section 1
 \section{Aksjomatyka}
 Tekst podsekcji Aksjomatyka. \loremipsum
-\input{section-01/axioms-euclid}
-\input{section-01/axioms-hilbert}
+\input{axioms/axioms-euclid}
+\input{axioms/axioms-hilbert}
 
-\section{Przekształcenia geometryczne}
-\subsection{Symetria osiowa}
-\subsection{Symetria środkowa}
-\subsection{Jednokładność}
+% section 2
+\input{transform/transform}
 
-\input{section-01/01-02}
+% section 3
+\input{triangle-circle/triangle-circle}
 
-\input{section-01/01-03}
+% section 4
+\input{similarity/similarity}
+\input{colinear/colinear}
 
-\input{section-01/01-04}
+% section 5
+\input{constructions/constructions}
 
-\input{section-01/01-05}
-
-
-\input{section-02/section-02}
-
-\input{section-03/section-03}
+% section 6
+\input{noneuclid/noneuclid}
 
 \section{Stereometria (wielościany)}
-Tekst sekcji stereometria, na podstawie 8 rozdziału Hartshorne'a.
+Tekst sekcji stereometria.
+% \subsection{Pięć wielościanów} Hartshorne: rozdział 8
+% \subsection{Cauchy's rigidity theorem} Hartshorne: section 45
+% \subsection{Siamese dodecahedron}
+% https://en.wikipedia.org/wiki/Johnson_solid
 
 \section{W powijakach}
 \input{section-99/todo}
 \input{section-99/erdos_mordell}
-
-
-
-
-
-
-
-
-
-
 % https://bookstore.ams.org/browse?Author=%22A.%20V.%20Akopyan%22
 % https://geometry.ru/books/conic_e.pdf
-
-
-
-
-
-
-
-
-
-
-
 
 \bibliography{geo-textbook}{}
 \bibliographystyle{plain}
@@ -74,75 +56,4 @@ Tekst sekcji stereometria, na podstawie 8 rozdziału Hartshorne'a.
 
 \end{document}
 
-
-
-
-
-
-
-\section{Aksjomatyka}
-
-\input{blurbs/axioms/euclides} % aksjomaty Euklidesa
-\input{blurbs/axioms/hilbert} % aksjomaty Hilberta
-
-\section{W przygotowaniu -- Geometria -- Uniwersytet Warszawski}
-\input{blurbs/warsaw1}
-\input{blurbs/warsaw2}
-\input{blurbs/warsaw3}
-
-
-\section{Trygonometria}
-\input{blurbs/trigonometry}
-
-\section{Konstrukcje geometryczne}
-\subsection{Twierdzenie Mohra-Mascheroniego}
-\input{constructions/circle-five-points}
-
-
-Konstruowalna => stopień Q(x) nad Q to potęga 2, ale nie w drugą stronę.
-Podwojenie sześcianu.
-Trysekcja kąta.
-<=: Hartshorne, papierowa strona 245.
-17-kąt
-
-\section{Stereometria}
-\subsection{Pięć wielościanów}
-Hartshorne: rozdział 8
-
-\subsection{Cauchy's rigidity theorem}
-Hartshorne: section 45
-
-\subsection{Siamese dodecahedron}
-John solid?
-% https://en.wikipedia.org/wiki/Johnson_solid
-
-
-
-
-% IMO problems
-1959/4.
-Construct a right triangle with given hypotenuse c such that the median
-drawn to the hypotenuse is the geometric mean of the two legs of the triangle.
-
-1959/5.
-An arbitrary point M is selected in the interior of the segment AB. The
-squares AM CD and M BEF are constructed on the same side of AB, with
-the segments AM and M B as their respective bases. The circles circum-
-scribed about these squares, with centers P and Q, intersect at M and also
-at another point N. Let N ′ denote the point of intersection of the straight
-lines AF and BC.
-(a) Prove that the points N and N ′ coincide.
-(b) Prove that the straight lines M N pass through a fixed point S indepen-
-dent of the choice of M.
-(c) Find the locus of the midpoints of the segments P Q as M varies between
-A and B.
-1959/6.
-Two planes, P and Q, intersect along the line p. The point A is given in the
-plane P, and the point C in the plane Q; neither of these points lies on the
-straight line p. Construct an isosceles trapezoid ABCD (with AB parallel to
-CD) in which a circle can be inscribed, and with vertices B and D lying in
-the planes P and Q respectively.
-
 % https://www.imo-official.org/problems.aspx
-
-
