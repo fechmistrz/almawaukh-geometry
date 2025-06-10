@@ -1,7 +1,8 @@
+%
+
 \subsection{Twierdzenie Talesa}
 Guzicki-3
 
-% intercept theorem, also known as Thales's theorem, basic proportionality theorem or side splitter theorem
 \begin{theorem}[Talesa]
     Jeśli ramiona kąta płaskiego przetnie się 2 równoległymi prostymi:
     \begin{center}
@@ -15,9 +16,9 @@ Guzicki-3
             \tkzDrawPoints[fill=gray,opacity=.9](O,A,B,Ap,Bpp)
             \tkzLabelPoint[above](O){$O$}
             \tkzLabelPoint[below](A){$A$}
-            \tkzLabelPoint[below](B){$B$}
+            \tkzLabelPoint[below](B){$A'$}
             \tkzLabelPoint[above left](Bpp){$B'$}
-            \tkzLabelPoint[above left](Ap){$A'$}
+            \tkzLabelPoint[above left](Ap){$B$}
             \tkzDrawLine[thick](O,B)
             \tkzDrawLine[thick](O,Bpp)
             \tkzDrawLine[color=blue, thick](A,Ap)
@@ -26,7 +27,8 @@ Guzicki-3
         \end{center}
     to długości odcinków wyznaczonych przez te proste na jednym z ramion kąta są proporcjonalne do długości odpowiednich odcinków na drugim ramieniu kąta, a zatem
     \begin{equation}
-        \frac{|OA|}{|OB|} = \frac{|OA'|}{|OB'|} = \frac{|AA'|}{|BB'|}.
+        \label{thales_ratio}
+        \frac{|OA|}{|OA'|} = \frac{|OB|}{|OB'|} = \frac{|AB|}{|A'B'|}.
     \end{equation}
 \end{theorem}
 
@@ -36,10 +38,34 @@ Tradycja przypisuje jego sformułowanie Talesowi z Miletu, chociaż znane było 
 Najstarszy zachowany dowód twierdzenia Talesa zamieszczony jest w VI. księdze Elementów Euklidesa. 
 % https://en.wikipedia.org/wiki/Intercept_theorem#Claim_3
 
-\begin{proposition}[twierdzenie o odcinku środkowym]
-	Jeżeli...
+Piszą o nim Neugebauer, Bogdańska \cite[s. 48-56]{neugebauer_2018}.
+Po angielsku znane jest jako \emph{Thales's theorem}, \emph{intercept theorem}, \emph{basic proportionality theorem} albo \emph{side splitter theorem}.
+
+Prawdziwe jest również twierdzenie odwrotne:
+
+\begin{proposition}[twierdzenie odwrotne do tw. Talesa]
+    Jeżeli pewna prosta przecina boki $OA'$, $OB'$ trójkąta $OA'B'$ w różnych punktach $A$ i $B$ odpowiednio, a przy tym zachodzi równość \ref{thales_ratio}, to prosta ta jest równoległa do prostej $A'B'$.
 \end{proposition}
 
+Prostym wnioskiem z twierdzenia Talesa jest fakt \ref{hartshorne_52}, znajduje on zastosowanie w dowodzie:
+% Neugebauer s. 52
+
 \begin{theorem}[Varignona]
-	Równoległobok środkowy...
+    Czworokąt $PQRS$, którego wierzchołki leżą na środkach boków $AB$, $BC$, $CD$, $DA$ czworokąta $ABCD$, jest równoległobokiem.
+    Jego pole jest równe połowie pola czworokąta $ABCD$. % Neugebauer s. 61
 \end{theorem}
+
+W szczególności, czworokąt $ABCD$ nie musi być wypukły\footnote{Może być nawet ,,motylkiem'', to znaczy łamaną zamkniętą o czterech bokach, która ma samoprzecięcia.}.
+Twierdzenie zostało nazwane na cześć Pierre'a Varignona pośmiertnie w 1731 roku.
+\index[persons]{Varignon, Pierre}%
+Co więcej,
+
+\begin{proposition}
+    Równoległobok Varignona jest rombem (prostokątem) wtedy i tylko wtedy, gdy przekątne czworokąta $ABCD$ są równej długości (są prostopadłe do siebie).
+\index{równoległobok Varignona}%
+\index{romb}%
+\index{prostokąt}%
+% de Villiers, Michael (2009), Some Adventures in Euclidean Geometry, Dynamic Mathematics Learning, p. 58, 169. ISBN 9780557102952.
+\end{proposition}
+
+%

@@ -1,12 +1,19 @@
-\subsubsection{Twierdzenie Ptolemeusza i Carnota}
-Guzicki-17
+\subsubsection{Twierdzenia Ptolemeusza, Carnota, Caseya}
+{
+    \Huge
+    \color{red}
+    TODO: Guzicki-17
+}
 
 Klaudiusz Ptolemeusz był astronomem, matematykiem i~geografem pochodzenia greckiego.
+\index[persons]{Ptolemeusz, Klaudiusz}%
 Urodzon w Tebaidzie (około roku 100), kształcił się, działał w~Aleksandrii; tam też zmarł około roku 170.
-Napisał po grecku Μαθηματικὴ Σύνταξις, traktat w trzynastu księgach znany lepiej jako Almagest zawierający kompendium wiedzy astronomicznej oraz matematyczny wykład teorii geocentrycznej.
-Tam też znajduje się następujące twierdzenie:
+Napisał po grecku Μαθηματικὴ Σύνταξις, traktat w trzynastu księgach znany lepiej jako \emph{Almagest} zawierający kompendium wiedzy astronomicznej oraz matematyczny wykład teorii geocentrycznej.
+Tam też znajduje się prawie\footnote{Ptolemeusz udowodnił równość, a nie nierówność, ale nazwa się przyjęła.} całe następujące twierdzenie:
 
-\begin{theorem}[Ptolemeusza, 140]
+\begin{theorem}[Ptolemeusza, 140 r.n.e.]
+\index{nierówność!Ptolemeusza}%
+\index{twierdzenie!Ptolemeusza}%
     W czworokącie wypukłym $ABCD$ zachodzi
     \begin{equation}
         |AC| \cdot |BD| \le |AB| \cdot |CD| + |BC| \cdot |AD|,
@@ -14,10 +21,23 @@ Tam też znajduje się następujące twierdzenie:
     z równością wtedy i tylko wtedy, gdy na czworokącie $ABCD$ można opisać okrąg.
 \end{theorem}
 
-O twierdzeniu Ptolemeusza piszą Bogdańska, Neugebauer \cite[s. 62, 63]{neugebauer_2018}.
-Wynika z niego:
+To wystarczyło mu, żeby opracować ,,tablice cięciw'' (równoważne tablicom wartości funkcji trygonometrycznych), potrzebne do celów astronomicznych.
+Wcześniejsze tablice Hipparchosa z~Nikei opisywały tylko wielokrotności kąta miary $\pi/24$.
+\index[persons]{Hipparchos z Nikei}%
+% Thurston, pp. 235–236.
+% Thurston, Hugh (1996), Early Astronomy, Springer, ISBN 978-0-387-94822-5
 
-\begin{theorem}[Carnot, 1???]
+O twierdzeniu Ptolemeusza piszą Bogdańska, Neugebauer \cite[s. 62, 63]{neugebauer_2018}.
+Angielska Wikipedia podpowiada, że założenie o wypukłości można pominąć, czwórka punktów nie musi nawet leżeć w~jednej płaszczyźnie -- ale wtedy równość zachodzi też wtedy, kiedy punkty są współliniowe.
+% https://en.wikipedia.org/wiki/Ptolemy%27s_inequality
+
+Twierdzenie Ptolemeusza można albo uogólnić (twierdzenie Caseya podamy za chwilę), albo wyprowadzić z niego jedno z kilku twierdzeń, które przypisuje się Lazarowi Carnotowi \cite{carnot_1803}.
+\index[persons]{Carnot, Lazare}
+% https://ru.wikipedia.org/w/index.php?title=Формула_Карно&oldid=8679639
+% В ее доказательстве используется теорема Птолемея.
+
+\begin{theorem}[Carnot, 1803?]
+    \index{twierdzenie!Carnota}%
     Niech $ABC$ będzie trójkątem wpisanym w okrąg o środku $O$ i promieniu $R$ oraz opisanym na okręgu o promieniu $r$.
     Oznaczmy przez $OO_A$ (i analogicznie $OO_B$, $OO_C$) znakowaną odległość punktu $O$ od boku $BC$.
     Wtedy 
@@ -27,12 +47,25 @@ Wynika z niego:
     (Odległość jest ujemna wtedy i tylko wtedy, gdy cały odcinek leży poza trójkątem).
 \end{theorem}
 
+Wynik ten znajduje znowu zastosowanie w dowodzie twierdzenia japońskiego.
+\index{twierdzenie!japońskie}
+
+\begin{theorem}[Caseya, 1866]
+\index{twierdzenie!Caseya}%
+    Niech $\Gamma_1$, $\Gamma_2$, $\Gamma_3$, $\Gamma_4$ będą czterema okręgami ponumerowanymi zgodnie z ruchem wskazówek zegara, z których każdy styka się z piątym okręgiem $\Gamma$.
+    Niechh $t_{ij}$ oznacza długość zewnętrznego odcinka stycznego łączącego okręgi $\Gamma_i$, $\Gamma_j$ (jeśli te stykają się z $\Gamma$ obydwa od wewnątrz lub obydwa od zewnątrz) albo długość wewnętrznego odcinka stycznego (w przeciwnym razie).
+    Wówczas:
+    \begin{equation}
+        t_{12} \cdot t_{34} + t_{14} \cdot t_{23} = t_{13} \cdot t_{24}.
+    \end{equation}
+\end{theorem}
+
 % https://en.wikipedia.org/wiki/Casey%27s_theorem
-
-\color{red}
-
-WIP: Casey w 1866 roku uogólnił twierdzenie Ptolemeusza.
-
-\color{black}
+Twierdzenie podał John Casey (1820-1891), szanowany irlandzki geometra, który razem z Émilem Lemoinem uznawany jest za współzałożyciela nowoczesnej geometrii trójkątów i okręgów.
+\index[persons]{Casey, John}%
+\index[persons]{Lemoine, Émile}% % Émile Michel Hyacinthe Lemoine
+Inny dowód wymyślił Max Zacharias \cite{zacharias_1942}.
+Twierdzenie odwrotne do podanego przydaje się w najkrótszym znanym dowodzie twierdzenia Feuerbacha (że okrąg dziewięciu punktów jest styczny do okręgów dopisanych oraz wpisanego).
+\index{twierdzenie!Feuerbacha}
 
 %
