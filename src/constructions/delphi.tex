@@ -1,0 +1,45 @@
+\begin{problem}[problem delijski]
+    Zbudować sześcian o objętości dwa razy większej niż sześcian dany.
+\end{problem}
+
+Według legendy wyrocznia na wyspie Delos poradziła, by dla powstrzymania panującej tam zarazy dwukrotnie powiększyć ołtarz ofiarny, nie zmieniając jego kształtu.
+Problem ten zajmował matematyków przez wiele stuleci; w efekcie istnieją konstrukcje przybliżone, a także konstrukcje wykorzystujące dodatkowo pewne krzywe, np. konstrukcja Dioklesa wykorzystująca cysoidę, konstrukcja Nikomedesa wykorzystująca konchoidę.
+
+\begin{problem}[trysekcja kąta]
+    Podzielić dowolny kąt na trzy równe części.
+\end{problem}
+% TODO: % TODO: Coxeter, s. 28
+
+Około V wieku próbowano rozwiązać to zagadnienie za pomocą innych środków konstrukcyjnych, np. wykorzystując kwadratrysę, konchoidę; Archimedes np. zaproponował następujący sposób trysekcji kąta za pomocą cyrkla i linijki z podziałką.
+% promieniem BA (równym np. jedności) zakreśla się okrąg (otrzymując punkty A i C), przedłuża średnicę AD poza okrąg i tak się umieszcza linijkę z zaznaczonym na niej odcinkiem EF = AB, by przechodziła ona przez punkt C oraz by zaznaczony na niej punkt F leżał na okręgu, punkt E zaś na przedłużeniu średnicy AD; wówczas DEF = 1/3ABC.
+W średniowieczu stwierdzono, że zagadnienie trysekcji kąta prowadzi do rozwiązania równania algebraicznego stopnia trzeciego postaci
+\begin{equation}
+    x^3 - 3 x - 2 \cos 3\alpha = 0,
+\end{equation}
+którego pierwiastek konstruuje się następnie za pomocą rozmaitych środków konstrukcyjnych.
+
+\begin{proposition}
+    Rozwiązanie problemu delijskiego oraz trysekcja kąta są niewykonalne za pomocą cyrkla i linijki.
+\end{proposition}
+
+Pierwszy dowód tego faktu podał P. L. Wantzel (1837).
+Być może było to powodem, dla którego dopiero w 1899 roku Frank Morley odkrył (a w 1924 opublikował):
+\index[persons]{Morley, Frank}
+
+\begin{theorem}[Morleya]
+    Punkty przeciecięcia tych trójsiecznych kątów trójkąta, które sąsiadują z którymś z boków trójkąta,są wierzchołkami trójkąta równobocznego.
+\end{theorem}
+
+(W tym sformułowaniu nie ma mowy, że chodzi o kąty wewnętrzne -- ponieważ twierdzenie jest prawdziwe także dla kątów zewnętrznych, z prawie takim samym dowodem).
+Trójkąt równoboczny, jaki powstaje, ma bok długości
+\begin{equation}
+    8 R \sin \frac \alpha 3 \sin \frac \beta 3 \sin \frac \gamma 3.
+\end{equation}
+% Coxeter s. 23-25
+% https://en.wikipedia.org/wiki/Hofstadter_points
+
+\begin{problem}[kwadratura koła]
+    Wykreślić kwadrat o polu równym polu danego koła.
+\end{problem}
+
+1833 F. Lindemann udowodnił, że kwadratura koła jest niewykonalna za pomocą linijki i cyrkla.
