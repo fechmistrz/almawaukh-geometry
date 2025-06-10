@@ -37,8 +37,7 @@ Potrzebujemy dodatkowego aksjomatu, by okręgi, od których oczekujemy, że się
 
 Dopiero teraz jesteśmy w stanie uratować twierdzenia (I.1), (I.22), (III.I), (III.17) z Elementów Euklidesa, do tego wszystkie dalsze wyniki aż do III.19 (ponieważ III.20 i dalej wymagany jest aksjomat Playfaira).
 
-
-
+\subsubsection{Kąty środkowe, wpisane, dopisane}
 Kąty środkowe, wpisane, dopisane.
 Okręgi opisane i wpisane w czworokąt.
 
@@ -53,29 +52,40 @@ Okręgi opisane i wpisane w czworokąt.
 	Wtedy ich cztery nowe punkty przecięcia tworzą czworokąt cykliczny.
 \end{proposition}
 
+Geometria koła i kątów, twierdzenie Apolloniusza (s. 22)
 
+\subsubsection{Okręgi wpisane i opisane}
 Styczna do okręgu, okrąg wpisany w kąt.
 Okrąg wpisany w trójkąt, okręgi dopisane do trójkąta.
 Warunki istnienia okręgu stycznego do czterech prostych.
 
+Euklides (III.35):
+
+% https://en.wikipedia.org/wiki/Intersecting_chords_theorem
+\begin{proposition}[twierdzenie o cięciwach]
+    \label{prop_intersecting_chords}
+	Niech punkty $A$, $B$ leżą na pewnej prostej przechodzącej przez punkt $S$, zaś punkty $C$, $D$ leżą na innej prostej przez ten punkt.
+	Wtedy cztery punkty $A$, $B$, $C$, $D$ leżą na jednym okręgu wtedy i tylko wtedy, gdy:
+	\begin{equation}
+		|AS| \cdot |BS| = |CS| \cdot |DS|.
+	\end{equation}
+\end{proposition}
+
+Po angielsku nazywa się to ,,\emph{intersecting chords theorem}''; Bogdańska i Neugebauer nazywają to nie wiedzieć czemu ,,potęgowym kryterium współokręgowości''.
+Ech.
+Elementarny dowód korzysta z~podobieństwa trójkątów $\triangle ASD$ i $\triangle BSC$.
+Nieelementarny zauważa, że obydwa iloczyny są równe (poza znakiem) potędze punktu $S$ względem okręgu przez punkty $A$, $B$, $C$, $D$.
+Definicję \ref{def_power_point} potęgi punktu podamy już za kilka stron.
+
 \begin{proposition}[twierdzenie o siecznych i stycznych]
-	Jeżeli...
+	Jeżeli... (Neugebauer s. 66)
 \end{proposition}
 
-Geometria koła i kątów, twierdzenie Apolloniusza (s. 22)
+\subsubsection{Twierdzenia Ptolemeusza, Carnota, Caseya}
+\input{triangle-circle/circle/ptolemy}
 
-\subsubsection{Twierdzenie Miquela}
-Twierdzenie Miquela
-\loremipsum
-% https://en.wikipedia.org/wiki/Miquel%27s_theorem
-Hartshorne jako ćwiczenie \cite[s. 61]{hartshorne2000} pisze, że tym razem punkt Miquela został nazwany na cześć osoby, która go odkryła w 1838 roku.
+\subsubsection{Okrąg dziewięciu punktów (Feuerbacha) i prosta Eulera}
+\input{triangle-circle/circle/feuerbach_euler}
 
-Twierdzneie o prostej Wallace'a-Simsona.
-Na UW: Zastosowanie: okrąg dziewięciu punktów, twierdzenie o prostej Simsona.
-
-\begin{proposition}
-	Niech $P$ będzie dowolnym punktem leżącym na okręgu opisanym na trójkącie $ABC$, zaś $D$, $E$ oraz $F$ rzutami punktu $P$ na proste zawierające boki trójkąta $ABC$.
-	Wtedy punkty $D$, $E$ oraz $F$ są współliniowe.
-\end{proposition}
-
-Hartshorne jako ćwiczenie \cite[s. 61]{hartshorne2000} pisze, że istnienie prostej Simsona jako pierwszy dowiódł Wallace w 1799 roku.
+\subsection{Potęga punktu względem okręgu}
+\input{triangle-circle/circle/power_point}
