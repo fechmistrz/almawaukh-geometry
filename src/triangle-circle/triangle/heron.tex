@@ -1,13 +1,55 @@
 %
-\subsubsection{Wzór Herona}
 
 \index{wzór!Herona|(}
-Guzicki \cite[s. 165-168]{guzicki_2021} wyprowadza wzór Herona z twierdzenia Pitagorasa.
-\index{twierdzenie!Pitagorasa}
-Oryginalny dowód Herona był dość skomplikowany, Guzicki \cite[s. 168-169]{guzicki_2021} wspomina o znacznie prostszym dowodzie geometrycznym, pochodzącym od Eulera.
+\begin{proposition}[wzór Herona]
+    Pole trójkąta o bokach długości $a, b, c$ wyraża się wzorem
+    \begin{equation}
+        S = \sqrt{p(p-a)(p-b)(p-c)},
+    \end{equation}
+    gdzie $p$ oznacza połowę obwodu.
+\end{proposition}
+
+Wynik przypisujemy obecne Heronowi z Aleksandrii, który podał dość skomplikowany dowód.
+\index[persons]{Heron z Aleksandrii}%
+Coxeter \cite[s. 12]{coxeter_1991} przeczytał van der Waerdena \cite[s. 228, 277]{waerden_1961} i przez to twierdzi, że wzór był już wcześniej znany Archimedesowi.
+\index[persons]{Archimedes}%
+Guzicki \cite[s. 165-169]{guzicki_2021} wyprowadza go z twierdzenia Pitagorasa i~wspomina, że prosty geometryczny dowód podał też Euler.
 \index[persons]{Euler, Leonhard}%
-(Chociaż wynik przypisujemy obecnie Heronowi, został odkryty przez Archimedesa -- Coxeter \cite[s. 12]{coxeter_1991} odsyła do van der Waerdena \cite{MISSING_CITATION}).
-% This remarkable expression, which we shall use in § 18.4, is attributed to Heron of Alexandria (about 60 a.d.), but it was really discovered by Archimedes. (See B. L. van der Waerden, Science Awakening, Oxford University Press, New York, 1961, pp. 228, 277.) 
+\index{twierdzenie!Pitagorasa}
+Wreszcie Bogdańska, Neugebauer \cite[s. 92]{neugebauer_2018} korzystają z twierdzenia cosinusów.
+
+Istnieje częściowe uogólnienie wzoru Herona dla czworokątów:
+
+\begin{proposition}[wzór Brahmagupty]
+    Pole czworokąta wypukłego, na którym można opisać okrąg, o bokach długości $a, b, c, d$ wyraża się wzorem
+    \begin{equation}
+        S = \sqrt{(p-a)(p-b)(p-c)(p-d)},
+    \end{equation}
+    gdzie $p$ oznacza połowę obwodu.
+\end{proposition}
+
+Dowód polega na zastosowaniu wzoru Herona dwa razy do trójkątów podobnych lub ponownym skorzystaniu z dobrodziejstw trygonometrii.
+Założenie o wypukłości i cykliczności można pominąć, jak odkryli równocześnie Carl Bretschneider i Karl von Staudt:
+\index[persons]{von Staudt, Karl}%
+\index[persons]{Bretschneider, Carl}%
+
+\begin{proposition}[wzór Bretschneidera, 1842]
+    Pole czworokąta o bokach długości $a, b, c, d$ i sumie miar dwóch przeciwległych kątów wewnętrznych $2 \varphi$ wyraża się wzorem
+    \begin{equation}
+        S = \sqrt{(p-a)(p-b)(p-c)(p-d) - abcd \cos^2  \varphi},
+    \end{equation}
+    gdzie $p$ oznacza połowę obwodu.
+\end{proposition}
+
+Inny, równie przydatny wzór znalazł Julian Coolidge:
+%  J. L. Coolidge, "A Historically Interesting Formula for the Area of a Quadrilateral", American Mathematical Monthly, 46 (1939) pp. 345-347.
+\index[persons]{Coolidge, Julian}%
+pole czworokąta o bokach długości $a, b, c, d$ i przekątnych długości $e, f$ wyraża się wzorem
+\begin{equation}
+    S = \sqrt{(p-a)(p-b)(p-c)(p-d) - \frac 1 4 (ac + bd + pq)(ac + bd - pq)},
+\end{equation}
+gdzie $p$ oznacza połowę obwodu.
+
 
 \index{wzór!Herona|)}
 
