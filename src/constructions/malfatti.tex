@@ -1,10 +1,12 @@
 %
 
 \subsection{Zadanie Malfattiego}
+\label{}
 W 1803 roku Malfatti \cite{malfatti_1803} zainspirowany pewnym praktycznym zagadnieniem (wycinanie walców z graniastosłupa) postawił następujący problem:
 \index[persons]{Malfatti, Gian Francesco}%
 
 \begin{problem}[zadanie Malfattiego]
+	\label{malfatti_problem}
 \index{zadanie Malfattiego}%
 	Dany jest trójkąt $\triangle ABC$.
 	Skonstruować takie trzy parami styczne okręgi $K_A, K_B, K_C$, że okrąg $K_A$ (odpowiednio: $K_B$, $K_C$) jest wpisany w~kąt $\angle A$ (odpowiednio: $\angle B$, $\angle C$).
@@ -43,4 +45,29 @@ Ostatnie słowo należało zaś do Zalgallera, Losa \cite{zalgaller_los_1992}, k
 
 Nie wiadomo, czy algorytm zachłanny zawsze znajduje $n \ge 4$ rozłącznych kół w trójkącie o maksymalnej łącznej powierzchni.
 
-%
+\subsubsection{Twierdzenia o sześciu, siedmiu i dziewięciu okręgach}
+Cecil John Alvin Evelyn, G. B. (pełne imiona nieznane) Money-Coutts i John Alfred Tyrrell znaleźli około 1974 roku piękne twierdzenia o okręgach wpisanych, które pokazują nam, jak wiele wyników geometrii elementarnej oczekuje na swoje odkrycie.
+
+\begin{proposition}[o sześciu okręgach]
+	Dany jest trójkąt $\triangle ABC$.
+	Niech $\Gamma_1, \Gamma_2, \ldots, \Gamma_6$ będą okręgami wpisanymi kolejno w kąty przy wierzchołkach $A$, $B$, $C$, $A$, $B$, $C$, $A$ takimi, że każdy jest styczny do poprzedniego.
+	Wtedy okręgi $\Gamma_6$ i $\Gamma_1$ też są do siebie styczne.
+\end{proposition}
+
+Pisze o tym Bogdańska, Neugebauer \cite[s. 101]{neugebauer_2018}: wykorzystują punkt Crelle'a-Brocarda, wzór Herona i trochę trygonometrii.
+
+\begin{proposition}[o siedmiu okręgach]
+	Dany jest okrąg $\Gamma$ oraz sześć okręgów stycznych do niego tak, że każdy jest też styczny do swoich dwóch sąsiadów.
+	Wtedy trzy proste łączące przeciwległe punkty styczności przecinają się w jednym punkcie.
+\end{proposition}
+
+\begin{proposition}[o dziewięciu okręgach]
+	Niech $\Gamma_1$, $\Gamma_2$, $\Gamma_3$ będą trzema okręgami na płaszczyźnie, zaś okrąg $\Gamma_4$ będzie styczny do $\Gamma_2$ i $\Gamma_3$.
+	Kreślimy ciąg okręgów stycznych do poprzednich:
+	$\Gamma_5$ do $\Gamma_1$, $\Gamma_3$ i $\Gamma_4$,
+	$\Gamma_6$ do $\Gamma_1$, $\Gamma_2$ i $\Gamma_5$,
+	$\Gamma_7$ do $\Gamma_2$, $\Gamma_3$ i $\Gamma_6$,
+	$\Gamma_8$ do $\Gamma_1$, $\Gamma_3$ i $\Gamma_7$,
+	$\Gamma_9$ do $\Gamma_1$, $\Gamma_2$ i $\Gamma_8$.
+	Wtedy przy dobrym wyborze, który okrąg styczny wziąć, okrąg $\Gamma_4$ jest też styczny do $\Gamma_2$, $\Gamma_3$ i $\Gamma_9$.
+\end{proposition}

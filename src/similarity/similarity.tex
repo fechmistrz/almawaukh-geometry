@@ -4,10 +4,10 @@
 \subsection{Jednokładność}
 Podobieństwo figur, trójkątów (cechy), stosunek pól figur podobnych.
 
+\subsection{Twierdzenie Talesa}
 \input{similarity/tales}
 
 \subsection{Podobieństwo trójkątów}
-
 \begin{definition}
 	Dwa trójkąty nazywamy podobnymi...
 	Liczbę $\lambda$... nazywamy skalą podobieństwa.
@@ -27,27 +27,46 @@ Podobieństwo figur, trójkątów (cechy), stosunek pól figur podobnych.
 
 % \subsection{Pole?}
 
-
-
-
 \subsection{Twierdzenie o dwusiecznej}
 Okrąg Apolloniusza, Guzicki-4
 % Coxeter s. 88 
 
 \begin{proposition}[twierdzenie o dwusiecznej]
-	Jeżeli...
+	Dany jest trójkąt $\triangle ABC$.
+	Odcinek $CF$, gdzie $F$ leży na odcinku $AB$, jest dwusieczną kąta przy wierzchołku $C$ wtedy i tylko wtedy, gdy zachodzi równość:
+	\begin{equation}
+		\frac{|AF|}{|BF|} = \frac{|AC|}{|BC|}.
+	\end{equation}
 \end{proposition}
+
+To jest (VI.3) w Elementach Euklidesa.
+Dowód korzysta z podobieństwa trójkątów, twierdzenia sinusów albo własności pola, patrz Bogdańska, Neugebauer \cite[s. 73]{neugebauer_2018}.
+
 % czemu to jest tu? czemu nie przenieść do trójkątów?
 \input{triangle-circle/triangle/steiner_lehmus}
 
-% TODO: https://en.wikipedia.org/wiki/Steiner–Lehmus_theorem
 % TODO: https://zadania.info/d801/3107027
 
-\begin{definition}[okrąg Apoloniusza]
-	Jeżeli...
-\end{definition}
-% czemu to tu? czemu nie w okręgach?
+Twierdzenie o symetralnej % TODO czy to jest oficjalna nazwa
+można wysłowić tak: miejsce geometryczne punktów $X$, dla których $|AX|/|BX| = 1$, jest prostą.
+Około dwusetnego roku przed naszą erą Apoloniusz z Pergi udowodnił piękne uogólnienie tego faktu:
 
+\begin{definition}[okrąg Apoloniusza]
+	Dane są dwa różne punkty $A$, $B$ oraz liczba dodatnia $\lambda \neq 1$.
+	Wtedy zbiór punktów 
+	\begin{equation}
+		\left\{X : \frac{|AX|}{|BX|} = \lambda \right\}
+	\end{equation}
+	jest okręgiem o środku na prostej $AB$ i promieniu równym
+	\begin{equation}
+		R = \frac{\lambda}{|\lambda^2 - 1|} \cdot |AB|.
+	\end{equation}
+\end{definition}
+
+To jest jeden z pięciu okręgów Apolloniusza, oprócz tego mamy dwie rodziny wzajemnie prostopadłych okręgów, okręgi Apoloniusza trójkąta (pomocne w znajdowaniu punktów izodynamicznych oraz prostej Lemoine'a), okrąg z problemu Apolloniusza styczny do trzech danych oraz fraktal zwany po angielsku uszczelką -- \emph{,,Apollonian gasket''}.
+% https://en.wikipedia.org/wiki/Circles_of_Apollonius
+
+Piszą o nim Bogdańska, Neugebauer \cite[s. 74]{neugebauer_2018}
 
 \subsection{Twierdzenie Newtona i Gaussa?}
 Twierdzenie Newtona: środek okręgu wpisanego w czworokąt i środki przekątnych tego czworokąta są współliniowe.
@@ -81,6 +100,14 @@ Dowód można znaleźć na przykład u Akopiana, Zasławskiego \cite[s. 93, 61, 
 
 \subsection{Trygonometria}
 
+\begin{proposition}
+	Niech $\alpha, \beta, \gamma$ będą miarami kątów trójkąta o bokach $a, b, c$, polu $S$ i promieniu okręgu opisanego $R$.
+	Wtedy
+	\begin{equation}
+		\tan \alpha + \tan \beta + \tan \gamma = \frac{4S}{a^2 + b^2 + c^2 - 8R^2}
+	\end{equation}
+\end{proposition}
+
 \subsubsection{Twierdzenie sinusów}
 
 $$\frac{a}{\sin \alpha} = \frac{b}{\sin \beta} = \frac{c}{\sin \gamma} = 2R$$
@@ -100,6 +127,8 @@ $$\frac{a}{\sin \alpha} = \frac{b}{\sin \beta} = \frac{c}{\sin \gamma} = 2R$$
 Wzory na promienie okręgów wpisanych, dopisanych.
 $4R = r_a + r_b + r_c - r$ % Coxeter, s. 13; dopisz też bend okręgi Kartezjusza
 
+
+
 Cztery okręgi ze znakiem Kartezjusza; Soddy.
 Cztery nowe okręgi Beecrofta.
 % ćwiczenie 2. ze strony 16
@@ -110,26 +139,24 @@ Cztery nowe okręgi Beecrofta.
 \subsubsection{Zastosowania trygonometrii -- twierdzenie Urquharta}
 Twierdzenie Urquharta
 
-\subsubsection{Zastosowania trygonometrii -- punkt i kąt Crelle'a-Brocarda}
-Punkt i kąt Crelle'a-Brocarda.
-
-\subsubsection{Zastosowania trygonometrii -- twierdzenie o siódmym okręgu}
-Twierdzenie o siódmym okręgu.
-
 \subsubsection{Rozwiązywanie trójkątów}
 Wzór Mollweide'a.
 \index{wzór!Mollweide'a}%
 
+\subsubsection{Zastosowania trygonometrii -- punkt i kąt Crelle'a-Brocarda}
+\input{similarity/trigonometry/crelle_brocard}
+
+\subsubsection{Problem Hansena}
 Problem Hansena
 \index{problem!Hansena}%
 
+\subsubsection{Problem Snelliusa-Pothenota}
 Problem Snelliusa-Pothenota.
 \index{problem!Snelliusa-Pothenota}%
 
 % https://en.wikipedia.org/wiki/Mollweide%27s_formula
 % https://en.wikipedia.org/wiki/Snellius%E2%80%93Pothenot_problem
 % https://en.wikipedia.org/wiki/Hansen%27s_problem
-
 
 Twierdzenie Malfattiego.
 Guzicki-11
