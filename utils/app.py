@@ -48,7 +48,7 @@ def extend(title):
     if title not in data:
         data[title] = {"dead": False, "forward": [], "backward": []}
         save_data(data)
-        subprocess.run(['python3', 'crawl-wiki.py', "wiki-geometry.json"])
+        subprocess.run(['make', 'crawl'])
 
     return redirect(url_for('index'))
 

@@ -32,23 +32,6 @@ def get_links(links):
         if type(link) == pw.page._page.Page
     ])
 
-
-def print_unvisited(final_database):
-    import collections
-
-    unvisited_links = list()
-    for v in final_database.values():
-        unvisited_links.extend(v["forward"])
-        unvisited_links.extend(v["backward"])
-
-    unvisited_links = collections.Counter(
-        [x for x in unvisited_links if x not in final_database.keys()]
-    )
-    
-    for x in unvisited_links.most_common(10):
-        print(f"Visit {x[1]}x {x[0]}")
-
-
 def add_missing_links(article, article_title):
     forward = article.get("forward", [])
     backward = article.get("backward", [])
@@ -90,5 +73,3 @@ with open(sys.argv[1], "w") as f:
     }
     database = dict(sorted(database.items()))
     f.write(json.dumps(database, indent=2))
-
-print_unvisited(database)

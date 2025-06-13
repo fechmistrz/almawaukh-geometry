@@ -1010,5 +1010,10 @@
     "dead": true,
     "forward": [],
     "backward": []
+  },
+  "Ptolemy inequality": {
+    "dead": true,
+    "forward": [],
+    "backward": []
   }
 }
