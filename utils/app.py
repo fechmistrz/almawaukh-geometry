@@ -45,10 +45,6 @@ def compute_scores(data):
             link_counts[neighbor] += 1
             neighbors[neighbor].append(page)
 
-    # Compute enhanced scores
-    enhanced_scores = {}
-    max_weight = 0
-
     float_scores = {}
     for page, count in link_counts.items():
         if page.lower() in seen_lower:
@@ -59,12 +55,6 @@ def compute_scores(data):
         weights = {nghbr: word_counts[nghbr] for nghbr in unique}
         float_scores[page] = count + min(weights.values()) / max_count
 
-        if "Zhang Heng" in page:
-            print(f"DEBUG: Calculating score for '{page}'")
-            print(f"  Occurrences (count): {count}")
-            print(f"  Word counts of neighbors: {weights=}")
-            print(f"  Weight (sum of words):  {float_scores[page]=}=")
-
     # Group pages by integer part of float score
     grouped = defaultdict(list)
     for page, score in float_scores.items():
@@ -73,7 +63,7 @@ def compute_scores(data):
 
     # Sort each group by float score descending
     sorted_grouped = {
-        group: sorted(items, reverse=True)  # now items are (score, title)
+        group: sorted(items, reverse=True)[:10]  # now items are (score, title)
         for group, items in grouped.items()
     }
     return sorted_grouped
