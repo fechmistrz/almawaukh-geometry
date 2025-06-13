@@ -1,0 +1,98 @@
+\begin{definition}
+	Czworokąt, który jest jednocześnie wpisany w pewien okrąg i opisany na innym okręgu, nazywamy dwuśrodkowym.
+\end{definition}
+
+Przykładami takich czworokątów są kwadraty, prostokątne latawce i niektóre równoramienne trapezy.
+Ich pełną charakteryzację można uzyskać przez połączenie warunków \ref{prp_incircle} oraz \ref{prp_excircle}.
+Ale mamy też inne opisy.
+
+\begin{proposition}
+	Niech $ABCD$ będzie czworokątem opisanym na okręgu $\Gamma$, który dotyka go w punktach $W$ (na odcinku $AB$), $X$ (na $BC$), $Y$ (na $CD$), $Z$ (na $AD$).
+	Wtedy następujące warunki są równoważne:
+	\begin{itemize}
+		\item na czworokącie $ABCD$ można opisać okrąg,
+		\item odcinki $WY$ i $XZ$ są prostopadłe,
+		\item $|AW|/|BW| = |DY|/|CY|$,
+		\item $|AC|/|BD| = (|AW| + |CY|) / (|BX| + |DZ|)$,
+		\item równoległobok Varignona jest prostokątem.
+	\end{itemize}
+	\todofoot{brakujący rysunek}
+\end{proposition}
+
+% TODO? https://en.wikipedia.org/wiki/Bicentric_quadrilateral#Construction
+
+Pole powierzchni czworokąta dwuśrodkowego o bokach długości $a, b, c, d$ wynosi $S = \sqrt{abcd}$, jest to prosty wniosek ze wzoru Brahmagupty \ref{brahmagupta_formula}.
+Mamy $4r^2 \le S \le 2R^2$, a nawet
+\begin{equation}
+	S \le r^2 \left(1 + \sqrt{\left(\frac{2R}{r}\right)^2 + 1} \right),
+\end{equation}
+z równością wtedy i tylko wtedy, kiedy czworokąt jest prostokątnym latawcem.
+Inne nierówności, których źródła nie podamy, to
+\begin{equation}
+	2 \sqrt {S} \le p \le r + \sqrt{r^2 + 4R^2},
+\end{equation}
+gdzie $p$ to połowa obwodu albo 
+\begin{equation}
+	S \le \frac 1 6 \left(ab + ac + ad + bc + bd + cd\right).
+\end{equation}
+Nierówność
+\begin{equation}
+	R \ge \sqrt 2 r
+\end{equation}
+z równością tylko dla kwadratu jest nietrywialna, dowiódł jej Fejes Tóth w 1948 roku.
+% TODO: citation missing.
+
+\begin{theorem}[Fussa, 1792]
+	Niech $x$ oznacza odległość między środkami okręgu wpisanego i opisanego na czworokącie dwuśrodkowym.
+	Wtedy
+	\begin{equation}
+		\frac{1}{(R-x)^2} + \frac{1}{(R+x)^2} = \frac{1}{r^2}.
+	\end{equation}
+\end{theorem}
+% TODO: to jest odpowiednik wzoru Eulera dla trójkątów
+
+Wyznaczając $x$ z twierdzenia Fussa i rozwiązując nierówność $x^2 \ge 0$ dochodzimy znowu do nierówności Tótha.
+Aż dziwne, że nikt tego wcześniej nie zrobił.
+Nicolaus Fuss był szwajcarskim matematykiem, który spędził większość swego życia w Rosji.
+\index[persons]{Fuss, Nicolaus}
+
+\begin{proposition}
+	Punkt przecięcia przekątnych, środek okręgu wpisanego i środek okręgu opisanego na czworokącie dwuśrodkowym są współliniowe.\todofoot{Bogomolny, Alex, Collinearity in Bicentric Quadrilaterals [9], 2004.}
+\end{proposition}
+
+\begin{proposition}
+	Niech $ABCD$ będzie czworokątem dwuśrodkowym, zaś $O$ środkiem okręgu opisanego.
+	Wtedy środki okręgów wpisanych w trójkąty $\triangle OAB$, $\triangle OBC$, $\triangle OCD$, $\triangle ODA$ leżą na jednym okręgu.\todofoot{Alexey A. Zaslavsky, One property of bicentral quadrilaterals, 2019, [11]}
+\end{proposition}
+
+Wreszcie Klamkin pokazał w 1967 roku, że
+\begin{proposition}
+    Niech $p, q$ będą długościami przekątnych czworokąta dwuśrodkowego o bokach długości $a$, $b$, $c$, $d$.
+    Wtedy
+    \begin{equation}
+        8 pq \le (a + b + c + d)^2
+    \end{equation}
+\end{proposition}
+
+
+
+
+
+Bogdańska, Neugebauer \cite[s. 267]{neugebauer_2018} na ostatniej stronie podają niespodziewanie informacją, że twierdzenie Ponceleta {\color{red}\textbf{(TODO: T2.19)}\color{black}} było motywem przewodnim całego skryptu.
+% todo: podlinkować te cztery dowody po ich spisaniu
+Zachęcają do uogólnienia czwartego dowodu dla poniższej wersji:
+
+\begin{theorem}[Ponceleta, małe]
+	Niech trójkąt $A_0 A_1 A_2$ będzie wpisany w~stożkową $C$ oraz opisany na stożkowej $D$.
+	Wtedy każdy punkt $B_0$ stożkowej $C$ jest wierzchołkiem dokładnie jednego trójkąta $B_0 B_1 B_2$ wpisanego w~stożkową $C$ oraz opisanego na stożkowej $D$.
+\end{theorem}
+
+Oczywiście jest też wielkie twierdzenie Ponceleta, udowodnione przez, jak niezbyt trudno się domyślić, Victora Ponceleta \cite[s. 311-317]{poncelet_1865} (wg Bogdańskiej, Neugebauera w 1813 roku, wg angielskiej Wikipedii w 1822 roku).
+\index[persons]{Poncelet, Victor}%
+
+\begin{theorem}[Ponceleta, wielkie]
+	Niech $C$ i $D$ będą dwiema stożkowymi, zaś $A_0, A_1, \ldots, A_{n-1}$ takimi punktami na stożkowej $C$, że proste $A_0A_1$, $A_1A_2$, \ldots, $A_{n-1}A_0$ są styczne do stożkowej $D$.
+	Wtedy dla każdego punktu $B_0$ na stożkowej $C$ istnieją różne punkty $B_1, \ldots, B_{n-1}$, też na stożkowej $C$, że proste $B_0B_1$, $B_1B_2$, \ldots, $B_{n-1}B_0$ są styczne do stożkowej $D$.
+\end{theorem}
+
+Dowód można znaleźć na przykład u Akopiana, Zasławskiego \cite[s. 93, 61, 67, 115, 124]{akopyan_2007}.
