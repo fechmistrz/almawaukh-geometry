@@ -18,21 +18,21 @@ def save_data(data):
 
 def compute_scores(data):
     score_count = defaultdict(int)
+    seen_lower = {
+        title.lower() for title, entry in data.items()
+        if entry['dead'] or entry['forward'] or entry['backward']
+    }
 
-    for page_data in data.values():
-        for linked in page_data.get('forward', []) + page_data.get('backward', []):
+    # Count all page mentions in forward/backward links
+    for entry in data.values():
+        for linked in entry.get('forward', []) + entry.get('backward', []):
             score_count[linked] += 1
 
-    # Filter: page is not in data or not marked as dead and has no links yet
-    unexplored = {}
-    for page, count in score_count.items():
-        if page not in data or (not data[page]['dead'] and not data[page]['forward'] and not data[page]['backward']):
-            unexplored[page] = count
-
-    # Group by score
+    # Keep only unexplored pages
     grouped = defaultdict(list)
-    for page, score in unexplored.items():
-        grouped[score].append(page)
+    for page, score in score_count.items():
+        if page.lower() not in seen_lower:
+            grouped[score].append(page)
 
     return dict(sorted(grouped.items(), key=lambda x: -x[0]))
 
@@ -50,11 +50,12 @@ def extend(title):
 @app.route('/mark_dead/<title>')
 def mark_dead(title):
     data = load_data()
-    if title in data:
-        data[title]['dead'] = True
-        data[title]['forward'] = []
-        data[title]['backward'] = []
-        save_data(data)
+    if title not in data:
+        data[title] = dict()
+    data[title]['dead'] = True
+    data[title]['forward'] = []
+    data[title]['backward'] = []
+    save_data(data)
     return redirect(url_for('index'))
 
 if __name__ == '__main__':

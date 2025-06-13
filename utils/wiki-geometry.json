@@ -563,5 +563,15 @@
       "Zeno of Sidon",
       "Zenodorus (mathematician)"
     ]
+  },
+  "Law of Rent": {
+    "dead": true,
+    "forward": [],
+    "backward": []
+  },
+  "Shibboleth": {
+    "dead": true,
+    "forward": [],
+    "backward": []
   }
 }
