@@ -72,4 +72,4 @@ with open(sys.argv[1], "w") as f:
         for k, v in database.items()
     }
     database = dict(sorted(database.items()))
-    f.write(json.dumps(database, indent=2))
+    f.write(json.dumps(database, indent=2, ensure_ascii=False))
