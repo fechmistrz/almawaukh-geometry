@@ -1,5 +1,18 @@
 \subsection{Elementarne wyniki}
 
+\begin{definition}[symetralna]
+	Prostą prostopadłą do odcinka i przechodzącą przez jego środek nazywamy symetralną.
+\end{definition}
+Przez dwa punkty możemy przeprowadzić nieskończenie wiele okręgów, ich środki leżą na symetralnej odcinka łączącego wspomniane dwa punkty.
+Przez trzy punkty możemy przeprowadzić jeden okrąg, jeśli nie są współliniowe (i zero w przeciwnym razie).
+\todofoot{Czy to jest tu? Z czego to wynika? Może później, jeśli korzystamy w dowodzie ze zbyt wielu aksjomatów? Guzicki s. 14, 15.}
+\begin{proposition} % Guzicki s. 126
+	Punkt $P$ leży na symetralnej odcinka $AB$ wtedy i tylko wtedy, gdy jest jednakowo oddalony od końców tego odcinka: $|AP| = |BP|$.
+\end{proposition}
+
+Okrąg przechodzący przez wszystkie wierzchołki wielokąta nazywamy okręgiem opisanym na tym wielokącie.
+Mówimy także, że wielokąt jest wpisany w okrąg.
+
 \begin{proposition}
 	\label{hartshorne_52}
     Niech $AB$ będzie odcinkiem.
@@ -24,3 +37,26 @@ Tego stwierdzenia nie ma w Elementach Euklidesa, ale można wyprowadzić je z ks
 \end{corollary}
 
 Do tego wniosku potrzeba dodatkowo cechy przystawania bok-bok-bok (I.8).
+
+\subsubsection{Twierdzenie Sylvestera-Gallaia}
+\begin{theorem}[Sylvestera-Gallaia]
+	Dla każdego skończonego zbioru punktów na płaszczyźnie istnieje prosta, która przechodzi przez dokładnie dwa albo wszystkie punkty.
+\end{theorem}
+
+Mamy wrażenie, że zaczęło się w 1893 roku, kiedy James Sylvester postawił problem.
+Być może zainspirowała go konfiguracją Hessego\footnote{Konfiguracja Hessego to 12 prostych przez 9 punktów na zespolonej płaszczyźnie rzutowej, gdzie każdy punkt leży na 4 prostych, a każda prosta przechodzi przez 3 punkty}.
+Herbert Woodall szybko zaproponował rozwiązanie, gdzie równie szybko wychwycono usterkę.
+Dopiero w 1941 roku Eberhard Melchior udowodnił trochę mocniejsze stwierdzenie niż rzutowy dual ówczesnej hipotezy (że prostych przez dokładnie dwa punkty jest co najmniej trzy).
+Nieświadomy tego, Paul ErdErdős postawił hipotezę na nowo w~1943 roku, a Tibor Gallai w 1944 roku dodał swój dowód (ponownie wykorzystując elementy geometrii rzutowej).
+Wraz z upływem czasu pojawiały się inne, ciekawe rozumowania.
+Na przykład Leroy Kelly wykorzystał własności metryki, co oburzyło Harolda Coxetera i skłoniło go do opublikowania kolejnego dowodu, korzystającego jedynie z aksjomatów geometrii uporządkowania.
+(Aigner, Ziegler uważają dowód Kelly'ego za najlepszy).
+
+Niech $t_2(n)$ oznacza minimalną liczbę prostych przez dwa punkty w dowolnym ułożeniu $n$ punktów.
+Melchior pokazał, że $t_2(n) \ge 3$.
+Wynik sukcesywnie poprawiano:
+de Bruijn \cite{debruijn_1948} zapytał, czy $t_2(n)$ dąży do nieskończoności,
+Theodore Motzkin \cite{motzkin_1951} udzielił twierdzącej odpowiedz, bo $t_2(n) \ge \sqrt{n}$.
+Potem Gabriel Dirac \cite{dirac_1951} przypuścił, że $t_2(n) \ge \lfloor n/2\rfloor$, co nie zostawia wiele miejsca na poprawki, bo dla parzystych $n \ge 6$ zachodzi $t_2(n) \le n/2$, jak pokazał pomysłową konstrukcją Károly Böröczky.
+Dla nieparzystych $n$ wiemy tylko, że ten kres jest realizowany dla $n = 7$ (Kelly, Moser \cite{kelly_1958} w 1958) i $n = 13$ (Crowe, McKee \cite{mckee_1968} w 1968).
+Najnowszy wynik, o jakim nam wiadomo, to Csimy, Sawyera \cite{csima_1993}: że $t_2(n) \ge \lceil 6n/13 \rceil$.
