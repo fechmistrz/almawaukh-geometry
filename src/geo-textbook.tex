@@ -6,6 +6,8 @@
 \usetikzlibrary{calc}
 
 \newcommand{\loremipsum}{ {\color{gray}  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisl purus, ultricies et ante quis, iaculis imperdiet justo. Proin tristique turpis a tortor eleifend lobortis. Vestibulum odio nisi, tempor sed scelerisque ac, aliquet a lorem. Proin ullamcorper nibh eget augue placerat lobortis. Quisque ac commodo libero, fringilla dictum purus. Proin nec massa vitae lorem eleifend lacinia. Praesent rhoncus ultricies ullamcorper. Fusce vel viverra purus, nec rhoncus massa. Etiam nisl lorem, cursus vel est sit amet, mattis venenatis magna. Vestibulum id risus sit amet nisi congue ultrices id nec ex. } }
+\newcommand{\todofoot}[1]{\textcolor{red}{\textbf{(!)}\footnote{\textbf{\color{red}{Do zrobienia}}: #1}}}
+
 \begin{document}
 
 \input{blurbs/page-1-5}
@@ -28,6 +30,10 @@ Tekst podsekcji Aksjomatyka. \loremipsum
 \input{similarity/similarity}
 \input{colinear/colinear}
 
+% Section 3 ciąg dalszy
+\section{Stożkowe}
+\input{conics/conics}
+
 % section 5
 \input{constructions/constructions}
 
@@ -40,6 +46,12 @@ Tekst sekcji stereometria.
 % \subsection{Cauchy's rigidity theorem} Hartshorne: section 45
 % \subsection{Siamese dodecahedron}
 % https://en.wikipedia.org/wiki/Johnson_solid
+
+\section{Ćwiczenia}
+\input{exercises/matura}
+\input{exercises/guzicki}
+\input{exercises/olimpiada-polska}
+\input{exercises/olimpiada-imo}
 
 \section{W powijakach}
 \input{section-99/todo}
