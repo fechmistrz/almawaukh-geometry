@@ -44,7 +44,12 @@ def index():
 
 @app.route('/extend/<title>')
 def extend(title):
-    subprocess.run(['python3', 'extend.py', title])
+    data = load_data()
+    if title not in data:
+        data[title] = {"dead": False, "forward": [], "backward": []}
+        save_data(data)
+        subprocess.run(['python3', 'crawl-wiki.py', "wiki-geometry.json"])
+
     return redirect(url_for('index'))
 
 @app.route('/mark_dead/<title>')
