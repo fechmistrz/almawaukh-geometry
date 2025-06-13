@@ -1,108 +1,9 @@
 \subsection{Okręgi}
-
-\begin{proposition}
-    Niech $\Gamma$ będzie okręgiem o środku $O$ oraz promieniu $OA$.
-    Wtedy prosta prostopadła do $OA$, która przechodzi przez $A$, jest styczną do okręgu, leżącą (poza punktem $A$) na zewnątrz okręgu $\Gamma$.
-    Odwrotnie, każda prosta, która jest styczna w punkcie $A$ do okręgu $\Gamma$, musi być prostopadła do prostej $OA$.
-\end{proposition} % Hartshorne 105
-
-\begin{corollary}
-    Przez każdy punkt okręgu przechodzi dokładnie jedna styczna do tego okręgu.
-\end{corollary} % Hartshorne 105
-
-\begin{corollary}
-    Prosta, która nie jest styczna do okręgu i nie jest z nim rozłączna, musi przecinać go w dokładnie dwóch punktach.
-\end{corollary} % Hartshorne 106
-
-\begin{proposition}
-    Niech $O_1, O_2, A$ będą trzema punktami.
-    Następujące warunki są równoważne: punkty $A, O_1, O_2$ są współliniowe; okręgi o promieniach $O_1A$, $O_2A$ są styczne.
-\end{proposition} % Hartshorne 105
-
-\begin{corollary}
-    Dwa okręgi, które nie są rozłączne i nie są styczne, mają dokładnie dwa punkty wspólne.
-\end{corollary} % Hartshorne 106
-
-Potrzebujemy dodatkowego aksjomatu, by okręgi, od których oczekujemy, że się przetną, naprawdę się przecięły:
-
-\begin{axiom}[o części wspólnej dwóch okręgów, E]
-    \label{axiom_e}
-    Niech $\Gamma_1$, $\Gamma_2$ będą dwoma okręgami takimi, że każdy zawiera pewien punkt leżący wewnątrz drugiego.
-    Wtedy istnieje punkt leżący na obydwu okręgach równocześnie.
-\end{axiom}
-
-\begin{proposition}[o części wspólnej prostej i okręgu, LCI]
-    Na płaszczyźnie Hilberta spełniającej aksjomat E, jeśli prosta $l$ zawiera punkt leżący wewnątrz okręgu $\Gamma$, to przecina ten okrąg.
-\end{proposition}
-
-Dopiero teraz jesteśmy w stanie uratować twierdzenia (I.1), (I.22), (III.I), (III.17) z Elementów Euklidesa, do tego wszystkie dalsze wyniki aż do III.19 (ponieważ III.20 i dalej wymagany jest aksjomat Playfaira).
-
 \subsubsection{Kąty środkowe, wpisane, dopisane}
-
-\begin{proposition}
-    Kąt środkowy jest dwa razy większy od kąta wpisanego opartego na tym samym łuku.
-\end{proposition}
-To jest Guzicki \cite[s. 11]{guzicki_2021}.
-
-\begin{corollary}
-    Kąty wpisane oparte na tym samym łuku (ogólniej: na równych łukach) są równe.
-\end{corollary}
-
-\begin{corollary}
-    Kąty oparty na półokręgu jest prosty.
-\end{corollary}
-
-\begin{corollary}
-    \label{ab_twice_pi}
-    Kąty wpisane oparte na dwóch różnych łukach $AB$ dają w sumie $\pi$.
-\end{corollary}
-
-\begin{proposition}
-    Kąt dopisany do okręgu jest równy kątowi wpisanemu opartemu na łuku zawartym w danym kącie dopisanym.
-\end{proposition}
-% Guzicki s. 18
-
-\begin{proposition}[okrąg opisany na czworokącie]
-	Niech $A$, $B$, $C$, $D$ będą czterema punktami na płaszczyźnie takimi, że $A$ i $B$ leżą po tej samej stronie prostej $CD$.
-	Wtedy następujące warunki są równoważne: punkty $A$, $B$, $C$, $D$ leżą na jednym okręgu; kąty $\angle DAC$ i $\angle DBC$ są sobie równe; suma dwóch przeciwległych kątów czworokąta $ABCD$ ma miarę kąta półpełnego.
-\end{proposition}
-
-Jedna ze wspomnianych implikacji to wniosek \ref{ab_twice_pi}.
-
-\begin{proposition}
-	Niech $\Gamma$ będzie okręgiem opisanym na czworokącie $ABCD$.
-	Niech $\Gamma_1$, $\Gamma_2$, $\Gamma_3$, $\Gamma_4$ będą dowolnymi okręgami, które przechodzą przez $AB$, $BC$, $CD$, $DA$.
-	Wtedy ich cztery nowe punkty przecięcia tworzą czworokąt cykliczny.
-\end{proposition}
-
-Geometria koła i kątów, twierdzenie Apolloniusza (s. 22)
+\input{triangle-circle/circle/angles}
 
 \subsubsection{Okręgi wpisane i opisane}
-Styczna do okręgu, okrąg wpisany w kąt.
-Okrąg wpisany w trójkąt, okręgi dopisane do trójkąta.
-Warunki istnienia okręgu stycznego do czterech prostych.
-
-Euklides (III.35):
-
-% https://en.wikipedia.org/wiki/Intersecting_chords_theorem
-\begin{proposition}[twierdzenie o cięciwach]
-    \label{prop_intersecting_chords}
-	Niech punkty $A$, $B$ leżą na pewnej prostej przechodzącej przez punkt $S$, zaś punkty $C$, $D$ leżą na innej prostej przez ten punkt.
-	Wtedy cztery punkty $A$, $B$, $C$, $D$ leżą na jednym okręgu wtedy i tylko wtedy, gdy:
-	\begin{equation}
-		|AS| \cdot |BS| = |CS| \cdot |DS|.
-	\end{equation}
-\end{proposition}
-
-Po angielsku nazywa się to ,,\emph{intersecting chords theorem}''; Bogdańska i Neugebauer nazywają to nie wiedzieć czemu ,,potęgowym kryterium współokręgowości''.
-Ech.
-Elementarny dowód korzysta z~podobieństwa trójkątów $\triangle ASD$ i $\triangle BSC$.
-Nieelementarny zauważa, że obydwa iloczyny są równe (poza znakiem) potędze punktu $S$ względem okręgu przez punkty $A$, $B$, $C$, $D$.
-Definicję \ref{def_power_point} potęgi punktu podamy już za kilka stron.
-
-\begin{proposition}[twierdzenie o siecznych i stycznych]
-	Jeżeli... (Neugebauer s. 66)
-\end{proposition}
+\input{triangle-circle/circle/incircle-excircle}
 
 \subsubsection{Twierdzenia Ptolemeusza, Carnota, Caseya}
 \input{triangle-circle/circle/ptolemy}
@@ -117,20 +18,11 @@ Definicję \ref{def_power_point} potęgi punktu podamy już za kilka stron.
 \subsubsection{W powijakach: twierdzenie Brianchona}
 twierdzenie Brianchona
 
-\subsubsection{W powijakach: konstrukcja stycznej do okręgu samą linijką}
-konstrukcja stycznej do okręgu samą linijką
-
 \subsubsection{W powijakach: okręgi współpękowe}
 okręgi współpękowe
 
 \subsubsection{W powijakach: twierdzenie Gaussa-Bodenmillera}
 twierdzenie Gaussa-Bodenmillera
-
-\subsubsection{W powijakach: twierdzenie o motylku}
-twierdzenie o motylku
-
-\subsubsection{W powijakach: formuła Eulera na odległość między środkami okręgu opisanego i wpisanego (dla trójkąta)}
-formuła Eulera na odległość między środkami okręgu opisanego i wpisanego (dla trójkąta)
 
 \subsubsection{W powijakach: twierdzenie Ponceleta dla trójkąta.}
 twierdzenie Ponceleta dla trójkąta
