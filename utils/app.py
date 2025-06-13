@@ -54,13 +54,16 @@ def compute_scores(data):
         if page.lower() in seen_lower:
             continue
 
-        weights = {nghbr: word_counts.get(nghbr, 0) for nghbr in set(neighbors[page])}
-        float_scores[page] = count + sum(weights.values(), 0) / float(max_count)
+        unique = set(neighbors[page])
+        unique.add(page)
+        weights = {nghbr: word_counts[nghbr] for nghbr in unique}
+        float_scores[page] = count + min(weights.values()) / max_count
 
-        # print(f"DEBUG: Calculating score for '{page}'")
-        # print(f"  Occurrences (count): {count}")
-        # print(f"  Word counts of neighbors: {weights=}")
-        # print(f"  Weight (sum of words):  {enhanced_scores[page]=}=")
+        if "Zhang Heng" in page:
+            print(f"DEBUG: Calculating score for '{page}'")
+            print(f"  Occurrences (count): {count}")
+            print(f"  Word counts of neighbors: {weights=}")
+            print(f"  Weight (sum of words):  {float_scores[page]=}=")
 
     # Group pages by integer part of float score
     grouped = defaultdict(list)

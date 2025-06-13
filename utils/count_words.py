@@ -25,9 +25,10 @@ def main():
 
     # Gather all linked pages
     linked_pages = set()
-    for entry in wiki_pages.values():
+    for k, entry in wiki_pages.items():
         linked_pages.update(entry.get("forward", []))
         linked_pages.update(entry.get("backward", []))
+        linked_pages.add(k)
 
     to_fetch = sorted([title for title in linked_pages if title not in seen])
     total = len(to_fetch)
