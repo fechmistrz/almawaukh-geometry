@@ -4,125 +4,38 @@
 % https://en.wikipedia.org/wiki/Compass_equivalence_theorem
 % https://en.wikipedia.org/wiki/4,294,967,295
 \section{Konstrukcje klasyczne}
+Konstrukcje klasyczne zwane też platońskimi to wspólna nazwa problemów, których celem jest wyznaczenie odcinków, kątów czy też okręgów spełniających dane warunki, korzystając przy tym jedynie z linijki (bez podziałki!) oraz cyrkla.
+Współczesny cyrkiel jest sztywny i potrafi przenosić odcinki, bo zachowuje swoje rozwarcie po podniesieniu z płaszczyzny rysunku.
+Starożytni korzystali z cyrkla zapadającego się, ale nie ograniczało to ich możliwości, ponieważ Euklides udowadnia bardzo szybko twierdzenie o równoważności obydwu cyrkli (I.2).
+% rigid compass = modern compass
+% traditional collapsing compass = divider
 
-% The compass equivalence theorem proves that the rigid compass (also called the modern compass) - one that holds its spacing when lifted from the plane - is equivalent to the traditional collapsing compass (also called divider) - one that does not retain its spacing, thus "resetting to zero", every time it is lifted from the plane. The ability to transfer distances (i.e. construct congruent circles, translate a circle in the plane) - an operation made trivial by the fixable aperture of a rigid compass - was proven by Euclid to be possible with the collapsing compass. Consequently, the rigid compass and the collapsing compass are equivalent; what can be constructed by one can be constructed by the other. => https://en.wikipedia.org/wiki/Poncelet%E2%80%93Steiner_theorem#Other_types_of_restricted_construction
+Obydwa przyrządy są wyidealizowane: linijka jest nieskończenie długa, ma tylko jeden brzeg i~jak już napisaliśmy, nie ma podziałki.
+Cyrkiel może kreślić okręgi o dowolnie małych lub dużych promieniach.
+Zabronione jest korzystanie jednocześnie z cyrkla i linijki, ponieważ razem są w stanie imitować linijkę z podziałką.
+Ślad, jaki zostawiają na kartce, jest nieskończenie cienki.
 
-\todofoot{Klasycznie zakłada się, że cyrkiel nie może przenosić odcinków, bo się rozpada po podniesieniu: However, by the compass equivalence theorem in Proposition 2 of Book 1 of Euclid's Elements, no power is lost by using a collapsing compass.} % The idealized ruler, known as a straightedge, is assumed to be infinite in length, have only one edge, and no markings on it. The compass is assumed to have no maximum or minimum radius, and is assumed to "collapse" when lifted from the page, so it may not be directly used to transfer distances. (This is an unimportant restriction since, using a multi-step procedure, a distance can be transferred even with a collapsing compass; see compass equivalence theorem. Note however that whilst a non-collapsing compass held against a straightedge might seem to be equivalent to marking it, the neusis construction is still impermissible and this is what unmarked really means: see Markable rulers below.) More formally, the only permissible constructions are those granted by the first three postulates of Euclid's Elements.
-%  
-
-\todofoot{Hipokrates podwoił sześcian: Hippocrates and Menaechmus showed that the volume of the cube could be doubled by finding the intersections of hyperbolas and parabolas, but these cannot be constructed by straightedge and compass.[2]: p. 30  In the fifth century BCE, Hippias used a curve that he called a quadratrix to both trisect the general angle and square the circle, and Nicomedes in the second century BCE showed how to use a conchoid to trisect an arbitrary angle;[2]: p. 37  but these methods also cannot be followed with just straightedge and compass.}
-
-
-
-\subsection{Proste}
-% TODO: Hartshorne s. 103
-\begin{problem}
-    Dwusieczna kąta.
-\end{problem}
-
-\begin{problem}
-    Środek odcinka.
-\end{problem}
-
-\begin{problem}
-    Prosta prostopadła do prostej, przechodząca przez punkt.
-\end{problem}
-
-\begin{problem}
-    Prosta równoległa do prostej, przechodząca przez punkt.
-\end{problem}
-
-% TODO: Neugebauer s. 67
-\begin{problem}
-    Okrąg styczny do prostej, przechodzący przez dwa punkty.
-\end{problem}
-
-
+\subsection{Łatwe}
+\input{constructions/constructions-easy}
 
 \subsection{Trudniejsze}
-% https://en.wikipedia.org/wiki/Cramer–Castillon_problem
-
-\begin{problem}[Monge'a?]
-    Okrąg, który przecina trzy okręgi $\Gamma_1$, $\Gamma_2$, $\Gamma_3$ pod kątem prostym.
-\end{problem}
-
-% https://mathworld.wolfram.com/MongesProblem.html
-Dla każdej pary okręgów $\Gamma_i$, $\Gamma_j$ znajdujemy oś potęgową; jeśli trzy osie przecinają się w punkcie $O$ leżącym na zewnątrz okręgów $\Gamma_i$, to jest to środek szukanego okręgu.
-Promieniem szukanego okręgu jest odcinek styczny do $\Gamma_i$ oraz przechodzący przez $O$.
-Jeśli jednak środek okręgu leży wewnątrz któregoś okręgu albo osie nie przecinają się, to problem nie ma rozwiąania.
-
-\begin{problem}
-    Dany jest odcinek $AB$ oraz punkt $P$ wewnątrz okręgu.
-    Skonstruować cięciwę tego okręgu, która przechodzi przez punkt $P$ o długości takiej samej, jak odcinek $AB$.
-\end{problem}
-% Hartshorne s. 26
-
-\begin{problem}
-    Dany jest odcinek $AB$, inny odcinek o długości $d$ oraz kąt $\alpha$.
-    Skonstruować trójkąt $ABC$ tak, by kąt przy wierzchołku $C$ miał miarę $\alpha$, zaś suma długości ramion tego kąta była równa $d$.
-\end{problem}
-% Hartshorne s. 26
-
-\begin{problem}
-    Dane są dwa okręgi takie, że żaden nie jest zawarty w drugim.
-    Skonstruować styczną do obydwu okręgów.
-\end{problem}
-% Hartshorne s. 26
-
-\begin{problem}
-    Dany jest okrąg $\Gamma$ oraz jego środek $O$.
-    Skonstruować trzy przystające okręgi, które są styczne do pozostałych dwóch oraz do $\Gamma$. \hfill \emph{(13 kroków)}. % Hartshorne s. 51
-\end{problem}
-% Hartshorne s. 26
-
-\begin{problem}
-    Dany jest okrąg $\Gamma$ oraz dwa punkty $A$ i $B$.
-    Skonstrować punkt $C$ na okręgu $\Gamma$ tak, by odcinek łączący punkty przecięcia prostych $CA$, $CB$ z okręgiem $\Gamma$ był równoległy do odcinka $AB$.
-\end{problem}
-% Hartshorne s. 58-59
-
-\begin{problem}
-    Skonstruować trzy parami styczne okręgi, każdy o innym promieniu, których środki nie są współliniowe. \hfill \emph{(7 kroków)}. % Hartshorne s. 62
-\end{problem}
-
-\subsection{Wyrocznia w Delfach}
-\input{constructions/delphi}
+\input{constructions/constructions-hard}
 
 \subsection{Wielokąty foremne}
 \input{constructions/regular-polygons}
 
-\subsection{Zadanie Malfattiego}
-\input{constructions/malfatti}
-
-\subsection{Apolloniusz}
-GUZICKI-19 **zadanie konstrukcyjne apolloniusza** wykorzystuje twierdzenie menelaosa
+\subsection{Wyrocznia w Delfach}
+\input{constructions/delphi}
 
 \input{constructions/circle-five-points}
 
 \subsection{Stożkowe}
 przecięcie prostej z parabolą (hartshorne s. 247)
-
-% TODO: Alhazen => https://en.wikipedia.org/wiki/Straightedge_and_compass_construction
-% https://en.wikipedia.org/wiki/Alhazen%27s_problem
-
-s. 278 Hartshorne: problem Alhazen, równokąty widziane z dwóch punktów na okręgu.
-\todofoot{Problem bilardowy Alhazena
-Opisać w danym okręgu trójkąt równoramienny, którego ramiona przechodzą przez dwa dane punkty wewnątrz okręgu.
-Problem ten pochodzi od arabskiego matematyka Abu Alego al Hassana ibn al Hassana ibn Alhajtama (ok. 965–ok. 1039), którego imię zostało przekształcone na Alhazen przez tłumaczy jego dzieła Optyka.
-W Optyce problem ten ma następującą postać:
-„Znajdź punkt na wklęsłym zwierciadle sferycznym, w który musi trafić promień światła wychodzący z danego punktu, aby po odbiciu dotarł do innego danego punktu.”
-Problem ten można sformułować także w inny sposób, np.:
-„Na okrągłym stole bilardowym znajdują się dwie bile; w jaki sposób należy uderzyć jedną z nich, aby po odbiciu od bandy trafiła w drugą?”
-lub
-„Na okręgu znajdź punkt, którego suma odległości od dwóch danych punktów wewnątrz okręgu jest minimalna (lub maksymalna).”
-Z problemem tym mierzyło się wielu wybitnych matematyków po Alhazenie, m.in. Huygens, Barrow, de L’Hôpital, Riccati i Quetelet.
-% In 1997, the Oxford mathematician Peter M. Neumann proved the theorem that there is no ruler-and-compass construction for the general solution of the ancient Alhazen's problem (billiard problem or reflection from a spherical mirror).[10][11]
-}
+\input{constructions/alhazen}
 
 \subsection{Konstrukcje bez linijki}
 \input{constructions/no_ruler}
 \input{constructions/napoleons-problem}
-
 
 \subsection{Konstrukcje bez cyrkla}
 \input{constructions/no_compass}
@@ -130,24 +43,9 @@ Z problemem tym mierzyło się wielu wybitnych matematyków po Alhazenie, m.in. 
 \subsection{Uszkodzone przyrządy}
 \input{constructions/broken}
 
-%
-
-% Konstruowalna => stopień Q(x) nad Q to potęga 2, ale nie w drugą stronę.
-% Podwojenie sześcianu. % https://en.wikipedia.org/wiki/Pandrosion
-% Trysekcja kąta.
-
-% https://pl.wikipedia.org/wiki/Punkty_Brocarda
-
+\subsection{Przyrządy potężniejsze niż cyrkiel i linjka bez podziałki}
 \todofoot{konstrukcja neusis z linijką z podziałką} % https://pl.wikipedia.org/wiki/Konstrukcja_neusis
+\todofoot{Solid constructions} % https://en.wikipedia.org/wiki/Straightedge_and_compass_construction#Solid_constructions % https://en.wikipedia.org/wiki/Straightedge_and_compass_construction#Angle_trisection_2
+\todofoot{Origami} % https://en.wikipedia.org/wiki/Straightedge_and_compass_construction#Origami
 
-% https://en.wikipedia.org/wiki/Straightedge_and_compass_construction#Solid_constructions
-% https://en.wikipedia.org/wiki/Straightedge_and_compass_construction#Angle_trisection_2
-% https://en.wikipedia.org/wiki/Straightedge_and_compass_construction#Origami
-% https://en.wikipedia.org/wiki/Straightedge_and_compass_construction#Markable_rulers
-
-Wpisać w dany okrąg trójkąt, którego boki przechodzą przez trzy dane punkty.
-Ten problem, postawiony przez szwajcarskiego matematyka Cramera, nosi nazwę włoskiego matematyka Castillona, który rozwiązał go w 1776 roku.
-(Gabriel Cramer, 1704–1752, opublikował w 1750 roku swoje główne dzieło Introduction à l’analyse des lignes courbes algébriques, w którym po raz pierwszy rozwiązano układ równań liniowych za pomocą wyznaczników.
-I. F. Salvemini, 1709–1791, przyjął nazwisko Castillon od swojego miejsca urodzenia – Castiglione w Toskanii.)
-Poniższe proste, choć niełatwe do zauważenia rozwiązanie problemu Castillona pochodzi od Włocha Giordano.
-% https://en.wikipedia.org/wiki/Cramer–Castillon_problem
+\todofoot{Markable ruler} % https://en.wikipedia.org/wiki/Straightedge_and_compass_construction#Markable_rulers

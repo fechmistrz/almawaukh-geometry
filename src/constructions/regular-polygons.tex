@@ -1,5 +1,12 @@
+\begin{problem}
+    Skonstruować wielokąt foremny o $n$ kątach.
+\end{problem}
+
+Konstrukcję trójkąta równobocznego oraz kwadratu była znana dobrze w starożytności i nie wiadomo, kto pierwszy na nią wpadł.
 Euklides potrafił skonstruować wielokąt foremny o $n$ bokach dla $n = 3$ (I.1), $n = 4$ (I.46), $n = 5$ (IV.11), $n = 6$ (IV.15) oraz $n = 15$ (IV.16).
-Ptolemeusz podał konstrukcję pięciokąta foremnego w Almageście.
+\index[persons]{Euklides}
+Ptolemeusz podał inną konstrukcję pięciokąta foremnego w Almageście.
+\index[persons]{Ptolemeusz}
 
 Mając wielokąt o $n$ bokach, bisekcja kąta środkowego pozwala podwoić liczbę boków do $2n$.
 Możemy więc uznać, że Euklides potrafił wykreślić wielokąty, które miały
@@ -8,30 +15,36 @@ Możemy więc uznać, że Euklides potrafił wykreślić wielokąty, które mia�
 \end{equation}
 boków.
 Lista została rozszerzona dopiero w 1796 roku przez Gaussa: pokazał, że siedemnastokąt foremny jest konstruowalny.
+\index{Gauss, Carl Friedrich}%
 Był tak zadowolony z tego wyniku, że zażyczył sobie wyryć właśnie tę figurę na swoim grobie.
 Faktycznej konstrukcji dokonał Johannes Erchinger w 1800 roku.
 \index[persons]{Erchinger, Johannes}%
-Hartstone \cite[s. 250-259]{hartshorne2000} poświęca tej konstrukcji całą sekcję 29.
-
-W 1832 roku Friederich Richelot skonstruował $257$-kąt.
-\index[persons]{Richelot, Friederich}
-Jego cierpliwość przyćmiewa konstrukcja $65\,537$-kąta Johanna Hermesa z 1896 roku, na którą poświęcił dziesięć lat swojego życia (i dwieście stron rękopisu).
-% The construction is very complex; Hermes spent 10 years completing the 200-page manuscript
+Hartstone \cite[s. 250-259]{hartshorne2000} poświęca tej konstrukcji całą sekcję.
 
 W ogólności, mamy:
 \begin{theorem}[Gaussa-Wantzla]
-    Wielokąt foremny o $n$ bokach jest konstruowalny przy pomocy cyrkla i linijki wtedy i tylko wtedy, kiedy $n$ jest postaci
+    \label{gauss_wantzel}
+    Wielokąt foremny o $n$ bokach jest konstruowalny przy pomocy cyrkla i~linijki bez podziałki wtedy i tylko wtedy, kiedy $n$ jest postaci
     \begin{equation}
         n = 2^r p_1 \cdot \ldots \cdot p_s,
     \end{equation}
-    $r, s \ge 0$, gdzie $p_i$ są różnymi liczbami pierwszymi postaci $2^{2^k} + 1$, na przykład: $3$, $5$, $17$, $257$, $65537$
+    $r, s \ge 0$, gdzie $p_i$ są różnymi liczbami pierwszymi postaci $2^{2^k} + 1$, na przykład: $3$, $5$, $17$, $257$, $65537$.
 \end{theorem}
 
-Uzasadnienie można znaleźć u Hartstone'a \cite[s. 258]{hartshorne2000}.
 Gauss znalazł warunek wystarczający i napisał bez dowodu w \emph{Disquisitiones Arithmeticae} (1801), że jest też konieczny.
 Brakujący dowód został dodany przez Pierre'a Wantzla w 1837 roku.
+\index[persons]{Wantzel, Pierre}
+Spisany współczesnym językiem znajdzie się u Hartstone'a \cite[s. 258]{hartshorne2000}.
 
-% TODO: Coxeter, s. 26
+Twierdzenie Gaussa zachęcało do znalezienia przepisu na wielokąty foremne o większej liczbie boków.
+W 1822 roku Magnus Paucker \cite{paucker_1822}, a dziesięć lat później i prawie pewne, że niezależnie także Friederich Richelot \cite{richelot_1832} znaleźli konstrukcję $257$-kąta foremnego. 
+\index[persons]{Paucker, Magnus}%
+\index[persons]{Richelot, Friederich}%
+Ich cierpliwość przyćmiewa konstrukcja $65\,537$-kąta Johanna Hermesa z 1896 roku, na którą poświęcił dziesięć lat swojego życia (i dwieście stron rękopisu).
+
+Pełna lista konstruowalnych wielokątów foremnych o nieparzyście wielu bokach to: 3, 5, 15 (znane starożytnym), 17, 51, 85, 255 (znane Gaussowi), 257, 771, 1 285, 3 855, 4 369, 13 107, 21 845, 65 535 (znane Pauckerowi/Richelotowi), 65 537, 196 611, 327 685, 983 055, 1 114 129, 3 342 387, 5 570 645, 16 711 935, 16 843 009, 50 529 027, 84 215 045, 252 645 135, 286 331 153, 858 993 459, 1 431 655 765, 4 294 967 295; zakładamy przy tym, że istnieje tylko pięć liczb pierwszych Fermata.
+
+\todofoot{Coxeter, s. 26}
 
 \begin{problem}
     Skonstrować trójkąt równoboczny wpisany w okrąg, którego środek nie jest znany. \hfill \emph{(7 kroków)}
@@ -52,4 +65,19 @@ Jeśli mamy zadany jeden z jego boków, konstrukcja wymaga 11 kroków. % Hartsho
 GUZICKI-12 pięciokąta - durer i da vinci.
 
 \subsubsection{Konstrukcje z niestandardowymi przyborami}
-$n = 7$ (niemożliwe), możliwe ze znaczoną linijką: Hartshorne rozdział 30/31
+Jeżeli mamy do dyspozycji trysektor kąta, potrafimy zbudować więcej wielokątów foremnych niż sugeruje to twierdzenie \ref{gauss_wantzel}:
+
+\begin{proposition}
+    Wielokąt foremny o $n$ bokach jest konstruowalny przy pomocy cyrkla, linijki bez podziałki oraz trysektora kąta wtedy i tylko wtedy, kiedy $n$ jest postaci
+    \begin{equation}
+        n = 2^r 3^q p_1 \cdot \ldots \cdot p_s,
+    \end{equation}
+    $q, r, s \ge 0$, gdzie $p_i$ są różnymi liczbami pierwszymi Pierponta, postaci $2^t3^u + 1$.
+\end{proposition}
+
+To są dokładnie wielokąty, które można skonstruować używając stożkowych, albo równoważnie origami.
+Lista nowych nieparzystych liczb $n$, który dostarcza ten fakt, to \textbf{7}, $9$, \textbf{13}, \textbf{19}, $21$, $27$, $35$, \textbf{37}, $39$, $45$, $57$, $63$, $65$, \textbf{73}, $81$, $91$, $95$, \textbf{97}, $105$, \textbf{109}, $111$, $117$, $119$, $133$, $135$, $153$, \textbf{163}, $171$, $185$, $189$, \textbf{193}, $195$, $219$, $221$, $243$, $247$, \textbf{257}, $259$, $273$, $285$, $291\ldots$ (pogrubiono liczby pierwsze).
+
+Szczegóły zapewnia artykuł Gleasona \cite{gleason_1988}.
+\index[persons]{Gleason, Andrew}%
+Konstrukcję siedmiokąta przy użyciu znaczonej linijki opisuje Hartshorne \todofoot{Hartshorne rozdział 30/31.}.
