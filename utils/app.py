@@ -1,103 +1,65 @@
-#!/usr/bin/env python3
-from flask import Flask, render_template, redirect, url_for, request
-from flask import Flask, render_template, redirect
-
-import json
-import subprocess
-from collections import defaultdict
-import os
+# app.py
+from flask import Flask, render_template_string, redirect, request
+import crawler
 
 app = Flask(__name__)
-DATA_FILE = 'wiki-geometry.json'
 
-def load_data():
-    with open(DATA_FILE) as f:
-        return json.load(f)
 
-def save_data(data):
-    with open(DATA_FILE, 'w') as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
+TEMPLATE = """
+<!doctype html>
+<title>Wiki Crawler</title>
+<h1>Suggested Pages to Visit</h1>
+{% for yearmonth, pages in good.items() %}
+<h2>h2= {{yearmonth}}</h2>
+<p>
+{{pages | safe}}
+</p>
+{% endfor %}
 
-def compute_scores(data):
-    from collections import defaultdict
-    import json
+{% for cata, catb in cats %}
+A {{cata}} B {{catb}}
+{% endfor %}
+"""
 
-    # Load word-counts
-    try:
-        with open("word-count.json") as f:
-            word_counts = json.load(f)
-            max_count = max(word_counts.values())
-    except FileNotFoundError:
-        word_counts = {}
-
-    # Lowercased pages that are already explored
-    seen_lower = {
-        title.lower() for title, entry in data.items()
-        if entry['dead'] or entry['forward'] or entry['backward']
-    }
-
-    link_counts = defaultdict(int)
-    neighbors = defaultdict(list)
-
-    # Count occurrences and gather neighbors for each linked page
-    for page, entry in data.items():
-        for neighbor in entry.get('forward', []) + entry.get('backward', []):
-            link_counts[neighbor] += 1
-            neighbors[neighbor].append(page)
-
-    float_scores = {}
-    for page, count in link_counts.items():
-        if page.lower() in seen_lower:
-            continue
-
-        unique = set(neighbors[page])
-        unique.add(page)
-        weights = {nghbr: word_counts[nghbr] for nghbr in unique}
-        float_scores[page] = count + min(weights.values()) / max_count
-
-    # Group pages by integer part of float score
-    grouped = defaultdict(list)
-    for page, score in float_scores.items():
-        group_key = int(score)
-        grouped[group_key].append((score, page))  # keep float score for sorting within group
-
-    # Sort each group by float score descending
-    sorted_grouped = {
-        group: sorted(items, reverse=True)[:10]  # now items are (score, title)
-        for group, items in grouped.items()
-    }
-    return sorted_grouped
+x = '''{% for page, score, good_score, bad_score in pages %}
+  <li>
+    <a href="{{ crawler.get_url(page) }}" target="_blank">{{ page }}</a>
+    [score: {{ score }}, good: {{ good_score }}, bad: {{ bad_score }}]
+    <a href="/mark/{{ page }}?state=good">✅</a>
+    <a href="/mark/{{ page }}?state=bad">❌</a>
+  </li>
+{% endfor %}
+'''
 
 @app.route("/")
 def index():
-    data = load_data()
-    scores = compute_scores(data)
-    from collections import OrderedDict
-    sorted_scores = OrderedDict(
-        sorted(scores.items(), key=lambda x: x[0], reverse=True)
-    )
-    return render_template("index.html", pages=sorted_scores)
+    unknown_pages = crawler.list_unvisited_pages()
+    page_scores = []
 
-@app.route('/extend/<title>')
-def extend(title):
-    data = load_data()
-    if title not in data:
-        data[title] = {"dead": False, "forward": [], "backward": []}
-        save_data(data)
-        subprocess.run(['make', 'crawl'])
+ 
 
-    return redirect(url_for('index'))
+    # rather good questions
+    # 2025-06
+    # ... sorted by some score, limit 10
+    # 2025-05
+    # ... sorted by some score, limit 10
+    # 2025-04
+    # ... sorted by some score, limit 10
 
-@app.route('/mark_dead/<title>')
-def mark_dead(title):
-    data = load_data()
-    if title not in data:
-        data[title] = dict()
-    data[title]['dead'] = True
-    data[title]['forward'] = []
-    data[title]['backward'] = []
-    save_data(data)
-    return redirect(url_for('index'))
+    # rather bad
 
-if __name__ == '__main__':
+    page_scores.sort(key=lambda x: x[1], reverse=True)
+    gp = crawler.list_good_pages()
+
+    # page_scores = [["Poland", 1, 1, 0]]
+    return render_template_string(TEMPLATE, oracle={"a":" B"}, cats=crawler.list_cats("unknown"), good=gp)
+
+@app.route("/mark/<page>")
+def mark(page):
+    state = request.args.get("state")
+    if state in ("good", "bad"):
+        crawler.mark_page(page, state)
+    return redirect("/")
+
+if __name__ == "__main__":
     app.run(debug=True, port=5001)
