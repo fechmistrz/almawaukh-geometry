@@ -8,10 +8,16 @@ app = Flask(__name__)
 TEMPLATE = """
 <!doctype html>
 <title>Wiki Crawler</title>
+  <style>
+    body { font-family: sans-serif; margin: 2em; }
+    .page-entry { margin-bottom: 0.5em; }
+    .title { font-weight: bold; }
+  </style>
 <h1>Suggested Pages to Visit</h1>
 {% for yearmonth, pages in good.items() %}
-<h2>h2= {{yearmonth}}</h2>
+
 <p>
+<b>{{yearmonth}}</b>
 {{pages | safe}}
 </p>
 {% endfor %}

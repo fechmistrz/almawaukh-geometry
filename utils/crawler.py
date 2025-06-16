@@ -13,6 +13,18 @@ SITE = pw.Site("en", "wikipedia")
 
 DATA_FILE = Path("crawling.json")
 
+def get_scores():
+    data = _load()
+    forward_backward = sum([
+        v.get("forward", []) + v.get("backward") for k, v in data.items() if v.get("state") == "good"
+    ], [])
+    import collections
+    forward_backward = list(collections.Counter(forward_backward).most_common())
+    forward_backward = [item [0] for item, _ in collections.Counter(forward_backward).most_common()]
+
+    logging.error(f"{forward_backward=} XX")
+    return forward_backward
+
 def _load():
     with DATA_FILE.open() as f:
         d = json.load(f)
@@ -144,13 +156,17 @@ def list_good_pages():
         "[[en:Category:Euclidean geometry]]",
     ]
     data = _load()
+    xx = get_scores()
     data = {k: v for k, v in data.items() if v.get("state", "unknown") == "unknown" and any(gc in v.get("cats", []) for gc in good_cats)}
-    return list_into_timestamp_dict(data)
+    data = sorted([(xx.index(k), k, v) for k, v in data.items()])
+    data = {k: v for _, k, v in data}
+    pre_ret = list_into_timestamp_dict(data)
+    return pre_ret
 
 def list_into_timestamp_dict(what):
     timestamps = sorted([v.get("timestamp", None) for v in what.values()], reverse=True)
     logging.error(f"{timestamps=}")
-    return {ts: ", ".join([f'<a href="{get_url(k)}">{k}</a>' for k, v in what.items() if v.get("timestamp", None) == ts]) for ts in timestamps}
+    return {ts: ", ".join([f'<a href="{get_url(k)}">{k}</a> (<a href="/mark/{{ page }}?state=good">✅</a> <a href="/mark/{{ page }}?state=bad">❌</a>)' for k, v in what.items() if v.get("timestamp", None) == ts]) for ts in timestamps}
 
 def list_cats(mode):
     catdata = {
