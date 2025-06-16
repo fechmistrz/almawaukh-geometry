@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{greaseproof}[2024/08/28]
-\LoadClass[9pt, twoside]{extarticle}
+\LoadClass[9pt, twoside]{extbook}
 
 \RequirePackage[
 	paperwidth=6.125in,
