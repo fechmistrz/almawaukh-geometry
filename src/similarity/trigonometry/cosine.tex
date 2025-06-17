@@ -31,10 +31,7 @@ We Francji twierdzenie cosinusów do dzisiaj bywa nazywane \emph{théorème d'Al
         %\tkzInit[xmin=-0.5,xmax=6.5, ymin=-0.5,ymax=4.5]
         % \tkzClip
         \tkzDefPoint(0, 0){A}
-        \tkzDefPoint(3, -0.25){n}
-		\tkzDefPoint(8, -0.25){m}
 		\tkzDefPoint(3.25, 3.25){d}
-
 
 		\tkzDefPoint(6, 0){AB}
         \tkzDefPoint(10, 0){B}
@@ -42,16 +39,14 @@ We Francji twierdzenie cosinusów do dzisiaj bywa nazywane \emph{théorème d'Al
         \tkzDefPoint(35:4.75){CC}
 		\tkzDrawSegments(C,AB)
         \tkzDrawPolygon[line width=0.3mm](A,B,C)
-		\tkzDefMidPoint(A,C) \tkzGetPoint{b}
-		\tkzDefMidPoint(B,C) \tkzGetPoint{a}
 
         \tkzLabelPoint[below left](A){$A$}
         \tkzLabelPoint[below right](B){$B$}
         \tkzLabelPoint[above](C){$C$}
 
         \tkzLabelPoint(d){$d$}
-        \tkzLabelPoint[below](m){$m$}
-	\tkzDrawPoints[size=3,color=black,fill=black!80](A,B,C,AB)
+
+		\tkzDrawPoints[size=3,color=black,fill=black!80](A,B,C,AB)
 		\tkzDrawSegment[dim={$\,\,c\,\,$,-16pt,transform shape}](A,B)
 		\tkzDrawSegment[dim={$\,\,n\,\,$,-8pt,transform shape}](A,AB)
 		\tkzDrawSegment[dim={$\,\,m\,\,$,-8pt,transform shape}](AB,B)
