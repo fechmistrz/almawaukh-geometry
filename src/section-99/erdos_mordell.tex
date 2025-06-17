@@ -16,7 +16,9 @@ Później znajdzie się prostsze dowody: Kazarinoff (1957), Bankoff (1958) oraz 
 
 \begin{figure}[H] \centering
 \begin{minipage}[b]{.45\linewidth}
-\begin{center}\begin{tikzpicture}[scale=.4]
+\begin{center}
+    \begin{comment}
+    \begin{tikzpicture}[scale=.4]
     \tkzDefPoint(0, 0){A}
     \tkzDefPoint(10, 2){B}
     \tkzDefPoint(6, 7){C}
@@ -36,13 +38,16 @@ Później znajdzie się prostsze dowody: Kazarinoff (1957), Bankoff (1958) oraz 
     \tkzDrawPolygon[line width=0.3mm](A,B,C)
     \tkzMarkRightAngles[size=0.5](P,Pa,C P,Pb,A P,Pc,B)
     \tkzDrawPoints[size=3,color=black,fill=black!50](A,B,C,P,Pc,Pb,Pa)
-\end{tikzpicture}\end{center}
+\end{tikzpicture}
+\end{comment}
+    \end{center}
     \subcaption{nierówność Erdősa-Mordella}
     \label{erdos_mordell_barrowa}
 \end{minipage}
 %
 \begin{minipage}[b]{.45\linewidth}
-\begin{center}\begin{tikzpicture}[scale=.4]
+\begin{center}\begin{comment}
+    \begin{tikzpicture}[scale=.4]
     \tkzDefPoint(0, 0){A}
     \tkzDefPoint(10, 2){B}
     \tkzDefPoint(6, 7){C}
@@ -74,7 +79,9 @@ Później znajdzie się prostsze dowody: Kazarinoff (1957), Bankoff (1958) oraz 
     \tkzDrawSegments[line width=0.2mm,dashed](P,Pa P,Pb P,Pc)
     \tkzDrawPolygon[line width=0.3mm](A,B,C)
     \tkzDrawPoints[size=3,color=black,fill=black!50](A,B,C,P,Pc,Pb,Pa)
-\end{tikzpicture}\end{center}
+\end{tikzpicture}
+\end{comment}
+    \end{center}
     \subcaption{nierówność Barrowa}
     \label{erdos_mordell_barrowb}
 \end{minipage}

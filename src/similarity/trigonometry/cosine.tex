@@ -27,7 +27,9 @@ We Francji twierdzenie cosinusów do dzisiaj bywa nazywane \emph{théorème d'Al
 \begin{theorem}[Stewarta, 1746]
 \index{twierdzenie!Stewarta}
 	W trójkącie $\triangle ABC$ o bokach długości $a, b, c$ poprowadzono czewianę z~wierzchołka $C$ do boku $AB$ o długości $d$, dzieląc ten bok na odcinki długości $n$ oraz $m$, jak na rysunku:
-	\begin{center}\begin{tikzpicture}[scale=.4]
+	\begin{center}
+\begin{comment}
+    \begin{tikzpicture}[scale=.4]
         %\tkzInit[xmin=-0.5,xmax=6.5, ymin=-0.5,ymax=4.5]
         % \tkzClip
         \tkzDefPoint(0, 0){A}
@@ -52,7 +54,9 @@ We Francji twierdzenie cosinusów do dzisiaj bywa nazywane \emph{théorème d'Al
 		\tkzDrawSegment[dim={$\,\,m\,\,$,-8pt,transform shape}](AB,B)
 		\tkzDrawSegment[dim={$\,\,b\,\,$,8pt,transform shape,sloped}](A,C)
 		\tkzDrawSegment[dim={$\,\,a\,\,$,-8pt,transform shape,sloped}](B,C)
-    \end{tikzpicture}\end{center}
+    \end{tikzpicture}
+\end{comment}
+    \end{center}
 	Wtedy
 	\begin{equation}
 		b^2 m + c^2 n = a (d^2 + mn).

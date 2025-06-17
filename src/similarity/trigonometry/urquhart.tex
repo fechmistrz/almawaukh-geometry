@@ -3,7 +3,10 @@
 \begin{theorem}[Urquharta?]
 \index{twierdzenie!Urquharta}%
     Przy oznaczeniach jak na rysunku:
-    \begin{center}\begin{tikzpicture}[scale=.4]
+    \begin{center}
+\begin{comment}
+    
+    \begin{tikzpicture}[scale=.4]
         \tkzDefPoint(0, 0){E}
         \tkzDefPoint(267:5){E1}
         \tkzDefPoint(250:5){E2}
@@ -33,7 +36,9 @@
         \tkzDrawSegments[line width=0.2mm](S1,Dolny S1,Gorny S3,Gorny S2,Dolny)
         \tkzDrawPoints[size=3,color=black,fill=black!50](S1,S2,S3,S4,Dolny,Gorny)
         % konstrukcja z https://en.wikipedia.org/wiki/Ex-tangential_quadrilateral
-\end{tikzpicture}\end{center}
+\end{tikzpicture}
+\end{comment}
+    \end{center}
     niech $|AB| + |BC| = |AD| + |CD|$.
     Wtedy $|AE| + |CE| = |AF| + |CF|$.
 \end{theorem}

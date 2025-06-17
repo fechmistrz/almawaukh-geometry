@@ -10,7 +10,9 @@ Piszą o~nim Guzicki \cite[s. 160]{guzicki_2021}.
 \index{twierdzenie!Pitagorasa}%
 \label{theorem_pythagorean}%
     Niech $ABC$ będzie trójkątem prostokątnym, w~którym kąt przy wierzchołku $C$ jest prosty.
-    \begin{center}\begin{tikzpicture}[scale=.4]
+    \begin{center}
+\begin{comment}
+        \begin{tikzpicture}[scale=.4]
         %\tkzInit[xmin=-0.5,xmax=6.5, ymin=-0.5,ymax=4.5]
         % \tkzClip
         \tkzDefPoint(105:3){A}
@@ -29,7 +31,9 @@ Piszą o~nim Guzicki \cite[s. 160]{guzicki_2021}.
         \tkzDefSquare(A,C)
         \tkzDrawPolygon[fill=black!25](A,C,tkzFirstPointResult, tkzSecondPointResult)
         \tkzDrawPolygon[line width=0.4mm](A,B,C)
-    \end{tikzpicture}\end{center}
+    \end{tikzpicture}
+\end{comment}
+    \end{center}
     Wtedy suma pól jasnych kwadratów jest równa polu ciemnego kwadratu:
     \begin{equation}
         |AC|^2 + |BC|^2 = |AB|^2.
@@ -53,7 +57,9 @@ Dowód Euklidesa korzysta z zasady Cavalieriego i urzekł nas tak bardzo swoją 
     Niech $\triangle ABC$ będzie trójkątem prostokątnym, z kątem prostym przy wierzchołku $C$.
     Na bokach $BC$, $AB$, $CA$ kreślimy kolejno kwadraty $BCDE$, $ABFG$, $ACHI$ (konstrukcja kwadratu Euklidesa korzysta z postulatu równoległości).
 
-    \begin{center}\begin{tikzpicture}[scale=.4]
+    \begin{center}
+\begin{comment}
+            \begin{tikzpicture}[scale=.4]
         %\tkzInit[xmin=-0.5,xmax=6.5, ymin=-0.5,ymax=4.5]
         % \tkzClip
         \tkzDefPoint(105:3){A}
@@ -93,7 +99,9 @@ Dowód Euklidesa korzysta z zasady Cavalieriego i urzekł nas tak bardzo swoją 
         \tkzDrawSegments[line width=0.2mm](I,B)
         % \tkzMarkRightAngle[size=0.5](A,C,B)
         \tkzDrawPolygon[line width=0.5mm](A,B,C)
-    \end{tikzpicture}\end{center}
+    \end{tikzpicture}
+\end{comment}
+    \end{center}
     Z punktu $C$ opuszczamy wysokość na przeciwprostokątną $AB$ i przedłużamy tak, by przecięła kwadrat $ABFG$ w punktach $K$ i $L$.
     Łączymy punkty $B$ i $I$ oraz $C$ i $G$.
     Otrzymane trójkąty $\triangle BAI$ oraz $\triangle GAC$ są przystające na mocy cechy bok-kąt-bok ($AB$, $\angle BAI$, $AI$ oraz $AG$, $\angle GAC$, $AC$).

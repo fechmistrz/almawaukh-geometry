@@ -8,7 +8,9 @@ Poznamy teraz dwa wyróżnione punkty trójkąta, opisane w 1875 roku przez ofic
     Niech $\triangle ABC$ będzie trójkątem.
     Punkt $X$ leżący w jego wnętrzu taki, że kąty $\angle XAB$, $\angle XBC$, $\angle XCA$ są równej miary, nazywamy (pierwszym) punktem Crelle'a-Brocarda.
     \index{punkt Crelle'a-Brocarda}%
-    \begin{center}\begin{tikzpicture}[scale=.75]
+    \begin{center}
+\begin{comment}
+    \begin{tikzpicture}[scale=.75]
         \tkzInit[xmin=-0.5,xmax=6.5, ymin=-0.5,ymax=4.5]
         \tkzClip
         \tkzDefPoint(0, 0){A}
@@ -34,7 +36,9 @@ Poznamy teraz dwa wyróżnione punkty trójkąta, opisane w 1875 roku przez ofic
         \tkzFillAngle[fill=black!30,size=1](A,C,Bro1)
         \tkzDrawPolygon[line width=0.4mm](A,B,C)
         \tkzDrawPoints[size=3,color=black,fill=black!50](Bro1)
-    \end{tikzpicture}\end{center}
+    \end{tikzpicture}
+\end{comment}
+    \end{center}
     % Construct a circle through vertices A and B, tangent to side BC of the triangle.
     % Symmetrically, construct the other two circles.
     % These three circles intersect at the first Brocard Point of triangle ABC.
