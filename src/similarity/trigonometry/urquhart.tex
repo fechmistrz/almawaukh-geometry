@@ -1,6 +1,40 @@
+%
+
 \begin{theorem}[Urquharta?]
 \index{twierdzenie!Urquharta}%
-    Przy oznaczeniach jak na rysunku, niech $|AB| + |BC| = |AD| + |CD|$.
+    Przy oznaczeniach jak na rysunku:
+    \begin{center}\begin{tikzpicture}[scale=.4]
+        \tkzDefPoint(0, 0){E}
+        \tkzDefPoint(267:5){E1}
+        \tkzDefPoint(250:5){E2}
+        \tkzDefPoint(165:5){E3}
+        \tkzDefPoint(135:5){E4}
+        
+        \tkzDefLine[tangent at=E1](E) \tkzGetPoint{tan1}
+        \tkzDefLine[tangent at=E2](E) \tkzGetPoint{tan2}
+        \tkzDefLine[tangent at=E3](E) \tkzGetPoint{tan3}
+        \tkzDefLine[tangent at=E4](E) \tkzGetPoint{tan4}
+        
+        \tkzInterLL(E4,tan4)(E1,tan1) \tkzGetPoint{S1}
+        \tkzInterLL(E4,tan4)(E2,tan2) \tkzGetPoint{S2}
+        \tkzInterLL(E3,tan3)(E1,tan1) \tkzGetPoint{S3}
+        \tkzInterLL(E3,tan3)(E2,tan2) \tkzGetPoint{S4}
+
+        \tkzInterLL(S3,S4)(S1,S2) \tkzGetPoint{Gorny}
+        \tkzInterLL(S1,S3)(S2,S4) \tkzGetPoint{Dolny}
+
+        \tkzLabelPoint[below](S1){$A$}
+        \tkzLabelPoint[above left](S2){$D$}
+        \tkzLabelPoint(S3){$B$}
+        \tkzLabelPoint[above right](S4){$C$}
+        \tkzLabelPoint(Dolny){$E$}
+        \tkzLabelPoint[right](Gorny){$F$}
+
+        \tkzDrawSegments[line width=0.2mm](S1,Dolny S1,Gorny S3,Gorny S2,Dolny)
+        \tkzDrawPoints[size=3,color=black,fill=black!50](S1,S2,S3,S4,Dolny,Gorny)
+        % konstrukcja z https://en.wikipedia.org/wiki/Ex-tangential_quadrilateral
+\end{tikzpicture}\end{center}
+    niech $|AB| + |BC| = |AD| + |CD|$.
     Wtedy $|AE| + |CE| = |AF| + |CF|$.
 \end{theorem}
 
@@ -10,3 +44,5 @@ przypisuje to twierdzenie Malcolmowi Urquhartowi\footnote{Matematyk australijski
 \index{Urquhart, Malcolm}%
 Wiemy jednak, że de Morgan opublikował swój dowód już w 1841 roku; samo zaś twierdzenie jest przypadkiem granicznym innego wyniku Chaslesa, znanego w latach 186x.
 Poznaliśmy je, tak jak wiele innych, z książki Bogdańskiej, Neugebauera \cite[s. 97]{neugebauer_2018}.
+
+%
