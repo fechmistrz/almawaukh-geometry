@@ -106,6 +106,7 @@
 
 % constructions
 \RequirePackage{tkz-euclide}
+\RequirePackage{subcaption}
 
 % index
 \RequirePackage{makeidx}

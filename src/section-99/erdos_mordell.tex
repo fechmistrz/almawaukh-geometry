@@ -1,26 +1,101 @@
 %
 
 \label{subsection_erdos_mordell}
-Erdős w 1935 roku postawił problem dowodu tej nierówności; dowód przedstawili dwa lata później Mordell i D. F. Barrow (1937), choć nie był on zbyt elementarny. Później znaleziono prostsze dowody: Kazarinoff (1957), Bankoff (1958) oraz Alsina i Nelsen (2007).
+Erdős w 1935 roku postawi problem dowodu tej nierówności; dowód przedstawią dwa lata później Mordell i D. F. Barrow (1937), choć nie będzie on zbyt elementarny.
+Później znajdzie się prostsze dowody: Kazarinoff (1957), Bankoff (1958) oraz Alsina i Nelsen (2007).
 % TODO: https://en.wikipedia.org/wiki/Erdős–Mordell_inequality#CITEREFErdős1935
 
 \begin{theorem}[nierówność Erdősa-Mordella]
-    Niech ..., wtedy ....
+    Niech $P$ będzie punktem wewnątrz trójkąta $\triangle ABC$, zaś $A_p, B_p, C_p$ spodkami punktu $P$ na boki trójkąta jak na rysunku \ref{erdos_mordell_barrowa}.
+    Wtedy
+    \begin{equation}
+        |PA| + |PB| + |PC| \ge 2 (|PA_p| + |PB_p| + |PC_p|).
+    \end{equation}
 \end{theorem}
 
-Twierdzenie podaje w formie ćwiczenia Coxeter \cite[s. 9]{coxeter_1991}, Audin z licznymi wskazówkami \cite[s. 102]{audin_2003}.
 
+\begin{figure}[H] \centering
+\begin{minipage}[b]{.45\linewidth}
+\begin{center}\begin{tikzpicture}[scale=.4]
+    \tkzDefPoint(0, 0){A}
+    \tkzDefPoint(10, 2){B}
+    \tkzDefPoint(6, 7){C}
+    \tkzDefPoint(5, 3){P}
+    \tkzLabelPoint[below left](A){$A$}
+    \tkzLabelPoint[below right](B){$B$}
+    \tkzLabelPoint[above](C){$C$}
+    \tkzLabelPoint[below left](P){$P$}
+    \tkzDefPointsBy[projection=onto A--B](P){Pc}
+    \tkzDefPointsBy[projection=onto B--C](P){Pa}
+    \tkzDefPointsBy[projection=onto C--A](P){Pb}
+    \tkzLabelPoint[above right](Pa){$A_p$}
+    \tkzLabelPoint[above left](Pb){$B_p$}
+    \tkzLabelPoint[below](Pc){$C_p$}
 
-Wzmocnieniem nierówności (...) jest nierówność Barrowa:
+    \tkzDrawSegments[line width=0.2mm,dashed](P,Pa P,Pb P,Pc)
+    \tkzDrawPolygon[line width=0.3mm](A,B,C)
+    \tkzMarkRightAngles[size=0.5](P,Pa,C P,Pb,A P,Pc,B)
+    \tkzDrawPoints[size=3,color=black,fill=black!50](A,B,C,P,Pc,Pb,Pa)
+\end{tikzpicture}\end{center}
+    \subcaption{nierówność Erdősa-Mordella}
+    \label{erdos_mordell_barrowa}
+\end{minipage}
+%
+\begin{minipage}[b]{.45\linewidth}
+\begin{center}\begin{tikzpicture}[scale=.4]
+    \tkzDefPoint(0, 0){A}
+    \tkzDefPoint(10, 2){B}
+    \tkzDefPoint(6, 7){C}
+    \tkzDefPoint(5, 3){P}
+
+    \tkzDefLine[bisector](A,P,B) \tkzGetPoint{prePc}
+    \tkzInterLL(P,prePc)(A,B) \tkzGetPoint{Pc}
+    \tkzDefLine[bisector](B,P,C) \tkzGetPoint{prePa}
+    \tkzInterLL(P,prePa)(B,C) \tkzGetPoint{Pa}
+    \tkzDefLine[bisector](C,P,A) \tkzGetPoint{prePb}
+    \tkzInterLL(P,prePb)(C,A) \tkzGetPoint{Pb}
+
+    \tkzLabelPoint[below left](A){$A$}
+    \tkzLabelPoint[below right](B){$B$}
+    \tkzLabelPoint[above](C){$C$}
+    %\tkzLabelPoint[below left](P){$P$}
+    \tkzLabelPoint[above right](Pa){$A_p$}
+    \tkzLabelPoint[above left](Pb){$B_p$}
+    \tkzLabelPoint[below](Pc){$C_p$}
+
+    \tkzMarkAngle[arc=lll,size=1.2,mark=|||](A,P,Pc)
+    \tkzMarkAngle[arc=lll,size=1.2,mark=|||](Pc,P,B)
+    \tkzMarkAngle[arc=ll,size=1.2,mark=||](B,P,Pa)
+    \tkzMarkAngle[arc=ll,size=1.2,mark=||](Pa,P,C)
+    \tkzMarkAngle[arc=l,size=1.2,mark=|](C,P,Pb)
+    \tkzMarkAngle[arc=l,size=1.2,mark=|](Pb,P,A)
+
+    \tkzDrawSegments[line width=0.2mm](P,A P,B P,C)
+    \tkzDrawSegments[line width=0.2mm,dashed](P,Pa P,Pb P,Pc)
+    \tkzDrawPolygon[line width=0.3mm](A,B,C)
+    \tkzDrawPoints[size=3,color=black,fill=black!50](A,B,C,P,Pc,Pb,Pa)
+\end{tikzpicture}\end{center}
+    \subcaption{nierówność Barrowa}
+    \label{erdos_mordell_barrowb}
+\end{minipage}
+\caption{}
+\end{figure}
+
+Twierdzenie poda w formie ćwiczenia Coxeter \cite[s. 9]{coxeter_1991}, Audin z licznymi wskazówkami \cite[s. 102]{audin_2003}.
+
+Wzmocnieniem nierówności Erdősa-Mordella będzie nierówność Barrowa:
 
 % TODO: https://en.wikipedia.org/wiki/Barrow%27s_inequality
 
 \begin{theorem}[nierówność Barrowa]
-    Niech ..., wtedy ....
+    Niech $P$ będzie punktem wewnątrz trójkąta $\triangle ABC$, zaś $A_p$, $B_p$, $C_p$ punktami przecięć dwusiecznych trzech kątów wyznaczanych przez $P$ i pary wierzchołków trójkąta; tak jak na rysunku \ref{erdos_mordell_barrowb}.
+    Wtedy
+    \begin{equation}
+        |PA| + |PB| + |PC| \ge 2 (|PA_p| + |PB_p| + |PC_p|).
+    \end{equation}
 \end{theorem}
 
-Nazwa ,,nierówność Barrowa'' jest używana co najmniej od 1961 roku; nie wiemy, co się stało w tym roku.
-Dowód Barrowa został opublikowany w 1937 roku.
+Dowód Barrowa zostanie opublikowany w 1937 roku, ale nazwa ,,nierówność Barrowa'' będzie używana dopiero od 1961 roku; nie wiemy, co się wtedy stanie.
 % TODO: Erdős, Paul; Mordell, L. J.; Barrow, David F. (1937), "Solution to problem 3740", American Mathematical Monthly, 44 (4): 252–254, doi:10.2307/2300713, JSTOR 2300713.
 
 %
