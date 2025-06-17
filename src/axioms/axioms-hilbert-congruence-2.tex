@@ -2,8 +2,7 @@
 Podobnie jak dla odcinków, wprowadzamy niezdefiniowaną relację przystawania kątów, oznaczaną znowu przez $\cong$, ponieważ nie prowadzi to do nieporozumień.
 
 \begin{axiom}[przystawania, C4]
-    Niech $\angle BAC$ będzie kątem, zaś $DF$ półprostą.
-    Istnieje wtedy dokładnie jedna półprosta $DE$ po ustalonej stronie prostej $DF$ taka, że $\angle BAC \cong \angle EDF$.
+    Dla każdego kąta $\angle BAC$ i każdej $DF$ półprostej istnieje dokładnie jedna półprosta $DE$ po ustalonej stronie prostej $DF$ taka, że $\angle BAC \cong \angle EDF$.
 \end{axiom}
 
 Możemy traktować ten aksjomat jako odpowiednik cyrkla: pozwala przenosić kąty tak, jak Euklides (I.23).
@@ -11,7 +10,7 @@ Możemy traktować ten aksjomat jako odpowiednik cyrkla: pozwala przenosić kąt
 \begin{axiom}[przystawania, C5]
     Niech $\alpha, \beta, \gamma$ będą kątami.
     Jeśli $\alpha \cong \beta$ oraz $\alpha \cong \gamma$, to $\beta \cong \gamma$.
-    Każdy kąt przystaje do siebie.
+    Każdy kąt przystaje do siebie: $\alpha \cong \alpha$.
 \end{axiom}
 
 Mamy wreszcie cechę przystawania bok-kąt-bok, z której można wyprowadzić dodawanie kątów:
@@ -34,11 +33,36 @@ Kąty można także odejmować.
 
 Warto teraz spojrzeć na (I.13) Euklidesa.
 
+
+\begin{figure}[H] \centering
+\begin{tikzpicture}[scale=.6]
+    \tkzDefPoint(-4, -2){A}
+    \tkzDefPoint(4, 2){B}
+    \tkzDefPoint(4, -2){C}
+    \tkzDefPoint(-4, 2){D}
+    \tkzDefPoint(0, 0){Zero}
+    \tkzDefPoint(0, 0.7){X1}
+    \tkzDefPoint(-1.7, 0){X2}
+    \tkzDefPoint(1.7, 0){X3}
+    \tkzMarkAngle[arc=l,size=1.2,mark=||](D,Zero,A)
+    \tkzMarkAngle[arc=l,size=1.2,mark=||](C,Zero,B)
+    \tkzMarkAngle[arc=ll,size=1.2](B,Zero,D)
+
+    \tkzDrawSegments[line width=0.3mm](A,B)
+    \tkzDrawSegments[line width=0.3mm](C,D)
+    \tkzLabelPoint[anchor=center](X1){$\beta$}
+    \tkzLabelPoint[anchor=center](X2){$\alpha$}
+    \tkzLabelPoint[anchor=center](X3){$\gamma$}
+
+\end{tikzpicture}
+    \caption{kąty przyległe ($\alpha$ i $\beta$) oraz wierzchłkowe ($\alpha$ i $\gamma$)}
+\end{figure}
+
 \begin{proposition}
     Kąty wierzchołkowe (para kątów przy dwóch przecinających się prostych, które nie są przyległe) są przystające.
 \end{proposition}
 
-Kąty wierzchołkowe, przyległe, odpowiadające i naprzemianległe.
+% odpowiadające i naprzemianległe.
 \todofoot{Pompe s. 5: dwie proste przecięte trzecią wyznaczają kąty tej samej miary <=> proste są równoległe (naprzemianległe). Pompe s. 5: suma kątów trójkąta to 180}
 
 Istnieje odpowiednik relacji między odcinkami ,,bycia mniejszym'' dla kątów:
