@@ -13,13 +13,15 @@ Piszą o~nim Guzicki \cite[s. 160]{guzicki_2021}.
     \begin{center}\begin{tikzpicture}[scale=.4]
         %\tkzInit[xmin=-0.5,xmax=6.5, ymin=-0.5,ymax=4.5]
         % \tkzClip
-        \tkzDefPoint(0, 0){A}
-        \tkzDefPoint(0, 5){B}
-        \tkzDefPoint(-2.4, 1.8){C}
-        \tkzDefPoint(-2.7, 1.6){CC}
-        \tkzLabelPoint[below right](A){$A$}
-        \tkzLabelPoint[above right](B){$B$}
-        \tkzLabelPoint[left](CC){$C$}
+        \tkzDefPoint(105:3){A}
+        \tkzDefPoint(285:3){B}
+        \tkzDefPoint(35:3){C}
+        \tkzDefPoint(35:4.75){CC}
+        \tkzMarkRightAngle[size=0.5](A,C,B)
+
+        \tkzLabelPoint[above left](A){$A$}
+        \tkzLabelPoint[below](B){$B$}
+        \tkzLabelPoint[below left](CC){$C$}
         \tkzDefSquare(B,A)
         \tkzDrawPolygon[fill=black!50](B,A,tkzFirstPointResult, tkzSecondPointResult)
         \tkzDefSquare(C,B)
@@ -30,9 +32,9 @@ Piszą o~nim Guzicki \cite[s. 160]{guzicki_2021}.
     \end{tikzpicture}\end{center}
     Wtedy suma pól jasnych kwadratów jest równa polu ciemnego kwadratu:
     \begin{equation}
-        |BC|^2 + |AC|^2 = |AB|^2.
+        |AC|^2 + |BC|^2 = |AB|^2.
     \end{equation}
-    Odwrotnie, jeśli $ABC$ jest trójkątem takim, że $|BC|^2 + |AC|^2 = |AB|^2$, to trójkąt ten jest prostokątny, zaś kąt przy wierzchołku $C$ jest prosty.
+    Odwrotnie, jeśli $ABC$ jest trójkątem takim, że $|AC|^2 + |BC|^2 = |AB|^2$, to trójkąt ten jest prostokątny, zaś kąt przy wierzchołku $C$ jest prosty.
 \end{theorem}
 
 Chociaż współcześnie powyższe twierdzenie przypisujemy Pitagorasowi z~Samos, to nie wiemy dokładnie, kto i~kiedy odkrył je jako pierwszy.
@@ -48,19 +50,58 @@ Dowód Euklidesa korzysta z zasady Cavalieriego i urzekł nas tak bardzo swoją 
 \todofoot{Przerysować obrazek} % https://en.wikipedia.org/wiki/File:Illustration_to_Euclid%27s_proof_of_the_Pythagorean_theorem2.svg
 
 \begin{proof}
-    Niech $\triangle ACB$ będzie trójkątem prostokątnym, z kątem prostym przy wierzchołku $A$.
-    Na bokach $BC$, $AB$, $CA$ kreślimy kolejno kwadraty $CBDE$, $BAGF$, $ACIH$ (konstrukcja kwadratu Euklidesa korzysta z postulatu równoległości).
+    Niech $\triangle ABC$ będzie trójkątem prostokątnym, z kątem prostym przy wierzchołku $C$.
+    Na bokach $BC$, $AB$, $CA$ kreślimy kolejno kwadraty $BCDE$, $ABFG$, $ACHI$ (konstrukcja kwadratu Euklidesa korzysta z postulatu równoległości).
 
-    \begin{figure}
-    \end{figure}
-    Z punktu $A$ opuszczamy wysokość na przeciwprostokątną $BC$ i przedłużamy tak, by przecięła kwadrat $CBDE$ w punktach $K$ i $L$.
-    Łączymy punkty $A$ i $D$ oraz $C$ i $F$.
-    Otrzymane trójkąty $\triangle ABD$ oraz $\triangle FBC$ są przystające na mocy cechy bok-kąt-bok ($AB$, $\angle ABD$, $BD$ oraz $FB$, $\angle FBC$, $BC$).
-    Prostokąt $BDLK$ (odpowiednio: kwadrat $BAGF$) ma dwukrotnie większe pole niż trójkąt $\triangle ABD$ (trójkąt $\triangle FBC$).
-    Zatem prostokąt $BDLK$ i kwadrat $BAGF$ mają równe pola.
+    \begin{center}\begin{tikzpicture}[scale=.4]
+        %\tkzInit[xmin=-0.5,xmax=6.5, ymin=-0.5,ymax=4.5]
+        % \tkzClip
+        \tkzDefPoint(105:3){A}
+        \tkzDefPoint(285:3){B}
+        \tkzDefPoint(35:3){C}
+        \tkzDefPoint(35:4.75){CC}
+
+        \tkzLabelPoint[above left](A){$A$}
+        \tkzLabelPoint[below](B){$B$}
+        \tkzLabelPoint[below left](CC){$C$}
+        \tkzDefSquare(B,A)
+        \tkzGetPoints{G}{F}
+        \tkzLabelPoint[below](F){$F$}
+        \tkzLabelPoint[above](G){$G$}
+        \tkzDefPointsBy[projection=onto A--B](C){K}
+        \tkzDefPointsBy[projection=onto G--F](C){L}
+
+        \tkzDrawPolygon[line width=0.3mm, fill=blue!10](A,K,L,G)
+        \tkzDrawPolygon[line width=0.3mm, fill=red!10](B,K,L,F)
+        \tkzDrawPolygon[line width=0.3mm](A,B,F,G)
+        \tkzLabelPoint[below left](K){$K$}
+        \tkzLabelPoint[left](L){$L$}
+
+
+        \tkzDefSquare(C,B)
+        \tkzGetPoints{E}{D}
+        \tkzDrawPolygon[line width=0.3mm,fill=red!40](C,B,E,D)
+        \tkzLabelPoint[above](D){$D$}
+        \tkzLabelPoint[below](E){$E$}
+        \tkzDefSquare(A,C)
+        \tkzGetPoints{H}{I}
+        \tkzDrawPolygon[line width=0.3mm, fill=blue!40](A,C,H,I)
+        \tkzLabelPoint[above right](H){$H$}
+        \tkzLabelPoint[above right](I){$I$}
+        \tkzDrawSegments[line width=0.2mm](C,G)
+        \tkzDrawSegments[line width=0.2mm, dashed](C,K)
+        \tkzDrawSegments[line width=0.2mm](I,B)
+        % \tkzMarkRightAngle[size=0.5](A,C,B)
+        \tkzDrawPolygon[line width=0.5mm](A,B,C)
+    \end{tikzpicture}\end{center}
+    Z punktu $C$ opuszczamy wysokość na przeciwprostokątną $AB$ i przedłużamy tak, by przecięła kwadrat $ABFG$ w punktach $K$ i $L$.
+    Łączymy punkty $B$ i $I$ oraz $C$ i $G$.
+    Otrzymane trójkąty $\triangle BAI$ oraz $\triangle GAC$ są przystające na mocy cechy bok-kąt-bok ($AB$, $\angle BAI$, $AI$ oraz $AG$, $\angle GAC$, $AC$).
+    Niebieski prostokąt $AGLK$ (odpowiednio: kwadrat $ACHI$) ma dwukrotnie większe pole niż trójkąt $\triangle GAC$ (trójkąt $\triangle BAI$).
+    Zatem prostokąt $AGLK$ i kwadrat $ACHI$ mają równe pola.
     
-    Analogicznie pokazujemy, że prostokąt $CKLE$ i kwadrat $ACIH$ mają równe pola.
-    Dodajemy dwie równości stronami i otrzymujemy, że suma pól kwadratów $ACIH$ oraz $BAGF$ jest równa polu kwadratu $BCDE$.
+    Analogicznie pokazujemy, że czerwony prostokąt $BFLK$ i kwadrat $BCDE$ mają równe pola.
+    Dodajemy dwie równości stronami i otrzymujemy, że suma pól kwadratów $ACIH$ oraz $BCDE$ jest równa polu kwadratu $ABFG$.
 \end{proof}
 
 Legenda głosi, że Hippazos z Metapontu został utopiony po odkryciu, że przeciwprostokątna trójkąta o~przyprostokątnych równej długości nie jest współmierna z nimi; zrujnował tak pogląd pitagorejskiej szkoły, że świat opiera się na liczbach (czyli liczbach naturalnych oraz ułamkach z~nich zbudowanych).
