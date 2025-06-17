@@ -1,3 +1,4 @@
+%
 
 Poznamy teraz dwa wyróżnione punkty trójkąta, opisane w 1875 roku przez oficera francuskiej armii, Henriego Brocarda oraz wiele lat wcześniej przez Augusta Crelle'a \cite{crelle_1816}, założyciela słynnego czasopisma matematycznego.
 \index[persons]{Brocard, Henri}%
@@ -6,12 +7,42 @@ Poznamy teraz dwa wyróżnione punkty trójkąta, opisane w 1875 roku przez ofic
 \begin{definition}
     Niech $\triangle ABC$ będzie trójkątem.
     Punkt $X$ leżący w jego wnętrzu taki, że kąty $\angle XAB$, $\angle XBC$, $\angle XCA$ są równej miary, nazywamy (pierwszym) punktem Crelle'a-Brocarda.
+    \index{punkt Crelle'a-Brocarda}%
+    \begin{center}\begin{tikzpicture}[scale=.75]
+        \tkzInit[xmin=-0.5,xmax=6.5, ymin=-0.5,ymax=4.5]
+        \tkzClip
+        \tkzDefPoint(0, 0){A}
+        \tkzDefPoint(6, 1){B}
+        \tkzDefPoint(1.5, 4){C}
+        \tkzLabelPoint[below left](A){$A$}
+        \tkzLabelPoint[right](B){$B$}
+        \tkzLabelPoint[above](C){$C$}
+
+        \tkzDefLine[mediator](A,B) \tkzGetPoints{AB1}{AB2}
+        \tkzDefLine[orthogonal=through B](B,C) \tkzGetPoint{BC3}
+        \tkzInterLL(AB1,AB2)(B,BC3) \tkzGetPoint{S1}
+        %
+        \tkzDefLine[mediator](B,C) \tkzGetPoints{BC1}{BC2}
+        \tkzDefLine[orthogonal=through C](A,C) \tkzGetPoint{AC3}
+        \tkzInterLL(BC1,BC2)(C,AC3) \tkzGetPoint{S2}
+        %
+        \tkzInterCC(S1,B)(S2,C) \tkzGetPoints{Bro1}{Bro2} % two circles
+        \tkzLabelPoint[above right](Bro1){$X$}
+        \tkzDrawSegments[line width=0.2mm](A,Bro1 B,Bro1 C,Bro1)
+        \tkzFillAngle[fill=black!30,size=1](B,A,Bro1)
+        \tkzFillAngle[fill=black!30,size=1](C,B,Bro1)
+        \tkzFillAngle[fill=black!30,size=1](A,C,Bro1)
+        \tkzDrawPolygon[line width=0.4mm](A,B,C)
+        \tkzDrawPoints[size=3,color=black,fill=black!50](Bro1)
+    \end{tikzpicture}\end{center}
+    % Construct a circle through vertices A and B, tangent to side BC of the triangle.
+    % Symmetrically, construct the other two circles.
+    % These three circles intersect at the first Brocard Point of triangle ABC.
+    % https://www.geogebra.org/m/MT679Keu
 \end{definition}
 
-\index{punkt Crelle'a-Brocarda}%
-\index{kąt Crelle'a-Brocarda}%
-
 Miarę wspomnianych kątów nazywamy kątem Crelle'a-Brocarda.
+\index{kąt Crelle'a-Brocarda}%
 Jest jeszcze drugi punkt Crelle'a-Brocarda, gdzie odwracamy kolejność punktów: $\angle XBA = \angle XCB = \angle XAC$.
 
 \begin{proposition}
@@ -39,8 +70,18 @@ Peter Yiff \cite{yff_1963} postawił w 1963 roku (!) hipotezę, że $8 \omega^3 
 \index[persons]{Yiff, Peter}%
 Dowód znalazł w 1974 roku Faruk Abi-Khuzam \cite{abikhuzam_1974}.
 \index[persons]{Abi-Khuzam, Faruk}%
-% P. Yff, "An analogue of the Brocard points" Amer. Math. Monthly , 70 (1963) pp. 495–501
-% F. Abi–Khuzam, "Proof of Yff's conjecture on the Brocard angle of a triangle" Elem. Math. , 29 (1974) pp. 141–142
 
+Mamy jeszcze mało ciekawy dla kogoś o wiedzy tak nikłej jak my okrąg Crelle'a-Brocarda.
+% PRZECZYTANO: https://mathworld.wolfram.com/BrocardCircle.html
+\index{okrąg!Crelle'a-Brocarda}%
+Jego średnicą jest odcinek łączący środek okręgu opisanego z punktem Lemoine'a.
+\index{okrąg!opisany}%
+\index{punkt!Lemoine'a}%
+Przechodzi przez pierwszy i drugi punkt Crelle'a-Brocarda oraz wierzchołki celowo niezdefiniowanego tu trójkąta Brocarda, co uzasadnia stosowaną czasami nazwę ,,okrąg siedmiu punktów''.
+\index{okrąg!siedmiu punktów}%
+Ma promień
+\begin{equation}
+    R \cdot \frac{\sqrt{1 - 4 \sin^2 \omega}}{2 \cos \omega}.
+\end{equation}
 
-\todofoot{https://mathworld.wolfram.com/BrocardCircle.html}
+%
