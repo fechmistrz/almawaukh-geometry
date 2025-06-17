@@ -10,7 +10,25 @@ Piszą o~nim Guzicki \cite[s. 160]{guzicki_2021}.
 \index{twierdzenie!Pitagorasa}%
 \label{theorem_pythagorean}%
     Niech $ABC$ będzie trójkątem prostokątnym, w~którym kąt przy wierzchołku $C$ jest prosty.
-    Wtedy
+    \begin{center}\begin{tikzpicture}[scale=.4]
+        %\tkzInit[xmin=-0.5,xmax=6.5, ymin=-0.5,ymax=4.5]
+        % \tkzClip
+        \tkzDefPoint(0, 0){A}
+        \tkzDefPoint(0, 5){B}
+        \tkzDefPoint(-2.4, 1.8){C}
+        \tkzDefPoint(-2.7, 1.6){CC}
+        \tkzLabelPoint[below right](A){$A$}
+        \tkzLabelPoint[above right](B){$B$}
+        \tkzLabelPoint[left](CC){$C$}
+        \tkzDefSquare(B,A)
+        \tkzDrawPolygon[fill=black!50](B,A,tkzFirstPointResult, tkzSecondPointResult)
+        \tkzDefSquare(C,B)
+        \tkzDrawPolygon[fill=black!25](C,B,tkzFirstPointResult, tkzSecondPointResult)
+        \tkzDefSquare(A,C)
+        \tkzDrawPolygon[fill=black!25](A,C,tkzFirstPointResult, tkzSecondPointResult)
+        \tkzDrawPolygon[line width=0.4mm](A,B,C)
+    \end{tikzpicture}\end{center}
+    Wtedy suma pól jasnych kwadratów jest równa polu ciemnego kwadratu:
     \begin{equation}
         |BC|^2 + |AC|^2 = |AB|^2.
     \end{equation}
