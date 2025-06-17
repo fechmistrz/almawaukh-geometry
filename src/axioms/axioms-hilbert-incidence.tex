@@ -14,6 +14,7 @@
 \end{axiom}
 
 ,,Być współliniowym'' to synonim leżenia na jednej prostej.
+\index{współliniowy}%
 
 \begin{proposition}
     Dwie różne proste mogą mieć co najwyżej jeden punkt wspólny.
@@ -23,10 +24,14 @@
     Dwie różne proste, które nie mają punktów wspólnych, nazywamy równoległymi.
     Każda prosta jest też równoległa do siebie.
 \end{definition}
+\index{prosta!równoległa}%
+
+Hartshorne \cite[s. 38]{hartshorne2000} przywoła:
 
 \begin{axiom}[Playfaira, P]
     Dla każdej prostej $l$ oraz punktu $A$, istnieje co najwyżej jedna prosta przechodząca przez $A$, równoległa do $l$.
 \end{axiom}
+\index{aksjomat!Playfaira}%
 % TODO: https://en.wikipedia.org/wiki/Playfair%27s_axiom
 
 John Playfair opublikował ten aksjomat w 1795 roku, chociaż już wtedy twierdził, że inni używali go przed nim (np. William Ludlam).
@@ -34,19 +39,19 @@ John Playfair opublikował ten aksjomat w 1795 roku, chociaż już wtedy twierdz
 Aksjomat Playfaira jest równoważny z (piątym) postulatem Euklidesa i dlatego wiele osób próbowało wyprowadzić go z czterech wcześniejszych postulatów.
 Za każdym razem okazywało się, że w ,,dowodzie'' użyte jest zdanie będące równoważnikiem piątego postulatu, na przykład:
 \begin{itemize}
-    \item suma kątów wewnętrznych każdego trójkąta jest kątem półpełnym,
-    \item suma kątów wewnętrznych każdego trójkąta jest taka sama,
-    \item istnieje trójkąt, którego suma kątów wewnętrznych jest kątem półpełnym,
-    \item istnieją dwa trójkąty, które są do siebie podobne, ale nie przystające,
-    \item na każdym trójkącie można opisać okrąg,
-    \item jeśli trzy kąty wewnętrzne czworokąta są proste, to czwarty kąt także jest prosty,
+    \item suma kątów wewnętrznych każdego trójkąta jest kątem półpełnym, \index{suma kątów}%
+    \item suma kątów wewnętrznych każdego trójkąta jest taka sama, \index{suma kątów}%
+    \item istnieje trójkąt, którego suma kątów wewnętrznych jest kątem półpełnym, \index{suma kątów}%
+    \item istnieją dwa trójkąty, które są do siebie podobne, ale nie przystające, \index{podobieństwo} \index{przystawanie}%
+    \item na każdym trójkącie można opisać okrąg, \index{okrąg!opisany}
     \item istnieje para prostych, które są w stałej odległości od siebie,
-    \item dwie proste, które są równoległe do danej prostej, są też równoległe do siebie,
-    \item twierdzenie Pitagorasa lub jego uogólnienie, twierdzenie cosinusów
-    \item aksjomat Wallisa: nie ma górnego ograniczenia na pole trójkąta,
-    \item kąty przy górnej podstawie czworokąta Saccheriego (czworokąta $ABCD$ o dwóch kątach prostych przy dolnej podstawie $AB$, w którym boki $AD$ i $BC$ mają równe długości) są proste,
+    \item dwie proste, które są równoległe do danej prostej, są też równoległe do siebie, \index{prosta!równoległa}
+    \item twierdzenie Pitagorasa lub jego uogólnienie, twierdzenie cosinusów, \index{twierdzenie!Pitagorasa} \index{twierdzenie!cosinusów}
+    \item aksjomat Wallisa: nie ma górnego ograniczenia na pole trójkąta, \index{aksjomat!Wallisa}
+    \item aksjomat Proklosa: jeśli prosta przecina jedną z dwóch równoległych prostych, to przecina także tę drugą, \index{aksjomat!Proklosa}
+    \item kąty przy górnej podstawie czworokąta Saccheriego (czworokąta $ABCD$ o dwóch kątach prostych przy dolnej podstawie $AB$, w którym boki $AD$ i $BC$ mają równe długości) są proste, \index{czworokąt!Saccheriego}
+    \item jeśli trzy kąty wewnętrzne czworokąta są proste, to czwarty kąt także jest prosty (czworokąt Lamberta jest prostokątem). \index{czworokąt!Lamberta}
 % https://en.wikipedia.org/wiki/Saccheri_quadrilateral
-    \item aksjomat Proklosa: jeśli prosta przecina jedną z dwóch równoległych prostych, to przecina także tę drugą.
 \end{itemize}
 
 % TODO: https://en.wikipedia.org/wiki/Parallel_postulate
@@ -54,17 +59,17 @@ Za każdym razem okazywało się, że w ,,dowodzie'' użyte jest zdanie będące
 \begin{example}
     Rozważmy geometrię, gdzie płaszczyzna składa się z pięciu punktów $A$, $B$, $C$, $D$, $E$ i leży na niej dziesięć różnych prostych, każda z nich przechodząca przez dokładnie dwa różne punkty.
     Wtedy proste $AB$ i $AC$ mają punkt wspólny $A$, chociaż obydwie są równoległe do prostej $DE$.
-    Aksjomat Playfaira nie jest spełniony.
+    Aksjomat Playfaira nie jest spełniony. \index{aksjomat!Playfaira}
 \end{example}
 
 \begin{proposition}
-    Aksjomaty incydencji I1, I2, I3 oraz aksjomat P (Playfaira) są od siebie niezależne.
+    Aksjomaty incydencji I1, I2, I3 oraz aksjomat P (Playfaira) są od siebie niezależne. \index{aksjomat!Playfaira}
 \end{proposition}
 
 Hartshorne \cite[s. 69-70]{hartshorne2000} konstruuje modele geometrii, w których spełnione są dowolne trzy, ale nie czwarty z nich.
 
 \begin{proposition}
-    Płaszczyzna rzutowa to taki zbiór punktów oraz prostych (podzbiorów zbioru punktów), że:
+    Płaszczyzna rzutowa to taki zbiór punktów oraz prostych (podzbiorów zbioru punktów), że: \index{płaszczyzna!rzutowa}
     \begin{itemize}
         \item przez dwa różne punkty przechodzi dokładnie jedna prosta,
         \item każde dwie proste mają punkt wspólny,
@@ -77,13 +82,13 @@ Hartshorne \cite[s. 69-70]{hartshorne2000} konstruuje modele geometrii, w który
 \end{proposition} % Hartshorne 71
 
 \begin{example}[płaszczyzna Fana]
-    Zbiór złożony z siedmiu elementów (,,punktów''), w którym wyróżniono rodzinę siedmiu podzbiorów (,,prostych'') spełniający następujące warunki:
+    Zbiór złożony z siedmiu elementów (,,punktów''), w którym wyróżniono rodzinę siedmiu podzbiorów (,,prostych'') spełniający następujące warunki: \index{płaszczyzna!Fana}
     \begin{itemize}
         \item każde dwie różne proste mają dokładnie jeden punkt wspólny,
         \item każde dwa różne punkty należą do dokładnie jednej prostej
     \end{itemize}
     nazywamy płaszczyzną Fana.
-    Jest przykładem płaszczyzny rzutowej, która nie spełnia aksjomatu Fana (że trzy punkty przekątne czworoboku zupełnego nie są współliniowe).
+    Jest przykładem płaszczyzny rzutowej, która nie spełnia aksjomatu Fana (że trzy punkty przekątne czworoboku zupełnego nie są współliniowe). \index{aksjomat Fana}
     \begin{figure}[H]
         \centering
         \begin{tikzpicture}[
@@ -126,7 +131,7 @@ Wie w jaki sposób określa się rzutowo ogniska i kierownice stożkowych.
 \index{kierownica}%
 
 \begin{proposition}
-    Płaszczyzna afiniczna to taki zbiór punktów i prostych, które spełniają:
+    Płaszczyzna afiniczna to taki zbiór punktów i prostych, które spełniają: \index{płaszczyzna afiniczna}
     \begin{itemize}
         \item aksjomaty incydencji oraz
         \item mocniejszą wersję aksjomatu Playfaira: dla każdej prostej $l$ i punktu $A$, dokładnie jedna prosta przechodzi przez punkt $A$ i jest równoległa do $l$.
@@ -139,6 +144,7 @@ Wie w jaki sposób określa się rzutowo ogniska i kierownice stożkowych.
 Podręcznik Audina \cite[s. 7]{audin_2003} zaczyna się od definicji przestrzeni afinicznej.
 My nie będziemy poświęcać im za dużo miejsca.
 \todofoot{Grupa przekształceń afinicznych od strony geometrycznej: powinowactwa osiowe, rozkład przekształcenia afinicznego na podobieństwo i powinowactwo osiowe, kierunki główne przekształcenia afinicznego.
+\index{powinowactwo osiowe}
 Niezmienniczość stosunku pól przy przekształceniu afinicznym
 Obraz okręgu przy przekształceniu afinicznym.}
 

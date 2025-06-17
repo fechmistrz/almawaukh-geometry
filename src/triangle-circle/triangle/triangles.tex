@@ -5,15 +5,23 @@
 Cechy przystawania
 \loremipsum
 Hartshorne s. 99
+% do wyrzucenia? to jest w intro
 
+\index{pons asinorum|(}
 \input{triangle-circle/triangle/pons-asinorum}
+\index{pons asinorum|)}
+\index{most osłów|see{pons asinorum}}
 
 \input{triangle-circle/triangle/triangle-inequality}
 
+\index{twierdzenie!Pitagorasa|(}
 \input{triangle-circle/triangle/pythagorean}
+\index{twierdzenie!Pitagorasa|)}
 
+\index{wzór!Herona|(}
 \subsection{Wzór Herona}
 \input{triangle-circle/triangle/heron}
+\index{wzór!Herona|)}
 
 \subsection{Symetralna i okrąg opisany}
 Symetralna i okrąg opisany
@@ -28,16 +36,20 @@ Problemy Fagnano i Fermata
 \todofoot{Coxeter, s. 20, 21}
 Audin \cite[s. 101]{audin_2003} podaje ten fakt w formie ćwiczenia.
 
-
 \begin{problem}[zadanie Fermata]
 	Dany jest trójkąt $ABC$.
 	Znaleźć punkt $F$ taki, by suma $|FA| + |FB| + |FC|$ była możliwie najmniejsza.
+\index{zadanie Fermata}%
 \end{problem}
 
-Powyższe zadanie rozwiązał Evangelista Torricelli, który dostał je w formie wyzwania od Fermata.
+Powyższe zadanie rozwiąże Evangelista Torricelli, który dostał je w formie wyzwania od Fermata.
+\index[persons]{Torricelli, Evangelista}%
 Rozwiązanie opublikował student Torricelliego, Viviani, w 1659 roku.
+\index[persons]{Viviani, ???}
 % TODO: Johnson, R. A. Modern Geometry: An Elementary Treatise on the Geometry of the Triangle and the Circle. Boston, MA: Houghton Mifflin, pp. 221-222, 1929.
 \todofoot{Punkt Fermata (punkt Torricellego) – punkt w trójkącie, którego suma odległości od wierzchołków trójkąta jest najmniejsza z możliwych. Pierwszy raz problem konstrukcji takiego punktu został rozwiązany przez Fermata w prywatnym liście.}. %https://pl.wikipedia.org/wiki/Punkt_Fermata
+
+\index{zadanie Fagnano}
 
 \subsection{Nierówności trójkątne}
 \input{triangle-circle/triangle/inequalities}
@@ -46,23 +58,30 @@ Rozwiązanie opublikował student Torricelliego, Viviani, w 1659 roku.
 
 \begin{proposition}
 	\label{srodkowe_przecinaja_sie}
+	\index{środkowa}%
+	\index{środek ciężkości}%
 	Środkowe trójkąta przecinają się w jednym punkcie zwanym środkiem ciężkości (po ang. \emph{centroid}?) i dzielą w stosunku $2 : 1$ licząc od wierzchołków.
 \end{proposition}
 
 Hartshorne \cite[s. 53, 54]{hartshorne2000} wnioskuje powyższe z \ref{hartshorne_52}.
 Podobnie postępują Bogdańska, Neugebauer (chociaż oni wyprowadzają fakt \ref{hartshorne_52} z twierdzenia Talesa).
+\index{twierdzenie!Talesa}%
 
 \begin{proposition}
 	\label{wysokosci_przecinaja_sie}
+	\index{wysokość trójkąta}
 	Wysokości trójkąta (proste prostopadłe do podstawy przechodzące przez wierzchołek nieleżący na niej) przecinają się w jednym punkcie zwanym ortocentrum.
+	\index{ortocentrum}
 \end{proposition}
 
 Hartshorne \cite[s. 52, 54]{hartshorne2000} pisze, że ten oraz poprzedni fakt (\ref{wysokosci_przecinaja_sie}, \ref{srodkowe_przecinaja_sie}) były znane Archimedesowi.
+\index[people]{Archmedes}
 Fakt zostaje powtórzony \cite[s. 119-120]{hartshorne2000}, by pokazać zastosowanie geometrii analitycznej.
 
 Twierdzneie o prostej Wallace'a-Simsona. % https://en.wikipedia.org/wiki/Simson_line
 Audin \cite[s. 104]{audin_2003} podaje ten fakt w formie ćwiczenia.
-
+\todofoot{HARTSHORNE PRZECHODZI DO PUNKTU MIQUELA}
+\index{prosta Wallace'a-Simsona}
 
 % PROSTA STEINERA? Audin ta sama strona
 http://users.math.uoc.gr/~pamfilos/eGallery/problems/SteinerLine.html
@@ -74,7 +93,6 @@ http://users.math.uoc.gr/~pamfilos/eGallery/problems/SteinerLine.html
 
 Hartshorne jako ćwiczenie \cite[s. 61]{hartshorne2000} pisze, że istnienie prostej Simsona jako pierwszy dowiódł Wallace w 1799 roku.
 
-
 Droz-Farny: proste przechodzą przez ortocentrum trójkąta i są prostopadłe, wtedy środki odcinków leżą na jednej prostej. % https://en.wikipedia.org/wiki/Droz-Farny_line_theorem
 
 %
@@ -83,5 +101,6 @@ Droz-Farny: proste przechodzą przez ortocentrum trójkąta i są prostopadłe, 
 % TODO: https://math.stackexchange.com/questions/3009635/japanese-temple-problem-from-1844
 
 \todofoot{Calabi triangle} % https://en.wikipedia.org/wiki/Calabi_triangle
+\index{trójkąt Calabiego}
 
 % https://en.wikipedia.org/wiki/Pompeiu%27s_theorem 1936

@@ -2,10 +2,14 @@
 
 \begin{definition}[symetralna]
 	Prostą prostopadłą do odcinka i przechodzącą przez jego środek nazywamy symetralną.
+    \index{symetralna}
 \end{definition}
+
 Przez dwa punkty możemy przeprowadzić nieskończenie wiele okręgów, ich środki leżą na symetralnej odcinka łączącego wspomniane dwa punkty.
 Przez trzy punkty możemy przeprowadzić jeden okrąg, jeśli nie są współliniowe (i zero w przeciwnym razie).
+\index{współliniowy}
 \todofoot{Czy to jest tu? Z czego to wynika? Może później, jeśli korzystamy w dowodzie ze zbyt wielu aksjomatów? Guzicki s. 14, 15.}
+
 \begin{proposition} % Guzicki s. 126
 	Punkt $P$ leży na symetralnej odcinka $AB$ wtedy i tylko wtedy, gdy jest jednakowo oddalony od końców tego odcinka: $|AP| = |BP|$.
 \end{proposition}
@@ -14,24 +18,29 @@ Przez trzy punkty możemy przeprowadzić jeden okrąg, jeśli nie są współli
 
 Okrąg przechodzący przez wszystkie wierzchołki wielokąta nazywamy okręgiem opisanym na tym wielokącie.
 Mówimy także, że wielokąt jest wpisany w okrąg.
+\index{okrąg!opisany}%
 
 \begin{proposition}
 	\label{hartshorne_52x}
     Niech $AB$ będzie odcinkiem.
 	Istnieje wtedy trójkąt równoramienny, którego podstawą jest $AB$.
+    \index{trójkąt!równoramienny}%
 \end{proposition}
 
 Powyższe stwierdzenie jest ciekawe, bo jest prawdziwe na płaszczyźnie Hilberta, tzn. jego prawdziwość nie zależy od aksjomatu Pascha.
+\index{płaszczyzna!Hilberta}
+\index{aksjomat!Pascha}
 (W geometrii nieeuklidesowej może nie istnieć trójkąt równoboczny o danej podstawie).
 
 \begin{proposition}
 	\label{hartshorne_52}
 	Linia środkowa (odcinek łączący środki pewnych dwóch boków trójkąta) jest równoległa do trzeciego boku.
+    \index{linia środkowa}
     Jej długość jest dwukrotnie mniejsza od długości tego boku.
 \end{proposition}
 % Hartshorne s. 52
 
-Tego stwierdzenia nie ma w Elementach Euklidesa, ale można wyprowadzić je z księgi I (I.29, I.26, I.34), jak wspomina Hartshorne \cite[s. 52. 53]{hartshorne2000}.
+Tego stwierdzenia nie ma w Elementach Euklidesa, ale można wyprowadzić je z księgi I (I.29, I.26, I.34), jak wspomina Hartshorne \cite[s. 45, 52. 53]{hartshorne2000}.
 
 \begin{corollary}
 	Niech $ABC$ będzie trójkątem, zaś punkty $D$, $E$ i $F$ środkami jego boków.
@@ -39,13 +48,14 @@ Tego stwierdzenia nie ma w Elementach Euklidesa, ale można wyprowadzić je z ks
 \end{corollary}
 
 Do tego wniosku potrzeba dodatkowo cechy przystawania bok-bok-bok (I.8).
+\index{cecha przystawania!bok-bok-bok}%
 
 \subsection{Okręgi?}
-
 \begin{proposition}
     Niech $\Gamma$ będzie okręgiem o środku $O$ oraz promieniu $OA$.
     Wtedy prosta prostopadła do $OA$, która przechodzi przez $A$, jest styczną do okręgu, leżącą (poza punktem $A$) na zewnątrz okręgu $\Gamma$.
     Odwrotnie, każda prosta, która jest styczna w punkcie $A$ do okręgu $\Gamma$, musi być prostopadła do prostej $OA$.
+    \index{styczność}
 \end{proposition} % Hartshorne 105
 
 \begin{corollary}
@@ -65,5 +75,9 @@ Do tego wniosku potrzeba dodatkowo cechy przystawania bok-bok-bok (I.8).
     Dwa okręgi, które nie są rozłączne i nie są styczne, mają dokładnie dwa punkty wspólne.
 \end{corollary} % Hartshorne 106
 
+\index{twierdzenie!Sylvestera-Gallaia|(}%
 \subsection{Twierdzenie Sylvestera-Gallaia}
 \input{axioms/sylvester-gallai}
+\index{twierdzenie!Sylvestera-Gallaia|)}%
+
+%

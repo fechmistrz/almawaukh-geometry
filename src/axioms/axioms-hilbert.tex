@@ -3,10 +3,18 @@
 \section{Aksjomaty Hilberta}
 W aksjomatyce Hilberta (płaskiej geometrii euklidesowej) pojęciami pierwotnymi są punkt, prosta, płaszczyzna, relacja incydencji (leżeć na, zawierać się w), relacja uporządkowania (leżenia między) oraz relacja przystawania.
 
+\index{aksjomaty!incydencji|(}%
 \input{axioms/axioms-hilbert-incidence}
+\index{aksjomaty!incydencji|)}%
+
+\index{aksjomaty!leżenia pomiędzy|(}%
 \input{axioms/axioms-hilbert-betweenness}
+\index{aksjomaty!leżenia pomiędzy|)}%
+
+\index{aksjomaty!przystawania|(}%
 \input{axioms/axioms-hilbert-congruence-1}
 \input{axioms/axioms-hilbert-congruence-2}
+\index{aksjomaty!przystawania|)}%
 
 \subsection{Płaszczyzna Hilberta}
 
@@ -14,11 +22,14 @@ Przedstawione do tej pory aksjomaty są niezbędnym minimum do uprawiania geomet
 
 \begin{definition}
     Zbiór punktów i prostych, razem z relacjami leżenia pomiędzy, przystawania odcinków i kątów, które spełniają aksjomaty I1 do I3, B1 do B4, C1 do C6, nazywamy płaszczyzną Hilberta.
+    \index{płaszczyzna!Hilberta}
 \end{definition}
 
 W szczególności, nie zakładamy aksjomatu równoległości (P).
+\index{aksjomat!Playfaire'a}
 Wszystkie twierdzenia Euklidesa od I.1 do I.28 (bez I.1, I.22) można udowodnić na dowolnej płaszczyźnie Hilberta.
 Do dwóch wyjątków potrzebujemy dodatkowego aksjomatu \ref{axiom_e}.
+\index{aksjomat!o części wspólnej dwóch okręgów}%
 
 Potrzebujemy dodatkowego aksjomatu, by okręgi, od których oczekujemy, że się przetną, naprawdę się przecięły:
 
@@ -26,21 +37,27 @@ Potrzebujemy dodatkowego aksjomatu, by okręgi, od których oczekujemy, że się
     \label{axiom_e}
     Niech $\Gamma_1$, $\Gamma_2$ będą dwoma okręgami takimi, że każdy zawiera pewien punkt leżący wewnątrz drugiego.
     Wtedy istnieje punkt leżący na obydwu okręgach równocześnie.
+    \index{aksjomat!o części wspólnej dwóch okręgów}%
 \end{axiom}
 
 Płaszczyznę Pitagorasa, która spełnia ten aksjomat, nazywamy płaszczyzną Euklidesa.
+\index{płaszczyzna!Pitagorasa}
 
 \begin{proposition}[o części wspólnej prostej i okręgu, LCI]
     Na płaszczyźnie Hilberta spełniającej aksjomat E, jeśli prosta $l$ zawiera punkt leżący wewnątrz okręgu $\Gamma$, to przecina ten okrąg.
+    \index{aksjomat!o części wspólnej prostej i okręgu}
 \end{proposition}
 
 Dopiero teraz jesteśmy w stanie uratować twierdzenia (I.1), (I.22), (III.I), (III.17) z Elementów Euklidesa, do tego wszystkie dalsze wyniki aż do III.19 (ponieważ III.20 i dalej wymagany jest aksjomat Playfaira).
 % [23, Exercise 16.11] gives an example of I.22 failure.
+\index{aksjomat!Playfaire'a}
 
 \todofoot{chord cięciwa, saggita, sieczna}
 
 (Reszta tekstu tej sekcji na podstawie artykułu Greenberga \cite[s. 201]{greenberg_2010}).
 Greenberg sugeruje nazywać płaszczyznę Hilberta, która spełnia aksjomat P, płaszczyzną Pitagorasa.
+\index{płaszczyzna!Pitagorasa}%
+\index{płaszczyzna!Hilberta}%
 
 \begin{proposition}
     Każda płaszczyzna Pitagorasa jest izomorficzna z kwadratem $F^2$ pewnego uporządkowanego ciała $F$ takiego, że z $x, y \in F$ wynika $\sqrt{x^2 + y^2} \in F$.
@@ -67,12 +84,21 @@ Aksjomat E pociąga za sobą prawdziwość aksjomatu LCI.
 \end{proposition}
 
 Twierdzenie (I.32) głosi, że suma kątów wewnętrznych trójkąta wynosi $\pi$.
-Dowód tego faktu znany pitagorejczykom wykorzystuje twierdzenie odwrotne do tego, że dwie proste równległe przecięte trzecią wyznaczają pary kątów o równych miarach; wiemy to z pracy Proklosa zwanego Diadochem.
+\index{suma kątów}%
+Jeden z możliwych dowodów -- ten, który będzie znany pitagorejczykom -- wykorzystuje twierdzenie odwrotne do tego, że dwie proste równległe przecięte trzecią wyznaczają pary kątów o równych miarach; wiemy to z~pracy Proklosa.
+\index[persons]{Proklos zwany Diadochem}
 Dla płaszczyzn Hilberta sprowadza się to do postulatu równoległości.
 Ale z samego faktu, że suma kątów wewnętrznych trójkąta wynosi $\pi$ nie wynika V postulat!
+\index{postulat!równoległości|see{aksjomat Playfaire'a}}%
+\index{piąty postulat|see{aksjomat Playfaire'a}}%
+\index{postulat!piąty postulat|see{aksjomat Playfaire'a}}%
+\index{V postulat|see{aksjomat Playfaire'a}}%
+\index{aksjomat!Playfaire'a}%
 
-Stosowny kontrprzykład z 1900 roku zawdzięczami Maxowi Dehnowi, studentowi Hilberta.
+Stosowny kontrprzykład z 1900 roku zawdzięczymy Maxowi Dehnowi, studentowi Hilberta.
+\index[persons]{Dehn, Max}%
 Brakującym założeniem jest to, że każdy odcinek jest krótszy od pewnej wielokrotności dowolnego innego odcinka -- czyli aksjomat Archimedesa.
+\index{aksjomat!Archimedesa}%
 
 Greenberg podsumowuje te rozważania tak:
 
@@ -83,6 +109,9 @@ Greenberg podsumowuje te rozważania tak:
         \item $\Pi$ jest płaszczyzną Pitagorasa;
         \item suma kątów trójkąta wynosi $\pi$ oraz (dla danego odcinka $PQ$, prostej $l$ przez $Q$ prostopadłej do $PQ$ oraz półprostej $r$ na $l$ wychodzącej z punktu $Q$, dla każdego kąta ostrego $\theta$ istnieje punkt $R$ na $r$ taki, że $\angle PRQ < \theta$).
     \end{itemize}
+    \index{suma kątów}
+    \index{płaszczyzna!Pitagorasa}
+    \index{płaszczyzna!Hilberta}
 \end{proposition}
 
 %

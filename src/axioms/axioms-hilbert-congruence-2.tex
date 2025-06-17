@@ -1,11 +1,12 @@
 \subsection{Aksjomaty przystawania kątów}
-Podobnie jak dla odcinków, wprowadzamy niezdefiniowaną relację przystawania kątów, oznaczaną znowu przez $\cong$, ponieważ nie prowadzi to do nieporozumień.
+Dokładnie jak dla odcinków, wprowadzamy niezdefiniowaną relację przystawania kątów, oznaczaną znowu przez $\cong$, ponieważ nie prowadzi to do nieporozumień.
 
 \begin{axiom}[przystawania, C4]
     Dla każdego kąta $\angle BAC$ i każdej $DF$ półprostej istnieje dokładnie jedna półprosta $DE$ po ustalonej stronie prostej $DF$ taka, że $\angle BAC \cong \angle EDF$.
 \end{axiom}
 
 Możemy traktować ten aksjomat jako odpowiednik cyrkla: pozwala przenosić kąty tak, jak Euklides (I.23).
+\index{cyrkiel}
 
 \begin{axiom}[przystawania, C5]
     Niech $\alpha, \beta, \gamma$ będą kątami.
@@ -14,6 +15,7 @@ Możemy traktować ten aksjomat jako odpowiednik cyrkla: pozwala przenosić kąt
 \end{axiom}
 
 Mamy wreszcie cechę przystawania bok-kąt-bok, z której można wyprowadzić dodawanie kątów:
+\index{cecha przystawania!bok-kąt-bok}%
 
 \begin{axiom}[przystawania, C6]
     Niech $ABC$ i $DEF$ będą dwoma trójkątami takimi, że $AB \cong DE$, $AC \cong DF$ i $\angle BAC \cong \angle EDF$.
@@ -21,6 +23,8 @@ Mamy wreszcie cechę przystawania bok-kąt-bok, z której można wyprowadzić do
 \end{axiom}
 
 Euklides udawał, że dowodzi aksjomatu C6 metodą ,,nakładania'' figur, ale Hilbert znalazł model będący świadkiem, że nie wynika on z poprzednich aksjomatów; patrz \cite[paragraf 11]{hilbert_1988}, jak wiemy od Greenberga \cite[s. 200]{greenberg_2010}.
+(W obronie Euklidesa należy dodać, że metoda nakładania pojawia się dwa razy: w (I.4) oraz (I.8); gdyby była słuszna, postulat 4, że wszystkie kąty proste są równe, nie byłby potrzebny!).
+\index{kąt!prosty}%
 
 Jeżeli chodzi o dodawanie kątów, musimy być ostrożni.
 Suma dwóch kątów może okazać się prostą (lub ,,dwoma kątami prostymi'' jak pisze Euklides) albo mieć miarę większą niż $\pi$, wtedy składniki sumy nie znajdują się we wnętrzu otrzymanego kąta.
@@ -29,6 +33,7 @@ Kąty można także odejmować.
 \begin{definition}[kąt przyległy]
     Niech $\angle BAC$ będzie kątem, zaś $D$ punktem na prostej $AC$ po przeciwnej stronie $A$ niż $C$.
     Wtedy kąty $\angle BAC$ i $\angle BAD$ nazywamy przyległymi. % supplementary.
+    \index{kąt!przyległy}
 \end{definition}
 
 Warto teraz spojrzeć na (I.13) Euklidesa.
@@ -53,7 +58,6 @@ Warto teraz spojrzeć na (I.13) Euklidesa.
     \tkzLabelPoint[anchor=center](X1){$\beta$}
     \tkzLabelPoint[anchor=center](X2){$\alpha$}
     \tkzLabelPoint[anchor=center](X3){$\gamma$}
-
 \end{tikzpicture}
 \end{comment}
     \caption{kąty przyległe ($\alpha$ i $\beta$) oraz wierzchłkowe ($\alpha$ i $\gamma$)}
@@ -61,10 +65,11 @@ Warto teraz spojrzeć na (I.13) Euklidesa.
 
 \begin{proposition}
     Kąty wierzchołkowe (para kątów przy dwóch przecinających się prostych, które nie są przyległe) są przystające.
+    \index{kąt!wierzchołkowy}
 \end{proposition}
 
 % odpowiadające i naprzemianległe.
-\todofoot{Pompe s. 5: dwie proste przecięte trzecią wyznaczają kąty tej samej miary <=> proste są równoległe (naprzemianległe). Pompe s. 5: suma kątów trójkąta to 180}
+\todofoot{Pompe s. 5: dwie proste przecięte trzecią wyznaczają kąty tej samej miary <=> proste są równoległe (naprzemianległe). Pompe s. 5: suma kątów trójkąta to 180\index{suma kątów}}
 % https://en.wikipedia.org/wiki/Saccheri–Legendre_theorem
 
 Istnieje odpowiednik relacji między odcinkami ,,bycia mniejszym'' dla kątów:
