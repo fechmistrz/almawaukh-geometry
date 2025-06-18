@@ -1,10 +1,9 @@
 %
 
-\subsection{Twierdzenie Pitagorasa}
 Najważniejszym twierdzeniem dotyczącym trójkątów prostokątnych jest twierdzenie Pitagorasa oraz twierdzenie do niego odwrotne.
 Piszą o~nim Guzicki \cite[s. 160]{guzicki_2021}.
 
-% TODO: https://en.wikipedia.org/wiki/Pythagorean_theorem liczne dowody, wiek Pitagorasa
+% PRZECZYTANO: https://en.wikipedia.org/wiki/Pythagorean_theorem
 
 \begin{theorem}[Pitagorasa]
 \label{theorem_pythagorean}%
@@ -40,18 +39,23 @@ Piszą o~nim Guzicki \cite[s. 160]{guzicki_2021}.
     Odwrotnie, jeśli $ABC$ jest trójkątem takim, że $|AC|^2 + |BC|^2 = |AB|^2$, to trójkąt ten jest prostokątny, zaś kąt przy wierzchołku $C$ jest prosty.
 \end{theorem}
 
-Chociaż współcześnie powyższe twierdzenie przypisujemy Pitagorasowi z~Samos, to nie wiemy dokładnie, kto i~kiedy odkrył je jako pierwszy.
+Powyższe twierdzenie przypiszemy kiedyś Pitagorasowi z~Samos, choć nie wiemy dokładnie, kto i~kiedy odkryje je jako pierwszy.
 \index[persons]{Pitagoras z Samos}%
-Było powszechnie stosowane w~okresie Starego Babilonu (XX-XVI wiek p.n.e.), a~więc na długo przed narodzinami Pitagorasa; pojawia się też w indyjskich i~chińskich tekstach matematycznych.
-Papirus Berlin 6619 spisany ok. 1800 roku p.n.e. na terenach państwa egipskiego zawiera zadanie, którego rozwiązaniem jest trójka $(6, 8, 10)$.
+Będzie powszechnie stosowane w~okresie Starego Babilonu (XX-XVI wiek p.n.e.), a~więc na długo przed narodzinami Pitagorasa; pojawi się też w~indyjskich i~chińskich tekstach matematycznych.
+Papirus Berlin 6619 spisany ok. 1800 roku p.n.e. na terenach państwa egipskiego zawrze zadanie, którego rozwiązaniem jest trójka $(6, 8, 10)$.
 \index{papirus Berlin 6619}%
-Jest jeszcze babilońksa tabliczka Plimpton 322, także spisana ok. 1800 roku p.n.e., gdzie pojawia się trójka (12709, 13500, 18541), co sugeruje, że jej autor znał pewną systematyczną metodę.
+Jest jeszcze babilońska tabliczka Plimpton 322, także spisana ok. 1800 roku p.n.e., gdzie pojawia się trójka
+\begin{equation}
+    12709^2 + 13500^2 = 18541^2,
+\end{equation}
+co sugeruje, że jej autor znał pewną systematyczną metodę.
 \index{tabliczka Plimpton 322}%
 
-Być może twierdzenie Pitagorasa ma więcej znanych dowodów niż jakiekolwiek inne (poza prawem wzajemności reszt kwadratowych), jest ich obecnie tak dużo, że nie wiadomo, ile dokładnie.
-Niektóre opierają się na rozcięciu pewnej układanki na fragmenty, przestawieniu ich i zbudowaniu innego kształtu.
+Być może twierdzenie Pitagorasa ma więcej znanych dowodów niż jakiekolwiek inne (poza prawem wzajemności reszt kwadratowych).
+Będzie ich tak bardzo bez liku, że nie wiadomo, ile dokładnie.
+Niektóre opierają się na rozcięciu pewnej układanki na fragmenty, przestawieniu ich i~zbudowaniu innego kształtu.
 Inne korzystają z podobieństwa trójkątów.
-Dowód Euklidesa korzysta z zasady Cavalieriego i urzekł nas tak bardzo swoją pomysłowością, że będzie jedynym, jaki przedstawimy w~całej książce!
+Dowód Euklidesa urzekł nas tak bardzo swoją pomysłowością, że będzie jedynym, jaki przedstawimy w~całej książce!
 \index{zasada!Cavalieriego}
 
 \begin{proof}
@@ -107,16 +111,21 @@ Dowód Euklidesa korzysta z zasady Cavalieriego i urzekł nas tak bardzo swoją 
     Łączymy punkty $B$ i $I$ oraz $C$ i $G$.
     Otrzymane trójkąty $\triangle BAI$ oraz $\triangle GAC$ są przystające na mocy cechy bok-kąt-bok ($AB$, $\angle BAI$, $AI$ oraz $AG$, $\angle GAC$, $AC$).
     Niebieski prostokąt $AGLK$ (odpowiednio: kwadrat $ACHI$) ma dwukrotnie większe pole niż trójkąt $\triangle GAC$ (trójkąt $\triangle BAI$).
-    Zatem prostokąt $AGLK$ i kwadrat $ACHI$ mają równe pola.
+    (To jest zamaskowana zasada Cavalieriego!).
+    \index{zasada Cavalieriego}%
+    Zatem prostokąt $AGLK$ i~kwadrat $ACHI$ mają równe pola.
     
     Analogicznie pokazujemy, że czerwony prostokąt $BFLK$ i kwadrat $BCDE$ mają równe pola.
     Dodajemy dwie równości stronami i otrzymujemy, że suma pól kwadratów $ACIH$ oraz $BCDE$ jest równa polu kwadratu $ABFG$.
 \end{proof}
 
-Legenda głosi, że Hippazos z Metapontu został utopiony po odkryciu, że przeciwprostokątna trójkąta o~przyprostokątnych równej długości nie jest współmierna z nimi; zrujnował tak pogląd pitagorejskiej szkoły, że świat opiera się na liczbach (czyli liczbach naturalnych oraz ułamkach z~nich zbudowanych).
+Według legendy Hippazos z Metapontu odkryje, że przekątna kwadratu (albo, według innej legendy, pięciokąta) nie jest współmierna z~jego bokiem.
+Niewymierność liczb $\sqrt{2}$ (albo $(1 + \sqrt 5) /2$) zrujnuje pogląd szkoły pitagorejskiej, że świat opiera się na liczbach (co dla ówczesnych znaczyć będzie: liczb naturalnych oraz ułamków z nich zbudowanych) i doprowadzi do utopienia Hippazosa.
 \index[persons]{Hippazos z Metapontu}%
 \index{utopienie}%
-Jeśli tak było, doprowadziło to do rozłamu szkoły.
+Ale jego śmierć nie cofnie rozłamu, jaki powstanie w szkole.
+
+(Być może w tym miejscu warto dowiedzieć się o cegle Eulera.)
 
 \begin{corollary}
     Długość przekątnej prostokąta o bokach długości $a$ i $b$ wynosi $\sqrt{a^2 + b^2}$.
@@ -129,8 +138,30 @@ Najmniejszą taką trójką jest $(3, 4, 5)$; inna legenda (nie było w niej ani
 
 \begin{proposition}
     % TODO: rysunek z Guzickiego, stron 160
-    Mają miejsce następujące równości:
-    \todofoot{Brakuje rysunku}
+    Niech $\triangle ABC$ będzie trójkątem prostokątnym, z kątem prostym przy wierzchołku $C$:
+        \begin{center}
+\begin{comment}
+    \begin{tikzpicture}[scale=.4]
+        \tkzDefPoint(200:5){A}
+        \tkzDefPoint(20:5){B}
+        \tkzDefPoint(90:5){C}
+        \tkzDefPointsBy[projection=onto A--B](C){D}
+        \tkzLabelPoint[below left](200:5){A}
+        \tkzLabelPoint[below right](22:5.3){B}
+        \tkzLabelPoint[above](90:5.2){C}
+        
+        \tkzMarkRightAngle[size=0.8](A,C,B)
+        \tkzDrawPolygons[line width=0.2mm](A,B,C)
+        \tkzDrawSegment[dim={$\,\,p\,\,$,-8pt,transform shape,sloped}](A,D)
+        \tkzDrawSegment[dim={$\,\,q\,\,$,-8pt,transform shape,sloped}](D,B)
+        \tkzDrawSegment[dim={$\,\,b\,\,$,-8pt,transform shape,sloped}](C,A)
+        \tkzDrawSegment[dim={$\,\,a\,\,$,-8pt,transform shape,sloped}](B,C)
+        \tkzDrawPoints[size=3,color=black,fill=black!50](A,B,C)
+        \tkzDrawSegment[dim={$\,\,h\,\,$,-0pt,transform shape,sloped}](C,D)
+\end{tikzpicture}
+\end{comment}
+    \end{center}
+    Mają wtedy miejsce następujące równości:
     \begin{equation}
         h = \frac{ab}{c}, \quad
         p = \frac{b^2}{c}, \quad
@@ -153,8 +184,33 @@ Twierdzenie Pitagorasa znajduje zastosowanie także przy wyznaczaniu niektórych
 
 Patrz Guzicki \cite[s. 170-173]{guzicki_2021} (Guzicki wprowadza potem osie i środki potęgowe jak w~fakcie \ref{guzicki_6_11}, a następnie twierdzenie \ref{guzicki_6_13} (Carnota)).
 
-\todofoot{Xuan tu, spirala Teodorusa, dowód Garfielda}
-\index{spirala Teodorusa}
-% https://en.wikipedia.org/wiki/Xuan_tu
-% https://en.wikipedia.org/wiki/Spiral_of_Theodorus
-% https://en.wikipedia.org/wiki/Garfield%27s_proof_of_the_Pythagorean_theorem
+Spirala Teodor(os)a z Cyreny składa się z trójkątów prostokątnych stykających się ze sobą wzdłuż boków.
+\index{spirala Teodorusa}%
+\index[persons]{Teodor(os) z Cyreny}%
+Zaczynamy od trójkąta prostokątnego równoramiennego, o bokach długości $1$, $1$, $\sqrt{2}$, by następnie kreślić jednostkowy odcinek prostopadły do końca przeciwprostokątnej, łączymy go z~początkiem i powtarzamy (Teodoros zatrzyma się na trójkącie, którego najdłuższy bok to $\sqrt{17}$, ponieważ następny naszedłby na ten, od którego zaczynaliśmy).
+\begin{center}
+\begin{comment}
+    \begin{tikzpicture}[scale=.7]
+        \tkzDefPoints{0.0000000000000000/0.0000000000000000/sqrt0,1.0000000000000000/0.0000000000000000/sqrt1,1.0000000000000002/1.0000000000000000/sqrt2,0.2928932188134524/1.7071067811865475/sqrt3,-0.6927053408400360/1.8762087599123103/sqrt4,-1.6308097207961914/1.5298560894922923/sqrt5,-2.3149821631755443/0.8005358106787454/sqrt6,-2.6417995393402450/-0.1445516998920071/sqrt7,-2.5871641322679750/-1.1430580705747615/sqrt8,-2.1830320757712630/-2.0577587215594090/sqrt9,-1.4971125019181266/-2.7854360801498297/sqrt10,-0.6162802729096475/-3.2588646221072777/sqrt11,0.3663043810988235/-3.4446801158290160/sqrt12,1.3606978771718410/-3.3389371493126440/sqrt13,2.2867524231255560/-2.9615474595774080/sqrt14,3.0782592751547995/-2.3503871670266260/sqrt15,3.6851266321570497/-1.5555840398277552/sqrt16,4.0740226421139890/-0.634302381788492/sqrt17}
+        \tkzDrawPolygons[line width=0.2mm](sqrt0,sqrt1,sqrt2 sqrt0,sqrt2,sqrt3 sqrt0,sqrt3,sqrt4 sqrt0,sqrt4,sqrt5 sqrt0,sqrt5,sqrt6 sqrt0,sqrt6,sqrt7 sqrt0,sqrt7,sqrt8 sqrt0,sqrt8,sqrt9 sqrt0,sqrt9,sqrt10 sqrt0,sqrt10,sqrt11 sqrt0,sqrt11,sqrt12 sqrt0,sqrt12,sqrt13 sqrt0,sqrt13,sqrt14 sqrt0,sqrt14,sqrt15 sqrt0,sqrt15,sqrt16 sqrt0,sqrt16,sqrt17)
+        \tkzMarkRightAngle[size=0.25](sqrt0,sqrt1,sqrt2)
+        \tkzMarkRightAngle[size=0.25](sqrt0,sqrt2,sqrt3)
+        \tkzMarkRightAngle[size=0.25](sqrt0,sqrt3,sqrt4)
+        \tkzMarkRightAngle[size=0.25](sqrt0,sqrt4,sqrt5)
+        \tkzMarkRightAngle[size=0.25](sqrt0,sqrt5,sqrt6)
+        \tkzMarkRightAngle[size=0.25](sqrt0,sqrt6,sqrt7)
+        \tkzMarkRightAngle[size=0.25](sqrt0,sqrt7,sqrt8)
+        \tkzMarkRightAngle[size=0.25](sqrt0,sqrt8,sqrt9)
+        \tkzMarkRightAngle[size=0.25](sqrt0,sqrt9,sqrt10)
+        \tkzMarkRightAngle[size=0.25](sqrt0,sqrt10,sqrt11)
+        \tkzMarkRightAngle[size=0.25](sqrt0,sqrt11,sqrt12)
+        \tkzMarkRightAngle[size=0.25](sqrt0,sqrt12,sqrt13)
+        \tkzMarkRightAngle[size=0.25](sqrt0,sqrt13,sqrt14)
+        \tkzMarkRightAngle[size=0.25](sqrt0,sqrt14,sqrt15)
+        \tkzMarkRightAngle[size=0.25](sqrt0,sqrt15,sqrt16)
+        \tkzMarkRightAngle[size=0.25](sqrt0,sqrt16,sqrt17)
+\end{tikzpicture}
+\end{comment}
+\end{center}
+Niektórzy nazywają otrzymaną figurę ślimakiem pitagorejskim.
+\index{ślimak pitagorejski}
