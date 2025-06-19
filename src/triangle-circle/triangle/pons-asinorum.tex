@@ -1,25 +1,52 @@
 %
 
-\subsection{Pons asinorum}
-\index{most osłów patrz pons asinorum}
-Most osłów (łacińskie \emph{,,pons asinorum''}) to tradycyjna nazwa dowodu twierdzenia (I.5), że kąty przy podstawie trójkąta równoramiennego są równe.
-Mawiało się, że ci, którzy nie są w stanie samodzielnie przeprowadzić tego dedukcyjnego dowodu opartego na własnościach trójkątów przystających, nie może przekroczyć mostu i studiować dalej geometrii.
-
-Bardziej przyziemnie Coxeter \cite[s. 6-9]{coxeter_1991} zauważa, że rysunek wykonany przez Euklidesa przypomina most.
-Wśród konsekwencji wymienia kilka wyników z Elementów: III.3, III.20, III.21, III.22, III.32, VI.2, VI.4, a potem III.35, III.36, VI.19, co prowadzi do dowodu twierdzenia Pitagorasa, czyli I.47. % TODO: sprawdzić, czy numeracja moja i Coxetera jest taka sama.
+,,\emph{Pons asinorum}'', czyli most osłów, to tradycyjna nazwa twierdzenia (I.5), że kąty przy podstawie trójkąta równoramiennego są równe.
+Ci, którzy nie są w stanie samodzielnie przeprowadzić jego dedukcyjnego dowodu opartego na własnościach trójkątów przystających, nie mogą przekroczyć mostu i studiować dalej geometrii.
+Bardziej przyziemnie Coxeter \cite[s. 6-9]{coxeter_1991} zauważa, że rysunek wykonany przez Euklidesa przypomni most.
+Wśród konsekwencji wymienia wyniki z~Elementów: (III.3), (III.20), (III.21), (III.22), (III.32), (VI.2), (VI.4), a potem (III.35), (III.36), (VI.19), co prowadzi do dowodu twierdzenia Pitagorasa, czyli (I.47). % TODO: sprawdzić, czy numeracja moja i Coxetera jest taka sama.
 \index{twierdzenie!Pitagorasa}%
-Coxeter podaje w formie ćwiczeń nierówność Erdősa-Mordella (u nas podsekcja \ref{subsection_erdos_mordell}) oraz twierdzenie Steinera-Lehmusa (twierdzenie \ref{theorem_steiner_lehmus}).
+
+\begin{figure}[H] \centering
+\begin{comment}
+\begin{tikzpicture}[scale=.5]
+    \tkzDefPoint(90:-1){A}
+    \tkzDefPoint(-55:5){C}
+    \tkzDefPoint(235:5){B}
+    \tkzDefPoint(-90:8){X}
+
+    \tkzLabelPoint[above](A){$A$}
+    \tkzLabelPoint[left](B){$B$}
+    \tkzLabelPoint[right](C){$C$}
+    \tkzInterLC(A,B)(A,X) \tkzGetPoints{XX}{D} % line and circle
+    \tkzLabelPoint[left](D){$D$}
+    \tkzDefLine[parallel=through D](B,C) \tkzGetPoint{XXX}
+    \tkzInterLL(D,XXX)(A,C) \tkzGetPoint{E} % line and circle
+    \tkzLabelPoint[right](E){$E$}
+    
+    \tkzMarkSegments[mark=|](A,B A,C)
+    \tkzMarkSegments[mark=||](B,D C,E)
+    \tkzDrawLines[add= 0 and 0, line width=0.2mm](B,E C,D)
+    \tkzDrawLines[add= 0 and 0.5, line width=0.2mm](B,D C,E)
+    \tkzDrawPolygon[line width=0.5mm](A,B,C)
+    \tkzDrawPoints[size=4,color=black,fill=black!50](A,B,C,D,E)
+\end{tikzpicture}
+\end{comment}
+    \caption{most osłów}
+\end{figure}
+
+Pierwsze dowody tego faktu podadzą jeszcze Euklides, komentujący jego prace Proklos, a także (dużo krócej\footnote{Pappus zauważa, że trójkąt $\triangle ABC$ przystaje do siebie $\triangle ACB$, więc stosowne kąty przy podstawie też są przystajace.}) Pappus z Aleksandrii.
+\index[persons]{Proklos zwany Diadochem}%
+\index[persons]{Pappus z Aleksandrii}%
+Przyszłość przyniesie jeszcze jedno uzasadnienie, zaczynające się od wykreślenia dwusiecznej z kąta przy wierzchołku.
+\index{dwusieczna}%
+Euklides nie zrobi tego przede wszystkim ze względu na kolejność wykładanego materiału: dwusieczna pojawi się cztery tezy później, a nie można korzystać z wyników, których prawdziwości dopiero się pokaże.
+
+Coxeter podaje w formie ćwiczeń nierówność Erdősa-Mordella (u nas podsekcja \ref{subsection_erdos_mordell}) oraz twierdzenie Steinera-Lehmusa (twierdzenie \ref{theorem_steiner_lehmus}). \todofoot{Czy to na pewno musi być tu?}
 \index{nierówność!Erdősa-Mordella}%
 \index{twierdzenie!Steinera-Lehmusa}%
 % TODO: https://www.deltami.edu.pl/1990/08/elementarny-dowod-nierownosci-erdosa-mordella/
 \todofoot{Przeczytać artykuł z Delty 1990, elementarny-dowod-nierownosci-erdosa-mordella}
 
-Pierwsze dowody tego faktu podali jeszcze Euklides, komentujący jego prace Proklos, a także Pappus z Aleksandrii.
-\index[persons]{Proklos zwany Diadochem}%
-\index[persons]{Pappus z Aleksandrii}%
-Współcześnie podaje się krótkie uzasadnienie w oparciu o dwusieczną kąta, ale Euklides nie mógł tak uczynić, ponieważ definiuje ją dopiero cztery tezy później w swoich Elementach.
-\index{dwusieczna}
-
-% TODO: https://en.wikipedia.org/wiki/Pons_asinorum
+% PRZECZYTANO: https://en.wikipedia.org/wiki/Pons_asinorum
 
 %
