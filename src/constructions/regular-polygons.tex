@@ -2,23 +2,26 @@
     Skonstruować wielokąt foremny o $n$ kątach.
 \end{problem}
 
-Konstrukcję trójkąta równobocznego oraz kwadratu była znana dobrze w starożytności i nie wiadomo, kto pierwszy na nią wpadł.
-Euklides potrafił skonstruować wielokąt foremny o $n$ bokach dla $n = 3$ (I.1), $n = 4$ (I.46), $n = 5$ (IV.11), $n = 6$ (IV.15) oraz $n = 15$ (IV.16).
-\index[persons]{Euklides}
-Ptolemeusz podał inną konstrukcję pięciokąta foremnego w Almageście.
-\index[persons]{Ptolemeusz}
+Konstrukcja trójkąta równobocznego oraz kwadratu będzie znana dobrze w~starożytności i~nie wiadomo, kto pierwszy na nią wpadnie.
+Euklides potrafi skonstruować wielokąt foremny, który ma trzy (I.1), cztery (I.46), pięć (IV.11), sześć (IV.15) albo, po wykreśleniu trójkąta i pięciokąta opisanych wewnątrz tego samego okręgu, piętnaście boków (IV.16).
+\index[persons]{Euklides}%
+Ptolemeusz poda inną metodę otrzymania pięciokąta foremnego w~Almageście.
+\index[persons]{Ptolemeusz}%
+Jeszcze inne eleganckie rozwiązanie (opisane w~$\Delta_{24}^{10}$) znajdzie Yosifusa Hirano, japoński miłośnik matematyki z XIX wieku, a opisze jego przyjaciel Kawakita Chorin w~manuskrypcie ,,\emph{Sanpo Jyojutu Kaigi}'' (rozwiązania Sanpo Jyojutu).
+\index[persons]{Hirano, Yosifusa}%
+Konstrukcja Hirano to kolejny powód, by sięgnąć po książkę Fukagawy, Pedoe \cite{fukagawa_1989}.
 
 Mając wielokąt o $n$ bokach, bisekcja kąta środkowego pozwala podwoić liczbę boków do $2n$.
-Możemy więc uznać, że Euklides potrafił wykreślić wielokąty, które miały
+Możemy więc uznać, że Euklides wykreśli wielokąty, które mają
 \begin{equation}
     3, 4, 5, 6, 8, 10, 12, 15, 16, 20, \ldots
 \end{equation}
 boków.
-Lista została rozszerzona dopiero w 1796 roku przez Gaussa: pokazał, że siedemnastokąt foremny jest konstruowalny.
+Lista zostanie rozszerzona dopiero w 1796 roku przez Gaussa: pokaże, że siedemnastokąt foremny jest konstruowalny.
 \index{Gauss, Carl Friedrich}%
 \index{wielokąt!siedemnastokąt}%
-Był tak zadowolony z tego wyniku, że zażyczył sobie wyryć właśnie tę figurę na swoim grobie.
-Faktycznej konstrukcji dokonał Johannes Erchinger w 1800 roku.
+Będzie tak zadowolony z tego wyniku, że zażyczy sobie wyryć właśnie tę figurę na swoim grobie.
+Faktycznej konstrukcji dokona Johannes Erchinger w 1800 roku.
 \index[persons]{Erchinger, Johannes}%
 Hartstone \cite[s. 250-259]{hartshorne2000} poświęca tej konstrukcji całą sekcję.
 
@@ -33,18 +36,19 @@ W ogólności, mamy:
     \index{liczba pierwsza!Fermata}%
 \end{theorem}
 
-Gauss znalazł warunek wystarczający i napisał bez dowodu w \emph{Disquisitiones Arithmeticae} (1801), że jest też konieczny.
-Brakujący dowód został dodany przez Pierre'a Wantzla w 1837 roku.
-\index[persons]{Wantzel, Pierre}
+Gauss znajdzie warunek wystarczający i napisze bez dowodu w~\emph{Disquisitiones Arithmeticae} (po polsku byłyby to Dociekaniach arytmetyczne, 1801), że jest też konieczny.
+Brakujący dowód doda Pierre Laurent Wantzel w 1837 roku.
+\index[persons]{Wantzel, Pierre Laurent}%
 Spisany współczesnym językiem znajdzie się u Hartstone'a \cite[s. 258]{hartshorne2000}.
 
-Twierdzenie Gaussa zachęcało do znalezienia przepisu na wielokąty foremne o większej liczbie boków.
-W 1822 roku Magnus Paucker \cite{paucker_1822}, a dziesięć lat później i prawie pewne, że niezależnie także Friederich Richelot \cite{richelot_1832} znaleźli konstrukcję $257$-kąta foremnego. 
-\index[persons]{Paucker, Magnus}%
-\index[persons]{Richelot, Friederich}%
-Ich cierpliwość przyćmiewa konstrukcja $65\,537$-kąta Johanna Hermesa z 1896 roku, na którą poświęcił dziesięć lat swojego życia (i dwieście stron rękopisu).
+Twierdzenie Gaussa zachęca do znalezienia przepisu na wielokąty foremne o większej liczbie boków.
+W 1822 roku Magnus Georg von Paucker\footnote{Właściwie Магнус-Георг Андреевич Паукер, urodzon w Simunie, wtedy części Imperium Rosyjskiego, później Łotwy.} \cite{paucker_1822}, a po dziesięciu latach, choć wciąż niezależnie także Friederich Julius Richelot \cite{richelot_1832} znajdą konstrukcję $257$-kąta foremnego. 
+\index[persons]{von Paucker, Magnus Georg}%
+\index[persons]{Richelot, Friederich Julius}%
+Ich cierpliwość przyćmiewa konstrukcja $65\,537$-kąta Johanna Hermesa z 1896 roku, na którą poświęci dziesięć lat swojego życia (i dwieście stron rękopisu).
 
-Pełna lista konstruowalnych wielokątów foremnych o nieparzyście wielu bokach to: 3, 5, 15 (znane starożytnym), 17, 51, 85, 255 (znane Gaussowi), 257, 771, 1 285, 3 855, 4 369, 13 107, 21 845, 65 535 (znane Pauckerowi/Richelotowi), 65 537, 196 611, 327 685, 983 055, 1 114 129, 3 342 387, 5 570 645, 16 711 935, 16 843 009, 50 529 027, 84 215 045, 252 645 135, 286 331 153, 858 993 459, 1 431 655 765, 4 294 967 295; zakładamy przy tym, że istnieje tylko pięć liczb pierwszych Fermata.
+W 2025 roku nie będzie jeszcze wiadomo, ile jest liczb pierwszych Fermata, więc ludzkość będzie w stanie wykreślić wielokąty o nieparzyście wielu bokach dokładnie wtedy, gdy liczba tych boków będzie dzielnikiem $2^{32} - 1 = 4\,294\,967\,295$.
+Dla oszczędności papieru i tuszu darujemy sobie wypisywanie tych dzielników.
 
 \todofoot{Coxeter, s. 26}
 

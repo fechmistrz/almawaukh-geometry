@@ -131,6 +131,28 @@ Ale jego śmierć nie cofnie rozłamu, jaki powstanie w szkole.
     Długość przekątnej prostokąta o bokach długości $a$ i $b$ wynosi $\sqrt{a^2 + b^2}$.
 \end{corollary}
 
+\begin{problem} % Delta 2024/09
+    Miasto jest otoczone okrągłym murem o nieznanej średnicy, z czterema bramami.
+    Drzewo leży trzy nible na północ od północnej bramy.
+    Jeśli idziemy dziewięć nibli na wschód od południowej bramy, drzewo staje się widoczne. 
+    Znajdź średnicę miasta.
+\end{problem}
+
+Problem pochodzi z chińskiego tekstu \emph{Shu shu jiu zhang} (,,Traktat matematyczny w dziewięciu sekcjach'') z XIII wieku.
+Jeżeli oznaczymy średnicę miasta przez $x$, odległość drzewa od miasta przez $b$, odległość do przejścia przez $a$, zaś kąt środek miasta -- punkt widoczności -- południowa brama przez $\alpha$, to dostaniemy równanie
+\begin{equation}
+    \tan 2 \alpha = 2 \tan \alpha + \frac ba,
+\end{equation}
+co po prostych przekształceniach i przyjęciu $y = \tan \alpha$ daje
+$
+    2ay^3 + by^2 - b = 0,
+$
+albo (pamiętając, że $y = x/2a$)
+$
+    x^3 + bx^2 - 4a^2 b = 0.
+$
+To równanie ma jedno rozwiązanie rzeczywiste, $x = 9$.
+
 Względnie pierwsze liczby naturalne $a, b, c$ takie, że $a^2 + b^2 = c^2$ nazywamy (pierwotną) trójką pitagorejską.
 \index{trójka pitagorejska}%
 Każdą taką trójkę można otrzymać biorąc względnie pierwsze liczby $m, n$ różnej parzystości takie, że $m > n$ i kładąc $a = m^2 - n^2$, $b = 2 mn$, $c = m^2 + n^2$.
