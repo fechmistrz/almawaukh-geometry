@@ -5,7 +5,46 @@ Tekst intro rozdziału stereometria.
 % https://en.wikipedia.org/wiki/Polyhedron
 % https://en.wikipedia.org/wiki/Dual_polyhedron
 % https://www.youtube.com/watch?v=yAEveAOH2KwI => Schwarz lantern
-% https://en.wikipedia.org/wiki/Wallace-Bolyai-Gerwien_theorem to nie działa w 3d a jest ok w 2d
+
+% TODO: https://en.wikipedia.org/wiki/Wallace-Bolyai-Gerwien_theorem to nie działa w 3d a jest ok w 2d
+Nie ma odpowiednika twierdzenia Wallace'a-Bolyaia-Gerwiena w trzech wymiarach.
+Dwa wielościany nazwijmy równoważnymi przez podział, jeśli pierwszy da się tak podzielić na skończoną liczbę wielościanów, by z otrzymanych kawałków można było złożyć drugi.
+To, czy każde dwa czworościany o równych podstawach i równych wysokościach będzie stanowić treść trzeciego problemu Hilberta.
+Negatywnej odpowiedzi udzieli Dehn w 1900 roku, prostszy dowód pokaże Hadwiger w 1954 roku.
+% Hadwiger, Glur pokazali, że kiedy boki kawałków mogą musieć być równoległe % Hadwiger, H.; Glur, P.: Zerlegungsgleichheit ebener Polygone. Elem. Math. 6 (1951), 97–106.
+
+\begin{theorem}[Hadwigera] % Delta 1984 11
+    Niech $\alpha_1$, $\ldots$, $\alpha_p$ będą kątami dwuściennymi wielościanu $W$ leżącymi wzdłuż krawędzi długości $k_1$, $\ldots$, $k_p$, a $\beta_1$, $\ldots$, $\beta_q$ kątami wielościanu $V$ (wzdłuż krawędzi długości $l_1$, $\ldots$, $l_q$).
+    Definiujemy, z lekkim nadużyciem notacji,
+    \begin{equation}
+        W := \sum_{i \le p} k_i \alpha_i
+    \end{equation}
+    i analogicznie liczbę $V$.
+    Jeśli istnieje taka funkcja $\mathbb Z$-addytywna na zbiorze $M \subseteq \mathbb R$ zawierającym $\pi$, $\alpha_1$, $\ldots$, $\alpha_p$, $\beta_1$, $\ldots$, $\beta_q$, że $f(W) \neq f(V)$, to $W$ i $V$ nie są równoważne przez podział.
+\end{theorem}
+
+\begin{corollary}
+    Czworościan o kątach dwuściennych
+    \begin{equation}
+        \frac \pi 2, \frac \pi 2, \frac \pi 2,
+        \arccos \frac{1}{\sqrt 3}, \arccos \frac{1}{\sqrt 3}, \arccos \frac{1}{\sqrt 3}
+    \end{equation}
+    nie jest równoważny przez podział z żadnym sześcianem.
+    Dla dowodu można wziąć $M = \{\pi/2, \pi, \alpha\}$ i określić $f(\pi/2) = f(\pi) = 0$, $f(\alpha) = 1$.
+    Wtedy funkcja $f$ przyjmuje na czworościanie wartość $3 \ \sqrt 2$, zaś na sześcianie $0$.
+\end{corollary}
+
+Taki sam wniosek wyciągnie nieznany autor w $\Delta_{84}^{11}$.
+
+% Unknown to Hilbert and Dehn, Hilbert's third problem was also proposed independently by Władysław Kretkowski for a math contest of 1882 by the Academy of Arts and Sciences of Kraków, and was solved by Ludwik Antoni Birkenmajer with a different method than Dehn's. Birkenmajer did not publish the result, and the original manuscript containing his solution was rediscovered years later.[3] 
+% Gauss regretted this defect in two of his letters to Christian Ludwig Gerling, who proved that two symmetric tetrahedra are equidecomposable.
+% Two polyhedra are called scissors-congruent if the first can be cut into finitely many polyhedral pieces that can be reassembled to yield the second. Any two scissors-congruent polyhedra have the same volume. Hilbert asks about the converse. 
+% In light of Dehn's theorem above, one might ask "which polyhedra are scissors-congruent"? Sydler (1965) showed that two polyhedra are scissors-congruent if and only if they have the same volume and the same Dehn invariant.[5] Børge Jessen later extended Sydler's results to four dimensions.[6] In 1990, Dupont and Sah provided a simpler proof of Sydler's result by reinterpreting it as a theorem about the homology of certain classical groups.[7] 
+% http://sciencecow.mit.edu/me/hilberts_third_problem.pdf
+
+\subsection{Zliczanie małych wielościanów}
+\subsubsection{Deltaściany}
+\input{solids/deltahedron}
 
 Jest siedem sześciościanów wypukłych (i trzy niewypukłe).
 Heinz Schumann oraz Bronisław Pabich napiszą krótki artykuł w $\Delta_{24}^{11}$, gdzie uzasadnią te liczby diagramami Schlegela.
@@ -17,12 +56,23 @@ Heinz Schumann oraz Bronisław Pabich napiszą krótki artykuł w $\Delta_{24}^{
 % https://en.wikipedia.org/wiki/Platonic_solid
 % \section{Pięć wielościanów} Hartshorne: rozdział 8
 % \section{Cauchy's rigidity theorem} Hartshorne: section 45
+
 \subsubsection{Czworościan}
+Czworościan
+
 \subsubsection{Sześcian}
+Sześcian
+
 \subsubsection{Ośmiościan}
+Ośmiościan
+
 \subsubsection{Dwunastościan}
+Dwunastościan
+
 \subsubsection{Dwudziestościan}
+Dwudziestościan
 % https://en.wikipedia.org/wiki/Regular_icosahedron
+
 \todofoot{Platonic solid} 
 
 \subsection{Wielościany archimedesowe}
