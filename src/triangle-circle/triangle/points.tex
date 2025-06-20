@@ -20,10 +20,31 @@ $X(39)$ to środek odcinka łączącego punkty Brocarda z definicji \ref{punkty_
 Lista jest długa, a jej końca nie widać.
 
 \begin{proposition}
+    \label{symetralne_przecinaja_sie}
     Trzy symetralne boków trójkąta przecinają się w jednym punkcie, środku okręgu opisanego na tym trójkącie.
 \end{proposition}
 
 Wynika to bezpośrednio z uwagi za definicją \ref{def_symetralna}: w trójkącie $\triangle ABC$, symetralna boku $AB$ (odpowiednio: $AC$) zawiera środki okręgów przechodzących przez punkty $A$ oraz $B$ (przez punkty $A$ oraz $C$), zatem trzecia symetralna musi przejść przez punkt wspólny dwóch pierwszych.
+
+Hartshorne \cite[s. 16]{hartshorne2000} podaje to w formie ćwiczenia ze wskazówką, by spojrzeć na (IV.5).
+Audin \cite[s. 61]{audin_2003} też, ale bez wskazówki.
+
+Uogólnieniem faktu \ref{symetralne_przecinaja_sie} o współpękowości symetralnych boków trójkąta jest:
+
+\begin{theorem}[Carnota]
+\index{twierdzenie!Carnota}%
+\label{guzicki_6_13}%
+	Dany jest trójkąt $ABC$ i punkty $D, E, F$ leżące odpowiednio na prostych $BC, CA, AB$.
+	Niech prosta $k$ (odpowiednio: $l$, $m$) przechodzi przez punkt $D$ ($E$, $F$) i będzie prostopadła do prostej $BC$ ($CA$, $AB$).
+	Wtedy proste $k$, $l$, $m$ mają punkt wspólny wtedy i tylko wtedy, gdy
+	\begin{equation}
+		|AF|^2 + |BD|^2 + |CE|^2 = |AE|^2 + |BF|^2 + |CD|^2.
+	\end{equation}
+\end{theorem}
+% TODO: https://en.wikipedia.org/wiki/Carnot%27s_theorem_(perpendiculars)
+
+Guzicki \cite[s. 176]{guzicki_2021} wyprowadza je z twierdzenia Pitagorasa, co pozwala mu dojść do wniosku, że okręgi opisany i wpisany oraz ortocentrum istnieją.
+\index{twierdzenie!Pitagorasa}
 
 \begin{proposition}
     Trzy dwusieczne kątów trójkąta przecinają się w jednym punkcie, środku okręgu wpisanego w ten trójkąt.
@@ -31,6 +52,7 @@ Wynika to bezpośrednio z uwagi za definicją \ref{def_symetralna}: w trójkąci
 
 Uzasadnienie jest kompletnie analogiczne.
 Po angielsku mamy krótkie określenia \emph{excenter, excircle, incenter, incircle}.
+Hartshorne \cite[s. 16]{hartshorne2000} podaje to w formie ćwiczenia ze wskazówką, by spojrzeć na (IV.4).
 
 \begin{definition}[wysokość]
 \index{wysokość trójkąta}%
@@ -47,6 +69,8 @@ Po angielsku mamy krótkie określenia \emph{excenter, excircle, incenter, incir
 \end{proposition}
 
 Po angielsku mamy \emph{altitude}, \emph{foot of the altitude}, \emph{orthocenter}.
+Pompe \cite[s. 38]{pompe_2022} pokaże dowód, który zmyślnie używa równoległoboków.
+Oprócz niego warto przeczytać tekst Hartshorne'a \cite[s. 54]{hartshorne2000}. albo Audina \cite[s. 61]{audin_2003}, gdzie poda się ten fakt w formie ćwiczenia.
 
 \begin{definition}[środkowa]
 \index{środkowa}%
@@ -61,9 +85,11 @@ Po angielsku mamy \emph{altitude}, \emph{foot of the altitude}, \emph{orthocente
 \index{środek ciężkości}%
     Trzy środkowe trójkąta przecinają się w jednym punkcie zwanym środkiem ciężkości i dzielą się w~stosunku $2$ do $1$, licząc od wierzchołków.
 \end{proposition}
+% % Coxeter, Introduction to Geometry, s. 10 <- przeczytaj to, nie tylko cytuj! + ćwiczenia: 3/4 <= 1
 
 Środkowe to po angielsku \emph{medians}, przecinają się w \emph{centroid}.
 Polska nazwa bierze się z tego, że środek ciężkości fizycznego modelu trójkąta wykonanego z jednolitego materiału znajduje się właśnie tam.
+(Ale warto też wiedzieć o punkcie Spiekera).
 
 Hartshorne \cite[s. 52-54]{hartshorne2000} wnioskuje \ref{srodkowe_przecinaja_sie} z faktu \ref{hartshorne_52} z krótkim komentarzem, że dwa ostatnie stwierdzenia (\ref{wysokosci_przecinaja_sie}, \ref{srodkowe_przecinaja_sie}) były znane Archimedesowi, później zaś \cite[s. 119-120]{hartshorne2000} powtórzy dowód z~maszynerią geometrii analitycznej.
 \index[persons]{Archimedes}%
