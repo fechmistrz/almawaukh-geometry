@@ -159,9 +159,8 @@ Każdą taką trójkę można otrzymać biorąc względnie pierwsze liczby $m, n
 Najmniejszą taką trójką jest $(3, 4, 5)$; inna legenda (nie było w niej ani smoków, ani Hippazosa) głosi, że Egipcjanie używali tego trójkąta do wyznaczania kątów prostych u podstawy piramid.
 
 \begin{proposition}
-    % TODO: rysunek z Guzickiego, stron 160
     Niech $\triangle ABC$ będzie trójkątem prostokątnym, z kątem prostym przy wierzchołku $C$:
-        \begin{center}
+    \begin{center}
 \begin{comment}
     \begin{tikzpicture}[scale=.4]
         \tkzDefPoint(200:5){A}
@@ -196,21 +195,21 @@ Twierdzenie Pitagorasa znajduje zastosowanie także przy wyznaczaniu niektórych
 
 \begin{proposition}
     Dane są dwa różne punkty $A$ i $B$ na płaszczyźnie oraz liczba rzeczywista $c$ taka, że $2c > |AB|^2$.
-    Miejscem geometrycznym punktów $P$ o własności $|AP|^2 + |BP|^2 = c$ jest okrąg o środku w środku odcinka $AB$ i promieniu $r = \frac 1 2 \sqrt{2c - |AB|^2}$.
+    Miejscem geometrycznym punktów $P$ o własności $|AP|^2 + |BP|^2 = c$ jest okrąg o środku w środku odcinka $AB$ i średnicy $r = \sqrt{2c - |AB|^2}$.
 \end{proposition}
 
 \begin{proposition}
     Dane są dwa różne punkty $A$ i $B$ na płaszczyźnie oraz liczba rzeczywista $c$.
-    Miejscem geometrycznym punktów $P$ o własności $|AP|^2 - |BP|^2 = c$ jest prosta prostopadła do prostej $AB$.
+    Wtedy miejscem geometrycznym punktów $P$ o własności $|AP|^2 - |BP|^2 = c$ jest prosta prostopadła do prostej $AB$.
 \end{proposition}
 
 Patrz Guzicki \cite[s. 170-173]{guzicki_2021} (Guzicki wprowadza potem osie i środki potęgowe jak w~fakcie \ref{guzicki_6_11}, a następnie twierdzenie \ref{guzicki_6_13} (Carnota)).
 
 Spirala Teodor(os)a z Cyreny składa się z trójkątów prostokątnych stykających się ze sobą wzdłuż boków.
-\index{spirala Teodorusa}%
+\index{spirala Teodor(os)a}%
 \index[persons]{Teodor(os) z Cyreny}%
 Zaczynamy od trójkąta prostokątnego równoramiennego, o bokach długości $1$, $1$, $\sqrt{2}$, by następnie kreślić jednostkowy odcinek prostopadły do końca przeciwprostokątnej, łączymy go z~początkiem i powtarzamy (Teodoros zatrzyma się na trójkącie, którego najdłuższy bok to $\sqrt{17}$, ponieważ następny naszedłby na ten, od którego zaczynaliśmy).
-\begin{center}
+\begin{figure}[H]\centering
 \begin{comment}
     \begin{tikzpicture}[scale=.7]
         \tkzDefPoints{0.0000000000000000/0.0000000000000000/sqrt0,1.0000000000000000/0.0000000000000000/sqrt1,1.0000000000000002/1.0000000000000000/sqrt2,0.2928932188134524/1.7071067811865475/sqrt3,-0.6927053408400360/1.8762087599123103/sqrt4,-1.6308097207961914/1.5298560894922923/sqrt5,-2.3149821631755443/0.8005358106787454/sqrt6,-2.6417995393402450/-0.1445516998920071/sqrt7,-2.5871641322679750/-1.1430580705747615/sqrt8,-2.1830320757712630/-2.0577587215594090/sqrt9,-1.4971125019181266/-2.7854360801498297/sqrt10,-0.6162802729096475/-3.2588646221072777/sqrt11,0.3663043810988235/-3.4446801158290160/sqrt12,1.3606978771718410/-3.3389371493126440/sqrt13,2.2867524231255560/-2.9615474595774080/sqrt14,3.0782592751547995/-2.3503871670266260/sqrt15,3.6851266321570497/-1.5555840398277552/sqrt16,4.0740226421139890/-0.634302381788492/sqrt17}
@@ -233,6 +232,8 @@ Zaczynamy od trójkąta prostokątnego równoramiennego, o bokach długości $1$
         \tkzMarkRightAngle[size=0.25](sqrt0,sqrt16,sqrt17)
 \end{tikzpicture}
 \end{comment}
-\end{center}
-Niektórzy nazywają otrzymaną figurę ślimakiem pitagorejskim.
-\index{ślimak pitagorejski}
+\caption{Spirala Teodor(os)a, zwany czasami ślimakiem pitagorejskim}
+\end{figure}
+\index{ślimak pitagorejski}%
+
+%
