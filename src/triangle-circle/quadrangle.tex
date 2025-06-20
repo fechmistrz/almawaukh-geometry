@@ -1,12 +1,26 @@
 %
 
 \begin{definition}[czworokąt]
+\index{czworokąt}%
 	Dane są cztery punkty $A$, $B$, $C$, $D$, z których żadne trzy nie są współliniowe, takimi że odcinki $AB$, $BC$, $CD$, $DA$ nie mają części wspólnej poza końcami.
-    Wtedy sumę tych odcinków nazywamy czworokątem.
-	\index{czworokąt}
+    Wtedy sumę tych odcinków nazywamy czworokątem.	
 \end{definition}
 
 \input{triangle-circle/quadrangle-types}
+
+\begin{definition}[wysokość środkowa]
+	Odcinek prostopadły do boku czworokąta, który kończy się na środku przeciwległego boku, nazywamy wysokością środkową.
+\end{definition}
+
+Po angielsku mamy piękne połączenie \emph{maltitude = midpoint + altitude}.
+
+\begin{proposition} % https://en.wikipedia.org/wiki/Cyclic_quadrilateral#Anticenter_and_collinearities
+	Niech $ABCD$ będzie czworokątem cyklicznym.
+	Wtedy jego wysokości środkowe są współpękowe, przechodzą przez punkt zwany antyśrodkiem.
+\index{antyśrodek}%
+	Antyśrodek to ortocentrum trójkąta utworzonego przez środki przekątnych oraz punkt ich przecięcia.
+	Przechodzą przez niego okręgi dziewięciu punktów trójkątów $\triangle ABC$, $\triangle BCD$, $\triangle CDA$, $\triangle DAB$ (a więc jest punktem Ponceleta czworokąta).
+\end{proposition}
 
 \subsection{Opisane i wpisane}
 \input{triangle-circle/quadrangle-in-ex}

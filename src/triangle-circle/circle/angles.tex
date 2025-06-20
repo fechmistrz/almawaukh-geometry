@@ -1,12 +1,38 @@
 
+Materiał przytoczony tutaj będzie łatwy do odnalezienia w~dowolnym podręczniku geometrii, dla przykładu u~Guzickiego \cite[s. 11-13, 18, 19]{guzicki_2021}, Audina \cite[s. 74, 75]{audin_2003}.
+
 \begin{proposition}
+\index{kąt!środkowy}%
+\index{kąt!wpisany}%
     Kąt środkowy jest dwa razy większy od kąta wpisanego opartego na tym samym łuku.
-    \index{kąt!środkowy}
-    \index{kąt!wpisany}
+\begin{figure}[H]\centering%
+\begin{comment}
+\begin{tikzpicture}[scale=.35]
+    \tkzDefPoint(0, 0){Zero}
+    \tkzDefPoint(100:5){A}
+    \tkzDefPoint(100:3.5){Aa}
+    \tkzDefPoint(230:5){B}
+    \tkzDefPoint(285:1.5){Oo}
+    \tkzDefPoint(340:5){C}
+    \tkzDrawCircle[line width=0.5mm](Zero,A)
+    \tkzLabelPoint[above left](Zero){$O$}
+    \tkzLabelPoint[above](A){$A$}
+    \tkzLabelPoint[below left](B){$B$}
+    \tkzLabelPoint[below right](C){$C$}
+    \tkzDrawPolygons[line width=0.3mm](A,B,Zero,C)
+    \tkzMarkAngle(B,Zero,C)
+    \tkzMarkAngle(B,A,C)
+    \tkzDrawPoints[size=3,color=black,fill=red!50](A,B,C,Zero)
+    \tkzLabelPoint[anchor=center](Aa){$\alpha$}
+    \tkzLabelPoint[anchor=center](Oo){$2\alpha$}
+\end{tikzpicture}
+\end{comment}
+    \caption{kąt środkowy jest dwa razy większy od wpisanego}
+\end{figure}
 \end{proposition}
 % PRZECZYTANO: https://en.wikipedia.org/wiki/Inscribed_angle
 
-O tym samym co (III.20) piszą Guzicki \cite[s. 11-13]{guzicki_2021}, Audin \cite[s. 74, 75]{audin_2003}.
+To będzie (III.20).
 
 \begin{corollary}
     Kąty wpisane oparte na tym samym łuku (ogólniej: na równych łukach) są równe.
@@ -16,7 +42,7 @@ O tym samym co (III.20) piszą Guzicki \cite[s. 11-13]{guzicki_2021}, Audin \cit
     Kąty oparty na półokręgu jest prosty.
 \end{corollary}
 
-Grecki pisarz Diogenes Laertios przypisze to stwierdzenie Talesowi.
+Grecki pisarz Diogenes Laertios przypisze to stwierdzenie Talesowi, chociaż nazwa przyjmie się jedynie w krajach anglosaskich.
 \index[persons]{Tales}%
 \index[persons]{Laertios, Diogenes}%
 Można wykorzystać je do konstrukcji stycznej.
@@ -30,10 +56,30 @@ Można wykorzystać je do konstrukcji stycznej.
 Wykorzystamy ten wniosek później (fakt \ref{prp_incircle}) do opisania, na których czworokątach można opisać okrąg.
 
 \begin{proposition}
-    Kąt dopisany do okręgu jest równy kątowi wpisanemu opartemu na łuku zawartym w danym kącie dopisanym.
+    Kąt dopisany do okręgu jest równy kątowi wpisanemu opartemu na łuku zawartym w danym kącie dopisanym: $\angle ABC = \angle CAD$.
     \index{kąt!dopisany}
+\begin{figure}[H] \centering
+\begin{comment}
+\begin{tikzpicture}[scale=.4]
+    \tkzDefPoint(0, 0){Zero}
+    \tkzDefPoint(50:5){A}
+    \tkzDefPoint(230:5){B}
+    \tkzDefPoint(300:5){C}
+    \tkzDefLine[tangent at=A](Zero) \tkzGetPoint{DD}
+    \tkzDefPointsBy[projection=onto A--DD](C){D}
+    \tkzDrawCircle[line width=0.5mm](Zero,A)
+    \tkzDrawLines[add= 1 and 1, line width=0.3mm](A,D)
+    \tkzDrawPolygons[line width=0.3mm](A,B,C)
+    \tkzMarkAngle[arc=l,size=1.2,mark=||](C,B,A)
+    \tkzMarkAngle[arc=l,size=1.2,mark=||](C,A,D)
+    \tkzDrawPoints[size=3,color=black,fill=black!50](A,B,C,D)
+    \tkzLabelPoint[above left](Zero){$O$}
+    \tkzLabelPoint[above right](A){$A$}
+    \tkzLabelPoint[below left](B){$B$}
+    \tkzLabelPoint[below right](C){$C$}
+    \tkzLabelPoint[above right](D){$D$}
+\end{tikzpicture}
+\end{comment}
+    \caption{kąt dopisane jest równy wpisanemu}
+\end{figure}
 \end{proposition}
-% Guzicki s. 18
-
-\todofoot{Geometria koła i kątów, twierdzenie Apoloniusza (s. 22)}
-\index{twierdzenie!Apoloniusza?}
