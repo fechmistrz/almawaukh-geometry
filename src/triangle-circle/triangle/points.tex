@@ -1,0 +1,78 @@
+Z każdym trójkątem związane są pewne specjalne punkty, internetowa lista \emph{Encyclopedia of Triangle Centers} wymieni ich co najmniej 68 547.
+My nie mamy aż tyle miejsca, więc ograniczymy się do najważniejszych.
+
+$X(1)$ to środek okręgu wpisanego, 
+$X(2)$ to środek ciężkości,
+$X(3)$ to środek okręgu opisanego,
+$X(4)$ to ortocentrum.
+Te cztery punkty opisujemy poniżej.
+
+$X(5)$ to środek okręgu dziewięciu punktów z faktu \ref{okrag_dziewieciu_punktow},
+$X(6)$ to punkt Lemoine'a (Grebego) z faktu \ref{punkt_lemoine},
+$X(7)$ to punkt Gergonne'a z~faktu \ref{punkt_gergonne},
+$X(8)$ to punkt Nagela z faktu \ref{punkt_nagela}, 
+$X(9)$ to mittenpunkt (punkt Lemoine'a trójkąta rozpiętego przez środki okręgów dopisanych; leży na prostych łączących środek ciężkości z punktem Gergonne'a, środek okręgu wpisanego z punktem Lemoine'a oraz ortocentrum ze środkiem Spiekera), % https://en.wikipedia.org/wiki/Mittenpunkt
+$X(10)$ to środek okręgu Spiekera z faktu \ref{punkt_spiekera},
+$X(11)$ to punkt Feuerbacha z twierdzenia \ref{punkt_feuerbacha},
+$X(13)$ to punkt Fermata z zadania \ref{punkt_fermata},
+$X(17)$, $X(18)$ to punkty Napoleona,
+$X(39)$ to środek odcinka łączącego punkty Brocarda z definicji \ref{punkty_brocarda}.
+Lista jest długa, a jej końca nie widać.
+
+\begin{proposition}
+    Trzy symetralne boków trójkąta przecinają się w jednym punkcie, środku okręgu opisanego na tym trójkącie.
+\end{proposition}
+
+Wynika to bezpośrednio z uwagi za definicją \ref{def_symetralna}: w trójkącie $\triangle ABC$, symetralna boku $AB$ (odpowiednio: $AC$) zawiera środki okręgów przechodzących przez punkty $A$ oraz $B$ (przez punkty $A$ oraz $C$), zatem trzecia symetralna musi przejść przez punkt wspólny dwóch pierwszych.
+
+\begin{proposition}
+    Trzy dwusieczne kątów trójkąta przecinają się w jednym punkcie, środku okręgu wpisanego w ten trójkąt.
+\end{proposition}
+
+Uzasadnienie jest kompletnie analogiczne.
+Po angielsku mamy krótkie określenia \emph{excenter, excircle, incenter, incircle}.
+
+\begin{definition}[wysokość]
+\index{wysokość trójkąta}%
+    Niech $\triangle ABC$ będzie trójkątem, w którym przez punkt $C$ poprowadzono prostą prostopadłą do boku $AB$.
+    Odcinek leżący na tej prostej, którego jeden koniec znajduje się w punkcie $C$, zaś drugi leży na boku $AB$, nazywamy wysokością opuszczoną z punktu $C$, drugi jego koniec to spodek wysokości.
+\end{definition}
+
+% TODO: Sometimes an arbitrary edge is chosen to be the base, in which case the opposite vertex is called the apex; the shortest segment between the base and apex is the height. The area of a triangle equals one-half the product of height and base length.
+
+\begin{proposition}
+\label{wysokosci_przecinaja_sie}%
+	Trzy wysokości trójkąta (albo w przypadku trójkąta rozwartokątnego, przedłużenia wysokości) przecinają się w jednym punkcie zwanym ortocentrum.
+	\index{ortocentrum}
+\end{proposition}
+
+Po angielsku mamy \emph{altitude}, \emph{foot of the altitude}, \emph{orthocenter}.
+
+\begin{definition}[środkowa]
+\index{środkowa}%
+    Niech $\triangle ABC$ będzie trójkątem.
+    Odcinek łaczący wierzchołek (na przykład $A$) ze środkiem przeciwległego boku (w naszym przykładzie $BC$) nazywamy środkową.
+\end{definition}
+
+Środkowe dzielą trójkąt na sześć mniejszych o równych polach.
+
+\begin{proposition}
+\label{srodkowe_przecinaja_sie}%
+\index{środek ciężkości}%
+    Trzy środkowe trójkąta przecinają się w jednym punkcie zwanym środkiem ciężkości i dzielą się w~stosunku $2$ do $1$, licząc od wierzchołków.
+\end{proposition}
+
+Środkowe to po angielsku \emph{medians}, przecinają się w \emph{centroid}.
+Polska nazwa bierze się z tego, że środek ciężkości fizycznego modelu trójkąta wykonanego z jednolitego materiału znajduje się właśnie tam.
+
+Hartshorne \cite[s. 52-54]{hartshorne2000} wnioskuje \ref{srodkowe_przecinaja_sie} z faktu \ref{hartshorne_52} z krótkim komentarzem, że dwa ostatnie stwierdzenia (\ref{wysokosci_przecinaja_sie}, \ref{srodkowe_przecinaja_sie}) były znane Archimedesowi, później zaś \cite[s. 119-120]{hartshorne2000} powtórzy dowód z~maszynerią geometrii analitycznej.
+\index[persons]{Archimedes}%
+Bogdańska, Neugebauer zrobią tak samo, ale fakt \ref{hartshorne_52} jest dla nich wnioskiem z~twierdzenia Talesa.
+\index{twierdzenie!Talesa}%
+% TODO: Ich długość można obliczyć z https://en.wikipedia.org/wiki/Apollonius%27s_theorem => to jest z https://en.wikipedia.org/wiki/Median_(geometry)#Formulas_involving_the_medians'_lengths
+
+Analogiczne stwierdzenie dla czworościanu mówi o dzieleniu się w stosunku $3$ do $1$ i bywa określane twierdzeniem Commandino, ponieważ Federico Commandino napisze w 1565 roku pracę \emph{De Centro Gravitatis Solidorum} (O środkach ciężkości brył), chociaż może nie być pierwszym, który je odkrył.
+\index{twierdzenie!Commandino}%
+\index[persons]{Commandino, Federico}%
+Podejrzewa się, że Francesco Maurolico pozna je wcześniej.
+(Friederich Eduard Reusch znajdzie uogólnienie, które w zdegenerowanym przypadku prowadzi znowu do twierdzenia \ref{theorem_varignon} Varignona).
