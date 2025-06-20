@@ -1,97 +1,14 @@
 %
 
 \begin{definition}[czworokąt]
-    Niech $A$, $B$, $C$, $D$ będą czterema punktami, z których żadne trzy nie są współliniowe, takimi że odcinki $AB$, $BC$, $CD$, $DA$ nie mają części wspólnej poza końcami.
+	Dane są cztery punkty $A$, $B$, $C$, $D$, z których żadne trzy nie są współliniowe, takimi że odcinki $AB$, $BC$, $CD$, $DA$ nie mają części wspólnej poza końcami.
     Wtedy sumę tych odcinków nazywamy czworokątem.
 	\index{czworokąt}
 \end{definition}
 
-% https://en.wikipedia.org/wiki/Square
-% https://en.wikipedia.org/wiki/Rhomboid
+\input{triangle-circle/quadrangle-types}
 
-To jest definicja Hartshorne'a \cite[s. 80]{hartshorne2000}.
-
-Po angielsku \emph{quadrangle}, z łacińskiego \emph{quadri} określającego liczbę cztery oraz \emph{latus}, czyli boku (a więc technicznie czworobok, nie czworokąt); istnieje też rzadko używane słowo \emph{tetragon} (przez analogię do \emph{polygon, pentagon}) z greckiego \emph{tetra} oraz \emph{gon}, znaczącego tym razem kąt.
-Niektórzy dopuszczają czworokąty z samoprzecięciem, nazywając je muchą albo motylem.
-\index{motyl}
-\index{mucha}
-
-Czworokąty, które nie mają samoprzecięć, mogą być wypukłe albo wklęsłe.
-Wypukłe tworzą bogatszą rodzinę.
-W krajach anglosaskich wyróżnia się czworokąty nieregularne, które nie mają żadnej pary boków równoległych (\emph{trapezium} w amerykańskiej odmianie języka).
-
-\begin{definition}[trapez]
-	Czworokąt, który posiada jedną lub dwie pary boków równoległych nazywamy trapezem.
-	\index{trapez}
-\end{definition}
-
-Po brytyjsku \emph{trapezium}, po amerykańsku \emph{trapezoid} -- widać więc kolizję z terminem na czworokąt ,,w ogólnym położeniu''.
-Wyjaśnimy to po podaniu pozostałych definicji. % https://en.wikipedia.org/wiki/Trapezoid
-
-\begin{definition}[trapez równoramienny]
-	Czworokąt, który posiada parę boków równoległych, którego kąty przy podstawie są równej miary, nazywamy trapezem równoramiennym.
-	\index{trapez!równoramienny}%
-\end{definition}
-
-W szczególności, nie można definiować trapezu równoramiennego jako trapezu, który ma ramiona równej długości!
-To czyniłoby wszystkie równoległoboki trapezami równoramiennymi, co nie ma żadnych zalet.
-\index{równoległobok}%
-Inne, równoważne definicje mówią, że jest to czworokąt z osią symetrii, która połowi parę przeciwległych boków albo trapez, który ma przekątne równej długości.
-
-\begin{definition}[równoległobok]
-	Czworokąt, który posiada dwie pary boków równoległych, nazywamy równoległobokiem.
-	\index{równoległobok}
-\end{definition}
-
-Każdy równoległobok (po angielsku \emph{parallelogram}) jest też trapezem.
-Alternatywne definicje głoszą, że ma przeciwległe boki równej długości, albo równe przeciwległe kąty, albo połowiące się wzajemnie przekątne.
-
-\begin{definition}[romb]
-	Czworokąt, który posiada cztery boki tej samej długości, nazywamy rombem.
-	\index{romb}
-\end{definition}
-
-Równoważnie, romby to te czworokąty, których prostopadłe przekątne połowią się i rozcinają romb na cztery przystające trójkąty (prostokątne).
-Angielski nazywa je \emph{rhombus}.
-
-\begin{definition}[prostokąt]
-	Czworokąt, który posiada cztery kąty tej samej miary, nazywamy prostokątem.
-	\index{prostokąt}%
-\end{definition}
-
-Nazwa bierze się z tego, że wszystkie jego kąty są proste.
-Alternatywnie, prostokąty to dokładnie te czworokąty, których przekątne równej długości połowią się.
-Szczególnymi prostokątami są
-
-\begin{definition}[kwadrat]
-	Czworokąt, który posiada cztery kąty tej samej miary i wszystkie boki tej samej długości, nazywamy kwadratem.
-	\index{kwadrat}
-\end{definition}
-
-Kwadraty (\emph{squares}) to dokładnie te prostokąty (\emph{rectangles}), które są też rombami.
-
-\begin{definition}[latawiec]
-	Czworokąt, który ma dwie pary sąsiednich boków równej długości, nazywamy latawcem.
-	\index{latawiec}
-	\index{deltoid|see{latawiec}}
-\end{definition}
-
-W Polsce bardziej popularne będzie określenie deltoid.
-Latawce mają jedną przekątną, która dzieli je na dwa przystające trójkąty, w szczególności jego przekątne są prostopadłe.
-Na latawcu, który ma dwa kąty proste naprzeciw siebie można opisać okrąg.
-Romby są szczególnym przypadkiem latawców.
-
-Czworokąty wklęsłe mają jeden kąt, którego miara wynosi między $\pi$ i $2\pi$ radianów.
-Wyróżniamy wśród nich rzutki (z angielskiego \emph{dart, arrowhead}), które mają oś symetrii albo równoważnie, dwie pary sąsiednich boków równej długości, tak jak latawce.
-\index{rzutka}
-
-W starożytnej Grecji czworokąty podzieli się na rozłączne klasy: kwadraty, podłużne prostokąty (po angielsku \emph{oblong}), niekwadratowe romby, romboidy (równoległoboki, które nie są ani rombami, ani prostokątami) oraz \emph{trapezia} (τραπέζιον znaczy dosłownie stolik), które nie pasowały do wcześniej wymienionych.
-Filozof neoplatoński Proklos zwany Diadochem napisze wpływowy komentarz do prac Euklidesa, gdzie wprowadzi trochę inny podział zgodnie z tym, co obmyśli około 100 lat p.n.e. Posejdonios z Rodos (nauczyciel Cycerona).
-Czworokąt będzie równoległobokiem (kwadratem, podłużnym prostokątem, rombem, romboidem) albo nie (z parą boków równoległych, jako trapezium równoramienne lub ukośne albo bez niej -- trapezoidem).
-Wszystkie języki europejskie odziedziczą klasyfikację czworokątów po Proklosie... poza angielskim, gdzie znaczenie trapezoidu i trapezium odwróci słownik wydany przez Charlesa Huttona w 1795 roku.
-Porządek przywróci się około 1875 roku, ale amerykańskiego angielskiego już nikt nie uratuje.
-
-\subsection{Opisane, wpisane}
+\subsection{Opisane i wpisane}
 \input{triangle-circle/quadrangle-in-ex}
 
 \subsection{Czoworokąty dwuśrodkowe}
@@ -100,61 +17,7 @@ Porządek przywróci się około 1875 roku, ale amerykańskiego angielskiego ju�
 \index{czworobok zupełny|(}%
 \index{czworokąt zupełny|see{czworobok zupełny}}%
 \subsection{Czoworobok zupełny}
-Pojęcie opisane tutaj jest charakterystyczne dla geometrii incydencji albo rzutowej.
-
-\begin{definition}
-	Cztery punkty, z których żadne trzy nie są współliniowe, leżące na sześciu prostych przez sześć par punktów, nazywamy czworokątem zupełnym.
-\end{definition}
-
-Sześć prostych wyznacza dodatkowe trzy punkty, które nazywamy przekątniowymi.
-
-\begin{definition}
-	Cztery proste, z których żadne trzy nie są współpękowe, przecinające się parami w sześciu różnych punktach, nazywamy czworobokiem zupełnym.
-\end{definition}
-
-Lachlan nazwie w 1893 roku czworoboki zupełne tetragramami, zaś czworokąty tetrastygmami.
-\index[persons]{Lachlan, Robert}
-Podobnież zdarzy się później napotkać jeszcze te słowa.
-\index{tetragram}%
-\index{tetrastygma}%
-\index[persons]{Lachlan, Robert}%
-% Lachlan, Robert (1893). An Elementary Treatise on Modern Pure Geometry. London, New York: Macmillan and Co.
-Inne określenie na czworoboki zupełne to konfiguracje Pascha, szczególnie w kontekście potrójnych układów Steinera.
-\index{układ Steinera, potrójny}%
-\index{konfiguracja Pascha}
-
-\begin{theorem}[Newtona-Gaussa]
-	Środki trzech przekątnych czworoboku zupełnego leżą na jednej prostej, zwaną prostą Newtona-Gaussa.
-	\index{twierdzenie!Newtona-Gaussa}%
-	\index{prosta!Newtona-Gaussa}%
-\end{theorem}
-
-Różne dowody korzystają z własności pola, iloczynu zewnętrznego albo twierdzenie Menelaosa.
-\index{iloczyn zewnętrzny}%
-\index{twierdzenie!Menelaosa}%
-\todofoot{en-wiki Newton-Gauss line}
-
-% TODO: https://en.wikipedia.org/wiki/Newton-Gauss_line#:~:text=In%20geometry%2C%20the%20Newton-Gauss,diagonals%20of%20a%20complete%20quadrilateral.
-% 	\todofoot{Twierdzenie Newtona: środek okręgu ego w czworokąt i środki przekątnych tego czworokąta są współliniowe.}
-
-% https://en.wikipedia.org/wiki/Newton%E2%80%93Gauss_line#Existence_of_the_Newton%E2%88%92Gauss_line
-
-\begin{theorem}[Gaussa-Bodenmillera]
-	Trzy okręgi, których średnicami są przekątne czworoboku zupełnego, są współosiowie.
-	% The theorem of Gauss and Bodenmiller states that the three circles whose diameters are the diagonals of a complete quadrilateral are coaxal.[8]
-	\index{twierdzenie!Gaussa-Bodenmillera}
-\end{theorem}
-
-\begin{theorem}[Jemieljanowa?]
-	punkt Miquela właściwego czworoboku zupełnego leży na okręgu dziewięciu punktów trójkąta przekątnego tego czworoboku.?
-	\index{twierdzenie!Jemieljanowa}
-\end{theorem}
-
-\begin{proposition}
-	Neugebauer 262: w każdy właściwy czworobok zupełny da się wpisać dokładnie jedną parabolę, jej ogniskiem jest punkt Miquela czworoboku.
-	\todofoot{Neugebauer 262: w każdy właściwy czworobok zupełny da się wpisać dokładnie jedną parabolę, jej ogniskiem jest punkt Miquela czworoboku.}
-\end{proposition}
-
+\input{triangle-circle/quadrangle-complete}
 \index{czworobok zupełny|)}%
 
 % The two '''bimedians''' of a convex quadrilateral are the line segments that connect the midpoints of opposite sides. They intersect at the "vertex centroid" of the quadrilateral (see [[Quadrilateral#Remarkable points and lines in a convex quadrilateral|§ Remarkable points and lines in a convex quadrilateral]] below).
