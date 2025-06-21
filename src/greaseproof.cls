@@ -56,7 +56,7 @@
 \fancyfoot{}
 % 341      Rozdział 7. Kalifat algebry | 7.2 Pierścień adeli              342 |
 \fancyhead[LE]{\thepage}
-\fancyhead[CE]{$\mathcal{E}$udoksos z Ptolemais, $\mathcal{L}$achmid z Al-Hiry, $\mathcal{A}$chradyna Ecetryjska}
+\fancyhead[CE]{$\mathcal{L}$emiałgiusz z Hornšperku}
 \fancyhead[RE]{}
 \fancyhead[LO]{}
 \fancyhead[CO]{Almanach geometryczny}
