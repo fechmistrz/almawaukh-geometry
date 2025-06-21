@@ -4,11 +4,26 @@
     Funkcję $R_A^\alpha$ zadaną następująco: $R_A^\alpha(X) = Y$ wtedy i tylko wtedy, gdy kąt $\angle XAY$ ma miarę $\alpha$ i $|AY| = |AX|$ nazywamy obrotem o kąt $\alpha$ wokół punktu $A$ zwanego środkiem obrotu.
 \end{definition}
 
+Oczywiście i tutaj można podać wzór.
+Wyznacza się go najpierw dla obrotów wokół zera, by następnie zauważyć, że dowolny obrót sprowadza się do tamtego przy użyciu dwóch translacji (jednej, by przenieść się na początek i drugiej, by wrócić):
+
+\begin{equation}
+    R_A^\alpha(x,y) = \begin{pmatrix}
+        x_A + (x_0 - x_A) \cos \alpha - (y_0 - y_A) \sin \alpha\\
+        y_A + (x_0 - x_A) \sin \alpha - (y_0 - y_A) \cos \alpha
+    \end{pmatrix}.
+\end{equation}
+
 \begin{proposition}
     Złożenie dwóch symetrii osiowych, których osie przecinają się pod kątem $\alpha$ jest obrotem o kąt $2 \alpha$ wokół punktu przecięcia wspomnianych osi.
 \end{proposition}
 
+To uogólnienie faktu \ref{two_axial_one_point}, tam było $\alpha = \pi$, a półobrót (obrót o kąt $\pi$) jest tym samym, co symetria środkowa.
+
 \begin{proposition}
 \label{for_banach_11}%
-    Złożenie dwóch obrotów jest obrotem lub translacją.
+    Niech $A \neq B$ będą dwoma punktami, zaś $\alpha, \beta$ dwiema miarami kątów.
+    Jeśli $\alpha + \beta$ nie jest wielokrotnością kąta pełnego, $2 \pi$, to $R_B^\beta \circ R_A^\alpha = R_C^{\alpha + \beta}$, gdzie $C$ jest takim punktem, by trójkąt $\triangle ABC$ miał kąty $\alpha/2$ przy $A$, $\beta / 2$ przy $B$.
+
+    W przeciwnym przypadku złożenie tych dwóch obrotów jest translacją.
 \end{proposition}

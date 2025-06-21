@@ -1,11 +1,19 @@
 
-\begin{theorem}[Chasles'a]
+\begin{theorem}[Chasles'a, 1830]
 \index{twierdzenie!Chasles'a}%
 \label{theorem_chasles}
     Każda izometria płaszczyzny jest złożeniem co najwyżej trzech symetrii osiowych.
 \end{theorem}
 
 Piszą o nim Audin \cite[s. 49]{audin_2003} (w ogólniejszej wersji dla przestrzeni $\mathbb R^n$ i $n+1$ odbić).
+Rozumiemy już symetrie osiowe oraz złożenia dwóch takich, pozostał przypadek trzech symetrii.
+
+\begin{definition}[symetria z poślizgiem]
+    Niech $p$ będzie prostą, zaś $w$ wektorem równoległym do niej.
+    Złożenie $T_w \circ S_p$ nazywamy symetrią osiową z poślizgiem.
+\end{definition}
+
+Wektor $w$ nie musi być równoległy do prostej $p$, ale jeśli założymy, że tak jest, to nie musimy pamiętać kolejności składania, bo mamy równość $T_w \circ S_p = S_p \circ T_w$.
 
 \begin{corollary}
     Każda izometria płaszczyzny jest przesunięciem, obrotem albo symetrią z poślizgiem, przy czym orientację zachowują dokładnie pierwsze dwa typy izometrii.
@@ -18,10 +26,11 @@ Gdy $g$ też jest izometrią, to $f^2g^2f^{-2}g^{-2}$ jest zawsze przesunięciem
 Pomocne może być zauważenie, że jeśli mamy dwa obroty $f$, $g$ o różnych środkach i ich złożenie jest obrotem, to $fg$ i $gf$ są obrotami o ten sam kąt, ale różnych środkach.
 A więc 
 \begin{align}
-    \ldots & = f^2 g^2 f^{-2} g^{-2} f^{-2} g^2 f^4 g^{-2} f^{-2} g^2 f^{-2} g^{-2} f^2 \\
+    \ldots & = f^2 g^2 f^{-2} g^{-2} f^{-2} g^2 f^4 g^{-2} f^{-2} g^2 f^{-2} g^{-2} f^2 \label{slowo_banacha} \\
     & = (f^2 g^2 f^{-2} g^{-2})( f^{-2} g^2 f^2 g^{-2}) (g^2 f^2g^{-2} f^{-2} ) (g^2 f^{-2} g^{-2} f^2) \\
     & = T_v T_w T_{-v} T_{-w} \\
     & = \operatorname{Id},
 \end{align}
 co kończy dowód.
 (Po drodze skorzystaliśmy z faktów \ref{delta_1997_9_start} do \ref{delta_1997_9_end}, twierdzenia \ref{theorem_chasles}, że złożenie przesunięć jest przesunięciem oraz faktu \ref{for_banach_11}).
+Napis \ref{slowo_banacha} to tak zwane słowem Banacha.

@@ -1,16 +1,32 @@
 
 \begin{definition}[symetria osiowa]
-    Niech $k$ będzie prostą.
-    Funkcję $S_k$ zadaną następująco: $S_k(X) = Y$ wtedy i tylko wtedy, gdy rzut punktu $X$ na prostą $k$ jest środkiem odcinka $XY$ nazywamy symetrią osiową o osi $k$.
+    Niech $k$ będzie ustaloną prostą, $X$ punktem, zaś $X'$ jego rzutem na prostą $k$.
+    Oznaczmy przez $w$ wektor $2X X'$.
+    Wtedy funkcję $S_k$ zadaną przez
+    \begin{equation}
+    S_k(X) = T_{w}(X)
+    \end{equation}
+    nazywamy symetrią osiową o osi $k$.
 \end{definition}
 
-Symetrie osiowe nie mają estetycznego wzoru, jeśli nie chcemy wprowadzać do książki macierzy (nie chcemy).
+(Chodzi o to, by rzut punktu $X$ na prostą $k$ był środkiem odcinka łączącego argument oraz wartość funkcji $S_k$).
+Symetrie osiowe nie mają estetycznego wzoru, jeśli nie chcemy wprowadzać do książki macierzy: punkt $(x_0, y_0)$ odbity względem osi o równaniu $ax + by + c = 0$ przechodzi na
+\begin{equation}
+    \left(
+    x_0 - 2a \cdot \frac{ax_0 + by_0 + c}{a^2 + b^2},
+    y_0 - 2b \cdot \frac{ax_0 + by_0 + c}{a^2 + b^2}
+    \right),
+\end{equation}
 
 \begin{proposition}
-    \label{kordos_banach_6}%
-    Złożenie dwóch symetrii osiowych, których osie są równoległe, jest translacją.
+\label{kordos_banach_6}%
+    Złożenie dwóch symetrii osiowych, których osie są równoległe, jest translacją (o wektor dwa razy dłuższy niż odległość między osiami, prostopadły do obydwu).
 \end{proposition}
 
 \begin{proposition}
-    Złożenie trzech symetrii osiowych jest symetrią osiową.
+\label{klkm1}%
+    Niech $k, l$ będą prostymi.
+    Wtedy $S_k \circ S_l \circ S_k = S_m$, gdzie $m$ to prosta będąca odbiciem prostej $l$ względem $k$.
 \end{proposition}
+
+Jeśli figura ma dokładnie dwie osi symetri, to muszą być prostopadłe.
