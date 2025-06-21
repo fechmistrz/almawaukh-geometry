@@ -1,58 +1,31 @@
-Przekształcenia geometryczne
+%
 
 \section{Izometrie}
-Izometrie
-\todofoot{Izometrie Coxetera, s. 29-36, 47 -- Hjelmslev}
+\input{transform/isometry}
+    \subsection{Translacje}
+    \input{transform/translation}
 
-\begin{enumerate}
-    \item Konstrukcja obrazu punktu, okręgu, prostej przy translacji, obrocie i symetrii osiowej. \index{translacja} \index{obrót} \index{symetria osiowa}
-    \item Złożenie dwóch i złożenie trzech symetrii osiowych.
-    \item Twierdzenia o składaniu izometrii. \index{izomeria}
-    \item Klasyfikacja izometrii na płaszczyźnie.
-    \item Izometrie parzyste i izometrie nieparzyste.
-    \item Twierdzenie o redukcji. \index{redukcja} \index{twierdzenie!o redukcji}
-    \item Twierdzenie Napoleona: środki ciężkości trójkątów równobocznych zbudowanych na bokach dowolnego trójkąta są wierzchołkami trójkąta równobocznego. \index[persons]{Bonaparte, Napoleon} \index{twierdzenie!Napoleona}%
-\end{enumerate}
+    \subsection{Symetrie osiowe}
+    \input{transform/reflection-line}
 
-\subsection{Symetria osiowa}
-Symetria osiowa.
-\todofoot{Symetria osiowa z poślizgiem.} \index{symetria z poślizgiem}
-\todofoot{Twierdzenie Chasles'a: każda izometria płaszczyzny jest złożeniem co najwyżej trzech symetrii osiowych.} \index{twierdzenie!Chasles'a}
-Piszą o nim Audin \cite[s. 49]{audin_2003} (w ogólniejszej wersji dla przestrzeni $\mathbb R^n$ i $n+1$ odbiciami).
+    \subsection{Symetrie środkowe}
+    \input{transform/reflection-point}
+    \input{transform/reflection-glide}
 
-\subsection{Symetria środkowa}
-Symetria środkowa
+    \subsection{Obroty}
+    \input{transform/rotation}
 
-\section{Jednokładność -- podobieństwo?}
-\todofoot{Coxeter, s. 67}
+    \subsection{Klasyfikacja izometrii}
+    \input{transform/classification}
 
-\begin{definition}[podobieństwo]
-    Niech $P \colon \Pi \to \Pi$ będzie przekształceniem geometrycznym, zaś $s > 0$ dodatnią liczbą taką, że dla każdej pary punktów $A, B \in \Pi$ zachodzi
-    \begin{equation}
-        d(P(A), P(B)) = s \cdot d(A, B).
-    \end{equation}
-    Wtedy przekształcenie $P$ nazywamy podobieństwem o skali $s$.
-\end{definition}
+\section{Podobieństwa}
+\input{transform/similarity}
 
-Podobieństwa są bijekcjami, zachowują miary kątów, a~obrazami prostych są proste.
+\section{Afiniczne?}
 
-\begin{proposition}
-    Jeżeli $\lambda \mu \neq 1$, to $J_A^\lambda \circ J_B^\mu = J_C^{\lambda \mu}$, gdzie $[CBA] = (1-\lambda) / (\lambda \mu - 1)$.
-\end{proposition}
+\section{Rzutowe?}
 
-To jest ćwiczenie 4.75 \cite[s. 217]{neugebauer_2018}.
-
-\begin{proposition}
-    Każde podobieństwo jest izometrią, podobieństwem spiralnym (złożeniem obrotu i~jednokładności o~tym samym środku) albo symetrią dylatacyjną (złożeniem jednokładności z~symetrią osiową o~osi przechodzącej przez środek jednokładności).
-\end{proposition}
-
-Wynika to z klasyfikacji izometrii, patrz Bogdańska, Neugebauer \cite[s. 220]{neugebauer_2018}.
-
-\begin{proposition}
-    Każde podobieństwo o skali $s \neq 1$ ma dokładnie jeden punkt stały.
-\end{proposition}
-
-\todofoot{Słowo Banacha.}
-\index{słowo Banacha}
+\section{Inwersja względem okręgu?}
+\input{transform/inversion}
 
 %
