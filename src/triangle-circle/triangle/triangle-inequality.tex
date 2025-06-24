@@ -1,19 +1,42 @@
 %
 
+Zajmiemy się teraz (I.20).
+
 \begin{proposition}[nierówność trójkąta]
+\index{nierówność!trójkąta}%
 	Niech $ABC$ będzie trojkątem.
 	Wtedy suma odcinków $AB$ i $BC$ jest dłuższa niż $AC$.
-	\index{nierówność trójkąta}
-\end{proposition} % https://en.wikipedia.org/wiki/Triangle_inequality#Euclidean_geometry I.20
+\end{proposition}
+% PRZECZYTANO: https://en.wikipedia.org/wiki/Triangle_inequality
 
-Nierówność trójkąta nie jest wnioskiem z aksjomatów I1-I3, B1-B4, C1-C3, ponieważ nie zachodzi w następującym modelu: płaszczyzna to zbiór $\mathbb R^2$, ze standardowymi punktami i prostymi, ale niestandardową metryką
-\begin{equation}
-	d((x_1, y_1), (x_2, y_2)) = \begin{cases}
-		\sqrt{(x_1-x_2)^2 + (y_1-y_2)^2} & \text{jeśli } x_1 = x_2 \vee y_1 = y_2, \\
-		2 \sqrt{(x_1-x_2)^2 + (y_1-y_2)^2} & \text{w przeciwnym wypadku}
-	\end{cases}.
-\end{equation}
+\begin{corollary}
+	Niech $a \ge b \ge c$ będą bokami trójkąta.
+	Wtedy
+	% \begin{equation}
+	% 	1 < \frac{a + c}{b} < 3
+	% \end{equation}
+	% oraz
+	\begin{equation}
+		1 \le \min \left(\frac ab, \frac bc\right) \le \phi = \frac {1 + \sqrt 5}{2}.
+		% American Mathematical Monthly, pp. 49-50, 1954. 
+	\end{equation}
+\end{corollary}
 
-(Powyższy przykład opisał Hartshorne \cite[s. 90]{hartshorne2000}).
+\begin{proposition}
+	Nierówność trójkąta wynika ze wzoru Herona (fakt \ref{prp_heron}) i tego, że pole trójkąta jest nieujemne.
+\end{proposition}
+
+Nierówność trójkąta nie jest wnioskiem z aksjomatów I1-I3, B1-B4, C1-C3, ponieważ nie zachodzi w następującym modelu (ukradniętym Hartshorne'owi \cite[s. 90]{hartshorne2000}):
+
+\begin{example}
+	Rozpatrujemy zbiór $\mathbb R^2$ jako płaszczyznę ze standardowymi punktami oraz prostymi, ale niestandardową metryką
+	\begin{equation}
+		d((x_1, y_1), (x_2, y_2)) = \begin{cases}
+			\sqrt{(x_1-x_2)^2 + (y_1-y_2)^2} & \text{jeśli } x_1 = x_2 \vee y_1 = y_2, \\
+			2 \sqrt{(x_1-x_2)^2 + (y_1-y_2)^2} & \text{w przeciwnym wypadku}
+		\end{cases}.
+	\end{equation}
+	Wtedy nierówność trójkąta nie zachodzi.
+\end{example}
 
 %
