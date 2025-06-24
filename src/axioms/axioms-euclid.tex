@@ -2,16 +2,29 @@
 
 \section{Aksjomaty Euklidesa}
 
-Zanim przytoczymy definicje, pojęcia pierwotne, twierdzenia i postulaty, jakie zbierze Euklides z~Aleksandrii, pozwolimy sobie na małą dygresję o rozwoju matematyki, jaki nastąpi przed tym.
-Więcej szczegółów poda Proklos na podstawie wcześniejszej pracy Eudemosa z Rodos, który pokryje okres do 355 roku przed Chrystusem.
+Opowiemy krótko o rozwoju geometrii w okresie klasycznym starożytnej Grecji, pomijając przy tym liczne szczegóły, ponieważ światu przekaże je lepiej Proklos zwany Diadochem, operając się na wcześniejszej pracy  Eudemosa z Rodos, obejmującej okres do 355 roku przed Chrystusem.
 \index[persons]{Proklos zwany Diadochem}%
 \index[persons]{Eudemos z Rodos}%
+Później przytoczymy definicje i twierdzenia zgromadzone przez Euklidesa z Aleksandrii.
+(Imię Euklidesa znamy z tylko jednego źródła: komentarza Proklosa!
+Pozostali nazywali go autorem Στοιχεῖα, znaczy Stoicheia, znaczy \emph{Elementów}).
+Interesować nas będzie nie wszystkie trzynaście ksiąg, a:
+\begin{itemize}
+\item I~(o~trójkątach),
+\item II (o~prostokątach),
+\item III (o~okręgach),
+\item IV (o~wielokątach),
+\item V (o~proporcjach),
+\item VI (o~podobieństwie), ale także, choć w~mniejszym stopniu,
+\item XI i~XIII (o~wielościanach).
+\end{itemize}
 
-Według Eudemosa/Proklosa, geometrię grecką ,,rozpocznie'' Tales z Miletu w pierwszej połowie VI wieku p.n.e., pierwsza znana postać, która zastosuje metody dedukcyjne.
+Według Eudemosa/Proklosa, początków geometrii greckiej należy szukać w dokonaniach Talesa z Miletu, a więc mniej więcej w VI wieku p.n.e.
+Tales zacznie stosować metody dedukcyjne.
 \index[persons]{Tales z Miletu}%
-Potem będzie Pitagoras, być może pobierający nauki u Talesa i jego szkoła, której uczniowie zaczną tworzyć łańcuchy różnych geometrycznych stwierdzeń oraz wniosków z nich. 
+Potem będzie na pewno pobierający (a być może u Talesa) nauki Pitagoras i jego szkoła, której uczniowie zaczną tworzyć łańcuchy różnych geometrycznych faktów oraz wniosków z nich. 
 \index[persons]{Pitagoras}%
-Próbę logicznego ujęcia geometrii w postaci uporządkowanego ciągu twierdzeń, częściowo udaną, podejmie Hipokrates z Chios.
+Hipokrates z Chios postara się uporządkować twierdzenia i częściowo uda mu się to.
 \index[persons]{Hipokrates z Chios}%
 Podobne próby podejmą Teudios z Magnezji oraz Leon (hehe); ale nie wiadomo za dużo ani o nich, ani o ich dziełach poza tym, że miały tytuł \emph{Elementy}.
 \index[persons]{Teudios z Magnezji}%
@@ -19,8 +32,9 @@ Podobne próby podejmą Teudios z Magnezji oraz Leon (hehe); ale nie wiadomo za 
 
 Proces przekształcania empirycznej geometrii Egipcjan i Babilończyków w systematyczną naukę, której fakty ustala się nie przez obserwacje, ale na drodze rozumowania dedukcyjnego będzie mieć swoje ukoronowanie około 300 roku p.n.e.
 Wtedy wielki sukces odniesie Euklides ze swoim epokowym dziełem -- także \emph{Elementami}, spójnym ciągiem 465 twierdzeń dotyczących geometrii płaskiej, przestrzennej, teorii liczb oraz częściowo algebry.
-Grek formułuje tam pewien minimalny zbiór aksjomatów przyjętych bez dowodu, z którego wyciąga następnie wnioski geometryczne.
-Pogląd, że tak powinno uprawiać się naukę, utrzyma się przez tysiące lat, jeśli nie wieczność.
+Grek formułuje tam pewien minimalny zbiór aksjomatów (czyli zdań przyjętych bez dowodu), z którego sukcesywnie wyprowadza co raz bardziej skomplikowane twierdzenia.
+Pogląd, że tak powinno uprawiać się naukę, utrzyma się przez tysiące lat, jeśli nie wieczność; jego książka zaś ukształtuje wykład geometrii aż do początków XIX wieku.
+Imponujące!
 
 Oprócz \emph{Elementów}, Euklides napisze jeszcze dzieła takie jak:
 \begin{itemize}
@@ -40,29 +54,13 @@ Chasles podejrzewa, że dzieło to obejmowało teorię transwersali i geometrii
 \item \emph{Τόποι πρὸς ἐπιφανείᾳ} (\emph{Topi pros epifania} czyli \emph{Obszary przy powierzchniach}) o którym prawie nic nie wiemy.
 \end{itemize}
 
-Powszechnie przyjmuje się, że szczytowy punkt rozwoju greckiej geometrii jest reprezentowany przez Euklidesa, Archimedesa i Apoloniusza.
-Spotkamy tych panów wielokrotnie na następnych stronach książki: tego drugiego jako autora dobrego przybliżenia liczby $\pi$, trzeciego jako osobę, która szukała czwartego okręgu stycznego do trzech danych i rozwinęła teorię stożkowych.
-Euklides bywa nazywany ojcem geometrii, ponieważ jego dokonania ukształtowały wykład geometrii aż do początków XIX wieku.
-
-\todofoot{Simply discarding it gives absolute geometry, while negating it yields hyperbolic geometry. Other consistent axiom sets can yield other geometries, such as projective, elliptic, spherical or affine geometry.}
-% https://en.wikipedia.org/wiki/Absolute_geometry
-% https://en.wikipedia.org/wiki/Hyperbolic_geometry
-% https://en.wikipedia.org/wiki/Projective_geometry
-% https://en.wikipedia.org/wiki/Elliptic_geometry
-% https://en.wikipedia.org/wiki/Spherical_geometry
-% https://en.wikipedia.org/wiki/Affine_geometry
-\todofoot{The theorem of the gnomon was described as early as in Euclid's Elements (around 300 BC), and there it plays an important role in the derivation of other theorems. It is given as proposition 43 in Book I of the Elements, where it is phrased as a statement about parallelograms without using the term "gnomon". The latter is introduced by Euclid as the second definition of the second book of Elements. Further theorems for which the gnomon and its properties play an important role are proposition 6 in Book II, proposition 29 in Book VI and propositions 1 to 4 in Book XIII.[5][4][6]} % https://en.wikipedia.org/wiki/Theorem_of_the_gnomon
-\todofoot{Strona ,,Euclidean geometry'' na en-wiki} % https://en.wikipedia.org/wiki/Euclidean_geometry
-% https://en.wikipedia.org/wiki/Euclid's_Elements
+Powszechnie przyjmuje się, że szczytowy punkt rozwoju greckiej geometrii jest reprezentowany (oprócz Euklidesa, ma się rozumieć) przez Archimedesa oraz Apoloniusza.
+Spotkamy tych panów wielokrotnie na następnych stronach książki: tego pierwszego jako autora dobrego przybliżenia liczby $\pi$;
+drugiego jako osobę, która szukała czwartego okręgu stycznego do trzech danych i rozwinęła teorię krzywych stożkowych.
 
 Wiele twierdzeń zawartych w Elementach Euklidesa to jawne przepisy, jak korzystając z cyrkla i~linijki otrzymać żądane figury.
 Dlatego nigdzie w~tekście nie pojawia się na przykład siedmiokąt foremny, chociaż w trzecim tysiącleciu każdy akceptuje, że ten istnieje.
 Ale nie można go wykreślić wspomnianymi przed chwilą przyrządami, więc Euklides nie zaczyna nawet badania jego własności.
-
-Nie wszystkie trzynaście ksiąg będzie nas interesować, raczej tylko: I~(o~trójkątach), II (o~polu), III (o~okręgach), IV (o~figurach wpisanych i~opisanych), V (o~proporcjach), VI (o~podobieństwie), ale także, choć w~mniejszym stopniu, XI i~XIII (o~wielościanach).
-
-Treść pierwszej księgi przytoczy Eves \cite[s. 375-379]{eves1_1972}.
-
 
 \input{axioms/axioms-euclid-1}
 \input{axioms/axioms-euclid-2}
