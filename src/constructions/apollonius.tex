@@ -1,0 +1,66 @@
+%
+
+\todofoot{GUZICKI-19 -- wykorzystuje twierdzenie menelaosa}
+% https://en.wikipedia.org/wiki/Problem_of_Apollonius
+\begin{problem}
+    \label{problem_apolloniusza}%
+    ...
+    Skonstruować ...
+    \index{okrąg!Apoloniusza}
+\end{problem}
+
+Z zadaniem wiąże się dużo późniejszy wynik.
+W dwóch listach z 1643 roku do czeskiej księżniczki Elżbiety z Palatynatu Kartezjusz przedstawi uproszczoną wersję, w której trzy okręgi są parami styczne i znajdzie (bez dowodu) relację wiążącą promienie okręgów.
+
+\begin{theorem}[Kartezjusza]
+    Dane są trzy okręgi, parami styczne o promieniach $r_1, r_2, r_3$ oraz czwarty styczny do każdego z nich (istnieją dwa takie, jeden z~nich zazwyczaj styczny wewnętrznie, a w szczególnym przypadku może okazać się prostą).
+    Definiujemy krzywiznę ze znakiem jako $\pm 1 / r$, gdzie znak $-$ odpowiada okręgowi stycznemu zewnętrznie.
+    Wtedy
+    \begin{equation}
+        \left(\pm \frac{1}{r_1} \pm  \frac{1}{r_2} \pm  \frac{1}{r_3} \pm  \frac{1}{r_4}\right)^2 = 2 \left(\frac{1}{r_1^2} + \frac{1}{r_2^2} + \frac{1}{r_3^2} + \frac{1}{r_4^2}\right),
+    \end{equation}
+    gdzie $r_4$ oznacza promień czwartego okręgu.
+\end{theorem}
+
+Jeżeli jeden z okręgów (dajmy na to ten o promieniu $r_1$) staje się prostą, to jego zerowa krzywizna znika z równania.
+Jeżeli dwa okręgi stają się dwiema prostymi, to pozostałem dwa muszą być do siebie przystające, co należy uznać za zdegenerowany przypadek.
+
+Twierdzenie Kartezjusza odkryją na nowo Yamaji Nuchizumi (1751), Jakob Steiner (\emph{Fortsetzung der geometrischen Betrachtungen} z 1826), Philip Beecroft (\emph{Properties of circles in mutual contac} z 1842) i~wreszcie Frederick Soddy (\emph{The Kiss Precise} z 1936).
+\index[persons]{Nuchizumi, Yamaji}%
+\index[persons]{Steiner, Jakob}%
+\index[persons]{Beecroft, Philip}%
+\index[persons]{Soddy, Frederick}%
+Ten ostatni poda uogólnienie do sfer, a rok później Thorold Gosset przeskoczy do przestrzeni dowolnego wmyiaru ($\mathbb R^n$), z $n$ w miejsce czynnika $2$.
+\index[persons]{Gosset, Thorold}%
+
+Dowody korzystają z inwersji, wzoru Herona, wyznacznika Cayleya-Mengera, albo łańcuchów Pappusa i twierdzenia Vivianiego.
+Patrz też $\Delta_{10}^6$. %. % https://www.deltami.edu.pl/media/articles/2010/06/delta-2010-06-czwarty-okrag.pdf
+
+\begin{example}
+    Dane są trzy styczne zewnętrznie okręgi o promieniach $r_1 = r_2 = r_3 = \sqrt{3}$.
+    Czwarty okrąg styczny do nich wszystkich ma wtedy krzywiznę $\sqrt 3 \pm 2$.
+\end{example}
+
+Jeszcze nie skończyliśmy z Soddym.
+W wierzchołkach trójkąta o obwodzie $2p = a + b + c$ wstawiamy okręgi o promieniach $p - a$, $p - b$, $p - c$.
+Wtedy czwarty okrąg (zwany okręgiem Soddy'ego) z twierdzenia Kartezjusza ma promień
+\begin{equation}
+    \frac{4R + r \pm 2p}{S},
+\end{equation}
+gdzie $R, r$ to promienie okręgu opisanego i wpisanego, zaś $S$ to pole powierzchni.
+Napisze o tym Coxeter \cite[s. 29-31]{coxeter_1967}
+
+\begin{definition}[prosta Soddy'ego]
+    Prostą przechodzącą przez środki okręgów Soddy'ego nazywamy prostą Soddy'ego.
+\end{definition}
+
+\begin{proposition}
+    Prosta Soddy'ego przechodzi przez środek okręgu wpisanego, punkt Gergonne'a i punkt Eppsteina (punkt, gdzie przecinają się trzy proste przechodzące przez trzy pary spośród sześciu punktów styczności czterech okręgów...)
+\index{punkt!Eppsteina}%
+\end{proposition}
+
+Prosta Soddy'ego ma pewien związek z punktem de Lonchampsa, którego nie opiszemy.
+\index{punkt!de Longchampsa}%
+% bo nie chce mi się wczytywać w szczegóły artykułu na wiki o Soddy'ego
+
+%
