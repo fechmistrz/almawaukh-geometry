@@ -3,26 +3,46 @@ Tekst intro rozdziału stereometria.
 
 \section{Wielościany}
 \subsection{Ostrosłupy}
+\input{solids/pyramid}
 
-Eves \cite[s.4]{eves_1963} napisze, że około 1850 lat przed Chrystusem znany będzie wzór na dokładną objętość ostrosłupa czworokątnego ściętego, o podstawie długości $a$, $b$ i wysokości $h$:
-\begin{equation}
-	V = \frac 1 3 h (a^2 + ab + b^2).
-\end{equation}
-(Po angielsku taką bryłę nazywa się \emph{frustum}, co w łacinie znaczy \emph{kęs, kawałek}).
-Wzór pojawi się bez dowodu w papirusie moskiewskim, nazwanym tak, ponieważ jego pierwszym właścicielem spoza Egiptu będzie Władimir Goleniszczew, rosyjski egiptolog i kolekcjoner sztuki.
-\index[persons]{Goleniszczew, Władimir}%
-
+\subsubsection{Pryzmatoid}
 Pryzmatoid to bryła, której wierzchołki leżą na dwóch płaszczyznach równoległych.
 Jej objętość wyraża wzór $(l + 4m + h)/ 6$, gdzie $l$ to pole dolnego przekroju, $m$ środkowego, $h$ górnego. % eves s. 40
 % TODO https://en.wikipedia.org/wiki/Prismatoid#Prismatoid_families
 
+
 \subsection{Graniastosłupy}
+
+\subsection{Wielościany platońskie}
+\input{solids/platonic}
+
+\subsection{Wielościany archimedesowe}
+\input{solids/archimedean}
+
+\subsection{Wielościany Catalana}
+\input{solids/catalan}
+
+\subsection{Wielościany Johnsona}
+\input{solids/johnson}
+
+\subsection{Wielościany Keplera-Poinsota}
+\input{solids/kepler_poinsot}
+
+\subsection{Wielościany Goldberga}
+\todofoot{Goldberg polyhedron} % https://en.wikipedia.org/wiki/Goldberg_polyhedron
+
+\subsection{Wielościany Szilassiego}
+O wielościanach Szilassiego pisze $\Delta_{24}^4$.
+
+
+
 
 % https://en.wikipedia.org/wiki/Polyhedron
 % https://en.wikipedia.org/wiki/Dual_polyhedron
 % https://www.youtube.com/watch?v=yAEveAOH2KwI => Schwarz lantern
 
 % TODO: https://en.wikipedia.org/wiki/Wallace-Bolyai-Gerwien_theorem to nie działa w 3d a jest ok w 2d
+\subsection{Nie ma odpowiednika}
 Nie ma odpowiednika twierdzenia Wallace'a-Bolyaia-Gerwiena w trzech wymiarach.
 Dwa wielościany nazwijmy równoważnymi przez podział, jeśli pierwszy da się tak podzielić na skończoną liczbę wielościanów, by z otrzymanych kawałków można było złożyć drugi.
 To, czy każde dwa czworościany o równych podstawach i równych wysokościach będzie stanowić treść trzeciego problemu Hilberta.
@@ -59,58 +79,15 @@ Taki sam wniosek wyciągnie nieznany autor w $\Delta_{84}^{11}$.
 % http://sciencecow.mit.edu/me/hilberts_third_problem.pdf
 
 \subsection{Zliczanie małych wielościanów}
-\subsubsection{Deltaściany}
-\input{solids/deltahedron}
+\subsubsection{Deltościany}
+\input{solids/deltahedron} % http://matematyka.wroc.pl/book/deltosciany
 
+\subsubsection{Sześciościany}
 Jest siedem sześciościanów wypukłych (i trzy niewypukłe).
 Heinz Schumann oraz Bronisław Pabich napiszą krótki artykuł w $\Delta_{24}^{11}$, gdzie uzasadnią te liczby diagramami Schlegela.
 \index{diagram Schlegela}%
 (Wielościany wypukłe mają 6/0/0, 5/0/1, 4/2/0, 3/2/1, 2/4/0, 2/2/2, 0/6/0 ścian o trzech, czterech, pięciu krawędziach).
 % TODO: DELTA 2001 luty Kordos
-
-\subsection{Wielościany platońskie}
-% https://en.wikipedia.org/wiki/Platonic_solid
-% \section{Pięć wielościanów} Hartshorne: rozdział 8
-% \section{Cauchy's rigidity theorem} Hartshorne: section 45
-
-\subsubsection{Czworościan}
-Czworościan
-
-\subsubsection{Sześcian}
-Sześcian
-
-\subsubsection{Ośmiościan}
-Ośmiościan
-% https://en.wikipedia.org/wiki/Octahedron
-
-\subsubsection{Dwunastościan}
-Dwunastościan
-
-\subsubsection{Dwudziestościan}
-Dwudziestościan
-% https://en.wikipedia.org/wiki/Regular_icosahedron
-
-\todofoot{Platonic solid} 
-
-\subsection{Wielościany archimedesowe}
-\todofoot{1955 - H. S. M. Coxeter et al. publish the complete list of uniform polyhedron}
-
-\subsection{Wielościany Keplera-Poinsota}
-\input{solids/kepler_poinsot}
-
-\subsection{Wielościany Catalana}
-\input{solids/catalan}
-
-\subsection{Wielościany Johnsona}
-\input{solids/johnson}
-
-\subsection{Wielościany Goldberga}
-\todofoot{Goldberg polyhedron} % https://en.wikipedia.org/wiki/Goldberg_polyhedron
-
-\subsection{Wielościany Szilassiego}
-O wielościanach Szilassiego pisze $\Delta_{24}^4$.
-
-
 
 \section{Kule, walce}
 % https://en.wikipedia.org/wiki/On_the_Sphere_and_Cylinder pierwszy raz wzór objętość kuli
