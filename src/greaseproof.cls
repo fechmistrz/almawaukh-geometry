@@ -82,7 +82,7 @@
 \newtheorem{axiom}[counter]{Aksjomat}
 \newtheorem{lemma}[counter]{Lemat}
 \newtheorem{proposition}[counter]{Fakt}
-\newtheorem{theorem}{Twierdzenie}
+\newtheorem{theorem}[counter]{Twierdzenie}
 \newtheorem{warning}[counter]{Uwaga}
 \newtheorem{tobedone}[counter]{Wymaga przeredagowania}
 

@@ -7,12 +7,12 @@ Piszą o~nim Guzicki \cite[s. 160]{guzicki_2021}.
 
 \begin{theorem}[Pitagorasa]
 \label{theorem_pythagorean}%
-    Niech $ABC$ będzie trójkątem prostokątnym, w~którym kąt przy wierzchołku $C$ jest prosty.
+\index{twierdzenie!Pitagorasa}%
+    Dany jest trójkąt prostokątny $\triangle ABC$, w~którym kąt przy wierzchołku $C$ jest prosty.
+    Na jego bokach zbudowano trzy kwadraty.
     \begin{center}
 \begin{comment}
         \begin{tikzpicture}[scale=.4]
-        %\tkzInit[xmin=-0.5,xmax=6.5, ymin=-0.5,ymax=4.5]
-        % \tkzClip
         \tkzDefPoint(105:3){A}
         \tkzDefPoint(285:3){B}
         \tkzDefPoint(35:3){C}
@@ -32,7 +32,7 @@ Piszą o~nim Guzicki \cite[s. 160]{guzicki_2021}.
     \end{tikzpicture}
 \end{comment}
     \end{center}
-    Wtedy suma pól jasnych kwadratów jest równa polu ciemnego kwadratu:
+    Suma pól jasnych kwadratów jest równa polu ciemnego kwadratu:
     \begin{equation}
         |AC|^2 + |BC|^2 = |AB|^2.
     \end{equation}
@@ -64,9 +64,7 @@ Dowód Euklidesa urzekł nas tak bardzo swoją pomysłowością, że będzie jed
 
     \begin{center}
 \begin{comment}
-            \begin{tikzpicture}[scale=.4]
-        %\tkzInit[xmin=-0.5,xmax=6.5, ymin=-0.5,ymax=4.5]
-        % \tkzClip
+        \begin{tikzpicture}[scale=.4]
         \tkzDefPoint(105:3){A}
         \tkzDefPoint(285:3){B}
         \tkzDefPoint(35:3){C}
@@ -87,7 +85,6 @@ Dowód Euklidesa urzekł nas tak bardzo swoją pomysłowością, że będzie jed
         \tkzDrawPolygon[line width=0.3mm](A,B,F,G)
         \tkzLabelPoint[below left](K){$K$}
         \tkzLabelPoint[left](L){$L$}
-
 
         \tkzDefSquare(C,B)
         \tkzGetPoints{E}{D}
@@ -145,12 +142,12 @@ Jeżeli oznaczymy średnicę miasta przez $x$, odległość drzewa od miasta prz
 \end{equation}
 co po prostych przekształceniach i przyjęciu $y = \tan \alpha$ daje
 $
-    2ay^3 + by^2 - b = 0,
-$
+    2ay^3 + by^2 - b = 0
+$,
 albo (pamiętając, że $y = x/2a$)
 $
-    x^3 + bx^2 - 4a^2 b = 0.
-$
+    x^3 + bx^2 - 4a^2 b = 0
+$.
 To równanie ma jedno rozwiązanie rzeczywiste, $x = 9$.
 
 Względnie pierwsze liczby naturalne $a, b, c$ takie, że $a^2 + b^2 = c^2$ nazywamy (pierwotną) trójką pitagorejską.
