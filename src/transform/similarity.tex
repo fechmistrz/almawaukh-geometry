@@ -1,16 +1,54 @@
-\todofoot{Coxeter, s. 67}
+%
 
-O podobieństwach pisze Coxeter \cite[s. 84]{coxeter_1967}
+O podobieństwach pisze Coxeter \cite[s. 84-92]{coxeter_1967}.
 
-\begin{definition}[podobieństwo]
-    Niech $P \colon \Pi \to \Pi$ będzie przekształceniem geometrycznym, zaś $s > 0$ dodatnią liczbą taką, że dla każdej pary punktów $A, B \in \Pi$ zachodzi
-    \begin{equation}
-        d(P(A), P(B)) = s \cdot d(A, B).
-    \end{equation}
-    Wtedy przekształcenie $P$ nazywamy podobieństwem o skali $s$.
+\begin{definition}[homotetia]
+    Przekształcenie, które zachowuje (lub odwraca) kierunek, czyli przekształca każdą prostą na prostą do niej równległą, nazywamy dylatacją (albo homotetią).
 \end{definition}
 
-Podobieństwa są bijekcjami, zachowują miary kątów, a~obrazami prostych są proste.
+Dwie figury, które są podobne i podobnie położone, to znaczy jeżeli jedną można przekształcić na drugą przez dylatację, nazywamy homotetycznymi.
+
+\begin{proposition}
+    Każda dylatacja, która nie jest translacją, ma punkt stały.
+\end{proposition}
+
+Wystarczy dobrać dwa punkty $A$ i $B$ takie, że $A$ nie jest punktem niezmienniczym, zaś odcinek $AB$ nie leży na prostej niezmienniczej i sprawdzić przecięcie odcinków $AA'$, $BB'$.
+Okazuje się, że każda dylatacja jest podobieństwem!
+
+\begin{definition}[podobieństwo]
+    Przekształcenie płaszczyzny w siebie, które przeprowadza każdy odcinek $AB$ na jakiś odcinek $A'B'$ o długości określonej wzorem
+    \begin{equation}
+        \frac{|A'B'|}{|AB|} = \mu
+    \end{equation}
+    nazywamy podobieństwem o skali (rzadziej: współczynniku rozciągania) $\mu$.
+\end{definition}
+
+Podobieństwa są bijekcjami i zachowują miary kątów.
+
+\begin{example}
+    Podobieństwo o skali $1$ to identyczność, zaś o skali $-1$ to półobrót. 
+\end{example}
+
+\begin{proposition}
+    Niech $\Gamma_1, \Gamma_2$ będą dwoma różnymi okręgami o środkach $C_1, C_2$ oraz nierównych promieniach $r_1, r_2$.
+    Wtedy dwie dylatacje (o środku $O_1$ i skali $r_2/r_1$ oraz o środku $O_2$ i skali $-r_2/r_1$) przekształcają pierwszy okrąg na drugi.
+    Punkty $O_1$ i $O_2$ dzielą odcinek $C_1 C_2$ zewnętrznie i wewnętrznie w stosunku $r_1 : r_2$.
+\end{proposition}
+
+Wspomniane punkty nazywa się środkami podobieństwa dwóch okręgów.
+
+\begin{proposition}
+    Każde dwa trójkąty podobne przekształcają się na siebie za pomocą jednego i tylko jednego podobieństwa.
+\end{proposition}
+
+
+\begin{definition}[podobieństwo spiralne]
+    Złożenie obrotu i jednokładnści o tym samym środku nazywamy podobieństwem spiralnym.
+\end{definition}
+
+\begin{definition}[symetria dylatacyjna]
+    Złożenie symetrii osiowej i jednokładnści o środku leżącym na osi symetrii nazywamy symetrią dylatacyjną.
+\end{definition}
 
 \begin{proposition}
     Jeżeli $\lambda \mu \neq 1$, to $J_A^\lambda \circ J_B^\mu = J_C^{\lambda \mu}$, gdzie $[CBA] = (1-\lambda) / (\lambda \mu - 1)$.
@@ -19,21 +57,16 @@ Podobieństwa są bijekcjami, zachowują miary kątów, a~obrazami prostych są 
 To jest ćwiczenie 4.75 \cite[s. 217]{neugebauer_2018}.
 
 \begin{proposition}
-    Każde podobieństwo jest izometrią, symetrią dylatacyjną albo podobieństwem spiralnym.
+    Każde podobieństwo jest:
+    \begin{itemize}
+        \item izometrią,
+        \item symetrią dylatacyjną albo
+        \item podobieństwem spiralnym.
+    \end{itemize}
 \end{proposition}
 
 Wynika to z klasyfikacji izometrii, patrz Bogdańska, Neugebauer \cite[s. 220]{neugebauer_2018}.
 
-\begin{itemize}
-        \item izometrią,
-        \item podobieństwem spiralnym (złożeniem obrotu i~jednokładności o~tym samym środku) albo
-        \item symetrią dylatacyjną (złożeniem jednokładności z~symetrią osiową o~osi przechodzącej przez środek jednokładności).
-    \end{itemize}
-
-\begin{proposition}
-    Każde podobieństwo o skali $s \neq 1$ ma dokładnie jeden punkt stały.
-\end{proposition}
-
-\subsection{Symetrie dylatacyjne}
-
-\subsection{Podobieństwa spiralne}
+Coxeter (s. 84) pisze, że dylatacja to przekształcenie, które zachowuje lub odwraca kierunek, to znaczy przekształca każdą prostą na prostą do niej równoległą.
+Dwie figury są homotetyczne, jeśli są podobne i podobnie położone, to znaczy można je przektształcić przez dylatację lub homnotetię.
+Pantograf Scheinera Krzysztofa z ok. 1630 roku.
