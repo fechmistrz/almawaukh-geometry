@@ -1,0 +1,48 @@
+\begin{definition}[środkowa]
+\index{środkowa}%
+    Niech $\triangle ABC$ będzie trójkątem.
+    Odcinek łaczący wierzchołek (na przykład $A$) ze środkiem przeciwległego boku (w naszym przykładzie $BC$) nazywamy środkową.
+\end{definition}
+
+Środkowe dzielą trójkąt na sześć mniejszych o równych polach.
+
+\begin{proposition}
+\label{srodkowe_przecinaja_sie}%
+\index{środek ciężkości}%
+    Trzy środkowe trójkąta przecinają się w jednym punkcie zwanym środkiem ciężkości i dzielą się w~stosunku $2$ do $1$, licząc od wierzchołków.
+\end{proposition}
+% % Coxeter, Introduction to Geometry, s. 10 <- przeczytaj to, nie tylko cytuj! + ćwiczenia: 3/4 <= 1
+
+Środkowe to po angielsku \emph{medians}, przecinają się w \emph{centroid}.
+Polska nazwa bierze się z tego, że środek ciężkości fizycznego modelu trójkąta wykonanego z jednolitego materiału znajduje się właśnie tam.
+\index{punkt!Spiekera}%
+Angielska nazwa powstanie w 1814 roku z powodu niechęci do tego, co nie jest czysto geometryczne; niechęci, której nie będzie widać w innych europejskich językach.
+(Środek ciężkości brzegu trójkąta nazywa się punktem Spiekera, patrz fakt \ref{punkt_spiekera}).
+
+Hartshorne \cite[s. 52-54]{hartshorne2000} wnioskuje \ref{srodkowe_przecinaja_sie} z faktu \ref{hartshorne_52} (później zaś \cite[s. 119-120]{hartshorne2000} powtórzy dowód z~maszynerią geometrii analitycznej).
+\index[persons]{Archimedes}%
+Podobnie zrobią Guzicki \cite[s. 220]{guzicki_2021} albo Bogdańska, Neugebauer, z tym że ta dwójka uwikła twierdzenie Talesa w uzasadnienie \ref{hartshorne_52} z twierdzenia Talesa.
+\index{twierdzenie!Talesa}%
+Zetel \cite[s. 14]{zetel_2020} pokaże, że twierdzenie Cevy daje natychmiastowy dowód istnienia środka ciężkości.
+% TODO: Ich długość można obliczyć z https://en.wikipedia.org/wiki/Apollonius%27s_theorem => to jest z https://en.wikipedia.org/wiki/Median_(geometry)#Formulas_involving_the_medians'_lengths
+
+Historia faktów \ref{wysokosci_przecinaja_sie} oraz \ref{srodkowe_przecinaja_sie} ma wiele elementów wspólnych, więc omówimy je razem.
+Żaden z nich nie pojawi się w Elementach Euklidesach i właściwie nie wiadomo, kto odkryje je pierwszy.
+Uczeni arabscy stwierdzą, że był to Archimedes, choć nie ma ku temu niezbitych dowodów.
+\index[persons]{Archimedes}%
+Pappus będzie świadom istnienia ortocentrum, ale najstarsze znane uzasadnienie (w komentarzu al-Nasawiego) pochodzi z XI wieku.
+\index[persons]{Pappus}%
+\index[persons]{al-Nasawi, Ali ibn Ahmad}%
+
+Fakt \ref{srodkowe_przecinaja_sie} ma trójwymiarową kontynuację:
+
+\begin{proposition}
+    Cztery odcinki łączące wierzchołki czworościanu ze środkami przeciwległych ścian przecinają się w~jednym punkcie, który dzieli je w stosunku $3$ do $1$.
+\end{proposition}
+
+Niektórzy stosują określenie ,,twierdzenie Commandino'', ponieważ Federico Commandino napisze w 1565 roku pracę \emph{De centro gravitatis solidorum} (O środkach ciężkości brył), chociaż może nie być pierwszym, który je odkrył.
+\index{twierdzenie!Commandino}%
+\index[persons]{Commandino, Federico}%
+Podejrzewa się, że Francesco Maurolico pozna je wcześniej.
+(Friederich Eduard Reusch znajdzie uogólnienie, które w zdegenerowanym przypadku prowadzi znowu do twierdzenia \ref{theorem_varignon} Varignona).
+\index[persons]{Reusch, Friederich Eduard}%

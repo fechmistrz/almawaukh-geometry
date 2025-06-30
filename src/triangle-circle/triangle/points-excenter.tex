@@ -1,0 +1,26 @@
+\begin{proposition}
+    \label{symetralne_przecinaja_sie}
+    Trzy symetralne boków trójkąta przecinają się w jednym punkcie, środku okręgu opisanego na tym trójkącie.
+\end{proposition}
+
+Wynika to bezpośrednio z uwagi za definicją \ref{def_symetralna}: w trójkącie $\triangle ABC$, symetralna boku $AB$ (odpowiednio: $AC$) zawiera środki okręgów przechodzących przez punkty $A$ oraz $B$ (przez punkty $A$ oraz $C$), zatem trzecia symetralna musi przejść przez punkt wspólny dwóch pierwszych.
+
+Hartshorne \cite[s. 16]{hartshorne2000} podaje to w formie ćwiczenia ze wskazówką, by spojrzeć na (IV.5).
+Audin \cite[s. 61]{audin_2003} też, ale bez wskazówki.
+
+Uogólnieniem faktu \ref{symetralne_przecinaja_sie} o współpękowości symetralnych boków trójkąta jest:
+
+\begin{theorem}[Carnota]
+\index{twierdzenie!Carnota}%
+\label{guzicki_6_13}%
+	Dany jest trójkąt $ABC$ i punkty $D, E, F$ leżące odpowiednio na prostych $BC, CA, AB$.
+	Niech prosta $k$ (odpowiednio: $l$, $m$) przechodzi przez punkt $D$ ($E$, $F$) i będzie prostopadła do prostej $BC$ ($CA$, $AB$).
+	Wtedy proste $k$, $l$, $m$ mają punkt wspólny wtedy i tylko wtedy, gdy
+	\begin{equation}
+		|AF|^2 + |BD|^2 + |CE|^2 = |AE|^2 + |BF|^2 + |CD|^2.
+	\end{equation}
+\end{theorem}
+% TODO: https://en.wikipedia.org/wiki/Carnot%27s_theorem_(perpendiculars)
+
+Guzicki \cite[s. 176]{guzicki_2021} wyprowadza je z twierdzenia Pitagorasa, co pozwala mu dojść do wniosku, że okręgi opisany i wpisany oraz ortocentrum istnieją.
+\index{twierdzenie!Pitagorasa}
