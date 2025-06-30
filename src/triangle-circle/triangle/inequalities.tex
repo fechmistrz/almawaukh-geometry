@@ -9,9 +9,10 @@
 	\index{nierówność!izoperymetryczna}
 \end{proposition}
 
-Guzicki \cite[s. 169, 170]{guzicki_2021} wyprowadza nierówność izoperymetryczną ze wzoru Herona oraz nierówności między średnią arytmetyczną i geometryczną.
-\index{wzór!Herona}
-
+Guzicki \cite[s. 169, 170]{guzicki_2021} wyprowadza nierówność izoperymetryczną ze wzoru Herona oraz nierówności między średnią arytmetyczną i~geometryczną.
+\index{wzór!Herona}%
+Odpowiednik tego w trzech wymiarach znany będzie jako hipoteza (Zdzisława Aleksandra) Melzaka: podana około roku 1965, będzie musiała długo czekać na swoje rozwiązanie.
+\index[persons]{Melzak, Zdzisław Aleksander}%
 % trójwymiarowy odpowiednik to hipoteza: https://math.stackexchange.com/questions/4044670/what-is-the-largest-volume-of-a-polyhedron-whose-skeleton-has-total-length-1-is
 
 \begin{proposition}[stosunek sumy środkowych do obwodu]
@@ -20,13 +21,29 @@ Guzicki \cite[s. 169, 170]{guzicki_2021} wyprowadza nierówność izoperymetrycz
 \end{proposition}
 
 \begin{proposition}[nierówność Eulera]
-	$R \ge 2r$
-	% TODO: Twierdzenie Eulera: $d^2 = R^2 - 2Rr$. % Audin \cite[s. 110]{audin_2003} podaje ten fakt w formie ćwiczenia.
-
-	% TODO: Eulera: R >= 2r https://en.wikipedia.org/wiki/Euler%27s_theorem_in_geometry
-	\todofoot{formuła Eulera na odległość między środkami okręgu opisanego i wpisanego (dla trójkąta)}
-	\index{nierówność!Eulera}
+\index{nierówność!Eulera}%
+	Niech $R, r, d$ oznaczają kolejno promienie okręgu opisanego i wpisanego w~trójkąt oraz odległość między środkami tych okręgów.
+	Wtedy
+	\begin{equation}
+	\frac{1}{R-d} + \frac{1}{R+d} = \frac 1 r,
+	\end{equation}
+	lub równoważnie $d^2 = R \cdot (R - 2r)$.
+	Wynika stąd, że $R \ge 2r$.
 \end{proposition}
+
+Leonhard Euler opublikuje ten wynik w 1765 roku, chociaż wcześniej zrobi to William Chapple, w pracy \emph{,,An essay on the properties of triangles inscribed in and circumscribed about two given circles''} z 1746 roku, na dole strony 123.
+% Leversha, Gerry; Smith, G. C. (November 2007), "Euler and triangle geometry", The Mathematical Gazette, 91 (522): 436–452, doi:10.1017/S0025557200182087, JSTOR 40378417, S2CID 125341434
+% TODO: https://en.wikipedia.org/wiki/Euler%27s_theorem_in_geometry a stornger version... [6]
+
+Trójwymiarowym odpowiednikiem jest:
+
+\begin{proposition}[nierówność Grace'a-Danielssona]
+\index{nierówność!Grace'a-Danielssona}%
+	Dla każdej pary sfer o promieniach $r, R$ takich, że $r < R$ istnieje czworościan zawarty w dużej sferze i zawierający małą sferę wtedy i tylko wtedy, gdy
+	\begin{equation}d^2 \le (R+r)(R - 3r).\end{equation}
+\end{proposition}
+% TODO: Grace, J.H. (1918), Proc. London Math. (ed.), Tetrahedra in relation to spheres and quadrics, vol. Soc.17, pp. 259–271
+% Danielsson, G. (1952), Johan Grundt Tanums Forlag (ed.), Proof of the inequality d2≤(R+r)(R−3r) for the distance between the centres of the circumscribed and inscribed spheres of a tetrahedron, pp. 101–105
 
 \begin{proposition}[nierówność Mitrinovica]
 	Niech...
@@ -55,7 +72,10 @@ Snellius-Huygens: $2 \sin x + \tan x > 3x$.
 
 % TODO: https://en.wikipedia.org/wiki/Ono%27s_inequality
 
-Mikołaj z Kuzy: $\sin x / x < (2 + \cos x) / 3$.
+Mikołaj z Kuzy:
+\begin{equation}
+	\frac{\sin x}{x} < \frac{2 + \cos x}{3}.
+\end{equation}
 \index{nierówność!Mikołaja z Kuzy}
 \index[persons]{Mikołaj z Kuzy}
 
