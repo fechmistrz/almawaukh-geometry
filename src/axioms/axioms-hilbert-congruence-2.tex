@@ -17,6 +17,11 @@ Możemy traktować ten aksjomat jako odpowiednik cyrkla: pozwala przenosić kąt
 Mamy wreszcie cechę przystawania bok-kąt-bok, z której można wyprowadzić dodawanie kątów:
 \index{cecha przystawania!bok-kąt-bok}%
 
+\todofoot{kąt-bok-kąt: Neugebauer s. 8, bbb: Neuge s. 11}
+
+\todofoot{Hartshorne s. 99: cechy przystawania!}
+% bok bok bok / bok kąt bok / bok kąt kąt / kąt kąt kąt
+
 \begin{axiom}[przystawania, C6]
     Niech $ABC$ i $DEF$ będą dwoma trójkątami takimi, że $AB \cong DE$, $AC \cong DF$ i $\angle BAC \cong \angle EDF$.
     Wtedy pozostałe boki i kąty są przystające, a razem z nimi całe trójkąty: $BC \cong EF$, $\angle ABC \cong \angle DEF$ i $\angle ACB \cong \angle DFE$.
@@ -37,6 +42,7 @@ Kąty można także odejmować.
 \end{definition}
 
 Warto teraz spojrzeć na (I.13) Euklidesa.
+(Są jeszcze kąty naprzemianległe i odpowiadające...)
 
 \begin{figure}[H] \centering
 \begin{comment}
@@ -60,13 +66,15 @@ Warto teraz spojrzeć na (I.13) Euklidesa.
     \tkzLabelPoint[anchor=center](X3){$\gamma$}
 \end{tikzpicture}
 \end{comment}
-    \caption{kąty przyległe ($\alpha$ i $\beta$) oraz wierzchłkowe ($\alpha$ i $\gamma$)}
+    \caption{kąty przyległe ($\alpha$ i $\beta$) oraz wierzchołkowe ($\alpha$ i $\gamma$)}
 \end{figure}
 
 \begin{proposition}
+\index{kąt!wierzchołkowy}%
     Kąty wierzchołkowe (para kątów przy dwóch przecinających się prostych, które nie są przyległe) są przystające.
-    \index{kąt!wierzchołkowy}
 \end{proposition}
+
+Piszą o tym Bogdańska, Neugebauer \cite[s. 6]{neugebauer_2018}
 
 % odpowiadające i naprzemianległe.
 \todofoot{Pompe s. 5: dwie proste przecięte trzecią wyznaczają kąty tej samej miary <=> proste są równoległe (naprzemianległe). Pompe s. 5: suma kątów trójkąta to 180\index{suma kątów}}

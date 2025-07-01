@@ -1,0 +1,91 @@
+Nie będziemy zanudzać Czytelnika sto sześćdziesięcioma trzema wzorami redukcyjnymi, na funkcje i kofunkcje, na sumy i różnice kątów, blablabla.
+Jest pełno innych książek, które to robią.
+Opowiemy trochę o etymologii różnych słów i tym, jak trygonometria rozwijać się będzie na przestrzeni wieków, co powinno być dużo ciekawsze.
+
+Współczesne ,,sinus'' i ,,kosinus'' wywodzą się z błędu w tłumaczeniu!
+Na pczątku będzie sanskryt i \emph{jyā} (cięciwa łuku, ze starogreckiego χορδή -- sznurek, struna), a potem transkrypcja do arabskiego \emph{jība}, gdzie pomija się samogłoski (!) i prowadzi do jb, słowa bez żadnego znaczenia. % (جب)
+Jb zinterpretują jako \emph{jayb}, które już coś znaczy (po angielsku: ,,bosom, pocket, fold''); Gerard z~Cremony przetłumaczy to do łacińskiego \emph{sinus} (czyli ,,zatoki'', ale też ,,zwisającego fałdu togi na piersi'')...
+Kosinus to skrót od \emph{complementi sinus} jak w \emph{Canon triangulorum} Edmunda Guntera z 1620 roku; po drodze był jeszcze Fibonacci oraz jego \emph{sinus rectus arcus}, co pomogło w przyjęciu się ostatecznej wersji.
+
+Nazwy dwóch kolejnych funkcji trygonometrycznych także mają korzenie w łacinie, bowiem \emph{tangens} znaczy ,,dotykający'', zaś \emph{secans} to ,,przecinający''.
+Ma to sens, jeśli popatrzymy na okrąg jednostkowy.
+Wreszcie termin ,,trygonometria'' bierze się z greckiego τρίγωνον (trigonon -- trójkąt) oraz μέτρον (metron -- miara).
+% TODO: https://en.wikipedia.org/wiki/History_of_trigonometry#Ancient_Near_East
+% TODO: https://en.wikipedia.org/wiki/History_of_trigonometry#Classical_antiquity
+% TODO: https://en.wikipedia.org/wiki/History_of_trigonometry#Indian_mathematics
+% TODO: https://en.wikipedia.org/wiki/History_of_trigonometry#Chinese_mathematics
+% TODO: https://en.wikipedia.org/wiki/History_of_trigonometry#Islamic_world
+% TODO: https://en.wikipedia.org/wiki/History_of_trigonometry#European_renaissance
+% TODO: https://en.wikipedia.org/wiki/History_of_trigonometry#Modern
+
+Podstawy trygonometrii rozwinął Hipparchos z Nikei: około 140 r.p.n.e opracował tablicę cięciw, czyli odpowiednik współczesnych sinusów.
+Pierwsza księga poświęcona temu niezależnie od astronomii wyjdzie spod pióra Nasira al Dina al-Tusiego, \emph{,,Kitāb al-Shakl al-qattā''} (czyli Rozprawa o czworobokach) około 1250 roku. % https://en.wikipedia.org/wiki/Nasir_al-Din_al-Tusi#Mathematics
+
+\begin{proposition}
+	Niech $\alpha, \beta, \gamma$ będą miarami kątów trójkąta o bokach $a, b, c$, polu $S$ i promieniu okręgu opisanego $R$.
+	Wtedy
+	\begin{equation}
+		\tan \alpha + \tan \beta + \tan \gamma = \frac{4S}{a^2 + b^2 + c^2 - 8R^2}
+	\end{equation}
+\end{proposition}
+
+\begin{theorem}[nierówność Arystarchusa]
+\index{nierówność!Arystarchusa}
+	% https://en.wikipedia.org/wiki/Aristarchus's_inequality
+\end{theorem}
+
+% https://en.wikipedia.org/wiki/List_of_trigonometric_identities#Identities_without_variables
+
+% https://en.wikipedia.org/wiki/Kunstweg
+
+\subsection{Twierdzenie sinusów}
+\todofoot{Law of sines}
+\index{twierdzenie!sinusów}
+% TODO: https://en.wikipedia.org/wiki/Law_of_sines
+\todofoot{ca. 1000 - Law of sines is discovered by Muslim mathematicians, but it is uncertain who discovers it first between Abu-Mahmud al-Khujandi, Abu Nasr Mansur, and Abu al-Wafa.}
+
+$$\frac{a}{\sin \alpha} = \frac{b}{\sin \beta} = \frac{c}{\sin \gamma} = 2R$$
+Coxeter \cite[s. 28, 29]{coxeter_1967} wyprowadza twierdzenie sinusów z symetrii okręgu opisanego na trójkącie.
+
+\subsection{Twierdzenie cosinusów}
+\index{twierdzenie!cosinusów|(}%
+\input{similarity/trigonometry/cosine}
+\index{twierdzenie!cosinusów|)}%
+
+\subsection{Więcej wzorów w powijakach z okręgami}
+Wzory na promienie okręgów wpisanych, dopisanych.
+$4R = r_a + r_b + r_c - r$ % Coxeter, s. 13; dopisz też bend okręgi Kartezjusza
+
+Cztery okręgi ze znakiem Kartezjusza; Soddy.
+Cztery nowe okręgi Beecrofta.
+\index{okrąg!Beecrofta}%
+% ćwiczenie 2. ze strony 16
+% https://en.wikipedia.org/wiki/Descartes%27_theorem
+% https://dept.math.lsa.umich.edu/~lagarias/doc/descartes.pdf Soddy-Gossett,
+
+\subsection{Rozwiązywanie trójkątów}
+% https://en.wikipedia.org/wiki/Solution_of_triangles
+\input{similarity/trigonometry/solving}
+
+\subsection{Zastosowania trygonometrii -- twierdzenie Urquharta}
+\input{similarity/trigonometry/urquhart}
+
+\subsection{Zastosowania trygonometrii -- punkt i kąt Crelle'a-Brocarda}
+\input{similarity/trigonometry/crelle_brocard}
+
+\subsection{Problem Hansena}
+Problem Hansena
+\index{problem!Hansena}%
+
+\subsection{Zastosowania trygonometrii -- Problem Snelliusa-Pothenota}
+% TODO: https://en.wikipedia.org/wiki/Snellius-Pothenot_problem
+Problem Snelliusa-Pothenota.
+\index{problem!Snelliusa-Pothenota}%
+
+% https://en.wikipedia.org/wiki/Skinny_triangle
+
+% https://en.wikipedia.org/wiki/Rule_of_marteloio - napisać, że tego nie będzie
+
+% https://en.wikipedia.org/wiki/Mollweide%27s_formula
+% https://en.wikipedia.org/wiki/Mollweide's_formula
+% https://en.wikipedia.org/wiki/Hansen%27s_problem

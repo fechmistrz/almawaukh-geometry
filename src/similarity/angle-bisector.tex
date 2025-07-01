@@ -1,0 +1,51 @@
+% Coxeter s. 88 
+
+\begin{proposition}[twierdzenie o dwusiecznej]
+	Dany jest trójkąt $\triangle ABC$.
+	Odcinek $CF$, gdzie $F$ leży na odcinku $AB$, jest dwusieczną kąta przy wierzchołku $C$ wtedy i tylko wtedy, gdy zachodzi równość:
+	\begin{equation}
+		\frac{|AF|}{|BF|} = \frac{|AC|}{|BC|}.
+	\end{equation}
+	\index{twierdzenie!o dwusiecznej}
+\end{proposition}
+
+To jest (VI.3) w Elementach Euklidesa.
+Dowód korzysta z podobieństwa trójkątów, twierdzenia sinusów albo własności pola, patrz Guzicki \cite[s. 120]{guzicki_2021} (siedem różnych dowodów); Bogdańska, Neugebauer \cite[s. 73]{neugebauer_2018}, Audin \cite[s. 102]{audin_2003} w formie ćwiczenia.
+\index{twierdzenie!sinusów}
+
+\begin{proposition} % Guzicki s. 126
+	Punkt $P$ znajdujący się wewnątrz kąta wypukłego leży na dwusiecznej tego kąta wtedy i tylko wtedy, gdy odległości tego punktu od ramion kąta są równe.
+\end{proposition}
+
+% czemu to jest tu? czemu nie przenieść do trójkątów?
+\index{twierdzenie!Steinera-Lehmusa|(}
+\input{triangle/steiner_lehmus}
+\index{twierdzenie!Steinera-Lehmusa|)}
+
+% TODO: https://zadania.info/d801/3107027
+
+Twierdzenie o symetralnej % TODO czy to jest oficjalna nazwa
+\index{twierdzenie!o symetralnej}
+można wysłowić tak: miejsce geometryczne punktów $X$, dla których $|AX|/|BX| = 1$, jest prostą.
+Około dwusetnego roku przed naszą erą Apoloniusz z Pergi udowodnił piękne uogólnienie tego faktu:
+
+\begin{definition}[okrąg Apoloniusza] % TODO: Guzicki s. 129
+	Dane są dwa różne punkty $A$, $B$ oraz liczba dodatnia $\lambda \neq 1$.
+	Wtedy zbiór punktów 
+	\begin{equation}
+		\left\{X : \frac{|AX|}{|BX|} = \lambda \right\}
+	\end{equation}
+	jest okręgiem o środku na prostej $AB$ i promieniu równym
+	\begin{equation}
+		R = \frac{\lambda}{|\lambda^2 - 1|} \cdot |AB|.
+	\end{equation}
+	\index{okrąg!Apoloniusza}
+\end{definition}
+
+Coxeter \cite[s. 104, 105]{coxeter_1967} pisze, że ten okrąg odbija inwersyjnie punkty $A, B$ (a dla $\lambda = 1$ dostajemy symetralną odcinka).
+
+To jest jeden z pięciu okręgów Apoloniusza, oprócz tego mamy dwie rodziny wzajemnie prostopadłych okręgów, okręgi Apoloniusza trójkąta (pomocne w znajdowaniu punktów izodynamicznych oraz prostej Lemoine'a), okrąg z problemu Apoloniusza styczny do trzech danych oraz fraktal zwany po angielsku uszczelką -- \emph{,,Apollonian gasket''}.
+% https://en.wikipedia.org/wiki/Circles_of_Apollonius
+\todofoot{Loksodromiczny ciąg Coxetera okręgów} % https://en.wikipedia.org/wiki/Coxeter%27s_loxodromic_sequence_of_tangent_circles
+
+Piszą o nim Bogdańska, Neugebauer \cite[s. 74]{neugebauer_2018}

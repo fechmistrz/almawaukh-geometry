@@ -9,18 +9,38 @@
 \newcommand{\todofoot}[1]{\textcolor{red}{\textbf{(!)}\footnote{\textbf{\color{red}{Do zrobienia}}: #1}}}
 
 \begin{document}
-
 \input{blurbs/page-1-5}
 
-% section 1
 \chapter{Aksjomatyka}
 \input{axioms/axioms}
 
-% section 3
-\chapter{Wielokąty i koła}
-\input{triangle-circle/triangle-circle}
+\chapter{Trójkąty}
+\input{triangle/triangles}
 
-\todofoot{140 BC - Hipparchus develops the bases of trigonometry}
+\chapter{Czworokąty: równoległoboki, prostkąty, romby, kwadraty, trapezy, deltoidy}
+\input{triangle-circle/quadrangle}
+
+\chapter{Pięciokąty i wyższe wielokąty}
+\begin{definition}[wielokąt]
+    Łamaną zamkniętą (sumę odcinkóe łączących kolejne punkty, aż do początkowego) bez samoprzecięć razem z jej wnętrzem nazywamy wielokątem.
+\end{definition}
+
+
+Złoty podział i pięciokąt.
+Złoty podział u Coxetera: 178-190
+
+% https://en.wikipedia.org/wiki/Golden_ratio
+\index{wielokąt!pięciokąt}%
+przekątne w wielokącie, tw. Heinekena % n nieparzyste -> w n-kącie foremnym żadne trzy przekątne nie przecinają się -> https://arxiv.org/pdf/math/9508209v3 ... In the 1960s, Heineken [6] gave a delightful argument which generalized this to all odd n,
+\index{twierdzenie!Heinekena (o współpękowych przekątnych wielokąta)}
+
+\chapter{Okręgi}
+\input{triangle-circle/circle/circles}
+
+\section{Teoria pola?}
+\todofoot{Area of a triangle, en-wiki} % https://en.wikipedia.org/wiki/Area_of_a_triangle#Other_area_formulas
+
+
 \todofoot{225 BC - Apollonius of Perga writes On Conic Sections and names the ellipse, parabola, and hyperbola}
 \todofoot{260 BC - Archimedes proved that the value of π lies between 3 + 1/7 (approx. 3.1429) and 3 + 10/71 (approx. 3.1408), that the area of a circle was equal to π multiplied by the square of the radius of the circle and that the area enclosed by a parabola and a straight line is 4/3 multiplied by the area of a triangle with equal base and height. He also gave a very accurate estimate of the value of the square root of 3.}
 \todofoot{5th century BC - Apastamba, author of the Apastamba Sulba Sutra, another Vedic Sanskrit geometric text, makes an attempt at squaring the circle and also calculates the square root of 2 correct to five decimal places}
