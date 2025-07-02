@@ -1,7 +1,33 @@
 
 Tekst intro rozdziału stereometria.
 
-\section{Wielościany}
+Panuje nieziemski bałagan, jeśli chodzi o terminologię dla wielościanów lub, ogólniej, wielotopów. By uniknąć ryzyka zgubienia się, podamy jedynie podstawowe definicje, a nie twierdzenia.
+
+
+Z każdym wielościanem związana jest grupa jego izometrii: takich przekształceń (odbić, obrotów) bryły na siebie, która zachowuje odległości.
+
+Tylko odwzorowanie tożsamościowe przenosi flagę na siebie.
+
+**Definicja** (symetrie wielościanów) Wielościan nazywamy izohedralnym (izotoksalnym, izogonalnym), jeśli jego grupa izometrii działa tranzytywnie na zbiorze ścian (krawędzi, wierzchołków).
+
+**Przykład** Wielościany platońskie są izogonalne, izotoksalne i izohedralne jednocześnie.
+
+Edmund Hess, Max Brückner, a później także Branko Grünbaum będą badać wielościany szlachetne czyli takie, które są izohedralne oraz izogonalne. Wiadomo, że wielościany platońskie, Keplera-Poinsota są szlachetne, poza nimi dwusfenoid i ogólniej, dowolne sfenoidy (wielościany koronne?). -> % https://en.wikipedia.org/wiki/Noble_polyhedron
+
+**Przykład**. Wielościany Catalana, podwójne ostrosłupy, latawcościany są izohedralne. Bryły dwoiste do nich, czyli wielościany archimedesowe, graniastosłupy i antygraniastosłupy są izogonalne.
+
+Wielościan dwoisty do izohedralnego jest zawsze izogonalny
+
+Wielosciany foremne maja jesli maja identyczne foremen sciany i naroza.
+
+Wielościany archimedesowe są wypukłe, mają foremne ściany (dwoch lub trzech rodzajow) i są izogonalne, ale nie izohedralne.
+
+Catalana dualne do archimedesowych.
+
+Uniform maja foremne sciany oraz vertex-transitive.
+
+Wielościan Johnsona(-Zalgallera) to wypukły wielościan, którego ściany są wielokątami foremnymi.
+
 
 Przez analogię do wielokątów wypukłych mamy:
 
@@ -12,24 +38,24 @@ Przez analogię do wielokątów wypukłych mamy:
 \end{definition}
 
 Najbardziej znanymi są ostrosłupy i graniastosłupy.
+Oprócz nich opowiemy także o podwójnych ostrosłupach, latawcościanach, różnych mniej lub bardziej foremnych bryłach.
+Natomiast nie podamy definicji wielościanu (niewypukłego), ponieważ nie ma powszechnie akceptowanej.
 
-Przekręcony graniastosłup to pryzmatoid. (ten z $n$-kątem i 2n trójkątami z boku)
+\begin{definition}[flaga]
+    Zbiór złożony ze ściany, krawędzi oraz wierzchołka takich, że każde leży na poprzednim, nazywamy flagą.
+\end{definition} % https://en.wikipedia.org/wiki/Flag_(geometry)
 
-\subsection{Ostrosłupy}
+
+\section{Ostrosłupy}
 \input{solids/pyramid}
 
-\subsubsection{Pryzmatoid}
-Pryzmatoid to bryła, której wierzchołki leżą na dwóch płaszczyznach równoległych.
-Jej objętość wyraża wzór $(l + 4m + h)/ 6$, gdzie $l$ to pole dolnego przekroju, $m$ środkowego, $h$ górnego. % eves s. 40
-% TODO https://en.wikipedia.org/wiki/Prismatoid#Prismatoid_families
+\section{Graniastosłupy}
+\input{solids/prism}
 
+\section{Wielościany foremne}
+\input{solids/regular}
 
-\subsection{Graniastosłupy}
-
-\subsection{Wielościany platońskie}
-\input{solids/platonic}
-
-\subsection{Wielościany archimedesowe}
+\section{Wielościany archimedesowe i Catalana}
 \input{solids/archimedean}
 
 \subsection{Wielościany Catalana}
@@ -38,16 +64,108 @@ Jej objętość wyraża wzór $(l + 4m + h)/ 6$, gdzie $l$ to pole dolnego przek
 \subsection{Wielościany Johnsona}
 \input{solids/johnson}
 
-\subsection{Wielościany Keplera-Poinsota}
-\input{solids/kepler_poinsot}
+\subsection{Wielościany jednorodne}
+\input{solids/uniform}
+
 
 \subsection{Wielościany Goldberga}
 \todofoot{Goldberg polyhedron} % https://en.wikipedia.org/wiki/Goldberg_polyhedron
 
+
 \subsection{Wielościany Szilassiego}
 O wielościanach Szilassiego pisze $\Delta_{24}^4$.
 
+\section{Historia}
 
+
+
+KratkaKratkaKratka historia
+
+KratkaKratkaKratkaKratka Regular convex polyhedra
+
+* The[Platonic solids](https://en.wikipedia.org/wiki/Platonic%_solid "Platonic solid") date back to the classical Greeks and were studied by the[Pythagoreans](https://en.wikipedia.org/wiki/Pythagoreanism "Pythagoreanism"),[Plato](https://en.wikipedia.org/wiki/Plato "Plato") (c. 424 – 348 BC),[Theaetetus](https://en.wikipedia.org/wiki/Theaetetus%_(mathematician)) "Theaetetus (mathematician)") (c. 417 BC – 369 BC),[Timaeus of Locri](https://en.wikipedia.org/wiki/Timaeus%_of%_Locri "Timaeus of Locri") (c. 420–380 BC), and[Euclid](https://en.wikipedia.org/wiki/Euclid "Euclid") (fl. 300 BC). The[Etruscans](https://en.wikipedia.org/wiki/Etruscans "Etruscans") discovered the regular dodecahedron before 500 BC.^[**[**3**]**](https://en.wikipedia.org/wiki/Uniform%_polyhedronKratkacite%_note-3)^
+
+KratkaKratkaKratkaKratka Nonregular uniform convex polyhedra
+
+* The[cuboctahedron](https://en.wikipedia.org/wiki/Cuboctahedron "Cuboctahedron") was known by[Plato](https://en.wikipedia.org/wiki/Plato "Plato").
+
+* [Archimedes](https://en.wikipedia.org/wiki/Archimedes "Archimedes") (287 BC – 212 BC) discovered all of the 13[Archimedean solids](https://en.wikipedia.org/wiki/Archimedean%_solid "Archimedean solid"). His original book on the subject was lost, but[Pappus of Alexandria](https://en.wikipedia.org/wiki/Pappus%_of%_Alexandria "Pappus of Alexandria") (c. 290 – c. 350 AD) mentioned Archimedes listed 13 polyhedra.
+
+* [Piero della Francesca](https://en.wikipedia.org/wiki/Piero%_della%_Francesca "Piero della Francesca")
+
+(1415 – 1492) rediscovered the five truncations of the Platonic
+
+solids—truncated tetrahedron, truncated octahedron, truncated cube,
+
+truncated dodecahedron, and truncated icosahedron—and included
+
+illustrations and calculations of their metric properties in his book*[De quinque corporibus regularibus](https://en.wikipedia.org/wiki/De%_quinque%_corporibus%_regularibus "De quinque corporibus regularibus")* . He also discussed the cuboctahedron in a different book.^[**[**4**]**](https://en.wikipedia.org/wiki/Uniform%_polyhedronKratkacite%_note-4)^
+
+* [Luca Pacioli](https://en.wikipedia.org/wiki/Luca%_Pacioli "Luca Pacioli") plagiarized Francesca's work in*[De divina proportione](https://en.wikipedia.org/wiki/De%_divina%_proportione "De divina proportione")* in 1509, adding the[rhombicuboctahedron](https://en.wikipedia.org/wiki/Rhombicuboctahedron "Rhombicuboctahedron"), calling it an*icosihexahedron* for its 26 faces, which was drawn by[Leonardo da Vinci](https://en.wikipedia.org/wiki/Leonardo%_da%_Vinci "Leonardo da Vinci").
+
+* [Johannes Kepler](https://en.wikipedia.org/wiki/Johannes%_Kepler "Johannes Kepler") (1571–1630) was the first to publish the complete list of[Archimedean solids](https://en.wikipedia.org/wiki/Archimedean%_solid "Archimedean solid"), in 1619. He also identified the infinite families of uniform[prisms and antiprisms](https://en.wikipedia.org/wiki/Prismatic%_uniform%_polyhedron "Prismatic uniform polyhedron").
+
+KratkaKratkaKratka Other 53 nonregular star polyhedra
+
+* Of the remaining 53,[Edmund Hess](https://en.wikipedia.org/wiki/Edmund%_Hess "Edmund Hess")
+
+(1878) discovered 2, Albert Badoureau (1881) discovered 36 more, and
+
+Pitsch (1881) independently discovered 18, of which 3 had not previously
+
+been discovered. Together these gave 41 polyhedra.
+
+* The geometer[H.S.M. Coxeter](https://en.wikipedia.org/wiki/Harold%_Scott%_MacDonald%_Coxeter "Harold Scott MacDonald Coxeter") discovered the remaining twelve in collaboration with[J. C. P. Miller](https://en.wikipedia.org/wiki/J.%_C.%_P.%_Miller "J. C. P. Miller") (1930–1932) but did not publish.[M.S. Longuet-Higgins](https://en.wikipedia.org/wiki/Michael%_S.%_Longuet-Higgins "Michael S. Longuet-Higgins") and[H.C. Longuet-Higgins](https://en.wikipedia.org/wiki/H.C.%_Longuet-Higgins "H.C. Longuet-Higgins") independently discovered eleven of these. Lesavre and Mercier rediscovered five of them in 1947.
+
+* [Coxeter, Longuet-Higgins % &amp; Miller (1954)](https://en.wikipedia.org/wiki/Uniform%_polyhedronKratkaCITEREFCoxeterLonguet-HigginsMiller1954) published the list of uniform polyhedra.
+
+* [Sopov (1970)](https://en.wikipedia.org/wiki/Uniform%_polyhedronKratkaCITEREFSopov1970) proved their conjecture that the list was complete.
+
+* In 1974,[Magnus Wenninger](https://en.wikipedia.org/wiki/Magnus%_Wenninger "Magnus Wenninger") published his book[*Polyhedron models*](https://en.wikipedia.org/wiki/List%_of%_Wenninger%_polyhedron%_models "List of Wenninger polyhedron models"), which lists all 75 nonprismatic uniform polyhedra, with many previously unpublished names given to them by[Norman Johnson](https://en.wikipedia.org/wiki/Norman%_Johnson%_(mathematician)) "Norman Johnson (mathematician)").
+
+* [Skilling (1975)](https://en.wikipedia.org/wiki/Uniform%_polyhedronKratkaCITEREFSkilling1975)
+
+independently proved the completeness and showed that if the definition
+
+of uniform polyhedron is relaxed to allow edges to coincide then there
+
+is just one extra possibility (the[great disnub dirhombidodecahedron](https://en.wikipedia.org/wiki/Great%_disnub%_dirhombidodecahedron "Great disnub dirhombidodecahedron")).
+
+* In 1987,[Edmond Bonan](https://en.wikipedia.org/wiki/Edmond%_Bonan "Edmond Bonan") drew all the uniform polyhedra and their duals in 3D with a Turbo Pascal program called**Polyca** .
+
+Most of them were shown during the International Stereoscopic Union
+
+Congress held in 1993, at the Congress Theatre, Eastbourne, England; and
+
+again in 2005 at the Kursaal of Besançon, % France.^[**[**5**]**](https://en.wikipedia.org/wiki/Uniform%_polyhedronKratkacite%_note-5)^
+
+* In 1993, Zvi Har'El % (1949–2008)^[**[**6**]**](https://en.wikipedia.org/wiki/Uniform%_polyhedronKratkacite%_note-6)^ produced a complete kaleidoscopic construction of the uniform polyhedra and duals with a computer program called**Kaleido** and summarized it in a paper*Uniform Solution for Uniform Polyhedra* , counting figures 1-80.^[**[**7**]**](https://en.wikipedia.org/wiki/Uniform%_polyhedronKratkacite%_note-7)^
+
+* Also in 1993, R. Mäder ported this Kaleido solution to[Mathematica](https://en.wikipedia.org/wiki/Mathematica) with a slightly different % indexing system.^[**[**8**]**](https://en.wikipedia.org/wiki/Uniform%_polyhedronKratkacite%_note-8)^
+
+* In 2002 Peter W. Messer discovered a minimal set of closed-form
+
+expressions for determining the main combinatorial and metrical
+
+quantities of any uniform polyhedron (and its dual) given only its[Wythoff symbol](https://en.wikipedia.org/wiki/Wythoff%_symbol "Wythoff symbol").^[**[**9**]**](https://en.wikipedia.org/wiki/Uniform%_polyhedronKratkacite%_note-9)^
+
+KratkaKratkaKratka archimedesowe -> semiregular
+
+Kepler coined kategorię wielościanów półforemnych w *Harmonice Mundi* (1619) jako 13 wielościanów archimedesowych, graniastosłupy, antygraniastosłupy, i dwa wielościany Catalana, krawędziowo tranzytywne **rhombic dodecahedron + rhombic triacontahedron** i niejawnie **trigonal trapezohedron**.
+
+Thorold Gosset zdefiniuje (*Thorold Gosset On the Regular and Semi-Regular Figures in Space of n Dimensions, Messenger of Mathematics, Macmillan, 1900*) ogólniejsze pojęcie wielotopu półforemnego, z którego wynika, że
+
+Coxeter et al. 1954 używali terminu "wielościany półforemne" do sklasyfikowania jednorodnych wielościanów, których symbol Wythoffa to "p q | r", co obejmuje tylko sześć wielościanów archimedesowych, graniastosłupy, ale nie antygraniastosłupy, ale za to liczne niewypukłe bryły.
+
+W 1973 zmieni zdanie i przyjmie definicje Gosseta bez komentarza.
+
+Cromwell 1997 napisze, że wielościany półforemne to archimedesowe, Catalana, chociaz w dalszej czesci (tej samej książki???) uzna wielościany Catalana, że nie są półforemne.
+
+https://en.wikipedia.org/wiki/Semiregular%_polyhedron
+
+https://en.wikipedia.org/wiki/Quasiregular%_polyhedron => raczej krtkie
+
+frustrum (frusta) to część bryły wycięta przez dwie płaszczyzny równoległ
 
 
 % https://en.wikipedia.org/wiki/Polyhedron
