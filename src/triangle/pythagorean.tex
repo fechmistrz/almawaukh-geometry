@@ -125,8 +125,19 @@ Ale jego śmierć nie cofnie rozłamu, jaki powstanie w szkole.
 (Być może w tym miejscu warto dowiedzieć się o cegle Eulera.)
 
 \begin{corollary}
-    Długość przekątnej prostokąta o bokach długości $a$ i $b$ wynosi $\sqrt{a^2 + b^2}$.
+    Długość przekątnej prostokąta o bokach długości $a$ i $b$ wynosi $c = \sqrt{a^2 + b^2}$.
 \end{corollary}
+
+Kto umie rozwijać funkcje w szeregi potęgowe może wpaść na pomysł, by zapisać
+\begin{equation}
+    c = a + \frac{b^2}{2a} - \frac{b^4}{8a^3} + \frac{b^6}{16a^5} - \frac{5b^8}{127a^7} + \ldots,
+\end{equation}
+co po obcięciu do pierwszych dwóch wyrazów daje przybliżenie znane Babilończykom (\cite[s. 6]{eves1_1972}):
+\begin{equation}
+    c \approx a + \frac{b^2}{2a}.
+\end{equation}
+
+Metoda ta daje największy błąd względny, gdy $a = b$ i wynosi on $6.06601\ldots \%$.
 
 \begin{problem} % Delta 2024/09
     Miasto jest otoczone okrągłym murem o nieznanej średnicy, z czterema bramami.
