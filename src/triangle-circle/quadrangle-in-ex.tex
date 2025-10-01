@@ -15,6 +15,7 @@ Na rombie, który nie jest kwadratem, nie można opisać okręgu.
 
 Jedna ze wspomnianych implikacji to wniosek \ref{ab_twice_pi}.
 Piszą o tym Guzicki \cite[s. 11-13, 16, 17]{guzicki_2021}.
+Neugebauer \cite[s. 25]{neugebauer_2018} wykorzystuje równoważność 1. i 3. warunku w dowodzie twierdzenia Wallace'a o trzech spodkach punktu na boki trójkąta.
 
 W prostokąt, który nie jest kwadratem, nie można wpisać okręgu.
 
@@ -69,4 +70,44 @@ Patrz też \cite[s. 11]{komisarczyk_2024}.
 	% Ostermann, Alexander; Wanner, Gerhard (2012), Geometry by its History, Springer, ISBN 978-3-642-29162-3 STRONA=352
 \end{proposition}
 
-\index{twierdzenie!Miquela}%
+\subsection{Punkt i twierdzenie Miquela}
+\begin{proposition}[o punkcie Miquela]
+	\index{twierdzenie!Miquela}%
+	Na bokach $AB$, $BC$, $AC$ trójkąta $\triangle ABC$ wybrano kolejno punkty $C'$, $A'$, $B'$.
+	Okręgi opisane na trójkątach $AB'C'$, $A'BC'$ oraz $A'B'C$ mają punkt wspólny, zwany punktem Miquela.
+\end{proposition}
+
+Ostermann, Wanner (autorzy książki ,,Geometry by its History'') stwierdzą, że Auguste Miquel był nauczycielem szkoły średniej na francuskiej prowincji (Nantua).
+% Ostermann, Alexander; Wanner, Gerhard (2012), Geometry by its History, Springer, ISBN 978-3-642-29162-3
+% STRONA 94 TAMŻĘ
+Podobną informację znajdziemy w ćwiczeniu u Hartshorne'a \cite[s. 61]{hartshorne2000} razem z datą: rokiem 1838.
+
+\begin{proposition}
+	Jeśli oznaczyć punkt Miquela przez $M$, to kąty $\angle MA'B$, $\angle MB'C$ oraz $\angle MC'A$ mają równe miary.	
+\end{proposition}
+
+Niektórzy używają nazwy ,,twierdzenie Miquela'' wobec innych wyników:
+\begin{itemize}
+	\item (o czterech okręgach) że okręgi opisane na czterech trójkątach wyznaczonych przez czworobok zupełny przechodzą przez jeden punkt; ogłoszone krótko przez Jakoba Steinera w wydaniu 1827/1828 \emph{,,Gergonne's Annales de Mathématiques''}, dowiedzione przez Miquela,
+	\item (o pięciu okręgach) że okręgi opisane na trójkątach wyznaczonych przez przedłużenia boków pięciokąta wypukłego przecinają się w pięciu nowych punktach; leżą one na jednym okręgu, % converse: https://en.wikipedia.org/wiki/Five_circles_theorem
+	\item (o sześciu okręgach) że pięć okręgów, które mają cztery potrójne punkty przecięcia, wyznaczają szósty okrąg, na którym leżą pozostałe cztery punkty przecięć.
+\end{itemize}
+
+Na przykład dla Audina \cite[s. 104]{audin_2003} ,,twierdzenie Miquela'' to trzeci wynik z listy, zaś ,,the pivot'' to określenie, jakiego używa wobec naszego twierdzenie Miquela.
+Patrz też do Guzickiego \cite[s. 29, 32]{guzicki_2021}.
+\index{punkt!Miquela}%
+
+\subsection{Wysokość środkowa}
+\begin{definition}[wysokość środkowa]
+	Odcinek prostopadły do boku czworokąta, który kończy się na środku przeciwległego boku, nazywamy wysokością środkową.
+\end{definition}
+
+Po angielsku mamy piękne połączenie \emph{maltitude = midpoint + altitude}.
+
+\begin{proposition} % https://en.wikipedia.org/wiki/Cyclic_quadrilateral#Anticenter_and_collinearities
+	Niech $ABCD$ będzie czworokątem cyklicznym.
+	Wtedy jego wysokości środkowe są współpękowe, przechodzą przez punkt zwany antyśrodkiem.
+\index{antyśrodek}%
+	Antyśrodek to ortocentrum trójkąta utworzonego przez środki przekątnych oraz punkt ich przecięcia.
+	Przechodzą przez niego okręgi dziewięciu punktów trójkątów $\triangle ABC$, $\triangle BCD$, $\triangle CDA$, $\triangle DAB$ (a więc jest punktem Ponceleta czworokąta).
+\end{proposition}
