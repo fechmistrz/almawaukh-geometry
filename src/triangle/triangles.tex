@@ -24,6 +24,46 @@
 \section{Okrąg dziewięciu punktów (Feuerbacha) i prosta Eulera}
 \input{triangle/feuerbach_euler}
 
+\section{Problemy Fagnano i Fermata}
+% https://en.wikipedia.org/wiki/Fagnano's_problem
+
+\begin{problem}[zadanie Fagnano]
+	Dany jest trójkąt ostrokątny $ABC$.
+	Wpisać w niego trójkąt $UVW$ o możliwie najmniejszym obwodzie.
+\index{zadanie!Fermata}%
+\end{problem}
+
+Coxeter \cite[s. 36, 37]{coxeter_1967} pokaże tak jak Fejer, że rozwiązaniem zadania jest trójkąt spodkowy (którego wierzchołkami są spodki wysokości danego trójkąta).
+Zetel \cite[s. 97-100]{zetel_2020} przytoczy oprócz dowodu Fejera także dowód Izwolskiego, oparty na twierdzeniu: promienie okręgu opisanego na trójkącie, przechodzące przez wierzchołki trójkąta, są prostopadłe do odpowiednich boków trójkąta spodkowego.
+Audin \cite[s. 101]{audin_2003} podaje ten fakt w formie ćwiczenia. % todo: fagnano czy gemrat?
+
+Boki trójkąta spodkowego są antyrównoległe do boków trójkąta danego (Zetel \cite[s. 89]{zetel_2020}).
+Wysokości trójkąta ostrokątnego są dwusiecznymi kątów wewnętrznych trójkąta spodkowego (Zetel \cite[s. 89]{zetel_2020}).
+
+\begin{proposition}
+	Niech wysokości trójkąta ABC przecinają sięw punkcie H.
+	Każdy z czterech punktów A, B, C, H jest ortocentrum trójkąta, którego wierzchołkami są trzy pozostałe punkty.
+\end{proposition}
+
+Powyższe: Zetel, s. 95.
+
+\begin{problem}[zadanie Fermata]
+	\label{punkt_fermata}
+	Dany jest trójkąt ostrokątny $ABC$.
+	Znaleźć punkt $F$ taki, by suma $|FA| + |FB| + |FC|$ była możliwie najmniejsza.
+\index{zadanie!Fermata}%
+\end{problem}
+
+% Zadanie Fermata -- Neugebauer, s. 117.
+
+Powyższe zadanie rozwiąże Evangelista Torricelli, który dostał je w formie wyzwania od Fermata.
+\index[persons]{Torricelli, Evangelista}%
+Rozwiązanie opublikował student Torricelliego, Vincenzo Viviani, w 1659 roku.
+\index[persons]{Viviani, Vincenzo}
+% TODO: Johnson, R. A. Modern Geometry: An Elementary Treatise on the Geometry of the Triangle and the Circle. Boston, MA: Houghton Mifflin, pp. 221-222, 1929.
+Coxeter \cite[s. 37]{coxeter_1967} przytoczy rozwiązanie Hofmanna. %J E Hoffman, Elementare Losung einer Mimimumsaufgabe 1929
+\index{zadanie!Fagnano}
+
 \section{Nierówności trójkątne}
 \input{triangle/inequalities}
 
