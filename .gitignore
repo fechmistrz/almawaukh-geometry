@@ -2,3 +2,4 @@
 *.bbl
 *.blg
 *.synctex.gz
+src/comment.cut

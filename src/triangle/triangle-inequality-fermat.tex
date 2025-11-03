@@ -1,0 +1,34 @@
+\begin{problem}[zadanie Fermata]
+	\label{punkt_fermata}
+	Dany jest trójkąt ostrokątny $ABC$.
+	Znaleźć punkt $P$ taki, by suma $|PA| + |PB| + |PC|$ była możliwie najmniejsza.
+\index{zadanie!Fermata}%
+\end{problem}
+
+Powyższe zadanie rozwiąże Evangelista Torricelli (dlatego też punkt $P$ nazywa się czasem punktem Torricellego; robi tak Guzicki \cite[s. 224-228]{guzicki_2021}), który dostanie je w formie wyzwania od Fermata.
+\index[persons]{Torricelli, Evangelista}%.
+Rozwiązanie opublikuje student Torricelliego, Vincenzo Viviani, w 1659 roku.
+\index[persons]{Viviani, Vincenzo}
+% TODO: Johnson, R. A. Modern Geometry: An Elementary Treatise on the Geometry of the Triangle and the Circle. Boston, MA: Houghton Mifflin, pp. 221-222, 1929.
+Coxeter \cite[s. 37]{coxeter_1967} przytoczy rozwiązanie Hofmanna\todofoot{J E Hoffman, Elementare Losung einer Mimimumsaufgabe 1929}
+Patrz też Pompe \cite[s. 19-22]{pompe_2022}, Neugebauer \cite[s. 117]{neugebauer_2018}.
+
+Założenie ostrokątności można osłabić, wystarczy, żeby każdy kąt wewnętrzny trójkąta miał miarę mniejszą niż $2\pi/3$.
+
+\begin{proposition}
+    Dany jest trójkąt $ABC$, w którym żaden kąt nie ma miary większej niż $2\pi/3$.
+    Wtedy wewnątrz istnieje dokładnie jeden punkt $P$ taki, że kąty $\angle APB$, $\angle BPC$, $\angle CPA$ są przystające (i miarę $2\pi/3$). 
+\end{proposition}
+
+Punkt $P$ jest punktem Fermata i można go łatwo skontruować.
+Na zewnątrz boków trójkąta $ABC$ kreślimy trzy trójkąty równoboczne $ABD$, $BCE$, $CAF$, po czym prowadzimy proste $AE$, $BF$, $CD$.
+Punkt $P$ leży na przecięciu wszystkich trzech, co wynika z twierdzenia Jacobiego:
+
+\begin{proposition}
+    Na bokach trójkąta $ABC$, po jego zewnętrznej stronie, zbudowano takie trójkąty $ABD$, $BCE$, $CAF$, że kąty: $\angle BAD = \angle CAF$, $\angle ABD = \angle CBE$, $\angle BCE = ACF$ są równe.
+    Wówczas proste $AE$, $BF$, $CD$ przecinają się w jednym punkcie.
+\end{proposition}
+
+O twierdzeniu tym wspomni Pompe \cite[s. 21]{pompe_2022}, a następnie przejdzie do twierdzenia \ref{twierdzenie_ptolemeusza} (czyli Ptolemeusza).
+
+% Zadanie Fermata -- Neugebauer, s. 117.
