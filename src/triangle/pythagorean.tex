@@ -5,6 +5,16 @@ Piszą o~nim Guzicki \cite[s. 160]{guzicki_2021}.
 
 % PRZECZYTANO: https://en.wikipedia.org/wiki/Pythagorean_theorem
 
+Do sformułowania twierdzenia Pitagorasa potrzebne jest pojęcie pola, którego z pewnych powodów nigdzie formalnie nie opisaliśmy.
+Wystarczy nam wiedzieć, że dla każdej odpowiednio regularnej figury na płaszczyźnie $F$ istnieje liczba rzeczywista $S_F \ge 0$ (zwana polem) taka, że:
+\begin{itemize}
+    \item pole prostokąta o bokach długości $a$ oraz $b$ to $ab$;
+    \item pole sumy (,,unii'') dwóch rozłącznych figur $F_1 \cup F_2$ jest sumą ich pól;
+    \item pola przystających trójkątów są sobie równe.
+\end{itemize}
+
+(Można poczytać o tym u Neugebauera \cite[s. 37]{neugebauer_2018}).
+
 \begin{theorem}[Pitagorasa]
 \label{theorem_pythagorean}%
 \index{twierdzenie!Pitagorasa}%
@@ -57,6 +67,7 @@ Niektóre opierają się na rozcięciu pewnej układanki na fragmenty, przestawi
 Inne korzystają z podobieństwa trójkątów.
 Dowód Euklidesa urzekł nas tak bardzo swoją pomysłowością, że będzie jedynym, jaki przedstawimy w~całej książce!
 \index{zasada!Cavalieriego}
+Patrz też: Neugebauer \cite[s. 39-41]{neugebauer_2018}.
 
 \begin{proof}
     Niech $\triangle ABC$ będzie trójkątem prostokątnym, z kątem prostym przy wierzchołku $C$.
@@ -104,7 +115,7 @@ Dowód Euklidesa urzekł nas tak bardzo swoją pomysłowością, że będzie jed
     \end{tikzpicture}
 \end{comment}
     \end{center}
-    Z punktu $C$ opuszczamy wysokość na przeciwprostokątną $AB$ i przedłużamy tak, by przecięła kwadrat $ABFG$ w punktach $K$ i $L$.
+    Z punktu $C$ opuszczamy wysokość na przeciwprostokątną\footnote{To jest jedno z dwóch wystąpień słowa przeciwprostokątna... :(} $AB$ i przedłużamy tak, by przecięła kwadrat $ABFG$ w punktach $K$ i $L$.
     Łączymy punkty $B$ i $I$ oraz $C$ i $G$.
     Otrzymane trójkąty $\triangle BAI$ oraz $\triangle GAC$ są przystające na mocy cechy bok-kąt-bok ($AB$, $\angle BAI$, $AI$ oraz $AG$, $\angle GAC$, $AC$).
     Niebieski prostokąt $AGLK$ (odpowiednio: kwadrat $ACHI$) ma dwukrotnie większe pole niż trójkąt $\triangle GAC$ (trójkąt $\triangle BAI$).
