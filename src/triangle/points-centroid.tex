@@ -1,15 +1,25 @@
+%
+
 \begin{definition}[środkowa]
 \index{środkowa}%
-    Niech $\triangle ABC$ będzie trójkątem.
-    Odcinek łaczący wierzchołek (na przykład $A$) ze środkiem przeciwległego boku (w naszym przykładzie $BC$) nazywamy środkową.
+    Dany jest pewien trójkąt.
+    Odcinek łaczący którykolwiek z jego wierzchołków ze środkiem przeciwległego boku nazywamy środkową.
 \end{definition}
 
 Nie mylić z linią środkową!
 Środkowe dzielą trójkąt na sześć mniejszych o równych polach.
+% TODO: rysunek równych sześciu pól.
 
 \begin{proposition}
-    Suma środkowych leży pomiędzy $1.5p$ oraz $2p$, gdzie $p$ to połowa obwodu trójkąta. % Coxeter polski, s. 26
+    Niech $m_a, m_b, m_c$ oznacza długości trzech środkowych trójkąta, zaś $p$ połowę jego obwodu.
+    Wtedy
+    \begin{equation}
+        \frac 32 p \le m_a + m_b + m_c \le 2p.
+    \end{equation}
+    % Posamentier, Alfred S., and Salkind, Charles T., Challenging Problems in Geometry, Dover, 1996: pp. 86–87.
 \end{proposition}
+
+Napisze o tym Coxeter \cite[s. 26]{coxeter_1967}.
 
 \begin{proposition}
 \label{srodkowe_przecinaja_sie}%
@@ -19,7 +29,7 @@ Nie mylić z linią środkową!
 % % Coxeter, Introduction to Geometry, s. 10 <- przeczytaj to, nie tylko cytuj! + ćwiczenia: 3/4 <= 1
 
 Środkowe to po angielsku \emph{medians}, przecinają się w \emph{centroid}.
-Polska nazwa bierze się z tego, że środek ciężkości fizycznego modelu trójkąta wykonanego z jednolitego materiału znajduje się właśnie tam.
+Polska nazwa weźmie się z tego, że środek ciężkości fizycznego modelu trójkąta wykonanego z jednolitego materiału znajduje się właśnie tam.
 \index{punkt!Spiekera}%
 Angielska nazwa powstanie w 1814 roku z powodu niechęci do tego, co nie jest czysto geometryczne; niechęci, której nie będzie widać w innych europejskich językach.
 (Środek ciężkości brzegu trójkąta nazywa się punktem Spiekera, patrz fakt \ref{punkt_spiekera}).
@@ -28,6 +38,7 @@ Hartshorne \cite[s. 52-54]{hartshorne2000} wnioskuje \ref{srodkowe_przecinaja_si
 \index[persons]{Archimedes}%
 Podobnie zrobią Guzicki \cite[s. 220]{guzicki_2021} albo Bogdańska, Neugebauer.
 Zetel \cite[s. 14, 25]{zetel_2020} pokaże, że twierdzenie Cevy daje natychmiastowy dowód istnienia środka ciężkości.
+\index{twierdzenie!Cevy}%
 % TODO: Ich długość można obliczyć z https://en.wikipedia.org/wiki/Apollonius%27s_theorem => to jest z https://en.wikipedia.org/wiki/Median_(geometry)#Formulas_involving_the_medians'_lengths
 Coxeter \cite[s. 26]{coxeter_1967} pokaże, jak otrzymać ten sam wynik z (VI.2) oraz (VI.4).
 
@@ -35,7 +46,7 @@ Historia faktów \ref{wysokosci_przecinaja_sie} oraz \ref{srodkowe_przecinaja_si
 Żaden z nich nie pojawi się w Elementach Euklidesach i właściwie nie wiadomo, kto odkryje je pierwszy.
 Uczeni arabscy stwierdzą, że był to Archimedes, choć nie ma ku temu niezbitych dowodów.
 \index[persons]{Archimedes}%
-Pappus będzie świadom istnienia ortocentrum, ale najstarsze znane uzasadnienie (w komentarzu al-Nasawiego) pochodzi z XI wieku.
+Pappus będzie świadom istnienia ortocentrum, ale najstarsze znane uzasadnienie (w komentarzu al-Nasawiego) przyjdzie na świat dopiero w XI wieku.
 \index[persons]{Pappus}%
 \index[persons]{al-Nasawi, Ali ibn Ahmad}%
 
@@ -51,3 +62,5 @@ Niektórzy stosują określenie ,,twierdzenie Commandino'', ponieważ Federico C
 Podejrzewa się, że Francesco Maurolico pozna je wcześniej.
 (Friederich Eduard Reusch znajdzie uogólnienie, które w zdegenerowanym przypadku prowadzi znowu do twierdzenia \ref{theorem_varignon} Varignona).
 \index[persons]{Reusch, Friederich Eduard}%
+
+%
