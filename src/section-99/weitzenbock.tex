@@ -1,0 +1,77 @@
+%
+
+\subsection{Nierówność Weitzenböcka i jej uogólnienia}
+
+% https://en.wikipedia.org/wiki/Weitzenböck's_inequality
+
+Roland Weitzenböck \cite{weitzenbock_1919} udowodni w 1919 roku:
+\index[persons]{Weitzenböck, Roland}%
+
+\begin{proposition}[nierówność Weitzenböcka]
+	W trójkącie o bokach długości $a, b, c$ oraz polu powierzchni $S$ zachodzi nierówność
+    \begin{equation}
+        a^2 + b^2 + c^2 \ge 4 \sqrt{3} S,
+    \end{equation}
+    z równością wtedy i tylko wtedy, gdy trójkąt jest równoboczny: $a = b = c$.
+	\index{nierówność!Weitzenböcka}%
+\end{proposition}
+
+% https://en.wikipedia.org/wiki/Weitzenböck%27s_inequality#Further_proofs
+Dowód wykorzystuje punkt Fermata, wzór Herona, nierówność między średnią arytmetyczną i~geometryczną, własności funkcji cotangens albo nierówność
+\begin{equation}
+    (a^2 - b^2)^2 + (b^2 - c^2)^2 + (c^2 - a^2)^2 \ge 0.
+\end{equation}
+\index{punkt Fermata}%
+\index{wzór Herona}%
+% https://www.ime.usp.br/~toscano/disc/2022/GreenbergGeometry.pdf ps. 34
+
+Są dwa uogólnienia: nierówność Hadwigera-Finslera oraz nierówność (Neuberga-)Pedoego.
+
+\begin{proposition}[nierówność Hadwigera-Finslera]
+    W trójkącie o bokach długości $a, b, c$ oraz polu powierzchni $S$ zachodzi nierówność
+    \begin{equation}
+        a^2 + b^2 + c^2 \ge (a-b)^2 + (b-c)^2 + (a-c)^2 + 4 \sqrt{3} S,
+    \end{equation}
+\end{proposition}
+
+\begin{proof}
+    Z twierdzenia cosinusów mamy $a^2 = b^2 + c^2 - 2bc \cos \alpha$.
+    Ponieważ $S = \frac 1 2 b c \sin \alpha$, poprzednią równość możemy przepisać do 
+    \begin{align}
+        a^2 & = (b-c)^2 + 4S \cdot \frac{1 - \cos \alpha}{\sin \alpha} \\
+        & = (b-c)^2 + 4S \cdot \frac{2 \sin^2 (\alpha / 2)}{2 \sin (\alpha / 2) \cos (\alpha / 2)} \\
+        & = (b-c)^2 + 4S \cdot \tan \frac \alpha 2.
+    \end{align}
+    Po powtórzeniu tego dla pozostałych boków i dodaniu do siebie dostaniemy
+    \begin{equation}
+        a^2 + b^2 + c^2 = (a-b)^2 + (b-c)^2 + (c-a)^2 + 4S \left(\tan \frac \alpha 2 + \tan \frac \beta 2 + \tan \frac \gamma 2\right).
+    \end{equation}
+    Ale połówki kątów trójkąta nie przekraczają $\pi/2$, zaś funkcja $\tan$ jest wypukła, więc nawias można ograniczyć z dołu:
+    \begin{equation}
+        \tan \frac \alpha 2 + \tan \frac \beta 2 + \tan \frac \gamma 2 \ge 3 \tan \frac{\alpha + \beta + \gamma}{6} = 3\tan \frac \pi 6 = \sqrt 3,
+    \end{equation}
+    co kończy dowód.
+\end{proof}
+
+Paul Finsler oraz Hugo Hadwiger \cite{finsler_1937} udowodnią to twierdzenie w 1937 roku.
+\index[persons]{Finsler, Paul}%
+\index[persons]{Hadwiger, Hugo}%
+
+\begin{proposition}[nierówność Neuberga-Pedoego]
+    W dwóch trójkątach o bokach $a, b, c$ oraz polu powierzchni $S$ i bokach $a_*, b_*, c_*$ oraz polu powierzchni $S_*$ zachodzi nierówność
+    \begin{equation}
+        a^2_*(b^2 + c^2 - a^2) + 
+        b^2_*(a^2 + c^2 - b^2) + 
+        c^2_*(a^2 + b^2 - c^2) \ge 16 SS_*
+    \end{equation}
+    z równością wtedy i tylko wtedy, gdy trójkąty są podobne: $a/a_* = b/b_* = c/c_*$.
+\end{proposition}
+
+(Aby dostać nierówność Weitzenböcka, wystarczy wziąć $a = b = c = 1$).
+Daniel Pedoe \cite{pedoe_1941} odkryje nierówność w 1941, a później dowie się, że była znana luksemburskiemu geometrze Józefowi Neubergowi.
+\index[persons]{Pedoe, Daniel}%
+\index[persons]{Neuberg, Joseph}%
+Ten jednak nie pokaże, że z równości dwóch strony wynika podobieństwo trójkątów.
+Jeden z dowodów wykorzystuje wzór Herona oraz nierówność Cauchy'ego-Schwarza.
+
+%
