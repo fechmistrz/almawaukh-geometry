@@ -1,7 +1,13 @@
-Według legendy wyrocznia na wyspie Delos poradziła, by dla powstrzymania panującej tam zarazy dwukrotnie powiększyć ołtarz ofiarny, nie zmieniając jego kształtu.
+%
+
+Przytoczymy teraz trzy problemy geometryczne, zaprzątające głowy przez blisko dwa tysiąclecia.
+Wszystkie trzy znajdziemy też u Evesa \cite[s. 156]{eves1_1972}.
+
+Według legendy wyrocznia na wyspie Delos poradzi, by dla powstrzymania panującej tam zarazy trzeba dwukrotnie powiększyć ołtarz ofiarny, nie zmieniając jego sześciennego kształtu.
 \index{podwojenie sześcianu}
 
 \begin{problem}[problem delijski]
+    \label{problem_delijski}%
     Zbudować sześcian o objętości dwa razy większej niż sześcian dany.
     \index{problem!delijski}
 \end{problem}
@@ -22,11 +28,13 @@ Choć odkryte zostanie wiele konstrukcji przybliżonych albo takich, które wyko
 \index[persons]{kwadratrysa}%
 
 \begin{problem}[trysekcja kąta]
+    \label{trysekcja_kata}%
     Podzielić dowolny kąt na trzy równe części.
     \index{trysekcja!kąta}
 \end{problem}
 % TODO: % TODO: Coxeter, s. 28
 % TODO: https://en.wikipedia.org/wiki/Square_trisection
+% https://en.wikipedia.org/wiki/Angle_trisection
 
 Tu też pojawią się próby użycia różnorakich przyrządów.
 Archmiedes zaproponuje dodanie podziałki do linijki, co okaże się wystarczające do wykreślenia kątów.
@@ -35,21 +43,21 @@ W średniowieczu zostanie zauważone, że zagadnienie trysekcji kąta prowadzi d
 \begin{equation}
     x^3 - 3 x - 2 \cos 3\alpha = 0.
 \end{equation}
-W szczególności, jeśli $\alpha = \pi / 9$, to pierwiastki okażą się nie być konstruowalne.
+W szczególności, jeśli $\alpha = \pi / 9$, to pierwiastki nie są konstruowalne.
 Patrz też do Coxetera \cite[s. 44]{coxeter_1967}.
 
 \begin{proposition}
     Rozwiązanie problemu delijskiego oraz trysekcja kąta są niewykonalne za pomocą cyrkla i linijki.
 \end{proposition}
 
-Pierwszy dowód tego faktu poda Pierre Wantzel (1837).
-Być może to będzie powodem, dla którego dopiero w 1899 roku Frank Morley odkryje (a w 1924 opublikuje):
+Pierwszy dowód tego faktu poda Pierre Wantzel \cite{wantzel_1837} w 1837 roku.
+Być może to będzie powodem, dla którego dopiero w 1899 roku Frank Morley \cite{morley_1907} odkryje:
 \index[persons]{Morley, Frank}
 
 \begin{theorem}[Morleya]
-    Punkty przeciecięcia tych trójsiecznych kątów trójkąta, które sąsiadują z którymś z boków trójkąta, są wierzchołkami trójkąta równobocznego.
-    \index{trójkąt!Morleya}
-    \index{twierdzenie!Morleya}
+    Punkty przeciecięcia tych spośród trójsiecznych kątów trójkąta, które sąsiadują z~którymś z~boków trójkąta, są wierzchołkami trójkąta równobocznego.
+    \index{trójkąt!Morleya}%
+    \index{twierdzenie!Morleya}%
 \end{theorem}
 
 (W tym sformułowaniu nie ma mowy, że chodzi o kąty wewnętrzne -- ponieważ twierdzenie jest prawdziwe także dla kątów zewnętrznych, z prawie takim samym dowodem).
@@ -68,18 +76,17 @@ Próbowano tego samego wobec koła, bez powodzenia.
 \index{kwadratura koła}%
     Wykreślić kwadrat o polu równym polu danego koła.
 \end{problem}
-% https://en.wikipedia.org/wiki/Adam_Adamandy_Kocha%C5%84ski
-% TODO: https://en.wikipedia.org/wiki/Lune_of_Hippocrates
-% Without the constraint of requiring solution by ruler and compass alone, the problem is easily solvable by a wide variety of geometric and algebraic means, and was solved many times in antiquity. => https://en.wikipedia.org/wiki/Straightedge_and_compass_construction
 % https://en.wikipedia.org/wiki/Wallace-Bolyai-Gerwien_theorem 
-% ciekawe, bo dla 3d nie działa, bo mają dziwną teorię pola, bo nie mają R
 
-Ferdinand Lindemann odkryje w 1882 roku, że liczba $\pi$ pojawiajaca się we wzorze na pole koła jest przestępna, zatem rozszerzenie $\mathbb Q(\sqrt{\pi}) / \mathbb Q$ jest za dużego stopnia i kwadratura koła, podobnie jak poprzednie dwa problemy, również nie jest wykonalna standardowymi narzędziami.
+Adam Adamandy Kochański herbu Lubicz, dworzanin króla Jana Sobieskiego znajdzie przybliżenie
+\begin{equation}
+    \sqrt{\frac{40}{3} - 2 \sqrt{3}} \approx 3.14153\,33387
+\end{equation}
+w pracy \emph{Observationes Cyclometricae ad facilitandam Praxin accommodatae} (\emph{Obserwacje cyklometryczne przystosowane dla ułatwienia praktycznego użycia})
 
-O wszystkich trzech problemach napiszą także Eves \cite[s. 156]{eves1_1972}.
+Ferdinand Lindemann odkryje w 1882 roku, że liczba $\pi$ pojawiająca się we wzorze na pole koła jest przestępna, zatem rozszerzenie $\mathbb Q(\sqrt{\pi}) / \mathbb Q$ jest za dużego stopnia i kwadratura koła, podobnie jak poprzednie dwa problemy, również nie jest wykonalna standardowymi narzędziami. (Jeśli liczba $x$ jest konstruowalna, to stopień rozszerzenia $\mathbb Q(x) / \mathbb Q$ jest potęgą $2$).
 
-\todofoot{Trysekcja kąta angle trisection} % https://en.wikipedia.org/wiki/Angle_trisection
+Kwadratura koła jest równoważna rektyfikacji okręgu, czyli zadaniu, by wykreślić odcinek tej samej długości, co obwód danego okręgu.
+To również nie jest wykonalne.
 
-% Konstruowalna => stopień Q(x) nad Q to potęga 2, ale nie w drugą stronę.
-% Podwojenie sześcianu. % https://en.wikipedia.org/wiki/Pandrosion
-% Trysekcja kąta.
+%
