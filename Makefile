@@ -6,6 +6,10 @@ geometry.pdf: src/geo-textbook.pdf
 src/geo-textbook.pdf: src/*.cls src/*.tex src/*/*.tex src/*/*/*.tex
 	cd src && lualatex geo-textbook.tex && bibtex geo-textbook && lualatex geo-textbook.tex && lualatex geo-textbook.tex
 
+lint:
+	python3 utils/lint_bibtex.py src/geo-textbook.bib > /tmp/geo-textbook.bib
+	mv /tmp/geo-textbook.bib src/geo-textbook.bib
+
 bibi:
 	cd src && bibtex geo-textbook
 
