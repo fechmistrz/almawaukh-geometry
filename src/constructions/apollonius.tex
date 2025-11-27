@@ -1,21 +1,24 @@
 %
 
-\todofoot{GUZICKI-19 -- wykorzystuje twierdzenie menelaosa}
 % https://en.wikipedia.org/wiki/Problem_of_Apollonius
 \begin{problem}
     \label{problem_apolloniusza}%
-    ...
-    Skonstruować ...
-    \index{okrąg!Apoloniusza}
+    Na płaszczyźnie dane są trzy okręgi.
+    Skonstruować czwarty, który jest styczny do każdego z~pozostałych.
+    \index{okrąg!Apoloniusza}%
 \end{problem}
 
-Eves \cite[s. 164]{eves1_1972} w szczególnym przypadku, kiedy trzy okręgi są współpękowe
+Dyskusję na temat problemu znajdziemy u Guzickiego \cite[s. 444-461]{guzicki_2021}.
+Eves \cite[s. 164]{eves1_1972} rozważa szczególny przypadek trzech współpękowych okręgów.
+W ogólności okręgi mogą mieć zerowy promień (i skurczyć się do punktu) lub nieskończony promień (i wydłużyć się do prostej).
+Zależnie od wyboru kształtów, mamy do rozwiązania dziesięć różnych zadań: PPP, PPL, PLL, LLL, PPC, PLC, LLC, PCC, LCC, CCC (klasyczne zadanie Apolloniusza).
+Tutaj P oznacza punkt, L prostą, zaś C okrąg, od pierwszych liter stosownych słów po angielsku.
 
 Z zadaniem wiąże się dużo późniejszy wynik.
 W dwóch listach z 1643 roku do czeskiej księżniczki Elżbiety z Palatynatu Kartezjusz przedstawi uproszczoną wersję, w której trzy okręgi są parami styczne i znajdzie (bez dowodu) relację wiążącą promienie okręgów.
 
 \begin{theorem}[Kartezjusza]
-    Dane są trzy okręgi, parami styczne o promieniach $r_1, r_2, r_3$ oraz czwarty styczny do każdego z nich (istnieją dwa takie, jeden z~nich zazwyczaj styczny wewnętrznie, a w szczególnym przypadku może okazać się prostą).
+    Dane są trzy okręgi, parami styczne o promieniach $r_1, r_2, r_3$ oraz czwarty styczny do każdego z nich\footnote{istnieją dwa takie, jeden z~nich zazwyczaj styczny wewnętrznie, a w szczególnym przypadku może okazać się prostą.}.
     Definiujemy krzywiznę ze znakiem jako $\pm 1 / r$, gdzie znak $-$ odpowiada okręgowi stycznemu zewnętrznie.
     Wtedy
     \begin{equation}
@@ -27,7 +30,7 @@ W dwóch listach z 1643 roku do czeskiej księżniczki Elżbiety z Palatynatu Ka
 Jeżeli jeden z okręgów (dajmy na to ten o promieniu $r_1$) staje się prostą, to jego zerowa krzywizna znika z równania.
 Jeżeli dwa okręgi stają się dwiema prostymi, to pozostałem dwa muszą być do siebie przystające, co należy uznać za zdegenerowany przypadek.
 
-Twierdzenie Kartezjusza odkryją na nowo Yamaji Nuchizumi (1751), Jakob Steiner (\emph{Fortsetzung der geometrischen Betrachtungen} z 1826), Philip Beecroft (\emph{Properties of circles in mutual contac} z 1842) i~wreszcie Frederick Soddy (\emph{The Kiss Precise} z 1936 jak opisane u Coxetera \cite[s. 29-31]{coxeter_1967}).
+Twierdzenie Kartezjusza odkryją na nowo Yamaji Nuchizumi (1751), Jakob Steiner (\emph{Fortsetzung der geometrischen Betrachtungen} z 1826), Philip Beecroft (\emph{Properties of circles in mutual contact} z 1842) i~wreszcie Frederick Soddy (\emph{The Kiss Precise} z 1936 jak opisane u Coxetera \cite[s. 29-31]{coxeter_1967}).
 \index[persons]{Nuchizumi, Yamaji}%
 \index[persons]{Steiner, Jakob}%
 \index[persons]{Beecroft, Philip}%
@@ -50,7 +53,7 @@ Wtedy czwarty okrąg (zwany okręgiem Soddy'ego) z twierdzenia Kartezjusza ma pr
     \frac{4R + r \pm 2p}{S},
 \end{equation}
 gdzie $R, r$ to promienie okręgu opisanego i wpisanego, zaś $S$ to pole powierzchni.
-Napisze o tym Coxeter \cite[s. 29-31]{coxeter_1967}
+Napisze o tym Coxeter \cite[s. 29-31]{coxeter_1967}.
 
 \begin{definition}[prosta Soddy'ego]
     Prostą przechodzącą przez środki okręgów Soddy'ego nazywamy prostą Soddy'ego.
