@@ -1,48 +1,24 @@
 %
 
 \section{Podstawowe definicje}
-
-\begin{definition}[czworokąt]
-\index{czworokąt}%
-	Dane są cztery punkty $A$, $B$, $C$, $D$, z których żadne trzy nie są współliniowe, takimi że odcinki $AB$, $BC$, $CD$, $DA$ nie mają części wspólnej poza końcami.
-    Wtedy sumę tych odcinków nazywamy czworokątem.	
-\end{definition}
-
-\input{triangle-circle/quadrangle-types}
-
-%%% POLE
-Eves \cite[s.4]{eves_1963} napisze, że w starożytnym Babilonie będzie używany niepoprawny wzór na pole czworokąta o przeciwległych bokach $a, c$ oraz $b, d$:
-\begin{equation}
-	S = \frac{a + c}{2} \cdot \frac{b + d}{2}.
-\end{equation}
-Wzór ten zostanie umieszczony w grobowcu Ptolemeusza XI, króla Egiptu żyjącego krótko przed narodzinami Chrystusa.
-Jak łatwo zauważyć, pole otrzymane w ten sposób jest zawyżone, chyba że czworokąt był prostokątem: jeśli oznaczymy kolejne kąty przez $\alpha, \beta, \gamma, \delta$, to 
-\begin{align}
-	S & = \frac 1 2 \left(\frac 1 2 ab \sin \alpha + \frac 1 2 bc \sin \beta + \frac 1 2 cd \sin \gamma + \frac 1 2 ad \sin \delta\right) \\
-	& \le \frac 1 4 (ab + bc + cd + ad) = \frac{a + c}{2} \cdot \frac{b + d}{2}.
-\end{align}
-z równością, kiedy wszystkie cztery kąty są proste.
-%%% POLE
-% https://www.ime.usp.br/~toscano/disc/2022/GreenbergGeometry.pdf ps. 34
+\input{300-quadrangle/types}
+\input{300-quadrangle/area}
 
 \section{Opisane i wpisane}
-\input{triangle-circle/quadrangle-in-ex}
+\input{300-quadrangle/incircle-excircle}
+
+\subsection{Punkt i twierdzenie Miquela}
+\input{300-quadrangle/miquel}
+
+\subsection{Wysokość środkowa}
+\input{300-quadrangle/maltitude}
 
 \section{Czoworokąty dwuśrodkowe}
-\input{triangle-circle/quadrangle-bicentric}
+\input{300-quadrangle/bicentric}
 
-\index{czworobok zupełny|(}%
-\index{czworokąt zupełny|see{czworobok zupełny}}%
 \section{Czoworobok zupełny}
-\input{triangle-circle/quadrangle-complete}
-\index{czworobok zupełny|)}%
-
-% The two '''bimedians''' of a convex quadrilateral are the line segments that connect the midpoints of opposite sides. They intersect at the "vertex centroid" of the quadrilateral (see [[Quadrilateral#Remarkable points and lines in a convex quadrilateral|§ Remarkable points and lines in a convex quadrilateral]] below).
-
-% The four '''maltitudes''' of a convex quadrilateral are the perpendiculars to a side—through the midpoint of the opposite side.
+\input{300-quadrangle/complete}
 
 % https://en.wikipedia.org/wiki/Antiparallelogram => STYCZNE OKRĘGU
-
-% The heyday of synthetic geometry can be considered to have been the 19th century, when analytic methods based on coordinates and calculus were ignored by some geometers such as Jakob Steiner, in favor of a purely synthetic development of projective geometry. For example, the treatment of the projective plane starting from axioms of incidence is actually a broader theory (with more models) than is found by starting with a vector space of dimension three. Projective geometry has in fact the simplest and most elegant synthetic expression of any geometry.
 
 %
