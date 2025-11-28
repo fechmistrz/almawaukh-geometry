@@ -1,5 +1,57 @@
+%
 
-\subsubsection{Pryzmatoid}
+\subsubsection{Pryzmatoidy}
 Pryzmatoid to bryła, której wierzchołki leżą na dwóch płaszczyznach równoległych.
-Jej objętość wyraża wzór $(l + 4m + h)/ 6$, gdzie $l$ to pole dolnego przekroju, $m$ środkowego, $h$ górnego. % eves s. 40
+
+\begin{example}[pyramids]
+    Ostrosłup, gdzie jedna płaszczyzna zawiera tylko wierzchołek.
+\end{example}
+
+\begin{example}[wedges]
+    (Klin?), gdzie jedna płaszczyzna zawiera tylko dwa wierzchołki.
+\end{example}
+
+\begin{example}[parallelepipeds]
+    Quadrilateral-faced hexahedral prismatoids:
+        Parallelepipeds – six parallelogram faces
+        Rhombohedrons – six rhombus faces
+        Trigonal trapezohedra – six congruent rhombus faces
+        Cuboids – six rectangular faces
+        Quadrilateral frusta – an apex-truncated square pyramid
+        Cube – six square faces
+\end{example}
+
+\begin{example}[prisms]
+    Graniastosłup, gdzie płaszczyzny są przystającymi wielokątami, zaś ściany boczne to równoległoboki.
+\end{example}
+
+\begin{example}[antiprisms]
+    % Antiprisms, whose polygons in each plane are congruent and joined by an alternating strip of triangles;[5]
+    % Star antiprisms;
+\end{example}
+
+\begin{example}[cupolae]
+    % Cupolae, in which the polygon in one plane contains twice as many points as the other and is joined to it by alternating triangles and rectangles;
+    % https://en.wikipedia.org/wiki/Cupola_(geometry)
+\end{example}
+
+\begin{example}[frusta]
+    Frusta obtained by truncation of a pyramid or a cone;
+    % https://en.wikipedia.org/wiki/Frustum
+\end{example}
+
+\begin{proposition}
+    Objętość pryzmatoidu wyraża wzór
+    \begin{equation}
+        V = \frac 1 6 h (S_l + 4S_m + 4S_h),
+    \end{equation}
+    gdzie $h$ oznacza wysokość (odległość między płaszczyznami podstaw), $S_l$ pole podstawy dolnej, $S_h$ pole podstawy górnej, zaś $S_m$ to pole przekroju poprzecznego płaszczyzną, która leży w połowie między podstawami. % eves s. 40
+\end{proposition}
+
+\begin{proof}
+    Wzór wynika z całkowania metodą Simsona, która daje dokładny wynik dla wielomianów stopnia co najwyżej trzeciego; pole przekroju poprzecznego stanowi funkcję kwadratową wysokości.
+\end{proof}
+
 % TODO https://en.wikipedia.org/wiki/Prismatoid#Prismatoid_families
+
+%
