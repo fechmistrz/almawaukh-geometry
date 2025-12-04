@@ -25,11 +25,10 @@ def pick_file_from_stdin():
             entries.append((path, weight))
 
     if not entries:
-        print("No valid input.", file=sys.stderr)
-        sys.exit(1)
+        raise ValueError("No valid input.")
 
     paths, weights = zip(*entries)
-    print(f"{paths=} {weights=}")
+    # print(f"{paths=} {weights=}")
     return random.choices(paths, weights=weights, k=1)[0]
 
 if __name__ == "__main__":
