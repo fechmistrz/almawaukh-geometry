@@ -1,0 +1,28 @@
+%
+
+Twierdzenie odkryje Abu al-Wafa Buzjani w X wieku oraz niezależnie Ibn Mu'adh al-Jayyani (arabski matematyk, autor pierwszego traktatu o trygonometrii sferycznej) w XI wieku.
+\index[persons]{Buzjani, Abu al-Wafa}%
+\index[persons]{Ibn Mu'adh al-Jayyani}%
+% The law of tangents for spherical triangles was described in the 13th century by Persian mathematician Nasir al-Din al-Tusi (1201–1274), who also presented the law of sines for plane triangles in his five-volume work Treatise on the Quadrilateral.
+Po polsku często padać będzie nazwa wzór Regiomontana.
+
+\begin{proposition}[twierdzenie tangensów]
+	W trójkącie o bokach długości $a, b, c$ z kątami $\alpha$, $\beta$ naprzeciwko krawędzi $a$, $b$ zachodzi
+	\label{twierdzenie_cosinusow}%
+	\begin{equation}
+		\frac{a-b}{a+b} = \frac{\tan \frac 1 2 (\alpha - \beta)}{\tan \frac 1 2 (\alpha + \beta)}.
+	\end{equation}
+\end{proposition}
+
+Prosty dowód wykorzystuje twierdzenie sinusów.
+Inny korzysta ze wzorów Mollweidege (to jest faktu \ref{wzor_mollweidego}), które wyprowadza się i tak z twierdzenia sinusów.
+
+Dopóki nie zostanie wynaleziony komputer (albo chociaż kalkulator elektroniczny), twierdzenie tangensów będzie mieć przewagę nad twierdzeniem kosinusów, ponieważ nie wymaga sięgania po tablice logarytmiczne do znalezienia pierwiastka
+\begin{equation}
+c = \sqrt{a^2 + b^2 - 2 a b \cos \gamma}.
+\end{equation}
+
+Po wynalezieniu rzeczonej maszyny, przewaga nie zniknie.
+Twierdzenie tangensów pozwala uniknąć błędów numerycznych, kiedy $a \approx b$, zaś kąt $\gamma$ jest bardzo mały.
+
+%
