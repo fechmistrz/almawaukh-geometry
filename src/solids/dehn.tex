@@ -1,7 +1,29 @@
-Nie ma odpowiednika twierdzenia Wallace'a-Bolyaia-Gerwiena w trzech wymiarach.Add commentMore actions
-Dwa wielościany nazwijmy równoważnymi przez podział, jeśli pierwszy da się tak podzielić na skończoną liczbę wielościanów, by z otrzymanych kawałków można było złożyć drugi.
-To, czy każde dwa czworościany o równych podstawach i równych wysokościach będzie stanowić treść trzeciego problemu Hilberta.
-Negatywnej odpowiedzi udzieli Dehn w 1900 roku, prostszy dowód pokaże Hadwiger w 1954 roku.
+
+Trójwymiarowy odpowiednik definicji TODO jest oczywisty:
+
+\begin{definition}
+    Dwa wielościany $V, V'$ nazywamy równoważnymi przez podział, jeśli można je podzielić na tyle samo przystających do siebie wielościanów o rozłącznych wnętrzach:
+    \begin{align}
+        V & = \bigcup_{k=1}^n V_k \\
+        V' & = \bigcup_{k=1}^n V'_k,
+    \end{align}
+   że wielościan $V_k$ przystaje do $V_k'$ (istnieje pewna izometria $f_k$ taka, że $f_k[V_k] = V'_k$).
+\end{definition}
+
+Władysław Kretkowski przygotuje na konkurs matematyczny w 1882 roku zadanie, rozwiązanie którego wyceni na 500 złotych franków.
+Nagrodę przyzna się Ludwikowi Birkenmajerowi; niestety ani problem, ani jego rozwiązanie nie zostaną opublikowane w żadnym rozsądnym zagranicznym czasopiśmie.
+Hilbert przedstawi na początku XX wieku listę 23 problemów, pokazujących stan ówczesnej matematyki.
+Pośród nich pojawi się:
+
+\begin{problem}[trzeci problem Hilberta]
+    \label{trzeci_problem_hilberta}
+    Czy mając dane dwa wielościany o równej objętości, można zawsze rozłożyć jeden z nich na skończoną liczbę wielościennych części, a następnie złożyć je w drugi?
+\end{problem}
+
+Już Euklides będzie znać wzór na objętość ostrosłupa, jedna trzecia iloczynu pola podstawy oraz wysokości.
+Ale każdy dowód tego wzoru wykorzysta elementy rachunku różniczkowo-całkowego takie jak zasada Cavalieriego albo przejście graniczne (metoda wyczerpywania).
+Wzory na pola wielokątów można wyprowadzić elementarnymi metodami, dlatego zastanawiano się, co jest nie tak z trzema wymiarami.
+Negatywnej odpowiedzi na pytanie \ref{trzeci_problem_hilberta} udzieli bardzo szybko Dehn, prostszy dowód pokaże Hadwiger w 1954 roku.
 % Hadwiger, Glur pokazali, że kiedy boki kawałków mogą musieć być równoległe % Hadwiger, H.; Glur, P.: Zerlegungsgleichheit ebener Polygone. Elem. Math. 6 (1951), 97–106.
 
 \begin{theorem}[Hadwigera] % Delta 1984 11
@@ -14,6 +36,8 @@ Negatywnej odpowiedzi udzieli Dehn w 1900 roku, prostszy dowód pokaże Hadwiger
     Jeśli istnieje taka funkcja $\mathbb Z$-addytywna na zbiorze $M \subseteq \mathbb R$ zawierającym $\pi$, $\alpha_1$, $\ldots$, $\alpha_p$, $\beta_1$, $\ldots$, $\beta_q$, że $f(W) \neq f(V)$, to $W$ i $V$ nie są równoważne przez podział.
 \end{theorem}
 
+Poniższy wniosek wyciągnie nieznany autor w $\Delta_{84}^{11}$.
+
 \begin{corollary}
     Czworościan o kątach dwuściennych
     \begin{equation}
@@ -25,10 +49,12 @@ Negatywnej odpowiedzi udzieli Dehn w 1900 roku, prostszy dowód pokaże Hadwiger
     Wtedy funkcja $f$ przyjmuje na czworościanie wartość $3 \ \sqrt 2$, zaś na sześcianie $0$.
 \end{corollary}
 
-Taki sam wniosek wyciągnie nieznany autor w $\Delta_{84}^{11}$.
+Które wielościany są zatem równoważne przez podział?
+Sydler pokaże w 1965, że warunkiem koniecznym i wystarczającym jest to, by miały równe objętości oraz równe niezmienniki Dehna.
+Børge Jessen przeniesie ten wynik do czterech wymiarów.
+W 1990 roku Dupont i Sah opracują prostszy dowód wyniku Sydlera, reinterpretując go jako twierdzenie o homologiach pewnych klasycznych grup.
+%  Dupont, Johan; Sah, Chih-Han (1990). "Homology of Euclidean groups of motions made discrete and Euclidean scissors congruences". Acta Math. 164 (1–2): 1–27. doi:10.1007/BF02392750.
+%  Sydler, J.-P. (1965). "Conditions nécessaires et suffisantes pour l'équivalence des polyèdres de l'espace euclidien à trois dimensions". Comment. Math. Helv. 40: 43–80. doi:10.1007/bf02564364. S2CID 123317371.
+%  Jessen, Børge (1972). "Zur Algebra der Polytope". Nachrichten der Akademie der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse, Fachgruppe II: Nachrichten aus der Physik, Astronomie, Geophysik, Technik: 47–53. MR 0353150. Zbl 0262.52004.
 
-% Unknown to Hilbert and Dehn, Hilbert's third problem was also proposed independently by Władysław Kretkowski for a math contest of 1882 by the Academy of Arts and Sciences of Kraków, and was solved by Ludwik Antoni Birkenmajer with a different method than Dehn's. Birkenmajer did not publish the result, and the original manuscript containing his solution was rediscovered years later.[3] 
-% Gauss regretted this defect in two of his letters to Christian Ludwig Gerling, who proved that two symmetric tetrahedra are equidecomposable.
-% Two polyhedra are called scissors-congruent if the first can be cut into finitely many polyhedral pieces that can be reassembled to yield the second. Any two scissors-congruent polyhedra have the same volume. Hilbert asks about the converse. 
-% In light of Dehn's theorem above, one might ask "which polyhedra are scissors-congruent"? Sydler (1965) showed that two polyhedra are scissors-congruent if and only if they have the same volume and the same Dehn invariant.[5] Børge Jessen later extended Sydler's results to four dimensions.[6] In 1990, Dupont and Sah provided a simpler proof of Sydler's result by reinterpreting it as a theorem about the homology of certain classical groups.[7] 
 % http://sciencecow.mit.edu/me/hilberts_third_problem.pdf
