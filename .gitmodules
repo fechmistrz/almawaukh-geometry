@@ -1,0 +1,3 @@
+[submodule "ziemiomierstwo"]
+	path = ziemiomierstwo
+	url = git@github.com:fechmistrz/ziemiomierstwo
